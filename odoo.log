@@ -1,0 +1,748 @@
+2018-01-07 17:32:08,038 4338 INFO ? odoo: Odoo version 10.0
+2018-01-07 17:32:08,039 4338 INFO ? odoo: addons paths: ['/home/manoj/.local/share/Odoo/addons/10.0', u'/opt/odoo/odoo-10.0/odoo/addons', u'/opt/odoo/odoo-10.0/addons']
+2018-01-07 17:32:08,039 4338 INFO ? odoo: database: default@default:default
+2018-01-07 17:32:08,058 4338 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-01-07 17:32:18,960 4338 INFO ? odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-01-07 17:32:19,275 4338 INFO ? odoo.http: HTTP Configuring static files
+2018-01-07 17:32:19,287 4338 INFO DCU_Experiment_1 odoo.modules.loading: loading 1 modules...
+2018-01-07 17:32:19,311 4338 INFO DCU_Experiment_1 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries
+2018-01-07 17:32:19,327 4338 INFO DCU_Experiment_1 odoo.modules.loading: loading 25 modules...
+2018-01-07 17:32:19,404 4338 INFO DCU_Experiment_1 odoo.modules.loading: 25 modules loaded in 0.08s, 0 queries
+2018-01-07 17:32:19,682 4338 INFO DCU_Experiment_1 odoo.modules.loading: Modules loaded.
+2018-01-07 17:32:19,685 4338 INFO DCU_Experiment_1 odoo.addons.base.ir.ir_http: Generating routing map
+2018-01-07 17:32:19,968 4338 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2018-01-07 17:32:41,249 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #6 deleted mail.message records with IDs: [41, 38]
+2018-01-07 17:32:41,279 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #6 deleted project.task records with IDs: [15]
+2018-01-07 17:32:41,285 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [20]
+2018-01-07 17:32:41,296 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:32:41] "POST /web/dataset/call_kw/project.task/unlink HTTP/1.1" 200 -
+2018-01-07 17:32:45,466 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #6 deleted mail.message records with IDs: [42, 40]
+2018-01-07 17:32:45,489 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #6 deleted project.task records with IDs: [17]
+2018-01-07 17:32:45,496 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [22]
+2018-01-07 17:32:45,502 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:32:45] "POST /web/dataset/call_kw/project.task/unlink HTTP/1.1" 200 -
+2018-01-07 17:33:09,976 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:33:09] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:34:00,064 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:34:00] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:34:46,498 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #6 deleted mail.message records with IDs: [43]
+2018-01-07 17:34:46,508 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #6 deleted project.task records with IDs: [18]
+2018-01-07 17:34:46,521 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [23]
+2018-01-07 17:34:46,527 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:34:46] "POST /web/dataset/call_kw/project.task/unlink HTTP/1.1" 200 -
+2018-01-07 17:34:50,131 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:34:50] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:35:40,191 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:35:40] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:36:30,214 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:36:30] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:37:05,543 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:37:05] "POST /web/dataset/call_kw/project.task/name_create HTTP/1.1" 200 -
+2018-01-07 17:37:05,593 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:37:05] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-07 17:37:05,628 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:37:05] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107173705 HTTP/1.1" 200 -
+2018-01-07 17:37:20,285 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:37:20] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:37:54,948 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:37:54] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-07 17:37:55,008 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:37:55] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-01-07 17:37:55,063 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:37:55] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:37:55,085 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:37:55] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+2018-01-07 17:38:10,351 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:38:10] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:38:37,943 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:38:37] "POST /web/dataset/call_kw/project.task/write HTTP/1.1" 200 -
+2018-01-07 17:38:38,022 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:38:38] "POST /web/dataset/call_kw/project.task/search_read HTTP/1.1" 200 -
+2018-01-07 17:38:38,060 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:38:38] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-01-07 17:38:38,116 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:38:38] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:38:38,262 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:38:38] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-01-07 17:38:52,444 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:38:52] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:38:52,466 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:38:52] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-07 17:38:52,552 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:38:52] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:38:52,593 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:38:52] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:38:52,692 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:38:52] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107173837 HTTP/1.1" 200 -
+2018-01-07 17:39:00,436 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:00] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:39:14,273 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:14] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-07 17:39:14,318 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:14] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:39:14,370 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:14] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-01-07 17:39:14,390 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:14] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:39:14,395 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:14] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:39:14,522 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:14] "POST /web/dataset/call_kw/project.task.type/name_get HTTP/1.1" 200 -
+2018-01-07 17:39:14,561 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:14] "POST /web/dataset/call_kw/project.task.type/name_get HTTP/1.1" 200 -
+2018-01-07 17:39:29,817 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:29] "POST /web/dataset/call_kw/project.task/message_get_suggested_recipients HTTP/1.1" 200 -
+2018-01-07 17:39:47,951 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:47] "POST /web/dataset/call_kw/project.task/message_post HTTP/1.1" 200 -
+2018-01-07 17:39:47,986 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:47] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+2018-01-07 17:39:50,504 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:39:50] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:40:15,844 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:15] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:40:15,888 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:15] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-07 17:40:15,974 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:15] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:40:16,003 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:16] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:40:16,094 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:16] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107173947 HTTP/1.1" 200 -
+2018-01-07 17:40:18,432 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:18] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-07 17:40:18,505 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:18] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-01-07 17:40:18,540 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:18] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:40:32,694 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #6 deleted mail.message records with IDs: [37]
+2018-01-07 17:40:32,716 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #6 deleted project.task records with IDs: [14]
+2018-01-07 17:40:32,724 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [19]
+2018-01-07 17:40:32,727 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:32] "POST /web/dataset/call_kw/project.task/unlink HTTP/1.1" 200 -
+2018-01-07 17:40:32,815 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:32] "POST /web/dataset/call_kw/project.task/search_read HTTP/1.1" 200 -
+2018-01-07 17:40:32,870 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:32] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-01-07 17:40:32,933 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:32] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:40:40,051 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:40] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:40:40,093 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:40] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-07 17:40:40,185 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:40] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:40:40,228 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:40] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:40:40,569 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:40:40] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:41:18,595 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:41:18] "POST /web/dataset/call_kw/project.task/name_create HTTP/1.1" 200 -
+2018-01-07 17:41:18,647 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:41:18] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-07 17:41:18,673 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:41:18] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107174118 HTTP/1.1" 200 -
+2018-01-07 17:41:30,594 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:41:30] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:41:34,869 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:41:34] "POST /web/dataset/call_kw/project.task/write HTTP/1.1" 200 -
+2018-01-07 17:41:34,917 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:41:34] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-07 17:41:34,941 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:41:34] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107174134 HTTP/1.1" 200 -
+2018-01-07 17:42:07,140 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:42:07] "POST /web/dataset/call_kw/project.task/write HTTP/1.1" 200 -
+2018-01-07 17:42:07,209 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:42:07] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-07 17:42:07,251 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:42:07] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107174207 HTTP/1.1" 200 -
+2018-01-07 17:42:20,663 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:42:20] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:42:39,882 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:42:39] "POST /web/dataset/call_kw/project.task/write HTTP/1.1" 200 -
+2018-01-07 17:42:39,944 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:42:39] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-07 17:42:39,974 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:42:39] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107174239 HTTP/1.1" 200 -
+2018-01-07 17:42:48,618 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:42:48] "POST /web/dataset/call_kw/project.task/write HTTP/1.1" 200 -
+2018-01-07 17:42:48,692 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:42:48] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-07 17:42:48,721 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:42:48] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107174248 HTTP/1.1" 200 -
+2018-01-07 17:43:10,721 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:10] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:43:12,413 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:12] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-07 17:43:12,510 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:12] "POST /web/dataset/call_kw/project.project/fields_get HTTP/1.1" 200 -
+2018-01-07 17:43:12,616 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:12] "POST /web/dataset/call_kw/project.project/read HTTP/1.1" 200 -
+2018-01-07 17:43:48,560 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:48] "POST /web/pivot/check_xlwt HTTP/1.1" 200 -
+2018-01-07 17:43:48,564 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:48] "POST /web/dataset/call_kw/project.task/fields_get HTTP/1.1" 200 -
+2018-01-07 17:43:48,654 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:48] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:43:48,699 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:48] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:43:48,740 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:48] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:43:48,754 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:48] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:43:52,792 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:52] "POST /web/dataset/call_kw/project.task/check_access_rights HTTP/1.1" 200 -
+2018-01-07 17:43:52,810 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:52] "POST /web/dataset/call_kw/project.task/check_access_rights HTTP/1.1" 200 -
+2018-01-07 17:43:53,182 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:53] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:43:55,713 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:55] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:43:59,348 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:43:59] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:44:00,752 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:00] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:44:04,546 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:04] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:44:06,821 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:06] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:44:08,782 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:08] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:44:08,823 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:08] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:44:08,858 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:08] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:44:08,863 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:08] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:44:21,679 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:21] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:44:50,819 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:50] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:44:50,991 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:50] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:44:54,428 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:54] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:44:56,622 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:44:56] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:45:40,923 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:45:40] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:45:54,897 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #6 deleted mail.message records with IDs: [47, 46]
+2018-01-07 17:45:54,918 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #6 deleted project.task records with IDs: [20]
+2018-01-07 17:45:54,932 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [25]
+2018-01-07 17:45:54,974 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:45:54] "POST /web/dataset/call_kw/project.task/unlink HTTP/1.1" 200 -
+2018-01-07 17:46:09,929 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:09] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:46:09,961 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:09] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-07 17:46:10,069 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:10] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:46:10,095 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:10] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:46:16,937 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:16] "POST /web/dataset/call_kw/mail.channel/channel_fetch_preview HTTP/1.1" 200 -
+2018-01-07 17:46:24,215 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:24] "POST /web/dataset/call_kw/res.partner/im_search HTTP/1.1" 200 -
+2018-01-07 17:46:25,474 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:25] "POST /web/dataset/call_kw/res.partner/im_search HTTP/1.1" 200 -
+2018-01-07 17:46:27,108 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:27] "POST /web/dataset/call_kw/mail.channel/channel_get_and_minimize HTTP/1.1" 200 -
+2018-01-07 17:46:27,129 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:27] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:46:27,234 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:27] "POST /web/dataset/call_kw/mail.channel/channel_fetch_listeners HTTP/1.1" 200 -
+2018-01-07 17:46:27,284 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:27] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 -
+2018-01-07 17:47:01,461 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:47:01] "POST /web/dataset/call_kw/mail.channel/message_post HTTP/1.1" 200 -
+2018-01-07 17:47:01,513 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:47:01] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:47:32,669 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:47:32] "POST /web/dataset/call_kw/mail.channel/channel_fold HTTP/1.1" 200 -
+2018-01-07 17:47:32,714 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:47:32] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:47:41,983 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:47:41] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-07 17:48:19,669 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:19] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-01-07 17:48:19,945 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:19] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:48:20,141 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:20] "POST /web/dataset/call_kw/web.planner/render HTTP/1.1" 200 -
+2018-01-07 17:48:22,747 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:22] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:48:38,844 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:38] "POST /web/dataset/call_kw/project.project/name_get HTTP/1.1" 200 -
+2018-01-07 17:48:38,948 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:38] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:48:38,985 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:38] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-07 17:48:39,091 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:39] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:48:39,138 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:39] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:48:42,708 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:42] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:48:44,760 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:44] "POST /web/dataset/call_kw/project.project/name_get HTTP/1.1" 200 -
+2018-01-07 17:48:44,866 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:44] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:48:44,901 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:44] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-07 17:48:44,994 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:44] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:48:45,032 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:48:45] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:49:12,818 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:49:12] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:49:43,248 4338 INFO DCU_Experiment_1 odoo.addons.base.ir.ir_model: Access Denied by ACLs for operation: create, uid: 6, model: project.task.type
+2018-01-07 17:49:43,251 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:49:43] "POST /web/dataset/call_kw/project.task.type/name_create HTTP/1.1" 200 -
+2018-01-07 17:50:02,913 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:50:02] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:50:22,895 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:50:22] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-07 17:50:23,052 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:50:23] "POST /web/dataset/call_kw/res.users/load_views HTTP/1.1" 200 -
+2018-01-07 17:50:23,211 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:50:23] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2018-01-07 17:50:23,288 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:50:23] "GET /web/image?model=res.users&id=6&field=image_small&unique=20171127212504 HTTP/1.1" 200 -
+2018-01-07 17:50:53,009 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:50:53] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:51:21,540 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:21] "POST /web/dataset/call_kw/project.task/name_create HTTP/1.1" 200 -
+2018-01-07 17:51:21,598 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:21] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-07 17:51:21,629 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:21] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107175121 HTTP/1.1" 200 -
+2018-01-07 17:51:25,255 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:25] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-07 17:51:25,326 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:25] "POST /web/dataset/call_kw/project.task.type/fields_get HTTP/1.1" 200 -
+2018-01-07 17:51:25,387 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:25] "POST /web/dataset/call_kw/project.tags/fields_get HTTP/1.1" 200 -
+2018-01-07 17:51:25,452 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:25] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-01-07 17:51:25,481 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:25] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+2018-01-07 17:51:25,557 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:25] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:51:25,578 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:25] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:51:25,729 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:25] "POST /web/dataset/call_kw/project.task.type/name_get HTTP/1.1" 200 -
+2018-01-07 17:51:33,226 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:33] "POST /web/dataset/call_kw/project.tags/name_search HTTP/1.1" 200 -
+2018-01-07 17:51:43,146 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:43] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:51:52,631 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:52] "POST /web/dataset/call_kw/project.tags/read HTTP/1.1" 200 -
+2018-01-07 17:52:33,230 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:52:33] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:52:57,634 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:52:57] "POST /web/dataset/call_kw/project.task/message_post HTTP/1.1" 200 -
+2018-01-07 17:52:57,689 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:52:57] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+2018-01-07 17:53:23,323 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:23] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:53:25,262 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:25] "POST /web/dataset/call_kw/project.project/get_formview_id HTTP/1.1" 200 -
+2018-01-07 17:53:25,398 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:25] "POST /web/dataset/call_kw/project.project/fields_view_get HTTP/1.1" 200 -
+2018-01-07 17:53:25,555 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:25] "POST /web/dataset/call_kw/project.project/read HTTP/1.1" 200 -
+2018-01-07 17:53:25,702 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:25] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-01-07 17:53:33,349 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:33] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-07 17:53:46,370 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:46] "POST /web/dataset/call_kw/project.task/load_views HTTP/1.1" 200 -
+2018-01-07 17:53:46,479 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:46] "POST /web/dataset/call_kw/project.project/name_get HTTP/1.1" 200 -
+2018-01-07 17:53:46,573 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:46] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:53:46,618 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:46] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-07 17:53:46,708 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:46] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:53:46,757 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:46] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:53:46,842 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:46] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107175257 HTTP/1.1" 200 -
+2018-01-07 17:53:51,991 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:51] "POST /web/dataset/call_button HTTP/1.1" 200 -
+2018-01-07 17:53:52,189 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:52] "POST /web/dataset/call_kw/ir.attachment/load_views HTTP/1.1" 200 -
+2018-01-07 17:53:52,340 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:52] "POST /web/dataset/call_kw/ir.attachment/fields_get HTTP/1.1" 200 -
+2018-01-07 17:53:52,369 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:52] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:53:52,582 4338 INFO ? werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:52] "GET /web/static/src/img/view_empty_arrow.png HTTP/1.1" 200 -
+2018-01-07 17:53:52,644 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:52] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-01-07 17:54:03,892 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:54:03] "POST /web/dataset/call_kw/ir.attachment/default_get HTTP/1.1" 200 -
+2018-01-07 17:54:03,995 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:54:03] "POST /web/dataset/call_kw/ir.attachment/onchange HTTP/1.1" 200 -
+2018-01-07 17:54:04,125 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:54:04] "POST /web/dataset/call_kw/res.company/name_get HTTP/1.1" 200 -
+2018-01-07 17:54:04,328 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:54:04] "POST /web/dataset/call_kw/ir.values/get_defaults HTTP/1.1" 200 -
+2018-01-07 17:54:04,339 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:54:04] "POST /web/dataset/call_kw/ir.values/get_defaults HTTP/1.1" 200 -
+2018-01-07 17:54:13,385 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:54:13] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:54:27,614 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:54:27] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:54:30,792 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:54:30] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-07 17:54:30,819 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:54:30] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-07 17:54:30,944 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:54:30] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:54:30,969 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:54:30] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 17:55:03,468 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:55:03] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:55:40,875 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:55:40] "GET /web/session/logout HTTP/1.1" 303 -
+2018-01-07 17:55:41,036 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:55:41] "GET /web HTTP/1.1" 303 -
+2018-01-07 17:55:41,225 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:55:41] "GET /web/login HTTP/1.1" 200 -
+2018-01-07 17:55:41,689 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:55:41] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 17:55:41,704 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:55:41] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 17:55:41,921 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:55:41] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 17:55:53,557 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:55:53] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-07 17:58:34,513 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:58:34] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 17:58:34,823 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:58:34] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 17:58:34,831 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:58:34] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 17:58:34,953 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:58:34] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 17:58:54,259 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:58:54] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 17:58:54,541 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:58:54] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 17:58:54,550 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:58:54] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 17:58:54,678 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:58:54] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 17:59:01,676 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:01] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 17:59:01,920 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:01] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 17:59:01,928 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:01] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 17:59:02,033 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:02] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 17:59:48,523 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:48] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 17:59:48,770 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:48] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 17:59:48,776 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:48] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 17:59:48,883 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:48] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 17:59:59,076 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:59] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 17:59:59,394 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:59] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 17:59:59,404 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:59] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 17:59:59,511 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 17:59:59] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:00:10,688 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:10] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:00:10,969 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:10] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:00:10,973 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:10] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:00:11,077 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:11] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:00:26,244 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:26] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:00:26,555 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:26] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:00:26,564 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:26] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:00:26,668 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:26] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:00:34,930 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:34] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:00:35,266 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:35] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:00:35,272 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:35] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:00:35,382 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:35] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:00:49,517 4338 INFO ? odoo.http: Generating nondb routing
+2018-01-07 18:00:49,548 4338 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:49] "GET /web/login HTTP/1.1" 303 -
+2018-01-07 18:00:49,704 4338 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:49] "GET /web/database/selector HTTP/1.1" 200 -
+2018-01-07 18:00:49,740 4338 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:49] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 200 -
+2018-01-07 18:00:49,760 4338 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:49] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 -
+2018-01-07 18:00:49,763 4338 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:49] "GET /web/static/lib/bootstrap/js/modal.js HTTP/1.1" 200 -
+2018-01-07 18:00:49,763 4338 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:49] "GET /web/static/lib/bootstrap/js/tooltip.js HTTP/1.1" 200 -
+2018-01-07 18:00:49,770 4338 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:49] "GET /web/static/lib/bootstrap/js/dropdown.js HTTP/1.1" 200 -
+2018-01-07 18:00:49,780 4338 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:49] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 200 -
+2018-01-07 18:00:49,791 4338 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:00:49] "GET /web/static/src/img/logo2.png HTTP/1.1" 200 -
+2018-01-07 18:03:34,511 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:03:34] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:03:34,836 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:03:34] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:03:34,845 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:03:34] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:03:34,938 4338 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:03:34] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:06:49,088 4992 INFO ? odoo: Odoo version 10.0
+2018-01-07 18:06:49,089 4992 INFO ? odoo: addons paths: ['/home/manoj/.local/share/Odoo/addons/10.0', u'/opt/odoo/odoo-10.0/odoo/addons', u'/opt/odoo/odoo-10.0/addons']
+2018-01-07 18:06:49,089 4992 INFO ? odoo: database: default@default:default
+2018-01-07 18:06:49,107 4992 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-01-07 18:07:12,907 4992 INFO ? odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-01-07 18:07:13,305 4992 INFO ? odoo.http: HTTP Configuring static files
+2018-01-07 18:07:13,319 4992 INFO DCU_Experiment_1 odoo.modules.loading: loading 1 modules...
+2018-01-07 18:07:13,348 4992 INFO DCU_Experiment_1 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries
+2018-01-07 18:07:13,370 4992 INFO DCU_Experiment_1 odoo.modules.loading: loading 25 modules...
+2018-01-07 18:07:13,460 4992 INFO DCU_Experiment_1 odoo.modules.loading: 25 modules loaded in 0.09s, 0 queries
+2018-01-07 18:07:13,812 4992 INFO DCU_Experiment_1 odoo.modules.loading: Modules loaded.
+2018-01-07 18:07:13,816 4992 INFO DCU_Experiment_1 odoo.addons.base.ir.ir_http: Generating routing map
+2018-01-07 18:07:14,104 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:14] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:07:14,334 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:14] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:07:14,339 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:14] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:07:14,428 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:14] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:07:28,951 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:28] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:07:29,250 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:29] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:07:29,257 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:29] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:07:29,370 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:29] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:07:43,852 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:43] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:07:44,144 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:44] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:07:44,148 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:44] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:07:44,271 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:07:44] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:08:06,661 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:06] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:08:06,955 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:06] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:08:06,962 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:06] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:08:07,083 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:07] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:08:52,637 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:52] "GET /web/database/manager HTTP/1.1" 200 -
+2018-01-07 18:08:52,686 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:52] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 200 -
+2018-01-07 18:08:52,687 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:52] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 -
+2018-01-07 18:08:52,690 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:52] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 200 -
+2018-01-07 18:08:52,691 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:52] "GET /web/static/lib/bootstrap/js/modal.js HTTP/1.1" 200 -
+2018-01-07 18:08:52,694 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:52] "GET /web/static/lib/bootstrap/js/tooltip.js HTTP/1.1" 200 -
+2018-01-07 18:08:52,695 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:52] "GET /web/static/lib/bootstrap/js/dropdown.js HTTP/1.1" 200 -
+2018-01-07 18:08:52,710 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:52] "GET /web/static/src/img/logo2.png HTTP/1.1" 200 -
+2018-01-07 18:08:57,453 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:57] "GET /web?db=DCU_Experiment_1 HTTP/1.1" 303 -
+2018-01-07 18:08:57,475 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:57] "GET /web/login HTTP/1.1" 200 -
+2018-01-07 18:08:57,785 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:57] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:08:57,788 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:57] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:08:57,899 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:08:57] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:09:05,140 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:05] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:09:05,361 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:05] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:09:05,366 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:05] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:09:05,480 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:05] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:09:22,633 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:22] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:09:22,901 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:22] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:09:22,906 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:22] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:09:23,002 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:23] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:09:30,277 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:30] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:09:30,588 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:30] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:09:30,597 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:30] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:09:30,710 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:30] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:09:49,148 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:49] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:09:49,486 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:49] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:09:49,497 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:49] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:09:49,583 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:09:49] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:10:10,999 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:10:10] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:10:11,333 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:10:11] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:10:11,335 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:10:11] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:10:11,435 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:10:11] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:12:22,095 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:12:22] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:12:22,342 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:12:22] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:12:22,346 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:12:22] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:12:22,429 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:12:22] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:12:29,949 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:12:29] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:12:30,225 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:12:30] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:12:30,231 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:12:30] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:12:30,327 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:12:30] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:14:31,861 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:31] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:14:32,136 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:32] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:14:32,144 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:32] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:14:32,244 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:32] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:14:46,512 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:46] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:14:46,763 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:46] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:14:46,765 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:46] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:14:46,855 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:46] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:14:56,365 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:56] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:14:56,680 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:56] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:14:56,684 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:56] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:14:56,820 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:14:56] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:15:01,850 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:01] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:15:02,102 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:02] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:15:02,107 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:02] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:15:02,198 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:02] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:15:08,033 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:08] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:15:08,114 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:08] "GET /web/content/266-765d3d9/web.assets_frontend.0.css HTTP/1.1" 304 -
+2018-01-07 18:15:08,117 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:08] "GET /web/content/267-765d3d9/web.assets_frontend.js HTTP/1.1" 304 -
+2018-01-07 18:15:08,124 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:08] "GET /web/content/246-17be956/web.assets_common.0.css HTTP/1.1" 304 -
+2018-01-07 18:15:08,140 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:08] "GET /web/content/251-17be956/web.assets_common.js HTTP/1.1" 304 -
+2018-01-07 18:15:08,353 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:08] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:15:08,363 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:08] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:15:08,394 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:08] "GET /web/binary/company_logo?dbname=DCU_Experiment_1 HTTP/1.1" 200 -
+2018-01-07 18:15:08,440 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:08] "GET /web_editor/static/src/xml/ace.xml HTTP/1.1" 304 -
+2018-01-07 18:15:08,490 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:08] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:15:18,218 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:18] "GET / HTTP/1.1" 303 -
+2018-01-07 18:15:18,241 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:18] "GET /web HTTP/1.1" 303 -
+2018-01-07 18:15:18,317 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:18] "GET /web/login HTTP/1.1" 200 -
+2018-01-07 18:15:18,647 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:18] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:15:18,651 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:18] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:15:18,801 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:18] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:15:23,858 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:23] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:15:24,116 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:24] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:15:24,121 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:24] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:15:24,225 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:15:24] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:16:29,171 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:16:29] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:16:29,468 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:16:29] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:16:29,476 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:16:29] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:16:29,575 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:16:29] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:18:36,021 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:36] "GET /web/database/selector HTTP/1.1" 200 -
+2018-01-07 18:18:38,514 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:38] "GET /web?db=ebug HTTP/1.1" 302 -
+2018-01-07 18:18:38,537 4992 INFO ? odoo.http: Generating nondb routing
+2018-01-07 18:18:38,556 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:38] "GET /web?db=ebug HTTP/1.1" 302 -
+2018-01-07 18:18:38,579 4992 INFO ebug odoo.modules.loading: loading 1 modules...
+2018-01-07 18:18:38,604 4992 INFO ebug odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries
+2018-01-07 18:18:38,612 4992 INFO ebug odoo.modules.loading: loading 12 modules...
+2018-01-07 18:18:38,621 4992 INFO ebug odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries
+2018-01-07 18:18:38,665 4992 INFO ebug odoo.modules.loading: Modules loaded.
+2018-01-07 18:18:38,668 4992 INFO ebug odoo.addons.base.ir.ir_http: Generating routing map
+2018-01-07 18:18:38,709 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:38] "GET /web?db=ebug HTTP/1.1" 303 -
+2018-01-07 18:18:42,794 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:42] "GET /web/login HTTP/1.1" 200 -
+2018-01-07 18:18:42,849 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:42] "GET /web/content/342-17be956/web.assets_common.0.css HTTP/1.1" 200 -
+2018-01-07 18:18:42,890 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:42] "GET /web/content/343-765d3d9/web.assets_frontend.0.css HTTP/1.1" 200 -
+2018-01-07 18:18:42,905 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:42] "GET /web/content/345-765d3d9/web.assets_frontend.js HTTP/1.1" 200 -
+2018-01-07 18:18:42,933 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:42] "GET /web/content/344-17be956/web.assets_common.js HTTP/1.1" 200 -
+2018-01-07 18:18:43,175 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:43] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:18:43,182 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:43] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:18:43,288 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:43] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:18:47,620 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:47] "POST /web/login HTTP/1.1" 303 -
+2018-01-07 18:18:53,074 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web HTTP/1.1" 200 -
+2018-01-07 18:18:53,136 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/content/347-8f292dd/web.assets_backend.1.css HTTP/1.1" 200 -
+2018-01-07 18:18:53,164 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/content/348-e9133cb/web_editor.summernote.0.css HTTP/1.1" 200 -
+2018-01-07 18:18:53,178 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/content/349-ccb9be8/web_editor.assets_editor.0.css HTTP/1.1" 200 -
+2018-01-07 18:18:53,179 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/content/346-8f292dd/web.assets_backend.0.css HTTP/1.1" 200 -
+2018-01-07 18:18:53,226 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/content/351-e9133cb/web_editor.summernote.js HTTP/1.1" 200 -
+2018-01-07 18:18:53,232 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/content/352-ccb9be8/web_editor.assets_editor.js HTTP/1.1" 200 -
+2018-01-07 18:18:53,267 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/content/350-8f292dd/web.assets_backend.js HTTP/1.1" 200 -
+2018-01-07 18:18:53,589 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/webclient/qweb?mods=web,web_kanban,base,web_diagram,web_planner,web_tour,base_import,web_calendar,web_editor,web_settings_dashboard,web_kanban_gauge HTTP/1.1" 200 -
+2018-01-07 18:18:53,836 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "POST /web/dataset/call HTTP/1.1" 200 -
+2018-01-07 18:18:53,890 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:18:53,902 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web_editor/static/src/xml/editor.xml HTTP/1.1" 200 -
+2018-01-07 18:18:53,909 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/webclient/locale/en_US HTTP/1.1" 200 -
+2018-01-07 18:18:53,917 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web_editor/static/src/xml/snippets.xml HTTP/1.1" 200 -
+2018-01-07 18:18:53,966 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/binary/company_logo?db=ebug&company=1 HTTP/1.1" 200 -
+2018-01-07 18:18:53,974 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 -
+2018-01-07 18:18:53,990 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:53] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+2018-01-07 18:18:54,015 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 18:18:54,042 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-01-07 18:18:54,050 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2018-01-07 18:18:54,070 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:18:54,163 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-07 18:18:54,340 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1" 200 -
+2018-01-07 18:18:54,491 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "POST /web/dataset/call_kw/ir.module.module/fields_get HTTP/1.1" 200 -
+2018-01-07 18:18:54,558 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-07 18:18:54,639 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /crm/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,650 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /project/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,655 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /stock/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,670 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /mrp/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,675 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /sale/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,683 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /mail/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,693 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,699 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /hr_timesheet/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,706 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,716 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /account/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,724 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /account_accountant/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,737 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /project_issue/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,741 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /note/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,752 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /website/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,760 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /website_sale/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,768 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /purchase/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,781 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /hr/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,786 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,799 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /contacts/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,810 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,817 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /hr_expense/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,827 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /board/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,839 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /base/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,851 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /survey/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,856 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,865 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /lunch/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,874 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /maintenance/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,887 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /calendar/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,895 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /website_event/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,908 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /website_blog/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,916 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /website_slides/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,927 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /website_forum/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,937 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /fleet/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,945 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /im_livechat/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:18:54,954 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:18:54] "GET /mrp_repair/static/description/icon.png HTTP/1.1" 200 -
+2018-01-07 18:19:02,611 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:19:02] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-07 18:19:02,683 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:19:02] "POST /web/dataset/call_kw/res.users/load_views HTTP/1.1" 200 -
+2018-01-07 18:19:02,803 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:19:02] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2018-01-07 18:19:02,868 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:19:02] "GET /web/image?model=res.users&id=1&field=image_small&unique=20180107171844 HTTP/1.1" 200 -
+2018-01-07 18:20:54,501 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:20:54] "GET /web/session/logout HTTP/1.1" 303 -
+2018-01-07 18:20:54,525 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:20:54] "GET /web HTTP/1.1" 303 -
+2018-01-07 18:20:54,676 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:20:54] "GET /web/login HTTP/1.1" 200 -
+2018-01-07 18:20:54,967 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:20:54] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:20:54,989 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:20:54] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:20:55,137 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:20:55] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:20:58,331 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:20:58] "GET /web/database/selector HTTP/1.1" 200 -
+2018-01-07 18:21:00,081 4992 INFO ebug werkzeug: 127.0.0.1 - - [07/Jan/2018 18:21:00] "GET /web?db=DCU_Experiment_1 HTTP/1.1" 302 -
+2018-01-07 18:21:00,104 4992 INFO ? werkzeug: 127.0.0.1 - - [07/Jan/2018 18:21:00] "GET /web?db=DCU_Experiment_1 HTTP/1.1" 302 -
+2018-01-07 18:21:00,114 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:21:00] "GET /web?db=DCU_Experiment_1 HTTP/1.1" 303 -
+2018-01-07 18:21:00,129 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:21:00] "GET /web/login HTTP/1.1" 200 -
+2018-01-07 18:21:00,400 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:21:00] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:21:00,404 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:21:00] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:21:00,533 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:21:00] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-07 18:21:03,714 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:21:03] "POST /web/login HTTP/1.1" 200 -
+2018-01-07 18:21:04,008 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:21:04] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-07 18:21:04,015 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:21:04] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-07 18:21:04,104 4992 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [07/Jan/2018 18:21:04] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-08 10:37:21,323 2709 INFO ? odoo: Odoo version 10.0
+2018-01-08 10:37:21,324 2709 INFO ? odoo: addons paths: ['/home/manoj/.local/share/Odoo/addons/10.0', u'/opt/odoo/odoo-10.0/odoo/addons', u'/opt/odoo/odoo-10.0/addons']
+2018-01-08 10:37:21,324 2709 INFO ? odoo: database: default@default:default
+2018-01-08 10:37:21,461 2709 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-01-08 11:08:42,694 2709 INFO ? odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-01-08 11:08:44,584 2709 INFO ? odoo.http: HTTP Configuring static files
+2018-01-08 11:08:44,711 2709 INFO ? odoo.http: Generating nondb routing
+2018-01-08 11:08:44,738 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:44] "GET /web/login HTTP/1.1" 303 -
+2018-01-08 11:08:44,944 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:44] "GET /web/database/selector HTTP/1.1" 200 -
+2018-01-08 11:08:45,029 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:45] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 304 -
+2018-01-08 11:08:45,039 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:45] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 304 -
+2018-01-08 11:08:45,054 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:45] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 304 -
+2018-01-08 11:08:45,071 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:45] "GET /web/static/lib/bootstrap/js/tooltip.js HTTP/1.1" 304 -
+2018-01-08 11:08:45,073 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:45] "GET /web/static/lib/bootstrap/js/modal.js HTTP/1.1" 304 -
+2018-01-08 11:08:45,073 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:45] "GET /web/static/lib/bootstrap/js/dropdown.js HTTP/1.1" 304 -
+2018-01-08 11:08:45,093 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:45] "GET /web/static/src/img/logo2.png HTTP/1.1" 304 -
+2018-01-08 11:08:45,100 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:45] "GET /web/static/src/img/favicon.ico HTTP/1.1" 304 -
+2018-01-08 11:08:49,999 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:49] "GET /web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.5.0 HTTP/1.1" 304 -
+2018-01-08 11:08:54,359 2709 INFO None werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:54] "POST /web/database/change_password HTTP/1.1" 303 -
+2018-01-08 11:08:54,417 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:54] "GET /web/database/manager HTTP/1.1" 200 -
+2018-01-08 11:08:57,391 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:57] "GET /web?db=DCU_Experiment_1 HTTP/1.1" 302 -
+2018-01-08 11:08:57,680 2709 INFO DCU_Experiment_1 odoo.modules.loading: loading 1 modules...
+2018-01-08 11:08:57,711 2709 INFO DCU_Experiment_1 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries
+2018-01-08 11:08:57,842 2709 INFO DCU_Experiment_1 odoo.modules.loading: loading 25 modules...
+2018-01-08 11:08:58,131 2709 INFO DCU_Experiment_1 odoo.modules.loading: 25 modules loaded in 0.29s, 0 queries
+2018-01-08 11:08:58,775 2709 INFO DCU_Experiment_1 odoo.modules.loading: Modules loaded.
+2018-01-08 11:08:59,041 2709 INFO DCU_Experiment_1 odoo.addons.base.ir.ir_http: Generating routing map
+2018-01-08 11:08:59,107 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:59] "GET /web?db=DCU_Experiment_1 HTTP/1.1" 303 -
+2018-01-08 11:08:59,936 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:08:59] "GET /web/login HTTP/1.1" 200 -
+2018-01-08 11:09:00,321 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:00] "GET /web/content/267-765d3d9/web.assets_frontend.js HTTP/1.1" 304 -
+2018-01-08 11:09:00,332 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:00] "GET /web/content/266-765d3d9/web.assets_frontend.0.css HTTP/1.1" 304 -
+2018-01-08 11:09:00,338 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:00] "GET /web/content/246-17be956/web.assets_common.0.css HTTP/1.1" 304 -
+2018-01-08 11:09:00,358 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:00] "GET /web/content/251-17be956/web.assets_common.js HTTP/1.1" 304 -
+2018-01-08 11:09:00,474 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:00] "GET /web/binary/company_logo HTTP/1.1" 200 -
+2018-01-08 11:09:00,631 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:00] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-08 11:09:00,635 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:00] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-08 11:09:00,719 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:00] "GET /web_editor/static/src/xml/ace.xml HTTP/1.1" 304 -
+2018-01-08 11:09:00,768 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:00] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-08 11:09:09,234 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:09] "POST /web/login HTTP/1.1" 200 -
+2018-01-08 11:09:09,282 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:09] "GET /web/binary/company_logo?dbname=DCU_Experiment_1 HTTP/1.1" 200 -
+2018-01-08 11:09:09,503 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:09] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-08 11:09:09,512 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:09] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-08 11:09:09,653 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:09] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-08 11:09:14,870 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:14] "POST /web/login HTTP/1.1" 200 -
+2018-01-08 11:09:15,140 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:15] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-08 11:09:15,150 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:15] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-08 11:09:15,299 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:15] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-08 11:09:23,706 2709 INFO DCU_Experiment_1 odoo.addons.base.ir.ir_attachment: filestore gc 0 checked, 0 removed
+2018-01-08 11:09:23,861 2709 INFO DCU_Experiment_1 odoo.addons.base.ir.ir_autovacuum: GC'd 1 user log entries
+2018-01-08 11:09:26,853 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:26] "POST /web/login HTTP/1.1" 303 -
+2018-01-08 11:09:28,201 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:28] "GET /web HTTP/1.1" 200 -
+2018-01-08 11:09:28,305 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:28] "GET /web/content/272-9f623ce/web.assets_backend.0.css HTTP/1.1" 304 -
+2018-01-08 11:09:28,349 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:28] "GET /web/content/249-e9133cb/web_editor.summernote.0.css HTTP/1.1" 304 -
+2018-01-08 11:09:28,363 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:28] "GET /web/content/273-9f623ce/web.assets_backend.1.css HTTP/1.1" 304 -
+2018-01-08 11:09:28,385 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:28] "GET /web/content/250-ccb9be8/web_editor.assets_editor.0.css HTTP/1.1" 304 -
+2018-01-08 11:09:28,424 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:28] "GET /web/content/254-ccb9be8/web_editor.assets_editor.js HTTP/1.1" 304 -
+2018-01-08 11:09:28,426 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:28] "GET /web/content/253-e9133cb/web_editor.summernote.js HTTP/1.1" 304 -
+2018-01-08 11:09:28,553 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:28] "GET /web/content/274-9f623ce/web.assets_backend.js HTTP/1.1" 304 -
+2018-01-08 11:09:29,269 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "GET /web/webclient/qweb?mods=web,web_kanban,base,bus,web_tour,mail,report,product,web_diagram,web_planner,base_import,web_editor,web_calendar,project,web_settings_dashboard,portal,web_kanban_gauge HTTP/1.1" 304 -
+2018-01-08 11:09:29,406 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "POST /web/dataset/call HTTP/1.1" 200 -
+2018-01-08 11:09:29,487 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-08 11:09:29,550 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "GET /web_editor/static/src/xml/editor.xml HTTP/1.1" 304 -
+2018-01-08 11:09:29,569 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "GET /web/webclient/locale/en_US HTTP/1.1" 200 -
+2018-01-08 11:09:29,579 2709 INFO ? werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "GET /web_editor/static/src/xml/snippets.xml HTTP/1.1" 304 -
+2018-01-08 11:09:29,679 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "GET /web/binary/company_logo?db=DCU_Experiment_1&company=1 HTTP/1.1" 200 -
+2018-01-08 11:09:29,728 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 304 -
+2018-01-08 11:09:29,793 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "POST /mail/client_action HTTP/1.1" 200 -
+2018-01-08 11:09:29,838 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2018-01-08 11:09:29,889 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-08 11:09:29,889 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-01-08 11:09:29,948 2709 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2018-01-08 11:09:29,995 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:29] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-08 11:09:30,000 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:30] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-08 11:09:30,145 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:30] "POST /web/dataset/call_kw/mail.message/fields_view_get HTTP/1.1" 200 -
+2018-01-08 11:09:30,312 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:30] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2018-01-08 11:09:30,477 2709 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [08/Jan/2018 11:09:30] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 -
+odoo-bin: command not found
+odoo-bin: command not found
+2018-01-09 14:59:13,538 2557 INFO ? odoo: Odoo version 10.0
+2018-01-09 14:59:13,538 2557 INFO ? odoo: Using configuration file at /home/manoj/.odoorc
+2018-01-09 14:59:13,538 2557 INFO ? odoo: addons paths: ['/home/manoj/.local/share/Odoo/addons/10.0', u'/opt/odoo/odoo-10.0/odoo/addons', u'/opt/odoo/odoo-10.0/addons']
+2018-01-09 14:59:13,539 2557 INFO ? odoo: database: default@default:default
+2018-01-09 14:59:13,860 2557 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-01-09 14:59:56,742 2557 INFO ? odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-01-09 15:00:01,099 2557 INFO DCU_Experiment_1 odoo.modules.loading: loading 1 modules...
+2018-01-09 15:00:01,217 2557 INFO DCU_Experiment_1 odoo.modules.loading: 1 modules loaded in 0.12s, 0 queries
+2018-01-09 15:00:01,912 2557 INFO DCU_Experiment_1 odoo.modules.loading: loading 25 modules...
+2018-01-09 15:00:02,771 2557 INFO DCU_Experiment_1 odoo.modules.loading: 25 modules loaded in 0.86s, 0 queries
+2018-01-09 15:00:02,926 2557 INFO ? odoo.http: HTTP Configuring static files
+2018-01-09 15:00:03,125 2557 INFO ? odoo.http: Generating nondb routing
+2018-01-09 15:00:03,433 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:03] "GET /web/database/selector HTTP/1.1" 200 -
+2018-01-09 15:00:03,498 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:03] "GET /web/static/lib/bootstrap/js/tooltip.js HTTP/1.1" 200 -
+2018-01-09 15:00:03,498 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:03] "GET /web/static/lib/bootstrap/js/modal.js HTTP/1.1" 200 -
+2018-01-09 15:00:03,503 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:03] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 -
+2018-01-09 15:00:03,505 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:03] "GET /web/static/lib/bootstrap/js/dropdown.js HTTP/1.1" 200 -
+2018-01-09 15:00:03,508 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:03] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 200 -
+2018-01-09 15:00:03,521 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:03] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 200 -
+2018-01-09 15:00:03,964 2557 INFO DCU_Experiment_1 odoo.modules.loading: Modules loaded.
+2018-01-09 15:00:04,109 2557 INFO DCU_Experiment_1 odoo.addons.base.ir.ir_http: Generating routing map
+2018-01-09 15:00:04,391 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:04] "GET /web/static/src/img/logo2.png HTTP/1.1" 200 -
+2018-01-09 15:00:05,388 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:05] "GET /web/login HTTP/1.1" 200 -
+2018-01-09 15:00:05,903 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:05] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-09 15:00:05,909 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:05] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-09 15:00:06,197 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:06] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-09 15:00:08,757 2557 INFO ? werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:08] "GET /web HTTP/1.1" 303 -
+2018-01-09 15:00:08,849 2557 INFO ? werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:08] "GET /web/database/selector HTTP/1.1" 200 -
+2018-01-09 15:00:08,877 2557 INFO ? werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:08] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 200 -
+2018-01-09 15:00:08,882 2557 INFO ? werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:08] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 -
+2018-01-09 15:00:08,887 2557 INFO ? werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:08] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 200 -
+2018-01-09 15:00:08,889 2557 INFO ? werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:08] "GET /web/static/lib/bootstrap/js/modal.js HTTP/1.1" 200 -
+2018-01-09 15:00:08,894 2557 INFO ? werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:08] "GET /web/static/lib/bootstrap/js/tooltip.js HTTP/1.1" 200 -
+2018-01-09 15:00:08,902 2557 INFO ? werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:08] "GET /web/static/lib/bootstrap/js/dropdown.js HTTP/1.1" 200 -
+2018-01-09 15:00:08,907 2557 INFO ? werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:08] "GET /web/static/src/img/logo2.png HTTP/1.1" 200 -
+2018-01-09 15:00:15,451 2557 INFO DCU_Experiment_1 odoo.addons.base.ir.ir_attachment: filestore gc 0 checked, 0 removed
+2018-01-09 15:00:15,661 2557 INFO DCU_Experiment_1 odoo.addons.base.ir.ir_autovacuum: GC'd 1 user log entries
+2018-01-09 15:00:16,423 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:16] "POST /web/login HTTP/1.1" 303 -
+2018-01-09 15:00:17,590 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:17] "GET /web HTTP/1.1" 200 -
+2018-01-09 15:00:18,370 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "GET /web/webclient/qweb?mods=web,web_kanban,base,bus,web_tour,mail,report,product,web_diagram,web_planner,base_import,web_editor,web_calendar,project,web_settings_dashboard,portal,web_kanban_gauge HTTP/1.1" 304 -
+2018-01-09 15:00:18,506 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "POST /web/dataset/call HTTP/1.1" 200 -
+2018-01-09 15:00:18,599 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-09 15:00:18,628 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "GET /web/webclient/locale/en_US HTTP/1.1" 200 -
+2018-01-09 15:00:18,747 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "GET /web/binary/company_logo?db=DCU_Experiment_1&company=1 HTTP/1.1" 200 -
+2018-01-09 15:00:18,758 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 304 -
+2018-01-09 15:00:18,861 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-01-09 15:00:18,887 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2018-01-09 15:00:18,913 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-09 15:00:18,921 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "POST /mail/client_action HTTP/1.1" 200 -
+2018-01-09 15:00:18,944 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:00:18,963 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:18] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-09 15:00:19,072 2557 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2018-01-09 15:00:19,180 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:19] "POST /web/dataset/call_kw/mail.message/fields_view_get HTTP/1.1" 200 -
+2018-01-09 15:00:19,309 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:19] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2018-01-09 15:00:19,404 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:00:19] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 -
+2018-01-09 15:00:34,203 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:34] "GET /web HTTP/1.1" 303 -
+2018-01-09 15:00:34,412 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:34] "GET /web/login HTTP/1.1" 200 -
+2018-01-09 15:00:34,877 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:34] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2018-01-09 15:00:34,886 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:34] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-01-09 15:00:35,203 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:00:35] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-09 15:01:09,075 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:01:09] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:01:47,796 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:01:47] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:02:32,191 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:32] "POST /web/login HTTP/1.1" 303 -
+2018-01-09 15:02:32,549 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:32] "GET /web HTTP/1.1" 200 -
+2018-01-09 15:02:33,639 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:33] "GET /web/webclient/qweb?mods=web,web_kanban,base,bus,web_tour,mail,report,product,web_diagram,web_planner,base_import,web_editor,web_calendar,project,web_settings_dashboard,portal,web_kanban_gauge HTTP/1.1" 304 -
+2018-01-09 15:02:34,353 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:34] "POST /web/dataset/call HTTP/1.1" 200 -
+2018-01-09 15:02:34,467 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:34] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-09 15:02:34,583 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:34] "GET /web/webclient/locale/en_US HTTP/1.1" 200 -
+2018-01-09 15:02:34,594 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:34] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-01-09 15:02:34,657 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:34] "POST /mail/client_action HTTP/1.1" 200 -
+2018-01-09 15:02:34,698 2557 INFO ? werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:34] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 -
+2018-01-09 15:02:34,793 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:34] "GET /web/image?model=res.users&field=image_small&id=6 HTTP/1.1" 304 -
+2018-01-09 15:02:34,874 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:34] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:02:35,060 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:35] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-01-09 15:02:35,097 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:35] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-09 15:02:35,303 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:35] "POST /web/dataset/call_kw/project.task/load_views HTTP/1.1" 200 -
+2018-01-09 15:02:35,504 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:35] "POST /web/dataset/call_kw/project.project/name_get HTTP/1.1" 200 -
+2018-01-09 15:02:35,650 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:35] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-09 15:02:35,676 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:35] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-09 15:02:35,802 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:35] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:02:35,810 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:02:35] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:02:37,828 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:37] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:02:47,302 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-01-09 15:02:47,667 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-09 15:02:47,758 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "POST /web/dataset/call_kw/web.planner/render HTTP/1.1" 200 -
+2018-01-09 15:02:47,793 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "POST /web/dataset/call_kw/project.project/load_views HTTP/1.1" 200 -
+2018-01-09 15:02:47,805 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "GET /project/static/src/img/chrome_store.png HTTP/1.1" 304 -
+2018-01-09 15:02:47,805 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "GET /project/static/src/img/play_store.png HTTP/1.1" 304 -
+2018-01-09 15:02:47,809 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "GET /web_planner/static/src/img/fabien_signature.png HTTP/1.1" 304 -
+2018-01-09 15:02:47,813 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "GET /project/static/src/img/app_store.png HTTP/1.1" 304 -
+2018-01-09 15:02:47,818 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "GET /project/static/src/img/web_planner_subtype.png HTTP/1.1" 304 -
+2018-01-09 15:02:47,829 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "GET /project/static/src/img/web_planner_email.png HTTP/1.1" 304 -
+2018-01-09 15:02:47,830 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "GET /web_planner/static/src/img/odoo_logo.png HTTP/1.1" 304 -
+2018-01-09 15:02:47,831 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:47] "GET /project/static/src/img/web_planner_project.png HTTP/1.1" 304 -
+2018-01-09 15:02:48,016 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:48] "POST /web/dataset/call_kw/project.project/fields_get HTTP/1.1" 200 -
+2018-01-09 15:02:48,105 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:48] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:02:50,141 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:50] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-09 15:02:50,241 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:50] "POST /web/dataset/call_kw/project.task/load_views HTTP/1.1" 200 -
+2018-01-09 15:02:50,311 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:50] "POST /web/dataset/call_kw/project.project/name_get HTTP/1.1" 200 -
+2018-01-09 15:02:50,382 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:50] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-09 15:02:50,402 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:50] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-09 15:02:50,463 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:50] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:02:50,483 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:50] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:02:50,535 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:50] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107174248 HTTP/1.1" 200 -
+2018-01-09 15:02:50,566 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:50] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107175257 HTTP/1.1" 200 -
+2018-01-09 15:02:50,604 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:50] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180107173837 HTTP/1.1" 200 -
+2018-01-09 15:02:54,814 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:54] "POST /web/dataset/call_kw/project.task.type/fields_view_get HTTP/1.1" 200 -
+2018-01-09 15:02:54,901 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:54] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-09 15:02:54,984 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:54] "POST /web/dataset/call_kw/project.project/fields_get HTTP/1.1" 200 -
+2018-01-09 15:02:55,037 2557 INFO ? werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:55] "GET /web/static/src/img/form_sheetbg.png HTTP/1.1" 304 -
+2018-01-09 15:02:55,107 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:02:55] "POST /web/dataset/call_kw/project.project/read HTTP/1.1" 200 -
+2018-01-09 15:03:04,043 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:04] "POST /web/dataset/call_kw/project.task.type/write HTTP/1.1" 200 -
+2018-01-09 15:03:04,094 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:04] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-09 15:03:04,166 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:04] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-09 15:03:04,222 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:04] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:03:04,240 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:04] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:03:09,719 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:09] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-09 15:03:09,824 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:09] "POST /web/dataset/call_kw/project.project/fields_get HTTP/1.1" 200 -
+2018-01-09 15:03:09,934 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:09] "POST /web/dataset/call_kw/project.project/read HTTP/1.1" 200 -
+2018-01-09 15:03:16,504 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:16] "POST /web/dataset/call_kw/project.task.type/write HTTP/1.1" 200 -
+2018-01-09 15:03:16,522 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:16] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-09 15:03:16,583 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:16] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-09 15:03:16,615 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:16] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:03:16,649 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:16] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:03:23,562 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:23] "POST /web/dataset/call_kw/project.task.type/name_create HTTP/1.1" 200 -
+2018-01-09 15:03:24,961 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:03:24] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:03:27,884 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:27] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:03:34,165 2557 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted mail.message records with IDs: [45, 39]
+2018-01-09 15:03:34,169 2557 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted project.task records with IDs: [16]
+2018-01-09 15:03:34,189 2557 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [21]
+2018-01-09 15:03:34,192 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:34] "POST /web/dataset/call_kw/project.task/unlink HTTP/1.1" 200 -
+2018-01-09 15:03:38,582 2557 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted mail.message records with IDs: [50, 49]
+2018-01-09 15:03:38,587 2557 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted project.task records with IDs: [21]
+2018-01-09 15:03:38,594 2557 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [27]
+2018-01-09 15:03:38,607 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:38] "POST /web/dataset/call_kw/project.task/unlink HTTP/1.1" 200 -
+2018-01-09 15:03:44,165 2557 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted mail.message records with IDs: [44]
+2018-01-09 15:03:44,170 2557 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted project.task records with IDs: [19]
+2018-01-09 15:03:44,175 2557 INFO DCU_Experiment_1 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [24]
+2018-01-09 15:03:44,199 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:03:44] "POST /web/dataset/call_kw/project.task/unlink HTTP/1.1" 200 -
+2018-01-09 15:04:02,198 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:02] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-01-09 15:04:02,201 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:02] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-09 15:04:02,279 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:02] "POST /web/dataset/call_kw/web.planner/render HTTP/1.1" 200 -
+2018-01-09 15:04:02,366 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:02] "POST /web/dataset/call_kw/project.project/load_views HTTP/1.1" 200 -
+2018-01-09 15:04:02,725 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:02] "POST /web/dataset/call_kw/project.project/fields_get HTTP/1.1" 200 -
+2018-01-09 15:04:02,875 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:02] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-01-09 15:04:05,330 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:05] "POST /web/action/load HTTP/1.1" 200 -
+2018-01-09 15:04:05,528 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:05] "POST /web/dataset/call_kw/project.task/load_views HTTP/1.1" 200 -
+2018-01-09 15:04:05,773 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:05] "POST /web/dataset/call_kw/project.project/name_get HTTP/1.1" 200 -
+2018-01-09 15:04:05,948 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:05] "POST /web/dataset/call_kw/project.task/read_group HTTP/1.1" 200 -
+2018-01-09 15:04:06,072 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:06] "POST /web/dataset/call_kw/project.task.type/read HTTP/1.1" 200 -
+2018-01-09 15:04:15,043 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:15] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:04:17,906 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:04:17] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:04:47,423 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:47] "POST /web/dataset/call_kw/project.task/name_create HTTP/1.1" 200 -
+2018-01-09 15:04:47,477 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:47] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-09 15:04:47,545 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:04:47] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180109150447 HTTP/1.1" 200 -
+2018-01-09 15:05:05,067 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:05:05] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:05:07,966 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:05:07] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:05:14,432 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:05:14] "POST /web/dataset/call_kw/project.task/name_create HTTP/1.1" 200 -
+2018-01-09 15:05:14,490 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:05:14] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-09 15:05:14,519 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:05:14] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180109150514 HTTP/1.1" 200 -
+2018-01-09 15:05:35,217 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:05:35] "POST /web/dataset/call_kw/project.task/name_create HTTP/1.1" 200 -
+2018-01-09 15:05:35,265 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:05:35] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-09 15:05:35,303 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:05:35] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180109150535 HTTP/1.1" 200 -
+2018-01-09 15:05:45,536 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:05:45] "POST /web/dataset/call_kw/project.task/name_create HTTP/1.1" 200 -
+2018-01-09 15:05:45,602 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:05:45] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-09 15:05:45,636 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:05:45] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180109150545 HTTP/1.1" 200 -
+2018-01-09 15:05:55,107 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:05:55] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:05:57,994 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:05:57] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:06:00,989 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:00] "POST /web/dataset/call_kw/project.task/write HTTP/1.1" 200 -
+2018-01-09 15:06:01,079 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:01] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-09 15:06:01,108 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:01] "POST /web/dataset/resequence HTTP/1.1" 200 -
+2018-01-09 15:06:01,137 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:01] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180109150600 HTTP/1.1" 200 -
+2018-01-09 15:06:19,118 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:19] "POST /web/dataset/call_kw/project.task/write HTTP/1.1" 200 -
+2018-01-09 15:06:19,209 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:19] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-09 15:06:19,217 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:19] "POST /web/dataset/resequence HTTP/1.1" 200 -
+2018-01-09 15:06:19,241 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:19] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180109150618 HTTP/1.1" 200 -
+2018-01-09 15:06:37,804 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:37] "POST /web/dataset/call_kw/project.task/write HTTP/1.1" 200 -
+2018-01-09 15:06:37,892 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:37] "POST /web/dataset/call_kw/project.task/read HTTP/1.1" 200 -
+2018-01-09 15:06:37,893 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:37] "POST /web/dataset/resequence HTTP/1.1" 200 -
+2018-01-09 15:06:37,928 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:37] "GET /web/image?model=res.users&field=image_small&id=6&unique=20180109150637 HTTP/1.1" 200 -
+2018-01-09 15:06:45,179 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:06:45] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:06:48,020 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:06:48] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:07:35,232 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:07:35] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:07:38,042 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:07:38] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:08:25,286 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:08:25] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:08:28,062 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:08:28] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:09:15,310 2557 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [09/Jan/2018 15:09:15] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-01-09 15:09:18,098 2557 INFO DCU_Experiment_1 werkzeug: 127.0.0.1 - - [09/Jan/2018 15:09:18] "POST /longpolling/poll HTTP/1.1" 200 -
