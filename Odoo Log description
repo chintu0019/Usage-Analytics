@@ -1,0 +1,23 @@
+2018-01-07 17:40:32,716 4338 INFO DCU_Experiment_1 odoo.models.unlink: User #6 deleted project.task records with IDs: [14]
+//User deleted a project task
+
+2018-01-07 17:46:16,937 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:46:16] "POST /web/dataset/call_kw/mail.channel/channel_fetch_preview HTTP/1.1" 200 -
+//Open message (chat) window by user
+
+2018-01-07 17:47:01,461 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:47:01] "POST /web/dataset/call_kw/mail.channel/message_post HTTP/1.1" 200 -
+//Message sent by user (to another user)
+
+2018-01-07 17:49:43,248 4338 INFO DCU_Experiment_1 odoo.addons.base.ir.ir_model: Access Denied by ACLs for operation: create, uid: 6, model: project.task.type
+//User is denied access to create a new column in the project (only admin can do so)
+
+2018-01-07 17:51:21,540 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:51:21] "POST /web/dataset/call_kw/project.task/name_create HTTP/1.1" 200 -
+//User created new task card
+
+2018-01-07 17:52:57,634 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:52:57] "POST /web/dataset/call_kw/project.task/message_post HTTP/1.1" 200 -
+//User posted a message in a task (comment)
+
+2018-01-07 17:53:52,189 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:52] "POST /web/dataset/call_kw/ir.attachment/load_views HTTP/1.1" 200 -
+//User opened the atachments page (every project overview page shows all the attachments belongign to theat project)
+
+2018-01-07 17:55:40,875 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:55:40] "GET /web/session/logout HTTP/1.1" 303 -
+//User logged out 
