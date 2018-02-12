@@ -1,0 +1,558 @@
+2018-02-09 15:43:15,068 21692 INFO ? odoo: Odoo version 10.0
+2018-02-09 15:43:15,069 21692 INFO ? odoo: Using configuration file at /etc/odoo-server.conf
+2018-02-09 15:43:15,069 21692 INFO ? odoo: addons paths: ['/opt/odoo/.local/share/Odoo/addons/10.0', u'/opt/odoo/addons', '/opt/odoo/odoo/addons']
+2018-02-09 15:43:15,069 21692 INFO ? odoo: database: odoo@default:default
+2018-02-09 15:43:15,095 21692 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-02-09 15:43:56,273 21692 INFO ? odoo.service.server: Initiating shutdown
+2018-02-09 15:43:56,274 21692 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-02-09 15:46:35,105 21887 INFO ? odoo: Odoo version 10.0
+2018-02-09 15:46:35,105 21887 INFO ? odoo: Using configuration file at /etc/odoo-server.conf
+2018-02-09 15:46:35,105 21887 INFO ? odoo: addons paths: ['/opt/odoo/.local/share/Odoo/addons/10.0', u'/opt/odoo/addons', '/opt/odoo/odoo/addons']
+2018-02-09 15:46:35,106 21887 INFO ? odoo: database: odoo@default:default
+2018-02-09 15:46:35,110 21887 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-02-09 15:46:39,465 21887 INFO ? odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-02-09 15:46:39,758 21887 INFO ? odoo.http: HTTP Configuring static files
+2018-02-09 15:46:39,766 21887 INFO ? odoo.http: Generating nondb routing
+2018-02-09 15:46:39,840 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:46:39] "GET /web/database/manager HTTP/1.1" 200 -
+2018-02-09 15:46:39,863 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:46:39] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 200 -
+2018-02-09 15:46:39,866 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:46:39] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 200 -
+2018-02-09 15:46:39,870 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:46:39] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 -
+2018-02-09 15:46:39,877 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:46:39] "GET /web/static/lib/bootstrap/js/modal.js HTTP/1.1" 200 -
+2018-02-09 15:46:39,878 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:46:39] "GET /web/static/lib/bootstrap/js/dropdown.js HTTP/1.1" 200 -
+2018-02-09 15:46:39,878 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:46:39] "GET /web/static/lib/bootstrap/js/tooltip.js HTTP/1.1" 200 -
+2018-02-09 15:46:39,886 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:46:39] "GET /web/static/src/img/logo2.png HTTP/1.1" 200 -
+2018-02-09 15:46:40,313 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:46:40] "GET /web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.5.0 HTTP/1.1" 200 -
+2018-02-09 15:46:40,710 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:46:40] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+2018-02-09 15:49:29,292 21887 INFO None odoo.service.db: Create database `Odoo_Database`.
+2018-02-09 15:49:32,104 21887 INFO Odoo_Database odoo.modules.loading: loading 1 modules...
+2018-02-09 15:49:32,200 21887 INFO Odoo_Database odoo.modules.registry: module base: creating or updating database tables
+2018-02-09 15:49:36,061 21887 INFO Odoo_Database odoo.models: Computing parent left and right for table ir_ui_menu...
+2018-02-09 15:49:54,078 21887 INFO Odoo_Database odoo.models: Computing parent left and right for table res_partner_category...
+2018-02-09 15:50:01,321 21887 INFO Odoo_Database odoo.models: Storing computed values of res.company fields email, logo_web, phone
+2018-02-09 15:50:01,322 21887 INFO Odoo_Database odoo.models: Storing computed values of ir.module.module fields menus_by_module, reports_by_module, views_by_module
+2018-02-09 15:50:01,324 21887 INFO Odoo_Database odoo.models: Storing computed values of ir.actions.report.xml fields report_file
+2018-02-09 15:50:01,324 21887 INFO Odoo_Database odoo.models: Storing computed values of ir.ui.view fields model_data_id
+2018-02-09 15:50:01,325 21887 INFO Odoo_Database odoo.models: Storing computed values of ir.rule fields global
+2018-02-09 15:50:01,326 21887 INFO Odoo_Database odoo.models: Storing computed values of ir.actions.server fields crud_model_name, wkf_model_name
+2018-02-09 15:50:01,326 21887 INFO Odoo_Database odoo.models: Storing computed values of res.users fields share
+2018-02-09 15:50:01,327 21887 INFO Odoo_Database odoo.models: Storing computed values of res.partner fields commercial_company_name, commercial_partner_id, display_name, partner_share
+2018-02-09 15:50:01,328 21887 INFO Odoo_Database odoo.models: Storing computed values of res.partner.bank fields sanitized_acc_number
+2018-02-09 15:50:01,328 21887 INFO Odoo_Database odoo.models: Storing computed values of ir.attachment fields res_name
+2018-02-09 15:50:01,451 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res.lang.csv
+2018-02-09 15:50:01,818 21887 INFO Odoo_Database odoo.modules.loading: loading base/base_data.xml
+2018-02-09 15:50:02,122 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_currency_data.xml
+2018-02-09 15:50:02,498 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_country_data.xml
+2018-02-09 15:50:04,814 21887 INFO Odoo_Database odoo.modules.loading: loading base/security/base_security.xml
+2018-02-09 15:50:05,060 21887 INFO Odoo_Database odoo.modules.loading: loading base/base_menu.xml
+2018-02-09 15:50:05,211 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_config.xml
+2018-02-09 15:50:05,248 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res.country.state.csv
+2018-02-09 15:50:06,694 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_actions.xml
+2018-02-09 15:50:07,114 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_config_parameter_view.xml
+2018-02-09 15:50:07,185 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_cron_view.xml
+2018-02-09 15:50:07,279 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_filters.xml
+2018-02-09 15:50:07,394 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_mail_server_view.xml
+2018-02-09 15:50:07,463 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_model_view.xml
+2018-02-09 15:50:07,907 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_attachment_view.xml
+2018-02-09 15:50:07,984 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_rule_view.xml
+2018-02-09 15:50:08,062 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_sequence_view.xml
+2018-02-09 15:50:08,142 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_translation_view.xml
+2018-02-09 15:50:08,234 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_ui_menu_view.xml
+2018-02-09 15:50:08,317 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_ui_view_view.xml
+2018-02-09 15:50:08,478 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_values_view.xml
+2018-02-09 15:50:08,592 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_autovacuum.xml
+2018-02-09 15:50:08,599 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_model_report.xml
+2018-02-09 15:50:08,610 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/report_ir_model.xml
+2018-02-09 15:50:08,636 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_logging_view.xml
+2018-02-09 15:50:08,716 21887 INFO Odoo_Database odoo.modules.loading: loading base/ir/ir_qweb.xml
+2018-02-09 15:50:08,736 21887 INFO Odoo_Database odoo.modules.loading: loading base/workflow/workflow_view.xml
+2018-02-09 15:50:09,112 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/module_view.xml
+2018-02-09 15:50:09,283 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/module_data.xml
+2018-02-09 15:50:09,417 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/module_report.xml
+2018-02-09 15:50:09,429 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/report/report_ir_module_reference.xml
+2018-02-09 15:50:09,450 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/wizard/base_module_update_view.xml
+2018-02-09 15:50:09,484 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/wizard/base_language_install_view.xml
+2018-02-09 15:50:09,533 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/wizard/base_import_language_view.xml
+2018-02-09 15:50:09,567 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/wizard/base_module_upgrade_view.xml
+2018-02-09 15:50:09,627 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/wizard/base_module_configuration_view.xml
+2018-02-09 15:50:09,647 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/wizard/base_export_language_view.xml
+2018-02-09 15:50:09,687 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/wizard/base_update_translations_view.xml
+2018-02-09 15:50:09,722 21887 INFO Odoo_Database odoo.modules.loading: loading base/module/wizard/base_module_immediate_install.xml
+2018-02-09 15:50:09,736 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_company_view.xml
+2018-02-09 15:50:09,810 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_request_view.xml
+2018-02-09 15:50:09,878 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_lang_view.xml
+2018-02-09 15:50:09,955 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_partner_view.xml
+2018-02-09 15:50:10,225 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_bank_view.xml
+2018-02-09 15:50:10,340 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_country_view.xml
+2018-02-09 15:50:10,474 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_currency_view.xml
+2018-02-09 15:50:10,649 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_users_view.xml
+2018-02-09 15:50:11,036 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_partner_data.xml
+2018-02-09 15:50:11,054 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/ir_property_view.xml
+2018-02-09 15:50:11,132 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_security.xml
+2018-02-09 15:50:11,183 21887 INFO Odoo_Database odoo.modules.loading: loading base/security/ir.model.access.csv
+2018-02-09 15:50:12,453 21887 INFO Odoo_Database odoo.modules.loading: loading base/base_demo.xml
+2018-02-09 15:50:12,609 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_currency_demo.xml
+2018-02-09 15:50:13,174 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_bank_demo.xml
+2018-02-09 15:50:13,184 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_partner_demo.xml
+2018-02-09 15:50:13,778 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_partner_demo.yml
+2018-02-09 15:50:20,416 21887 INFO Odoo_Database odoo.modules.loading: loading base/res/res_partner_image_demo.xml
+2018-02-09 15:50:22,811 21887 INFO Odoo_Database odoo.modules.loading: 1 modules loaded in 50.71s, 0 queries
+2018-02-09 15:50:22,858 21887 INFO Odoo_Database odoo.modules.loading: loading 12 modules...
+2018-02-09 15:50:22,890 21887 INFO Odoo_Database odoo.modules.registry: module auth_crypt: creating or updating database tables
+2018-02-09 15:50:22,926 21887 INFO Odoo_Database odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-02-09 15:50:23,267 21887 INFO Odoo_Database odoo.modules.registry: module web: creating or updating database tables
+2018-02-09 15:50:23,286 21887 INFO Odoo_Database odoo.modules.loading: loading web/views/webclient_templates.xml
+2018-02-09 15:50:23,676 21887 INFO Odoo_Database odoo.modules.registry: module web_calendar: creating or updating database tables
+2018-02-09 15:50:23,686 21887 INFO Odoo_Database odoo.modules.loading: loading web_calendar/views/web_calendar_templates.xml
+2018-02-09 15:50:23,759 21887 INFO Odoo_Database odoo.modules.registry: module web_diagram: creating or updating database tables
+2018-02-09 15:50:23,767 21887 INFO Odoo_Database odoo.modules.loading: loading web_diagram/views/web_diagram_templates.xml
+2018-02-09 15:50:23,866 21887 INFO Odoo_Database odoo.modules.registry: module web_editor: creating or updating database tables
+2018-02-09 15:50:24,624 21887 INFO Odoo_Database odoo.modules.loading: loading web_editor/security/ir.model.access.csv
+2018-02-09 15:50:24,649 21887 INFO Odoo_Database odoo.modules.loading: loading web_editor/views/editor.xml
+2018-02-09 15:50:24,831 21887 INFO Odoo_Database odoo.modules.loading: loading web_editor/views/iframe.xml
+2018-02-09 15:50:24,864 21887 INFO Odoo_Database odoo.modules.loading: loading web_editor/views/snippets.xml
+2018-02-09 15:50:25,010 21887 INFO Odoo_Database odoo.modules.registry: module web_kanban: creating or updating database tables
+2018-02-09 15:50:25,019 21887 INFO Odoo_Database odoo.modules.loading: loading web_kanban/views/web_kanban_templates.xml
+2018-02-09 15:50:25,109 21887 INFO Odoo_Database odoo.modules.registry: module web_planner: creating or updating database tables
+2018-02-09 15:50:25,432 21887 INFO Odoo_Database odoo.modules.loading: loading web_planner/security/ir.model.access.csv
+2018-02-09 15:50:25,476 21887 INFO Odoo_Database odoo.modules.loading: loading web_planner/security/web_planner_security.xml
+2018-02-09 15:50:25,503 21887 INFO Odoo_Database odoo.modules.loading: loading web_planner/views/web_planner_templates.xml
+2018-02-09 15:50:25,599 21887 INFO Odoo_Database odoo.modules.loading: loading web_planner/views/web_planner_views.xml
+2018-02-09 15:50:25,760 21887 INFO Odoo_Database odoo.modules.registry: module web_tour: creating or updating database tables
+2018-02-09 15:50:26,007 21887 INFO Odoo_Database odoo.modules.loading: loading web_tour/security/ir.model.access.csv
+2018-02-09 15:50:26,023 21887 INFO Odoo_Database odoo.modules.loading: loading web_tour/views/tour_templates.xml
+2018-02-09 15:50:26,090 21887 INFO Odoo_Database odoo.modules.loading: loading web_tour/views/tour_views.xml
+2018-02-09 15:50:26,245 21887 INFO Odoo_Database odoo.modules.registry: module base_import: creating or updating database tables
+2018-02-09 15:50:29,507 21887 INFO Odoo_Database odoo.modules.loading: loading base_import/security/ir.model.access.csv
+2018-02-09 15:50:29,667 21887 INFO Odoo_Database odoo.modules.loading: loading base_import/views/base_import_templates.xml
+2018-02-09 15:50:29,794 21887 INFO Odoo_Database odoo.modules.registry: module web_kanban_gauge: creating or updating database tables
+2018-02-09 15:50:29,806 21887 INFO Odoo_Database odoo.modules.loading: loading web_kanban_gauge/views/web_kanban_gauge_templates.xml
+2018-02-09 15:50:29,939 21887 INFO Odoo_Database odoo.modules.registry: module web_settings_dashboard: creating or updating database tables
+2018-02-09 15:50:29,965 21887 INFO Odoo_Database odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-02-09 15:50:29,976 21887 INFO Odoo_Database odoo.modules.loading: loading web_settings_dashboard/views/dashboard_views.xml
+2018-02-09 15:50:29,997 21887 INFO Odoo_Database odoo.modules.loading: loading web_settings_dashboard/views/dashboard_templates.xml
+2018-02-09 15:50:30,086 21887 INFO Odoo_Database odoo.modules.loading: 12 modules loaded in 7.23s, 0 queries
+2018-02-09 15:50:30,207 21887 INFO Odoo_Database odoo.modules.loading: Modules loaded.
+2018-02-09 15:50:30,208 21887 INFO Odoo_Database odoo.models: Computing parent left and right for table ir_ui_menu...
+2018-02-09 15:50:30,223 21887 INFO Odoo_Database odoo.models: Computing parent left and right for table res_partner_category...
+2018-02-09 15:50:30,624 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:30] "POST /web/database/create HTTP/1.1" 303 -
+2018-02-09 15:50:30,632 21887 INFO Odoo_Database odoo.addons.base.ir.ir_http: Generating routing map
+2018-02-09 15:50:35,041 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/ HTTP/1.1" 200 -
+2018-02-09 15:50:35,173 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/content/344-240ecbd/web.assets_backend.1.css HTTP/1.1" 200 -
+2018-02-09 15:50:35,185 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/content/345-6a9a5bc/web_editor.summernote.0.css HTTP/1.1" 200 -
+2018-02-09 15:50:35,192 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/content/346-b5252f9/web_editor.assets_editor.0.css HTTP/1.1" 200 -
+2018-02-09 15:50:35,198 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/content/342-8ec6ad2/web.assets_common.0.css HTTP/1.1" 200 -
+2018-02-09 15:50:35,274 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/content/343-240ecbd/web.assets_backend.0.css HTTP/1.1" 200 -
+2018-02-09 15:50:35,308 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/content/350-b5252f9/web_editor.assets_editor.js HTTP/1.1" 200 -
+2018-02-09 15:50:35,309 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/content/349-6a9a5bc/web_editor.summernote.js HTTP/1.1" 200 -
+2018-02-09 15:50:35,310 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/content/347-8ec6ad2/web.assets_common.js HTTP/1.1" 200 -
+2018-02-09 15:50:35,313 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Auto-vacuum internal data`.
+2018-02-09 15:50:35,320 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/content/348-240ecbd/web.assets_backend.js HTTP/1.1" 200 -
+2018-02-09 15:50:35,346 21887 INFO Odoo_Database odoo.addons.base.ir.ir_attachment: filestore gc 349 checked, 0 removed
+2018-02-09 15:50:35,352 21887 INFO Odoo_Database odoo.addons.base.ir.ir_autovacuum: GC'd 0 user log entries
+2018-02-09 15:50:35,370 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/binary/company_logo HTTP/1.1" 200 -
+2018-02-09 15:50:35,601 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web/webclient/qweb?mods=web,web_kanban,base,web_diagram,web_planner,web_tour,base_import,web_calendar,web_editor,web_settings_dashboard,web_kanban_gauge HTTP/1.1" 200 -
+2018-02-09 15:50:35,735 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web_editor/static/src/xml/ace.xml HTTP/1.1" 200 -
+2018-02-09 15:50:35,750 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "POST /web/dataset/call HTTP/1.1" 200 -
+2018-02-09 15:50:35,994 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:35] "GET /web_editor/static/src/xml/editor.xml HTTP/1.1" 200 -
+2018-02-09 15:50:36,031 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-02-09 15:50:36,051 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /web_editor/static/src/xml/snippets.xml HTTP/1.1" 200 -
+2018-02-09 15:50:36,058 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /web/webclient/locale/en_US HTTP/1.1" 200 -
+2018-02-09 15:50:36,099 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:50:36,118 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-02-09 15:50:36,118 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2018-02-09 15:50:36,119 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /web/binary/company_logo?db=Odoo_Database&company=1 HTTP/1.1" 200 -
+2018-02-09 15:50:36,127 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+2018-02-09 15:50:36,171 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "POST /web/action/load HTTP/1.1" 200 -
+2018-02-09 15:50:36,245 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1" 200 -
+2018-02-09 15:50:36,297 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "POST /web/dataset/call_kw/ir.module.module/fields_get HTTP/1.1" 200 -
+2018-02-09 15:50:36,324 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:50:36,419 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /crm/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,421 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /stock/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,424 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /project/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,425 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /mrp/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,426 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,427 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /sale/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,442 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /hr_timesheet/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,447 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,448 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /account/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,449 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /project_issue/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,449 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /account_accountant/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,453 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /mail/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,461 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /note/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,462 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /website/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,463 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /website_sale/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,464 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /purchase/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,466 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /hr/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,467 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,480 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /hr_expense/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,482 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /board/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,483 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,484 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /survey/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,485 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /contacts/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,486 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,498 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /maintenance/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,499 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /lunch/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,500 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /website_event/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,501 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /website_blog/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,501 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /calendar/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,503 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /website_slides/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,510 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /fleet/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,510 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /mrp_repair/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,510 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /im_livechat/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:50:36,511 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:50:36] "GET /website_forum/static/description/icon.png HTTP/1.1" 200 -
+2018-02-09 15:51:08,465 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "POST /web/dataset/call_kw/ir.module.module/read HTTP/1.1" 200 -
+2018-02-09 15:51:08,515 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "POST /web/dataset/call_kw/ir.module.category/name_search HTTP/1.1" 200 -
+2018-02-09 15:51:08,549 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:51:08,562 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "GET /base/static/src/css/description.css HTTP/1.1" 200 -
+2018-02-09 15:51:08,565 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "GET /note/static/description/note_sc_00.png HTTP/1.1" 200 -
+2018-02-09 15:51:08,567 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "GET /note/static/description/note_sc_02.png HTTP/1.1" 200 -
+2018-02-09 15:51:08,568 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "GET /note/static/description/note_sc_01.png HTTP/1.1" 200 -
+2018-02-09 15:51:08,569 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "GET /note/static/description/note_sc_03b.png HTTP/1.1" 200 -
+2018-02-09 15:51:08,570 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "GET /note/static/description/note_sc_03a.png HTTP/1.1" 200 -
+2018-02-09 15:51:08,583 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "GET /note/static/description/note_sc_03c.png HTTP/1.1" 200 -
+2018-02-09 15:51:08,587 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "GET /note/static/description/note_sc_04.png HTTP/1.1" 200 -
+2018-02-09 15:51:08,588 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "GET /web/static/src/img/form_sheetbg.png HTTP/1.1" 200 -
+2018-02-09 15:51:08,612 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "POST /web/dataset/call_kw/ir.module.module.dependency/fields_get HTTP/1.1" 200 -
+2018-02-09 15:51:08,620 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "GET /web/static/src/fonts/lato/Lato-Lig-webfont.woff HTTP/1.1" 200 -
+2018-02-09 15:51:08,666 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:08] "POST /web/dataset/call_kw/ir.module.module.dependency/read HTTP/1.1" 200 -
+2018-02-09 15:51:11,769 21887 INFO Odoo_Database odoo.modules.loading: loading 1 modules...
+2018-02-09 15:51:11,784 21887 INFO Odoo_Database odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries
+2018-02-09 15:51:11,822 21887 INFO Odoo_Database odoo.modules.loading: loading 12 modules...
+2018-02-09 15:51:11,838 21887 INFO Odoo_Database odoo.modules.loading: 12 modules loaded in 0.02s, 0 queries
+2018-02-09 15:51:11,843 21887 INFO Odoo_Database odoo.modules.loading: loading 20 modules...
+2018-02-09 15:51:11,873 21887 INFO Odoo_Database odoo.modules.registry: module bus: creating or updating database tables
+2018-02-09 15:51:12,590 21887 INFO Odoo_Database odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-02-09 15:51:12,834 21887 INFO Odoo_Database odoo.modules.loading: loading bus/views/bus.xml
+2018-02-09 15:51:12,913 21887 INFO Odoo_Database odoo.modules.loading: loading bus/security/ir.model.access.csv
+2018-02-09 15:51:13,093 21887 INFO Odoo_Database odoo.modules.registry: module base_setup: creating or updating database tables
+2018-02-09 15:51:13,407 21887 INFO Odoo_Database odoo.modules.loading: loading base_setup/views/res_config_views.xml
+2018-02-09 15:51:13,486 21887 INFO Odoo_Database odoo.modules.loading: loading base_setup/views/res_partner_views.xml
+2018-02-09 15:51:13,656 21887 INFO Odoo_Database odoo.modules.registry: module mail: creating or updating database tables
+2018-02-09 15:51:14,632 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:14] "GET /web/static/src/img/spin.png HTTP/1.1" 200 -
+2018-02-09 15:51:21,310 21887 INFO Odoo_Database odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-02-09 15:51:25,460 21887 INFO Odoo_Database odoo.models: Storing computed values of email_template.preview fields model
+2018-02-09 15:51:25,461 21887 INFO Odoo_Database odoo.models: Storing computed values of mail.template fields model
+2018-02-09 15:51:25,476 21887 INFO Odoo_Database odoo.modules.loading: loading mail/wizard/invite_view.xml
+2018-02-09 15:51:25,504 21887 INFO Odoo_Database odoo.modules.loading: loading mail/wizard/mail_compose_message_view.xml
+2018-02-09 15:51:25,541 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml
+2018-02-09 15:51:25,598 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/mail_tracking_views.xml
+2018-02-09 15:51:25,651 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/mail_message_views.xml
+2018-02-09 15:51:25,813 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/mail_mail_views.xml
+2018-02-09 15:51:25,883 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/mail_followers_views.xml
+2018-02-09 15:51:25,934 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/mail_channel_views.xml
+2018-02-09 15:51:26,107 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/mail_shortcode_views.xml
+2018-02-09 15:51:26,151 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/res_config_views.xml
+2018-02-09 15:51:26,180 21887 INFO Odoo_Database odoo.modules.loading: loading mail/data/mail_data.xml
+2018-02-09 15:51:26,242 21887 INFO Odoo_Database odoo.modules.loading: loading mail/data/mail_channel_data.xml
+2018-02-09 15:51:26,323 21887 INFO Odoo_Database odoo.modules.loading: loading mail/data/mail_shortcode_data.xml
+2018-02-09 15:51:26,382 21887 INFO Odoo_Database odoo.modules.loading: loading mail/security/mail_security.xml
+2018-02-09 15:51:26,430 21887 INFO Odoo_Database odoo.modules.loading: loading mail/security/ir.model.access.csv
+2018-02-09 15:51:26,656 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/mail_alias_views.xml
+2018-02-09 15:51:26,735 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/res_users_views.xml
+2018-02-09 15:51:26,813 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/mail_templates.xml
+2018-02-09 15:51:26,887 21887 INFO Odoo_Database odoo.modules.loading: loading mail/wizard/email_template_preview_view.xml
+2018-02-09 15:51:26,916 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/mail_template_views.xml
+2018-02-09 15:51:26,994 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/ir_actions_views.xml
+2018-02-09 15:51:27,049 21887 INFO Odoo_Database odoo.modules.loading: loading mail/views/res_partner_views.xml
+2018-02-09 15:51:27,128 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.values records with IDs: [8]
+2018-02-09 15:51:27,132 21887 INFO Odoo_Database odoo.modules.loading: loading mail/data/mail_demo.xml
+2018-02-09 15:51:27,763 21887 INFO Odoo_Database odoo.modules.loading: loading mail/data/mail_channel_demo.xml
+2018-02-09 15:51:28,588 21887 INFO Odoo_Database odoo.modules.registry: module report: creating or updating database tables
+2018-02-09 15:51:29,254 21887 INFO Odoo_Database odoo.modules.loading: loading report/data/report_paperformat_data.xml
+2018-02-09 15:51:29,266 21887 INFO Odoo_Database odoo.modules.loading: loading report/security/ir.model.access.csv
+2018-02-09 15:51:29,288 21887 INFO Odoo_Database odoo.modules.loading: loading report/views/layout_templates.xml
+2018-02-09 15:51:29,462 21887 INFO Odoo_Database odoo.modules.loading: loading report/views/report_paperformat_views.xml
+2018-02-09 15:51:29,593 21887 INFO Odoo_Database odoo.modules.loading: loading report/views/report_templates.xml
+2018-02-09 15:51:29,637 21887 INFO Odoo_Database odoo.modules.loading: loading report/views/base_config_settings_views.xml
+2018-02-09 15:51:29,672 21887 INFO Odoo_Database odoo.modules.loading: loading report/views/ir_actions_report_views.xml
+2018-02-09 15:51:29,929 21887 INFO Odoo_Database odoo.modules.registry: module auth_signup: creating or updating database tables
+2018-02-09 15:51:30,071 21887 INFO Odoo_Database odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-02-09 15:51:30,098 21887 INFO Odoo_Database odoo.modules.loading: loading auth_signup/data/auth_signup_data.xml
+2018-02-09 15:51:30,351 21887 INFO Odoo_Database odoo.modules.loading: loading auth_signup/views/res_config_views.xml
+2018-02-09 15:51:30,396 21887 INFO Odoo_Database odoo.modules.loading: loading auth_signup/views/res_users_views.xml
+2018-02-09 15:51:30,448 21887 INFO Odoo_Database odoo.modules.loading: loading auth_signup/views/auth_signup_login_templates.xml
+2018-02-09 15:51:30,671 21887 INFO Odoo_Database odoo.modules.registry: module fetchmail: creating or updating database tables
+2018-02-09 15:51:31,320 21887 INFO Odoo_Database odoo.modules.loading: loading fetchmail/data/fetchmail_data.xml
+2018-02-09 15:51:31,330 21887 INFO Odoo_Database odoo.modules.loading: loading fetchmail/security/ir.model.access.csv
+2018-02-09 15:51:31,343 21887 INFO Odoo_Database odoo.modules.loading: loading fetchmail/views/fetchmail_views.xml
+2018-02-09 15:51:31,469 21887 INFO Odoo_Database odoo.modules.loading: loading fetchmail/views/mail_mail_views.xml
+2018-02-09 15:51:31,640 21887 INFO Odoo_Database odoo.modules.registry: module note: creating or updating database tables
+2018-02-09 15:51:33,056 21887 INFO Odoo_Database odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-02-09 15:51:33,102 21887 INFO Odoo_Database odoo.models: Storing computed values of note.note fields name
+2018-02-09 15:51:33,123 21887 INFO Odoo_Database odoo.modules.loading: loading note/security/note_security.xml
+2018-02-09 15:51:33,167 21887 INFO Odoo_Database odoo.modules.loading: loading note/security/ir.model.access.csv
+2018-02-09 15:51:33,198 21887 INFO Odoo_Database odoo.modules.loading: loading note/data/note_data.xml
+2018-02-09 15:51:33,219 21887 INFO Odoo_Database odoo.modules.loading: loading note/views/note_views.xml
+2018-02-09 15:51:33,425 21887 INFO Odoo_Database odoo.modules.loading: loading note/views/note_templates.xml
+2018-02-09 15:51:33,467 21887 INFO Odoo_Database odoo.modules.loading: loading note/data/note_demo.xml
+2018-02-09 15:51:34,140 21887 INFO Odoo_Database odoo.modules.registry: module portal: creating or updating database tables
+2018-02-09 15:51:34,678 21887 INFO Odoo_Database odoo.modules.loading: loading portal/data/portal_data.xml
+2018-02-09 15:51:34,828 21887 INFO Odoo_Database odoo.modules.loading: loading portal/views/portal_views.xml
+2018-02-09 15:51:34,877 21887 INFO Odoo_Database odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml
+2018-02-09 15:51:34,907 21887 INFO Odoo_Database odoo.modules.loading: loading portal/security/ir.model.access.csv
+2018-02-09 15:51:34,922 21887 INFO Odoo_Database odoo.modules.loading: loading portal/data/portal_demo.xml
+2018-02-09 15:51:35,300 21887 INFO Odoo_Database odoo.modules.loading: 20 modules loaded in 23.46s, 20 queries
+2018-02-09 15:51:35,463 21887 INFO Odoo_Database odoo.modules.loading: Modules loaded.
+2018-02-09 15:51:35,465 21887 INFO Odoo_Database odoo.models: Computing parent left and right for table ir_ui_menu...
+2018-02-09 15:51:35,491 21887 INFO Odoo_Database odoo.addons.base.res.res_config: getting next operation
+2018-02-09 15:51:35,491 21887 INFO Odoo_Database odoo.addons.base.res.res_config: getting next ir.actions.todo()
+2018-02-09 15:51:35,494 21887 INFO Odoo_Database odoo.addons.base.res.res_config: next action is None
+2018-02-09 15:51:35,495 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:35] "POST /web/dataset/call_button HTTP/1.1" 200 -
+2018-02-09 15:51:35,515 21887 INFO Odoo_Database odoo.addons.base.ir.ir_http: Generating routing map
+2018-02-09 15:51:37,296 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [344, 343]
+2018-02-09 15:51:38,114 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [348]
+2018-02-09 15:51:38,275 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:38] "GET /web HTTP/1.1" 200 -
+2018-02-09 15:51:38,388 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:38] "GET /web/content/362-5c1d747/web.assets_backend.1.css HTTP/1.1" 200 -
+2018-02-09 15:51:38,398 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:38] "GET /web/content/361-5c1d747/web.assets_backend.0.css HTTP/1.1" 200 -
+2018-02-09 15:51:38,421 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:38] "GET /web/content/363-5c1d747/web.assets_backend.js HTTP/1.1" 200 -
+2018-02-09 15:51:38,880 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:38] "GET /web/webclient/qweb?mods=web,web_kanban,base,web_diagram,web_planner,bus,base_import,web_editor,web_calendar,web_tour,mail,note,web_settings_dashboard,portal,report,web_kanban_gauge HTTP/1.1" 200 -
+2018-02-09 15:51:38,999 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:38] "POST /web/dataset/call HTTP/1.1" 200 -
+2018-02-09 15:51:39,325 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-02-09 15:51:39,367 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "POST /mail/client_action HTTP/1.1" 200 -
+2018-02-09 15:51:39,377 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 304 -
+2018-02-09 15:51:39,406 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:51:39,415 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2018-02-09 15:51:39,482 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-02-09 15:51:39,507 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "POST /web/action/load HTTP/1.1" 200 -
+2018-02-09 15:51:39,510 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 15:51:39,579 21887 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2018-02-09 15:51:39,584 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "POST /web/dataset/call_kw/mail.message/fields_view_get HTTP/1.1" 200 -
+2018-02-09 15:51:39,621 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2018-02-09 15:51:39,677 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 -
+2018-02-09 15:51:39,727 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "GET /web/static/src/img/mimetypes/document.png HTTP/1.1" 200 -
+2018-02-09 15:51:39,909 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "GET /mail/static/src/img/email_icon.png HTTP/1.1" 200 -
+2018-02-09 15:51:39,985 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "GET /web/image/res.partner/8/image_small HTTP/1.1" 200 -
+2018-02-09 15:51:39,996 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "GET /web/image/res.partner/9/image_small HTTP/1.1" 200 -
+2018-02-09 15:51:39,998 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:39] "GET /web/image/res.partner/6/image_small HTTP/1.1" 200 -
+2018-02-09 15:51:40,002 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:40] "GET /web/image/res.partner/7/image_small HTTP/1.1" 200 -
+2018-02-09 15:51:40,301 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-09 15:51:49,619 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:49] "POST /web/action/load HTTP/1.1" 200 -
+2018-02-09 15:51:49,668 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:49] "POST /web/dataset/call_kw/note.note/load_views HTTP/1.1" 200 -
+2018-02-09 15:51:49,722 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:49] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+2018-02-09 15:51:49,818 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:49] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:51:49,825 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:49] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:51:49,827 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:49] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:51:57,161 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted mail.message records with IDs: [28, 27]
+2018-02-09 15:51:57,171 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [4710]
+2018-02-09 15:51:57,172 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted note.note records with IDs: [1]
+2018-02-09 15:51:57,178 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted mail.followers records with IDs: [6]
+2018-02-09 15:51:57,197 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:51:57] "POST /web/dataset/call_kw/note.note/unlink HTTP/1.1" 200 -
+2018-02-09 15:52:00,365 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted mail.message records with IDs: [30, 29]
+2018-02-09 15:52:00,373 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [4711]
+2018-02-09 15:52:00,374 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted note.note records with IDs: [2]
+2018-02-09 15:52:00,380 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted mail.followers records with IDs: [7]
+2018-02-09 15:52:00,502 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:52:00] "POST /web/dataset/call_kw/note.note/unlink HTTP/1.1" 200 -
+2018-02-09 15:52:05,403 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted mail.message records with IDs: [32, 31]
+2018-02-09 15:52:05,411 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [4712]
+2018-02-09 15:52:05,412 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted note.note records with IDs: [3]
+2018-02-09 15:52:05,417 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted mail.followers records with IDs: [8]
+2018-02-09 15:52:05,439 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:52:05] "POST /web/dataset/call_kw/note.note/unlink HTTP/1.1" 200 -
+2018-02-09 15:52:08,588 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted mail.message records with IDs: [36, 35]
+2018-02-09 15:52:08,595 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [4714]
+2018-02-09 15:52:08,596 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted note.note records with IDs: [5]
+2018-02-09 15:52:08,601 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted mail.followers records with IDs: [10]
+2018-02-09 15:52:08,619 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:52:08] "POST /web/dataset/call_kw/note.note/unlink HTTP/1.1" 200 -
+2018-02-09 15:52:19,723 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:52:19] "POST /web/action/load HTTP/1.1" 200 -
+2018-02-09 15:52:19,769 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:52:19] "POST /web/dataset/call_kw/res.users/load_views HTTP/1.1" 200 -
+2018-02-09 15:52:19,816 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:52:19] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2018-02-09 15:52:20,200 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:52:20] "GET /web/image?model=res.users&id=1&field=image_small&unique=20180209155030 HTTP/1.1" 200 -
+2018-02-09 15:52:20,341 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:52:20] "GET /web/static/src/fonts/lato/Lato-Reg-webfont.woff HTTP/1.1" 200 -
+2018-02-09 15:52:28,503 21887 INFO ? werkzeug: 136.206.48.84 - - [09/Feb/2018 15:52:28] "GET /web/static/src/img/placeholder.png HTTP/1.1" 200 -
+2018-02-09 15:52:29,581 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:52:29] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 15:53:12,193 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:12] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 -
+2018-02-09 15:53:19,619 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:19] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 15:53:24,565 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [250]
+2018-02-09 15:53:24,573 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [249]
+2018-02-09 15:53:24,580 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [251]
+2018-02-09 15:53:24,618 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:24] "POST /web/dataset/call_kw/res.users/write HTTP/1.1" 200 -
+2018-02-09 15:53:24,631 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:24] "POST /web/dataset/call_button HTTP/1.1" 200 -
+2018-02-09 15:53:24,694 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:24] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-02-09 15:53:37,863 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:37] "POST /web/session/change_password HTTP/1.1" 200 -
+2018-02-09 15:53:38,038 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:38] "GET /web/session/logout HTTP/1.1" 303 -
+2018-02-09 15:53:38,047 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:38] "GET /web HTTP/1.1" 303 -
+2018-02-09 15:53:39,337 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:39] "GET /web/login HTTP/1.1" 200 -
+2018-02-09 15:53:39,388 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:39] "GET /web/content/364-b01b7ed/web.assets_frontend.0.css HTTP/1.1" 200 -
+2018-02-09 15:53:39,392 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:39] "GET /web/content/365-b01b7ed/web.assets_frontend.js HTTP/1.1" 200 -
+2018-02-09 15:53:39,740 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:39] "GET /web/webclient/qweb?mods= HTTP/1.1" 200 -
+2018-02-09 15:53:39,744 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:39] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-02-09 15:53:39,834 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:39] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-02-09 15:53:48,317 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:48] "POST /web/login HTTP/1.1" 200 -
+2018-02-09 15:53:48,892 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:48] "GET /web HTTP/1.1" 200 -
+2018-02-09 15:53:49,223 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "GET /web/webclient/qweb?mods=web,web_kanban,base,web_diagram,web_planner,bus,base_import,web_editor,web_calendar,web_tour,mail,note,web_settings_dashboard,portal,report,web_kanban_gauge HTTP/1.1" 200 -
+2018-02-09 15:53:49,270 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "POST /web/dataset/call HTTP/1.1" 200 -
+2018-02-09 15:53:49,363 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-02-09 15:53:49,463 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:53:49,490 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2018-02-09 15:53:49,512 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+2018-02-09 15:53:49,588 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "POST /mail/client_action HTTP/1.1" 200 -
+2018-02-09 15:53:49,591 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-02-09 15:53:49,592 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "POST /web/action/load HTTP/1.1" 200 -
+2018-02-09 15:53:49,643 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "POST /web/dataset/call_kw/mail.message/fields_view_get HTTP/1.1" 200 -
+2018-02-09 15:53:49,673 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2018-02-09 15:53:49,736 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:49] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 -
+2018-02-09 15:53:50,027 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:50] "GET /web/image/res.partner/6/image_small HTTP/1.1" 200 -
+2018-02-09 15:53:50,030 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:50] "GET /web/image/res.partner/9/image_small HTTP/1.1" 200 -
+2018-02-09 15:53:50,041 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:50] "GET /web/image/res.partner/7/image_small HTTP/1.1" 200 -
+2018-02-09 15:53:50,044 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:50] "GET /web/image/res.partner/8/image_small HTTP/1.1" 200 -
+2018-02-09 15:53:59,361 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:59] "POST /web/dataset/call_kw/mail.message/mark_all_as_read HTTP/1.1" 200 -
+2018-02-09 15:53:59,389 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:59] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 15:53:59,423 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:53:59] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 15:54:09,670 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:09] "POST /web/action/load HTTP/1.1" 200 -
+2018-02-09 15:54:09,715 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:09] "POST /web/dataset/call_kw/note.note/load_views HTTP/1.1" 200 -
+2018-02-09 15:54:09,760 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:09] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+2018-02-09 15:54:09,804 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:09] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:54:09,807 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:09] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:54:11,228 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:11] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-02-09 15:54:11,270 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:11] "POST /web/action/load HTTP/1.1" 200 -
+2018-02-09 15:54:11,345 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:11] "POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1" 200 -
+2018-02-09 15:54:11,384 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:11] "POST /web/dataset/call_kw/ir.module.module/fields_get HTTP/1.1" 200 -
+2018-02-09 15:54:11,415 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:11] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:54:14,948 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:14] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+2018-02-09 15:54:15,001 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:15] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:54:15,004 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:15] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:54:38,921 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [4691]
+2018-02-09 15:54:38,923 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted note.stage records with IDs: [5]
+2018-02-09 15:54:38,944 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:38] "POST /web/dataset/call_kw/note.stage/unlink HTTP/1.1" 200 -
+2018-02-09 15:54:49,429 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:49] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 15:54:52,467 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:52] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-02-09 15:54:52,470 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:52] "POST /web/action/load HTTP/1.1" 200 -
+2018-02-09 15:54:52,486 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:52] "POST /web_settings_dashboard/data HTTP/1.1" 200 -
+2018-02-09 15:54:52,507 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:52] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:54:57,245 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:57] "POST /web/action/load HTTP/1.1" 200 -
+2018-02-09 15:54:57,291 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:54:57] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:55:26,411 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:55:26] "POST /web/action/load HTTP/1.1" 200 -
+2018-02-09 15:55:26,506 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:55:26] "POST /web/dataset/call_kw/res.users/load_views HTTP/1.1" 200 -
+2018-02-09 15:55:26,557 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:55:26] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:55:39,471 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:55:39] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 15:55:45,733 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [3294]
+2018-02-09 15:55:45,734 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted res.users records with IDs: [5]
+2018-02-09 15:55:45,744 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:55:45] "POST /web/dataset/call_kw/res.users/unlink HTTP/1.1" 200 -
+2018-02-09 15:55:45,771 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:55:45] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 15:56:35,731 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:56:35] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 15:57:25,773 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:57:25] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 15:58:15,815 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:58:15] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 15:59:05,856 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:59:05] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 15:59:55,898 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 15:59:55] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:00:45,939 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:00:45] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:01:35,981 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:01:35] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:02:26,030 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:02:26] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:03:16,064 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:03:16] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:04:06,106 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:04:06] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:04:56,147 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:04:56] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:05:46,189 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:05:46] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:06:36,230 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:06:36] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:07:26,272 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:07:26] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:08:16,314 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:08:16] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:09:06,355 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:09:06] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:09:56,397 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:09:56] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:10:46,438 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:10:46] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:11:36,480 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:11:36] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:12:26,522 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:12:26] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:13:16,563 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:13:16] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:14:06,605 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:14:06] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:14:56,647 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:14:56] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:15:46,688 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:15:46] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:16:36,721 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:16:36] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:17:26,763 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:17:26] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:18:16,804 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:18:16] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:18:57,477 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:18:57] "POST /web/dataset/call_kw/res.users/default_get HTTP/1.1" 200 -
+2018-02-09 16:18:57,492 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:18:57] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 -
+2018-02-09 16:18:57,525 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:18:57] "POST /web/dataset/call_kw/res.company/fields_get HTTP/1.1" 200 -
+2018-02-09 16:18:57,535 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:18:57] "POST /web/dataset/call_kw/res.company/name_get HTTP/1.1" 200 -
+2018-02-09 16:18:57,894 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:18:57] "POST /web/dataset/call_kw/res.company/read HTTP/1.1" 200 -
+2018-02-09 16:19:06,846 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:19:06] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:19:12,161 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:19:12] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 16:19:14,087 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:19:14] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+2018-02-09 16:19:14,109 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:19:14] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 16:19:14,114 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:19:14] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-09 16:19:56,888 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:19:56] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:20:46,930 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:20:46] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:20:55,226 21887 INFO Odoo_Database werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:55] "GET / HTTP/1.1" 200 -
+2018-02-09 16:20:56,046 21887 INFO Odoo_Database werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:56] "GET /web HTTP/1.1" 303 -
+2018-02-09 16:20:56,225 21887 INFO Odoo_Database werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:56] "GET /web/login HTTP/1.1" 200 -
+2018-02-09 16:20:56,642 21887 INFO Odoo_Database werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:56] "GET /web/content/342-8ec6ad2/web.assets_common.0.css HTTP/1.1" 200 -
+2018-02-09 16:20:56,661 21887 INFO Odoo_Database werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:56] "GET /web/content/364-b01b7ed/web.assets_frontend.0.css HTTP/1.1" 200 -
+2018-02-09 16:20:56,671 21887 INFO Odoo_Database werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:56] "GET /web/content/347-8ec6ad2/web.assets_common.js HTTP/1.1" 200 -
+2018-02-09 16:20:56,673 21887 INFO Odoo_Database werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:56] "GET /web/content/365-b01b7ed/web.assets_frontend.js HTTP/1.1" 200 -
+2018-02-09 16:20:56,699 21887 INFO Odoo_Database werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:56] "GET /web/binary/company_logo HTTP/1.1" 200 -
+2018-02-09 16:20:57,337 21887 INFO Odoo_Database werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:57] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+2018-02-09 16:20:57,344 21887 INFO Odoo_Database werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:57] "GET /web/webclient/qweb?mods= HTTP/1.1" 200 -
+2018-02-09 16:20:57,503 21887 INFO Odoo_Database werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:57] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-02-09 16:20:57,508 21887 INFO ? werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:57] "GET /web_editor/static/src/xml/ace.xml HTTP/1.1" 200 -
+2018-02-09 16:20:57,870 21887 INFO ? werkzeug: 136.206.11.69 - - [09/Feb/2018 16:20:57] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+2018-02-09 16:21:36,980 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:21:36] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:22:27,029 21887 INFO Odoo_Database werkzeug: 136.206.48.84 - - [09/Feb/2018 16:22:27] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-09 16:51:38,109 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-09 17:51:40,585 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-09 18:51:43,324 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-09 19:51:45,971 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-09 20:51:48,253 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-09 21:51:50,089 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-09 22:51:51,653 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-09 23:51:53,168 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 00:51:54,779 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 01:51:56,404 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 02:51:58,136 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 03:51:59,734 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 04:52:01,602 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 05:52:03,403 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 06:52:04,753 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 07:52:06,057 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 08:52:07,703 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 09:52:09,353 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 10:52:11,017 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 11:51:27,053 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 12:51:29,609 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 13:51:32,116 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 14:51:34,842 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 15:50:16,962 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Auto-vacuum internal data`.
+2018-02-10 15:50:16,984 21887 INFO Odoo_Database odoo.addons.base.ir.ir_attachment: filestore gc 16 checked, 6 removed
+2018-02-10 15:50:17,000 21887 INFO Odoo_Database odoo.models.unlink: User #1 deleted base.language.install records with IDs: [1]
+2018-02-10 15:50:17,002 21887 INFO Odoo_Database odoo.addons.base.ir.ir_autovacuum: GC'd 1 user log entries
+2018-02-10 15:51:37,276 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 16:51:40,198 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 17:51:42,906 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 18:51:45,609 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 19:51:48,252 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 20:51:51,080 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 21:51:27,305 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 22:51:29,094 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-10 23:51:30,847 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 00:51:32,475 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 01:51:33,970 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 02:51:35,530 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 03:51:37,172 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 04:51:38,889 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 05:51:40,581 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 06:51:42,353 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 07:51:43,878 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 08:51:45,737 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 09:51:47,664 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 10:51:27,605 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 11:51:30,272 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 12:51:33,153 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 13:51:35,853 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 14:51:38,367 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 15:50:40,768 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Auto-vacuum internal data`.
+2018-02-11 15:50:40,787 21887 INFO Odoo_Database odoo.addons.base.ir.ir_attachment: filestore gc 0 checked, 0 removed
+2018-02-11 15:50:40,801 21887 INFO Odoo_Database odoo.addons.base.ir.ir_autovacuum: GC'd 0 user log entries
+2018-02-11 15:51:40,853 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 16:51:43,305 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 17:51:45,908 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 18:51:48,550 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 19:51:51,251 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 20:51:53,826 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 21:51:56,308 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 22:51:59,113 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-11 23:52:01,653 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 00:52:04,188 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 01:52:06,651 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 02:52:09,354 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 03:52:12,020 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 04:52:14,805 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 05:52:17,531 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 06:52:19,792 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 07:52:22,041 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 08:52:23,936 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 09:30:51,148 21887 INFO ? odoo.service.server: Initiating shutdown
+2018-02-12 09:30:51,148 21887 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
