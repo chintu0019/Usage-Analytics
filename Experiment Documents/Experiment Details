@@ -1,3 +1,12 @@
 System IP: 136.206.48.84
 Odoo Port: 8069
 DNS Server: 136.206.0.1
+
+Odoo database:
+	database name:  Odoo_Database
+	email: 		manojpratnas@gmail.com
+	password: 	dontknow
+	language: 	english
+	country:	Ireland
+
+
