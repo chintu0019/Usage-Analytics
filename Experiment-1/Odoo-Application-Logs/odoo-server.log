@@ -584,3 +584,11 @@
 2018-02-12 09:49:53,244 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /web/dataset/call_kw/mail.message/fields_view_get HTTP/1.1" 200 -
 2018-02-12 09:49:53,275 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
 2018-02-12 09:49:53,312 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 -
+2018-02-12 09:50:43,181 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:50:43] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-12 09:51:33,222 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:51:33] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-12 09:51:35,592 22509 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 09:52:23,262 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:52:23] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-12 09:53:13,287 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:53:13] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-12 09:54:03,313 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:54:03] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-12 10:51:37,797 22509 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-02-12 11:51:40,246 22509 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
