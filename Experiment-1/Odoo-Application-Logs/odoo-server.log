@@ -556,3 +556,31 @@
 2018-02-12 08:52:23,936 21887 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
 2018-02-12 09:30:51,148 21887 INFO ? odoo.service.server: Initiating shutdown
 2018-02-12 09:30:51,148 21887 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-02-12 09:49:35,483 22509 INFO ? odoo: Odoo version 10.0
+2018-02-12 09:49:35,483 22509 INFO ? odoo: Using configuration file at /etc/odoo-server.conf
+2018-02-12 09:49:35,483 22509 INFO ? odoo: addons paths: ['/opt/odoo/.local/share/Odoo/addons/10.0', u'/opt/odoo/addons', '/opt/odoo/odoo/addons']
+2018-02-12 09:49:35,483 22509 INFO ? odoo: database: odoo@default:default
+2018-02-12 09:49:35,488 22509 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-02-12 09:49:50,746 22509 INFO ? odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-02-12 09:49:50,855 22509 INFO ? odoo.http: HTTP Configuring static files
+2018-02-12 09:49:50,863 22509 INFO Odoo_Database odoo.modules.loading: loading 1 modules...
+2018-02-12 09:49:50,882 22509 INFO Odoo_Database odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries
+2018-02-12 09:49:50,892 22509 INFO Odoo_Database odoo.modules.loading: loading 20 modules...
+2018-02-12 09:49:50,927 22509 INFO Odoo_Database odoo.modules.loading: 20 modules loaded in 0.03s, 0 queries
+2018-02-12 09:49:51,101 22509 INFO Odoo_Database odoo.modules.loading: Modules loaded.
+2018-02-12 09:49:51,104 22509 INFO Odoo_Database odoo.addons.base.ir.ir_http: Generating routing map
+2018-02-12 09:49:51,330 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:51] "GET / HTTP/1.1" 200 -
+2018-02-12 09:49:52,427 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:52] "GET /web HTTP/1.1" 200 -
+2018-02-12 09:49:52,799 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:52] "GET /web/webclient/qweb?mods=web,web_kanban,base,web_diagram,web_planner,bus,base_import,web_editor,web_calendar,web_tour,mail,note,web_settings_dashboard,portal,report,web_kanban_gauge HTTP/1.1" 200 -
+2018-02-12 09:49:52,913 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:52] "POST /web/dataset/call HTTP/1.1" 200 -
+2018-02-12 09:49:53,023 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-02-12 09:49:53,053 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /mail/client_action HTTP/1.1" 200 -
+2018-02-12 09:49:53,080 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-02-12 09:49:53,101 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2018-02-12 09:49:53,165 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+2018-02-12 09:49:53,178 22509 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2018-02-12 09:49:53,199 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-02-12 09:49:53,203 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /web/action/load HTTP/1.1" 200 -
+2018-02-12 09:49:53,244 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /web/dataset/call_kw/mail.message/fields_view_get HTTP/1.1" 200 -
+2018-02-12 09:49:53,275 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2018-02-12 09:49:53,312 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:49:53] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 -
