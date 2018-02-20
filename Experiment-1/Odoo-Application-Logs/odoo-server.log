@@ -590,6 +590,7 @@
 2018-02-12 09:52:23,262 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:52:23] "POST /longpolling/poll HTTP/1.1" 200 -
 2018-02-12 09:53:13,287 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:53:13] "POST /longpolling/poll HTTP/1.1" 200 -
 2018-02-12 09:54:03,313 22509 INFO Odoo_Database werkzeug: 136.206.48.84 - - [12/Feb/2018 09:54:03] "POST /longpolling/poll HTTP/1.1" 200 -
+<<<<<<< HEAD
 2018-02-12 10:51:37,797 22509 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
 2018-02-12 11:51:40,246 22509 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
 2018-02-12 12:51:41,397 22509 INFO Odoo_Database odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
@@ -1678,3 +1679,5 @@
 2018-02-20 16:41:12,683 1299 INFO ? werkzeug: 136.206.48.84 - - [20/Feb/2018 16:41:12] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
 2018-02-20 16:41:48,873 1299 INFO Odoo_Database werkzeug: 136.206.48.84 - - [20/Feb/2018 16:41:48] "POST /longpolling/poll HTTP/1.1" 200 -
 2018-02-20 16:42:38,916 1299 INFO Odoo_Database werkzeug: 136.206.48.84 - - [20/Feb/2018 16:42:38] "POST /longpolling/poll HTTP/1.1" 200 -
+=======
+>>>>>>> master
