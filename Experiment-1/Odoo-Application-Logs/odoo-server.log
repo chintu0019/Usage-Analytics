@@ -1676,3 +1676,5 @@
 2018-02-20 16:41:08,926 1299 INFO Odoo_Database werkzeug: 136.206.48.84 - - [20/Feb/2018 16:41:08] "POST /web/dataset/call_kw/res.partner/im_search HTTP/1.1" 200 -
 2018-02-20 16:41:09,487 1299 INFO Odoo_Database werkzeug: 136.206.48.84 - - [20/Feb/2018 16:41:09] "POST /web/dataset/call_kw/res.partner/im_search HTTP/1.1" 200 -
 2018-02-20 16:41:12,683 1299 INFO ? werkzeug: 136.206.48.84 - - [20/Feb/2018 16:41:12] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+2018-02-20 16:41:48,873 1299 INFO Odoo_Database werkzeug: 136.206.48.84 - - [20/Feb/2018 16:41:48] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-02-20 16:42:38,916 1299 INFO Odoo_Database werkzeug: 136.206.48.84 - - [20/Feb/2018 16:42:38] "POST /longpolling/poll HTTP/1.1" 200 -
