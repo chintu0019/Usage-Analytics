@@ -14,9 +14,11 @@ https://www.odoo.com/page/notes-features
   2.7 Export                  - Export notes as HTML, plain text or DocuWiki text documents
 3. Collaborate
   3.1 Invite people           - Add coworkers to your notes so they can follow the discussions and receive notifications
-  ~3.2 Authorship color        - Every author typing some text in a note has a different background color to show who wrote what. You can link a name to a colo
+  3.2 Authorship color*       - Every author typing some text in a note has a different background color to show who wrote what. You can link a name to a colo
   3.3 Timeline slider         - See the history of changes made to a note through a timeline, from first to last sentence
   3.4 Share                   - Easily share your notes with your colleagues by sending them as link or embed URL
   3.5 Access Settings         - Choose what others can do with your notes by granting viewing or editing access
   3.6 Chat                    - Enable chat for real time discussion with the people following your notes
-  ~3.7 Show Connected Users    - See who is connected to your notes right now
+  3.7 Show Connected Users*   - See who is connected to your notes right now
+
+*No user interaction data available
