@@ -1,22 +1,24 @@
-Time allocated 15 minutes:
+- Time allocated 15 minutes
 
-Following activities to be performed in the same order:
-  1 Create a new stage (column)
-  2 Add a note (card) to a stage
-  3 Move the created note to new column
-  4 Edit note
-    4.1 Open note
-    4.2 Write something - About your research
-    4.3 Change text style - Bold, Italic
-    4.4 Make a list - objectives or RQ's
-    4.4 Add tag - create new if needed
-    4.5 Assign a colour to the note
-    4.6 Upload a document
-  5 Export
-    5.1 Notes as HTML
-    5.2 Notes as plain Text
-  6 Collaborate
-    6.1 Invite other (Test) Users
-    6.2 Share your notes with Test User(s)
-    6.3 Change access right for Test User
-    6.4 Send a message to Test User
+Following activities could be performed (in the same order?):
+  1 	Create a new stage (column)
+  2 	Add a note (card) to a stage
+  3 	Move the created note to new column
+  4 	Edit note
+    4.1 	Open note
+    4.2 	Write something - About your research
+    4.3 	Change text style - Bold, Italic
+    4.4	Make a list - objectives or RQ's
+    4.4 	Add tag - create new if needed
+    4.5 	Assign a colour to the note
+    4.6	Upload a document
+  5 	Export
+    5.1 	Notes as HTML
+    5.2 	Notes as plain Text
+  6 	Collaborate
+    6.1	Invite other (Test) Users
+    6.2 	Share your notes with Test User(s)
+    6.3 	Change access right for Test User
+    6.4 	Send a message to Test User
+	
+Scenario:
