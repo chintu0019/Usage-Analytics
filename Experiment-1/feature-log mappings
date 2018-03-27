@@ -1,0 +1,19 @@
+Reorder / rearrange note
+2018-03-27 12:58:22,875 20602 INFO Odoo_Database werkzeug: 136.206.48.84 - - [27/Mar/2018 12:58:22] "POST /web/dataset/resequence HTTP/1.1" 200 -
+
+Delete a new note
+2018-03-27 13:48:15,166 20602 INFO Odoo_Database odoo.models.unlink: User #1 deleted note.note records with IDs: [33]
+
+Create a new node
+2018-03-27 13:49:23,804 20602 INFO Odoo_Database werkzeug: 136.206.48.84 - - [27/Mar/2018 13:49:23] "POST /web/dataset/call_kw/note.note/create HTTP/1.1" 200 -
+
+Duplicate a note
+2018-03-27 13:51:30,902 20602 INFO Odoo_Database werkzeug: 136.206.48.84 - - [27/Mar/2018 13:51:30] "POST /web/dataset/call_kw/note.note/copy HTTP/1.1" 200 -
+
+Edit note
+2018-03-27 13:52:44,783 20602 INFO Odoo_Database werkzeug: 136.206.48.84 - - [27/Mar/2018 13:52:44] "POST /web/dataset/call_kw/note.note/read HTTP/1.1" 200 -
+2018-03-27 13:52:44,806 20602 INFO Odoo_Database werkzeug: 136.206.48.84 - - [27/Mar/2018 13:52:44] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-03-27 13:52:44,831 20602 INFO Odoo_Database werkzeug: 136.206.48.84 - - [27/Mar/2018 13:52:44] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-03-27 13:52:55,493 20602 INFO Odoo_Database werkzeug: 136.206.48.84 - - [27/Mar/2018 13:52:55] "POST /web/dataset/call_kw/note.note/write HTTP/1.1" 200 -
+
+
