@@ -23,13 +23,13 @@ Following activities could be performed (in the same order?):
 	
 Scenario:
 Plan and discuss your research using notes
-1	create a new note about the research problem (RP)
-2	create a new note about the hypothesis (H)
-3	create new notes about research questions (RQ) - one note per question
-4	edit RP note text - highlight (bold/italic/underline etc) keywords
-5	edit RQ notes - highlight (bold/italic/underline etc) keywords
-6	remove one of the RQ notes 
-6	edit H note - highlight (bold/italic/underline etc) keywords
-7	Duplicate a RQ note
-7	reorder/rearrange notes - move duplicated RQ note to "Additional Information" column (drag and drop)
-8	
+ 1	create a new note about the research problem (RP)
+ 2	create a new note about the hypothesis (H)
+ 3	create new notes about research questions (RQ) - one note per question
+ 4	edit RP note text - highlight (bold/italic/underline etc) keywords
+ 5	edit RQ notes - highlight (bold/italic/underline etc) keywords
+ 6	remove one of the RQ notes 
+ 7	edit H note - highlight (bold/italic/underline etc) keywords
+ 8	Duplicate a RQ note
+ 9	reorder/rearrange notes - move duplicated RQ note to "Additional Information" column (drag and drop)
+ 10
