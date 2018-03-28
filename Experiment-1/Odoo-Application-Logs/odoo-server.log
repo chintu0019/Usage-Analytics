@@ -7313,3 +7313,27 @@ KeyError: u'auditlog.rule'
 2018-03-28 14:05:56,139 8970 DEBUG ? odoo.service.server: cron0 polling for jobs
 2018-03-28 14:05:57,349 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:05:57] "POST /longpolling/poll HTTP/1.1" 200 -
 2018-03-28 14:06:36,979 8970 DEBUG ? odoo.service.server: cron1 polling for jobs
+2018-03-28 14:06:47,399 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:06:47] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-03-28 14:06:56,171 8970 DEBUG ? odoo.service.server: cron0 polling for jobs
+2018-03-28 14:07:37,456 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:07:37] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-03-28 14:07:38,039 8970 DEBUG ? odoo.service.server: cron1 polling for jobs
+2018-03-28 14:07:56,228 8970 DEBUG ? odoo.service.server: cron0 polling for jobs
+2018-03-28 14:08:27,506 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:08:27] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-03-28 14:08:39,066 8970 DEBUG ? odoo.service.server: cron1 polling for jobs
+2018-03-28 14:08:56,281 8970 DEBUG ? odoo.service.server: cron0 polling for jobs
+2018-03-28 14:09:17,573 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:09:17] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-03-28 14:09:40,112 8970 DEBUG ? odoo.service.server: cron1 polling for jobs
+2018-03-28 14:09:56,344 8970 DEBUG ? odoo.service.server: cron0 polling for jobs
+2018-03-28 14:10:07,623 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:10:07] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-03-28 14:10:41,156 8970 DEBUG ? odoo.service.server: cron1 polling for jobs
+2018-03-28 14:10:56,367 8970 DEBUG ? odoo.service.server: cron0 polling for jobs
+2018-03-28 14:10:57,672 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:10:57] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-03-28 14:11:42,192 8970 DEBUG ? odoo.service.server: cron1 polling for jobs
+2018-03-28 14:11:47,748 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:11:47] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-03-28 14:11:56,427 8970 DEBUG ? odoo.service.server: cron0 polling for jobs
+2018-03-28 14:12:37,798 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:12:37] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-03-28 14:12:43,217 8970 DEBUG ? odoo.service.server: cron1 polling for jobs
+2018-03-28 14:12:56,489 8970 DEBUG ? odoo.service.server: cron0 polling for jobs
+2018-03-28 14:13:27,848 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:13:27] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-03-28 14:13:44,280 8970 DEBUG ? odoo.service.server: cron1 polling for jobs
+2018-03-28 14:13:56,552 8970 DEBUG ? odoo.service.server: cron0 polling for jobs
