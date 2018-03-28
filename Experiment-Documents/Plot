@@ -8,28 +8,28 @@ Following activities could be performed (in the same order?):
     4.1 	Open note
     4.2 	Write something - About your research
     4.3 	Change text style - Bold, Italic
-    4.4	Make a list - objectives or RQ's
+    4.4		Make a list - objectives or RQ's
     4.4 	Add tag - create new if needed
     4.5 	Assign a colour to the note
-    4.6	Upload a document
+    4.6		Upload a document
   5 	Export
     5.1 	Notes as HTML
     5.2 	Notes as plain Text
   6 	Collaborate
-    6.1	Invite other (Test) Users
+    6.1		Invite other (Test) Users
     6.2 	Share your notes with Test User(s)
     6.3 	Change access right for Test User
     6.4 	Send a message to Test User
 	
 Scenario:
 Plan and discuss your research using notes
- 1	create a new note about the research problem (RP)
- 2	create a new note about the hypothesis (H)
- 3	create new notes about research questions (RQ) - one note per question
- 4	edit RP note text - highlight (bold/italic/underline etc) keywords
- 5	edit RQ notes - highlight (bold/italic/underline etc) keywords
- 6	remove one of the RQ notes 
- 7	edit H note - highlight (bold/italic/underline etc) keywords
- 8	Duplicate a RQ note
- 9	reorder/rearrange notes - move duplicated RQ note to "Additional Information" column (drag and drop)
- 10
+  1	create a new note about the research problem (RP)
+  2	create a new note about the hypothesis (H)
+  3	create new notes about research questions (RQ) - one note per question
+  4	edit RP note text - highlight (bold/italic/underline etc) keywords
+  5	edit RQ notes - highlight (bold/italic/underline etc) keywords
+  6	remove one of the RQ notes 
+  7	edit H note - highlight (bold/italic/underline etc) keywords
+  8	Duplicate a RQ note
+  9	reorder/rearrange notes - move duplicated RQ note to "Additional Information" column (drag and drop)
+  10
