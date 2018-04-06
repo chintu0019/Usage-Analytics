@@ -7337,6 +7337,7 @@ KeyError: u'auditlog.rule'
 2018-03-28 14:13:27,848 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:13:27] "POST /longpolling/poll HTTP/1.1" 200 -
 2018-03-28 14:13:44,280 8970 DEBUG ? odoo.service.server: cron1 polling for jobs
 2018-03-28 14:13:56,552 8970 DEBUG ? odoo.service.server: cron0 polling for jobs
+<<<<<<< HEAD
 2018-03-28 14:14:17,897 8970 INFO Odoo_Database werkzeug: 136.206.48.84 - - [28/Mar/2018 14:14:17] "POST /longpolling/poll HTTP/1.1" 200 -
 2018-03-28 14:14:45,336 8970 DEBUG ? odoo.service.server: cron1 polling for jobs
 2018-03-28 14:14:56,609 8970 DEBUG ? odoo.service.server: cron0 polling for jobs
@@ -15710,3 +15711,5 @@ KeyError: u'auditlog.rule'
 2018-04-06 12:53:54,520 1317 DEBUG ? odoo.service.server: cron1 polling for jobs
 2018-04-06 12:54:20,037 1317 DEBUG ? odoo.service.server: cron0 polling for jobs
 2018-04-06 12:54:55,570 1317 DEBUG ? odoo.service.server: cron1 polling for jobs
+=======
+>>>>>>> master
