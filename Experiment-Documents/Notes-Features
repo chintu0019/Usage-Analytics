@@ -5,18 +5,22 @@ Source: https://www.odoo.com/page/notes-features
 1. Build to-do list
   1.1 Create Stages (Columns) - Break down your to-do list into stages which will be converted to columns into your dashboard
   1.2 Create Notes            - Add notes to your stages. Each note correspond to a mini-project that you will move from one stage to another as your project moves forward
-  1.3 Kanban View             - Drag and drop notes easily from one stage to another in the kanban view
+  1.3 Delete Notes			      -	Delete a note
+  1.4 Edit Notes			        -	Change the text in the note
+  1.5 Kanban View             - Drag and drop notes easily from one stage to another in the kanban view
 2. Organize your notes
   2.1 Text layout             - Insert text styles like headers, bold, italic, lists and fonts with a simple WYSIWYG editor
   2.2 File attachments        - Attach text files, image files document files to your notes
   2.3 Tags                    - Add tags to your notes for a clear organization
+	  2.3.1 Create new tag	    - Create a new tag to the tags list
+	  2.3.2 Add tag			        - Add a tag to a note
   2.4 Filters and Groups      - Search notes easily with smart filters
   2.5 Colors                  - Group your notes by color as a way to categorize your tasks. There are 9 colors to choose from and a colorless option
   2.6 Import                  - Upload any text file or document to your notes
   2.7 Export                  - Export notes as HTML, plain text or DocuWiki text documents
 3. Collaborate
   3.1 Invite people           - Add coworkers to your notes so they can follow the discussions and receive notifications
-  3.2 Authorship color       - Every author typing some text in a note has a different background color to show who wrote what. You can link a name to a colo
+  3.2 Authorship color        - Every author typing some text in a note has a different background color to show who wrote what. You can link a name to a colo
   3.3 Timeline slider         - See the history of changes made to a note through a timeline, from first to last sentence
   3.4 Share                   - Easily share your notes with your colleagues by sending them as link or embed URL
   3.5 Access Settings         - Choose what others can do with your notes by granting viewing or editing access
