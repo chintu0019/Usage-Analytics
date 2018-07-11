@@ -5855,3 +5855,6 @@ ValueError: <class 'NameError'>: "name 'context' is not defined" while evaluatin
 2018-07-11 10:57:48,816 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 3 -> 3]
 2018-07-11 10:57:51,670 1 DEBUG ? odoo.service.server: cron0 polling for jobs
 2018-07-11 10:57:56,489 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+2018-07-11 10:58:38,836 1 INFO UA-DB werkzeug: 172.18.0.1 - - [11/Jul/2018 10:58:38] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-07-11 10:58:38,857 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 3 -> 3]
+2018-07-11 10:58:51,742 1 DEBUG ? odoo.service.server: cron0 polling for jobs
