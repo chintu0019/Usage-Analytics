@@ -1,0 +1,455 @@
+2018-07-11 10:37:49,282 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+2018-07-11 10:37:49,288 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+2018-07-11 10:37:49,288 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:37:49,288 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+2018-07-11 10:37:49,288 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+2018-07-11 10:37:49,288 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:37:49,289 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:37:49,289 1 INFO ? odoo: Odoo version 11.0-20180710
+2018-07-11 10:37:49,289 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+2018-07-11 10:37:49,289 1 INFO ? odoo: addons paths: ['/mnt/extra-addons', '/usr/lib/python3/dist-packages/odoo/addons']
+2018-07-11 10:37:49,289 1 INFO ? odoo: database: odoo@db:5432
+2018-07-11 10:37:49,289 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:37:49,302 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:37:49,304 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:37:49,305 1 DEBUG ? odoo.service.server: Setting signal handlers
+2018-07-11 10:37:49,311 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 8023fb9c4ce7:8069
+2018-07-11 10:37:49,312 1 DEBUG ? odoo.service.server: cron0 started!
+2018-07-11 10:37:49,324 1 DEBUG ? odoo.service.server: cron1 started!
+2018-07-11 10:37:49,479 1 INFO ? odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-07-11 10:37:49,490 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:37:49,494 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:37:49,555 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.'", skipped
+2018-07-11 10:38:15,249 1 INFO ? odoo.service.server: Initiating shutdown
+2018-07-11 10:38:15,250 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-07-11 10:38:15,349 1 DEBUG ? odoo.service.server: current thread: <_MainThread(MainThread, started 139636007339776)>
+2018-07-11 10:38:15,350 1 DEBUG ? odoo.service.server: process <_MainThread(MainThread, started 139636007339776)> (False)
+2018-07-11 10:38:15,350 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.httpd, started daemon 139635774732032)> (True)
+2018-07-11 10:38:15,350 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 139635686631168)> (True)
+2018-07-11 10:38:15,350 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 139635695023872)> (True)
+2018-07-11 10:38:15,350 1 DEBUG ? odoo.service.server: --
+2018-07-11 10:38:38,086 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+2018-07-11 10:38:38,088 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+2018-07-11 10:38:38,089 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:38:38,089 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+2018-07-11 10:38:38,089 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+2018-07-11 10:38:38,089 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:38:38,090 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:38:38,090 1 INFO ? odoo: Odoo version 11.0-20180710
+2018-07-11 10:38:38,090 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+2018-07-11 10:38:38,090 1 INFO ? odoo: addons paths: ['/mnt/extra-addons', '/usr/lib/python3/dist-packages/odoo/addons']
+2018-07-11 10:38:38,090 1 INFO ? odoo: database: odoo@db:5432
+2018-07-11 10:38:38,090 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:38:38,098 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:38:38,099 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:38:38,100 1 DEBUG ? odoo.service.server: Setting signal handlers
+2018-07-11 10:38:38,103 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on e5f3bbf9fe6a:8069
+2018-07-11 10:38:38,104 1 DEBUG ? odoo.service.server: cron0 started!
+2018-07-11 10:38:38,110 1 DEBUG ? odoo.service.server: cron1 started!
+2018-07-11 10:38:38,263 1 INFO ? odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-07-11 10:38:38,279 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:38:38,279 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:38:38,346 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.'", skipped
+2018-07-11 10:38:57,253 1 INFO ? odoo.service.server: Initiating shutdown
+2018-07-11 10:38:57,254 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-07-11 10:38:57,637 1 DEBUG ? odoo.service.server: current thread: <_MainThread(MainThread, started 140529802872576)>
+2018-07-11 10:38:57,640 1 DEBUG ? odoo.service.server: process <_MainThread(MainThread, started 140529802872576)> (False)
+2018-07-11 10:38:57,642 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.httpd, stopped daemon 140529570264832)> (True)
+2018-07-11 10:38:57,643 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 140529553479424)> (True)
+2018-07-11 10:38:57,643 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 140529561872128)> (True)
+2018-07-11 10:38:57,643 1 DEBUG ? odoo.service.server: --
+2018-07-11 10:39:19,689 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+2018-07-11 10:39:19,690 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+2018-07-11 10:39:19,691 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:39:19,691 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+2018-07-11 10:39:19,692 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+2018-07-11 10:39:19,692 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:39:19,693 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:39:19,693 1 INFO ? odoo: Odoo version 11.0-20180710
+2018-07-11 10:39:19,693 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+2018-07-11 10:39:19,693 1 INFO ? odoo: addons paths: ['/mnt/extra-addons', '/usr/lib/python3/dist-packages/odoo/addons']
+2018-07-11 10:39:19,693 1 INFO ? odoo: database: odoo@db:5432
+2018-07-11 10:39:19,693 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:39:19,710 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:39:19,711 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:39:19,711 1 DEBUG ? odoo.service.server: Setting signal handlers
+2018-07-11 10:39:19,715 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 2d1e9bef3714:8069
+2018-07-11 10:39:19,718 1 DEBUG ? odoo.service.server: cron0 started!
+2018-07-11 10:39:19,727 1 DEBUG ? odoo.service.server: cron1 started!
+2018-07-11 10:39:19,884 1 INFO ? odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-07-11 10:39:19,897 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:39:19,898 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:39:19,953 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.'", skipped
+2018-07-11 10:39:40,083 1 INFO ? odoo.service.server: Initiating shutdown
+2018-07-11 10:39:40,083 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-07-11 10:39:40,250 1 DEBUG ? odoo.service.server: current thread: <_MainThread(MainThread, started 139944539297536)>
+2018-07-11 10:39:40,251 1 DEBUG ? odoo.service.server: process <_MainThread(MainThread, started 139944539297536)> (False)
+2018-07-11 10:39:40,251 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.httpd, started daemon 139944306689792)> (True)
+2018-07-11 10:39:40,251 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 139944289904384)> (True)
+2018-07-11 10:39:40,251 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 139944298297088)> (True)
+2018-07-11 10:39:40,251 1 DEBUG ? odoo.service.server: --
+2018-07-11 10:40:51,888 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+2018-07-11 10:40:51,889 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+2018-07-11 10:40:51,890 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:40:51,890 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+2018-07-11 10:40:51,891 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+2018-07-11 10:40:51,891 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:40:51,892 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:40:51,892 1 INFO ? odoo: Odoo version 11.0-20180710
+2018-07-11 10:40:51,892 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+2018-07-11 10:40:51,892 1 INFO ? odoo: addons paths: ['/mnt/extra-addons', '/usr/lib/python3/dist-packages/odoo/addons']
+2018-07-11 10:40:51,893 1 INFO ? odoo: database: odoo@db:5432
+2018-07-11 10:40:51,893 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:40:51,901 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:40:51,902 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:40:51,903 1 DEBUG ? odoo.service.server: Setting signal handlers
+2018-07-11 10:40:51,906 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 696d7250c16f:8069
+2018-07-11 10:40:51,907 1 DEBUG ? odoo.service.server: cron0 started!
+2018-07-11 10:40:51,912 1 DEBUG ? odoo.service.server: cron1 started!
+2018-07-11 10:40:52,050 1 INFO ? odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-07-11 10:40:52,067 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:40:52,068 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:40:52,166 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.'", skipped
+2018-07-11 10:41:17,136 1 DEBUG ? odoo.http: Loading account
+2018-07-11 10:41:17,358 1 DEBUG ? odoo.http: Loading account_asset
+2018-07-11 10:41:17,372 1 DEBUG ? odoo.http: Loading account_bank_statement_import
+2018-07-11 10:41:17,378 1 DEBUG ? odoo.http: Loading account_check_printing
+2018-07-11 10:41:17,389 1 DEBUG ? odoo.http: Loading account_invoicing
+2018-07-11 10:41:17,390 1 DEBUG ? odoo.http: Loading auth_signup
+2018-07-11 10:41:17,397 1 DEBUG ? odoo.http: Loading barcodes
+2018-07-11 10:41:17,402 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Any'", skipped
+2018-07-11 10:41:17,402 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Alias'", skipped
+2018-07-11 10:41:17,402 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Unit Product'", skipped
+2018-07-11 10:41:17,403 1 DEBUG ? odoo.http: Loading base
+2018-07-11 10:41:17,408 1 DEBUG ? odoo.http: Loading base_import
+2018-07-11 10:41:17,416 1 DEBUG ? odoo.http: Loading board
+2018-07-11 10:41:17,420 1 DEBUG ? odoo.http: Loading bus
+2018-07-11 10:41:17,420 1 DEBUG ? odoo.http: Loading calendar
+2018-07-11 10:41:17,444 1 DEBUG ? odoo.http: Loading contacts
+2018-07-11 10:41:17,445 1 DEBUG ? odoo.http: Loading crm
+2018-07-11 10:41:17,471 1 DEBUG ? odoo.http: Loading document
+2018-07-11 10:41:17,479 1 DEBUG ? odoo.http: Loading event
+2018-07-11 10:41:17,495 1 DEBUG ? odoo.http: Loading event_sale
+2018-07-11 10:41:17,503 1 DEBUG ? odoo.http: Loading fleet
+2018-07-11 10:41:17,517 1 DEBUG ? odoo.http: Loading gamification
+2018-07-11 10:41:17,527 1 DEBUG ? odoo.http: Loading google_calendar
+2018-07-11 10:41:17,540 1 DEBUG ? odoo.http: Loading google_drive
+2018-07-11 10:41:17,638 1 DEBUG ? odoo.http: Loading google_spreadsheet
+2018-07-11 10:41:17,639 1 DEBUG ? odoo.http: Loading hr
+2018-07-11 10:41:17,652 1 DEBUG ? odoo.http: Loading hr_attendance
+2018-07-11 10:41:17,658 1 DEBUG ? odoo.http: Loading hr_expense
+2018-07-11 10:41:17,679 1 DEBUG ? odoo.http: Loading hr_gamification
+2018-07-11 10:41:17,695 1 DEBUG ? odoo.http: Loading hr_holidays
+2018-07-11 10:41:17,713 1 DEBUG ? odoo.http: Loading hr_org_chart
+2018-07-11 10:41:17,717 1 DEBUG ? odoo.http: Loading hr_payroll
+2018-07-11 10:41:17,731 1 DEBUG ? odoo.http: Loading hr_recruitment
+2018-07-11 10:41:17,744 1 DEBUG ? odoo.http: Loading hr_timesheet
+2018-07-11 10:41:17,751 1 DEBUG ? odoo.http: Loading iap
+2018-07-11 10:41:17,756 1 DEBUG ? odoo.http: Loading im_livechat
+2018-07-11 10:41:17,767 1 DEBUG ? odoo.http: Loading l10n_ae
+2018-07-11 10:41:17,767 1 DEBUG ? odoo.http: Loading l10n_ar
+2018-07-11 10:41:17,768 1 DEBUG ? odoo.http: Loading l10n_at
+2018-07-11 10:41:17,771 1 DEBUG ? odoo.http: Loading l10n_au
+2018-07-11 10:41:17,772 1 DEBUG ? odoo.http: Loading l10n_be
+2018-07-11 10:41:17,774 1 DEBUG ? odoo.http: Loading l10n_be_hr_payroll
+2018-07-11 10:41:17,780 1 DEBUG ? odoo.http: Loading l10n_be_hr_payroll_account
+2018-07-11 10:41:17,781 1 DEBUG ? odoo.http: Loading l10n_bo
+2018-07-11 10:41:17,782 1 DEBUG ? odoo.http: Loading l10n_br
+2018-07-11 10:41:17,783 1 DEBUG ? odoo.http: Loading l10n_ca
+2018-07-11 10:41:17,783 1 DEBUG ? odoo.http: Loading l10n_ch
+2018-07-11 10:41:17,791 1 DEBUG ? odoo.http: Loading l10n_cl
+2018-07-11 10:41:17,796 1 DEBUG ? odoo.http: Loading l10n_cn
+2018-07-11 10:41:17,796 1 DEBUG ? odoo.http: Loading l10n_co
+2018-07-11 10:41:17,798 1 DEBUG ? odoo.http: Loading l10n_cr
+2018-07-11 10:41:17,798 1 DEBUG ? odoo.http: Loading l10n_de
+2018-07-11 10:41:17,803 1 DEBUG ? odoo.http: Loading l10n_do
+2018-07-11 10:41:17,807 1 DEBUG ? odoo.http: Loading l10n_ec
+2018-07-11 10:41:17,808 1 DEBUG ? odoo.http: Loading l10n_es
+2018-07-11 10:41:17,810 1 DEBUG ? odoo.http: Loading l10n_et
+2018-07-11 10:41:17,811 1 DEBUG ? odoo.http: Loading l10n_fr
+2018-07-11 10:41:17,821 1 DEBUG ? odoo.http: Loading l10n_fr_certification
+2018-07-11 10:41:17,833 1 DEBUG ? odoo.http: Loading l10n_fr_pos_cert
+2018-07-11 10:41:17,835 1 DEBUG ? odoo.tools.translate: translation went wrong for "'According to the French law, you cannot modify a %s. Forbidden fields: %s.'", skipped
+2018-07-11 10:41:17,835 1 DEBUG ? odoo.http: Loading l10n_fr_sale_closing
+2018-07-11 10:41:17,842 1 DEBUG ? odoo.http: Loading l10n_gr
+2018-07-11 10:41:17,844 1 DEBUG ? odoo.http: Loading l10n_gt
+2018-07-11 10:41:17,845 1 DEBUG ? odoo.http: Loading l10n_hn
+2018-07-11 10:41:17,845 1 DEBUG ? odoo.http: Loading l10n_hr
+2018-07-11 10:41:17,846 1 DEBUG ? odoo.http: Loading l10n_hu
+2018-07-11 10:41:17,846 1 DEBUG ? odoo.http: Loading l10n_in
+2018-07-11 10:41:17,853 1 DEBUG ? odoo.http: Loading l10n_in_hr_payroll
+2018-07-11 10:41:17,863 1 DEBUG ? odoo.http: Loading l10n_in_schedule6
+2018-07-11 10:41:17,868 1 DEBUG ? odoo.http: Loading l10n_it
+2018-07-11 10:41:17,869 1 DEBUG ? odoo.http: Loading l10n_jp
+2018-07-11 10:41:17,869 1 DEBUG ? odoo.http: Loading l10n_lu
+2018-07-11 10:41:17,870 1 DEBUG ? odoo.http: Loading l10n_ma
+2018-07-11 10:41:17,870 1 DEBUG ? odoo.http: Loading l10n_mx
+2018-07-11 10:41:17,877 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Debitable Account'", skipped
+2018-07-11 10:41:17,880 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Creditable Account'", skipped
+2018-07-11 10:41:17,881 1 DEBUG ? odoo.http: Loading l10n_nl
+2018-07-11 10:41:17,885 1 DEBUG ? odoo.http: Loading l10n_no
+2018-07-11 10:41:17,886 1 DEBUG ? odoo.http: Loading l10n_nz
+2018-07-11 10:41:17,887 1 DEBUG ? odoo.http: Loading l10n_pa
+2018-07-11 10:41:17,887 1 DEBUG ? odoo.http: Loading l10n_pe
+2018-07-11 10:41:17,887 1 DEBUG ? odoo.http: Loading l10n_pl
+2018-07-11 10:41:17,891 1 DEBUG ? odoo.http: Loading l10n_ro
+2018-07-11 10:41:17,893 1 DEBUG ? odoo.http: Loading l10n_sa
+2018-07-11 10:41:17,893 1 DEBUG ? odoo.http: Loading l10n_sg
+2018-07-11 10:41:17,894 1 DEBUG ? odoo.http: Loading l10n_si
+2018-07-11 10:41:17,894 1 DEBUG ? odoo.http: Loading l10n_th
+2018-07-11 10:41:17,895 1 DEBUG ? odoo.http: Loading l10n_tr
+2018-07-11 10:41:17,895 1 DEBUG ? odoo.http: Loading l10n_uk
+2018-07-11 10:41:17,896 1 DEBUG ? odoo.http: Loading l10n_us
+2018-07-11 10:41:17,901 1 DEBUG ? odoo.http: Loading l10n_uy
+2018-07-11 10:41:17,905 1 DEBUG ? odoo.http: Loading l10n_ve
+2018-07-11 10:41:17,905 1 DEBUG ? odoo.http: Loading l10n_vn
+2018-07-11 10:41:17,906 1 DEBUG ? odoo.http: Loading lunch
+2018-07-11 10:41:17,914 1 DEBUG ? odoo.http: Loading mail
+2018-07-11 10:41:17,916 1 DEBUG ? odoo.http: Loading maintenance
+2018-07-11 10:41:17,919 1 DEBUG ? odoo.http: Loading mass_mailing
+2018-07-11 10:41:17,972 1 DEBUG ? odoo.http: Loading membership
+2018-07-11 10:41:17,984 1 DEBUG ? odoo.http: Loading mrp
+2018-07-11 10:41:18,030 1 DEBUG ? odoo.http: Loading mrp_repair
+2018-07-11 10:41:18,039 1 DEBUG ? odoo.http: Loading note
+2018-07-11 10:41:18,044 1 DEBUG ? odoo.http: Loading pad
+2018-07-11 10:41:18,052 1 DEBUG ? odoo.http: Loading payment
+2018-07-11 10:41:18,066 1 DEBUG ? odoo.http: Loading payment_adyen
+2018-07-11 10:41:18,068 1 DEBUG ? odoo.http: Loading payment_authorize
+2018-07-11 10:41:18,081 1 DEBUG ? odoo.http: Loading payment_buckaroo
+2018-07-11 10:41:18,083 1 DEBUG ? odoo.http: Loading payment_ogone
+2018-07-11 10:41:18,091 1 DEBUG ? odoo.http: Loading payment_paypal
+2018-07-11 10:41:18,098 1 DEBUG ? odoo.http: Loading payment_payumoney
+2018-07-11 10:41:18,103 1 DEBUG ? odoo.http: Loading payment_sips
+2018-07-11 10:41:18,109 1 DEBUG ? odoo.http: Loading payment_stripe
+2018-07-11 10:41:18,111 1 DEBUG ? odoo.http: Loading payment_transfer
+2018-07-11 10:41:18,120 1 DEBUG ? odoo.http: Loading point_of_sale
+2018-07-11 10:41:18,126 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Weighted Product'", skipped
+2018-07-11 10:41:18,126 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Priced Product'", skipped
+2018-07-11 10:41:18,126 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Discounted Product'", skipped
+2018-07-11 10:41:18,126 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Client'", skipped
+2018-07-11 10:41:18,127 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Cashier'", skipped
+2018-07-11 10:41:18,171 1 DEBUG ? odoo.http: Loading portal
+2018-07-11 10:41:18,172 1 DEBUG ? odoo.http: Loading pos_cache
+2018-07-11 10:41:18,175 1 DEBUG ? odoo.http: Loading pos_data_drinks
+2018-07-11 10:41:18,178 1 DEBUG ? odoo.http: Loading pos_discount
+2018-07-11 10:41:18,179 1 DEBUG ? odoo.http: Loading pos_mercury
+2018-07-11 10:41:18,183 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Credit Card'", skipped
+2018-07-11 10:41:18,186 1 DEBUG ? odoo.http: Loading pos_reprint
+2018-07-11 10:41:18,187 1 DEBUG ? odoo.http: Loading pos_restaurant
+2018-07-11 10:41:18,193 1 DEBUG ? odoo.http: Loading product
+2018-07-11 10:41:18,195 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Consumable'", skipped
+2018-07-11 10:41:18,195 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Service'", skipped
+2018-07-11 10:41:18,218 1 DEBUG ? odoo.http: Loading product_email_template
+2018-07-11 10:41:18,219 1 DEBUG ? odoo.http: Loading product_expiry
+2018-07-11 10:41:18,231 1 DEBUG ? odoo.http: Loading project
+2018-07-11 10:41:18,243 1 DEBUG ? odoo.tools.translate: translation went wrong for "'On invitation only'", skipped
+2018-07-11 10:41:18,245 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Visible by all employees'", skipped
+2018-07-11 10:41:18,245 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Visible by following customers'", skipped
+2018-07-11 10:41:18,260 1 DEBUG ? odoo.http: Loading purchase
+2018-07-11 10:41:18,280 1 DEBUG ? odoo.http: Loading rating
+2018-07-11 10:41:18,288 1 DEBUG ? odoo.http: Loading sale
+2018-07-11 10:41:18,316 1 DEBUG ? odoo.http: Loading sale_management
+2018-07-11 10:41:18,317 1 DEBUG ? odoo.http: Loading sale_stock
+2018-07-11 10:41:18,327 1 DEBUG ? odoo.http: Loading sale_timesheet
+2018-07-11 10:41:18,345 1 DEBUG ? odoo.http: Loading sales_team
+2018-07-11 10:41:18,347 1 DEBUG ? odoo.http: Loading sms
+2018-07-11 10:41:18,362 1 INFO ? odoo.addons.sms.wizard.send_sms: The `phonenumbers` Python module is not available. Phone number validation will be skipped. Try `pip3 install phonenumbers` to install it.
+2018-07-11 10:41:18,363 1 DEBUG ? odoo.http: Loading stock
+2018-07-11 10:41:18,367 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Weighted Product'", skipped
+2018-07-11 10:41:18,367 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Location'", skipped
+2018-07-11 10:41:18,367 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Lot'", skipped
+2018-07-11 10:41:18,367 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Package'", skipped
+2018-07-11 10:41:18,431 1 DEBUG ? odoo.http: Loading survey
+2018-07-11 10:41:18,461 1 DEBUG ? odoo.http: Loading test_assetsbundle
+2018-07-11 10:41:18,465 1 DEBUG ? odoo.http: Loading test_exceptions
+2018-07-11 10:41:18,466 1 DEBUG ? odoo.http: Loading test_main_flows
+2018-07-11 10:41:18,468 1 DEBUG ? odoo.http: Loading test_new_api
+2018-07-11 10:41:18,477 1 DEBUG ? odoo.http: Loading theme_bootswatch
+2018-07-11 10:41:18,478 1 DEBUG ? odoo.http: Loading theme_default
+2018-07-11 10:41:18,480 1 DEBUG ? odoo.http: Loading transifex
+2018-07-11 10:41:18,482 1 DEBUG ? odoo.http: Loading web
+2018-07-11 10:41:18,482 1 DEBUG ? odoo.http: Loading web_diagram
+2018-07-11 10:41:18,485 1 DEBUG ? odoo.http: Loading web_editor
+2018-07-11 10:41:18,486 1 DEBUG ? odoo.http: Loading web_kanban_gauge
+2018-07-11 10:41:18,486 1 DEBUG ? odoo.http: Loading web_planner
+2018-07-11 10:41:18,488 1 DEBUG ? odoo.http: Loading web_settings_dashboard
+2018-07-11 10:41:18,494 1 DEBUG ? odoo.http: Loading web_tour
+2018-07-11 10:41:18,498 1 DEBUG ? odoo.http: Loading website
+2018-07-11 10:41:18,523 1 DEBUG ? odoo.http: Loading website_blog
+2018-07-11 10:41:18,531 1 DEBUG ? odoo.http: Loading website_crm
+2018-07-11 10:41:18,538 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Custom infos'", skipped
+2018-07-11 10:41:18,540 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Metadata'", skipped
+2018-07-11 10:41:18,555 1 DEBUG ? odoo.http: Loading website_crm_partner_assign
+2018-07-11 10:41:18,578 1 DEBUG ? odoo.http: Loading website_customer
+2018-07-11 10:41:18,586 1 DEBUG ? odoo.http: Loading website_event
+2018-07-11 10:41:18,592 1 DEBUG ? odoo.http: Loading website_event_questions
+2018-07-11 10:41:18,595 1 DEBUG ? odoo.http: Loading website_event_sale
+2018-07-11 10:41:18,602 1 DEBUG ? odoo.http: Loading website_event_track
+2018-07-11 10:41:18,608 1 DEBUG ? odoo.http: Loading website_form
+2018-07-11 10:41:18,613 1 DEBUG ? odoo.http: Loading website_forum
+2018-07-11 10:41:18,633 1 DEBUG ? odoo.http: Loading website_forum_doc
+2018-07-11 10:41:18,635 1 DEBUG ? odoo.http: Loading website_gengo
+2018-07-11 10:41:18,641 1 DEBUG ? odoo.http: Loading website_google_map
+2018-07-11 10:41:18,643 1 DEBUG ? odoo.http: Loading website_hr
+2018-07-11 10:41:18,646 1 DEBUG ? odoo.http: Loading website_hr_recruitment
+2018-07-11 10:41:18,651 1 DEBUG ? odoo.http: Loading website_links
+2018-07-11 10:41:18,657 1 DEBUG ? odoo.http: Loading website_livechat
+2018-07-11 10:41:18,668 1 DEBUG ? odoo.http: Loading website_mail
+2018-07-11 10:41:18,679 1 DEBUG ? odoo.http: Loading website_mail_channel
+2018-07-11 10:41:18,685 1 DEBUG ? odoo.http: Loading website_mass_mailing
+2018-07-11 10:41:18,687 1 DEBUG ? odoo.http: Loading website_membership
+2018-07-11 10:41:18,693 1 DEBUG ? odoo.http: Loading website_partner
+2018-07-11 10:41:18,696 1 DEBUG ? odoo.http: Loading website_payment
+2018-07-11 10:41:18,700 1 DEBUG ? odoo.http: Loading website_quote
+2018-07-11 10:41:18,711 1 DEBUG ? odoo.http: Loading website_rating
+2018-07-11 10:41:18,714 1 DEBUG ? odoo.http: Loading website_rating_project
+2018-07-11 10:41:18,718 1 DEBUG ? odoo.http: Loading website_sale
+2018-07-11 10:41:18,741 1 DEBUG ? odoo.http: Loading website_sale_comparison
+2018-07-11 10:41:18,749 1 DEBUG ? odoo.http: Loading website_sale_delivery
+2018-07-11 10:41:18,752 1 DEBUG ? odoo.http: Loading website_sale_digital
+2018-07-11 10:41:18,762 1 DEBUG ? odoo.http: Loading website_sale_management
+2018-07-11 10:41:18,763 1 DEBUG ? odoo.http: Loading website_sale_options
+2018-07-11 10:41:18,775 1 DEBUG ? odoo.http: Loading website_sale_stock
+2018-07-11 10:41:18,790 1 DEBUG ? odoo.http: Loading website_sale_wishlist
+2018-07-11 10:41:18,793 1 DEBUG ? odoo.http: Loading website_slides
+2018-07-11 10:41:18,802 1 DEBUG ? odoo.http: Loading website_theme_install
+2018-07-11 10:41:18,809 1 DEBUG ? odoo.http: Loading website_twitter
+2018-07-11 10:41:18,812 1 DEBUG ? odoo.tools.translate: translation went wrong for "'There was no new data to return.'", skipped
+2018-07-11 10:41:18,812 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The request was invalid or cannot be otherwise served. Requests without authentication are considered invalid and will yield this response.'", skipped
+2018-07-11 10:41:18,812 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Authentication credentials were missing or incorrect. Maybe screen name tweets are protected.'", skipped
+2018-07-11 10:41:18,812 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The request is understood, but it has been refused or access is not allowed. Please check your Twitter API Key and Secret.'", skipped
+2018-07-11 10:41:18,812 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Request cannot be served due to the applications rate limit having been exhausted for the resource.'", skipped
+2018-07-11 10:41:18,812 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Twitter seems broken. Please retry later. You may consider posting an issue on Twitter forums to get help.'", skipped
+2018-07-11 10:41:18,812 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Twitter is down or being upgraded.'", skipped
+2018-07-11 10:41:18,812 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The Twitter servers are up, but overloaded with requests. Try again later.'", skipped
+2018-07-11 10:41:18,813 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The Twitter servers are up, but the request could not be serviced due to some failure within our stack. Try again later.'", skipped
+2018-07-11 10:41:18,813 1 INFO ? odoo.http: HTTP Configuring static files
+2018-07-11 10:41:18,821 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2018 10:41:18] "GET /web HTTP/1.1" 500 -
+2018-07-11 10:41:18,828 1 ERROR ? werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 205, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 193, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/service/server.py", line 250, in app
+    return self.app(e, s)
+  File "/usr/lib/python3/dist-packages/odoo/service/wsgi_server.py", line 166, in application
+    return application_unproxied(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/service/wsgi_server.py", line 154, in application_unproxied
+    result = handler(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1318, in __call__
+    return self.dispatch(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1292, in __call__
+    return self.app(environ, start_wrapped)
+  File "/usr/lib/python3/dist-packages/werkzeug/wsgi.py", line 599, in __call__
+    return self.app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1454, in dispatch
+    explicit_session = self.setup_session(httprequest)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1361, in setup_session
+    session_gc(self.session_store)
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 23, in __get__
+    value = self.fget(obj)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1303, in session_store
+    path = odoo.tools.config.session_dir
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 627, in session_dir
+    "%s: directory is not writable" % d
+AssertionError: /var/lib/odoo/sessions: directory is not writable
+2018-07-11 10:41:30,843 1 INFO ? odoo.service.server: Initiating shutdown
+2018-07-11 10:41:30,843 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-07-11 10:41:31,163 1 DEBUG ? odoo.service.server: current thread: <_MainThread(MainThread, started 139739683211008)>
+2018-07-11 10:41:31,164 1 DEBUG ? odoo.service.server: process <_MainThread(MainThread, started 139739683211008)> (False)
+2018-07-11 10:41:31,164 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.httpd, started daemon 139739450603264)> (True)
+2018-07-11 10:41:31,164 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 139739433817856)> (True)
+2018-07-11 10:41:31,164 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 139739442210560)> (True)
+2018-07-11 10:41:31,164 1 DEBUG ? odoo.service.server: --
+2018-07-11 10:41:51,363 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+2018-07-11 10:41:51,364 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+2018-07-11 10:41:51,365 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:41:51,366 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+2018-07-11 10:41:51,366 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+2018-07-11 10:41:51,366 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:41:51,366 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:41:51,366 1 INFO ? odoo: Odoo version 11.0-20180710
+2018-07-11 10:41:51,366 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+2018-07-11 10:41:51,366 1 INFO ? odoo: addons paths: ['/mnt/extra-addons', '/usr/lib/python3/dist-packages/odoo/addons']
+2018-07-11 10:41:51,366 1 INFO ? odoo: database: odoo@db:5432
+2018-07-11 10:41:51,367 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:41:51,379 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:41:51,384 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:41:51,385 1 DEBUG ? odoo.service.server: Setting signal handlers
+2018-07-11 10:41:51,387 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 696d7250c16f:8069
+2018-07-11 10:41:51,387 1 DEBUG ? odoo.service.server: cron0 started!
+2018-07-11 10:41:51,399 1 DEBUG ? odoo.service.server: cron1 started!
+2018-07-11 10:41:51,550 1 INFO ? odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-07-11 10:41:51,568 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:41:51,569 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:41:51,629 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.'", skipped
+2018-07-11 10:41:54,773 1 INFO ? odoo.service.server: Initiating shutdown
+2018-07-11 10:41:54,774 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-07-11 10:41:54,892 1 DEBUG ? odoo.service.server: current thread: <_MainThread(MainThread, started 140639126734592)>
+2018-07-11 10:41:54,893 1 DEBUG ? odoo.service.server: process <_MainThread(MainThread, started 140639126734592)> (False)
+2018-07-11 10:41:54,893 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 140638877341440)> (True)
+2018-07-11 10:41:54,893 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 140638885734144)> (True)
+2018-07-11 10:41:54,893 1 DEBUG ? odoo.service.server: --
+2018-07-11 10:43:42,641 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+2018-07-11 10:43:42,643 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+2018-07-11 10:43:42,643 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:43:42,644 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+2018-07-11 10:43:42,645 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+2018-07-11 10:43:42,645 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:43:42,645 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:43:42,645 1 INFO ? odoo: Odoo version 11.0-20180710
+2018-07-11 10:43:42,645 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+2018-07-11 10:43:42,645 1 INFO ? odoo: addons paths: ['/mnt/extra-addons', '/usr/lib/python3/dist-packages/odoo/addons']
+2018-07-11 10:43:42,646 1 INFO ? odoo: database: odoo@db:5432
+2018-07-11 10:43:42,646 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:43:42,653 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:43:42,654 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:43:42,655 1 DEBUG ? odoo.service.server: Setting signal handlers
+2018-07-11 10:43:42,658 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 2af393e45e15:8069
+2018-07-11 10:43:42,658 1 DEBUG ? odoo.service.server: cron0 started!
+2018-07-11 10:43:42,669 1 DEBUG ? odoo.service.server: cron1 started!
+2018-07-11 10:43:42,825 1 INFO ? odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-07-11 10:43:42,839 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:43:42,844 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:43:42,909 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.'", skipped
+2018-07-11 10:44:39,338 1 INFO ? odoo.service.server: Initiating shutdown
+2018-07-11 10:44:39,338 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-07-11 10:44:39,745 1 DEBUG ? odoo.service.server: current thread: <_MainThread(MainThread, started 140137265100544)>
+2018-07-11 10:44:39,747 1 DEBUG ? odoo.service.server: process <_MainThread(MainThread, started 140137265100544)> (False)
+2018-07-11 10:44:39,747 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.httpd, started daemon 140137032492800)> (True)
+2018-07-11 10:44:39,747 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 140137024100096)> (True)
+2018-07-11 10:44:39,747 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 140137015707392)> (True)
+2018-07-11 10:44:39,747 1 DEBUG ? odoo.service.server: --
+2018-07-11 10:44:46,919 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+2018-07-11 10:44:46,920 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+2018-07-11 10:44:46,920 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:44:46,921 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+2018-07-11 10:44:46,921 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+2018-07-11 10:44:46,922 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2018-07-11 10:44:46,923 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:44:46,923 1 INFO ? odoo: Odoo version 11.0-20180710
+2018-07-11 10:44:46,923 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+2018-07-11 10:44:46,923 1 INFO ? odoo: addons paths: ['/mnt/extra-addons', '/usr/lib/python3/dist-packages/odoo/addons']
+2018-07-11 10:44:46,923 1 INFO ? odoo: database: odoo@db:5432
+2018-07-11 10:44:46,923 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:44:46,931 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:44:46,932 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:44:46,933 1 DEBUG ? odoo.service.server: Setting signal handlers
+2018-07-11 10:44:46,936 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 1ecfde2c9e5b:8069
+2018-07-11 10:44:46,937 1 DEBUG ? odoo.service.server: cron0 started!
+2018-07-11 10:44:46,943 1 DEBUG ? odoo.service.server: cron1 started!
+2018-07-11 10:44:47,095 1 INFO ? odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-07-11 10:44:47,103 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:44:47,104 1 DEBUG ? odoo.tools.config: Failed to create addons data dir /var/lib/odoo/addons/11.0
+2018-07-11 10:44:47,158 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.'", skipped
+2018-07-11 10:45:47,244 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+2018-07-11 10:45:48,249 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+2018-07-11 10:45:49,908 1 INFO ? odoo.service.server: Initiating shutdown
+2018-07-11 10:45:49,908 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-07-11 10:45:50,038 1 DEBUG ? odoo.service.server: current thread: <_MainThread(MainThread, started 140056740660992)>
+2018-07-11 10:45:50,038 1 DEBUG ? odoo.service.server: process <_MainThread(MainThread, started 140056740660992)> (False)
+2018-07-11 10:45:50,039 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.httpd, started daemon 140056508053248)> (True)
+2018-07-11 10:45:50,039 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 140056491267840)> (True)
+2018-07-11 10:45:50,039 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 140056499660544)> (True)
+2018-07-11 10:45:50,039 1 DEBUG ? odoo.service.server: --
