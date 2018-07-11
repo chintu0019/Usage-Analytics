@@ -12,7 +12,7 @@ services:
       - ./addons:/mnt/extra-addons:rw
       - ./odoo_logs:/var/log/odoo/:rw
   db:
-    image: postgres:9.4
+    image: postgres:latest
     environment:
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
