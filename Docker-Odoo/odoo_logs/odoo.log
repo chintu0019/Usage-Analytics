@@ -810,3 +810,54 @@ Attaching to dockerodoo_db_1, dockerodoo_web_1
 [33mweb_1  |[0m 2018-07-13 14:27:18,895 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:27:18] "POST /longpolling/poll HTTP/1.1" 200 -
 [33mweb_1  |[0m 2018-07-13 14:27:18,906 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
 [33mweb_1  |[0m 2018-07-13 14:27:44,239 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:28:08,936 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:28:08] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:28:08,946 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:28:17,887 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:28:44,300 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:28:58,979 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:28:58] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:28:58,990 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:29:18,948 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:29:44,360 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:29:49,020 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:29:49] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:29:49,030 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:30:20,006 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:30:39,062 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:30:39] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:30:39,074 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:30:44,416 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:31:21,051 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:31:29,111 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:31:29] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:31:29,120 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:31:44,432 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:32:19,178 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:32:19] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:32:19,189 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:32:22,103 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:32:44,480 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:33:09,221 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:33:09] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:33:09,232 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:33:23,163 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:33:44,543 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:33:59,270 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:33:59] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:33:59,278 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:34:24,169 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:34:44,590 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:34:49,304 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:34:49] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:34:49,315 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:35:25,207 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:35:39,337 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:35:39] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:35:39,347 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:35:44,637 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:36:26,250 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:36:29,370 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:36:29] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:36:29,380 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:36:44,694 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:37:19,412 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:37:19] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:37:19,423 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:37:27,315 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:37:44,729 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:38:09,453 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:38:09] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:38:09,464 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 14:38:28,379 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:38:44,735 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 14:38:59,520 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:38:59] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 14:38:59,531 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+Gracefully stopping... (press Ctrl+C again to force)
