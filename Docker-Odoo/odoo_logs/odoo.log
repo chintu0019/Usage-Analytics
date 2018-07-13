@@ -861,3 +861,359 @@ Attaching to dockerodoo_db_1, dockerodoo_web_1
 [33mweb_1  |[0m 2018-07-13 14:38:59,520 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 14:38:59] "POST /longpolling/poll HTTP/1.1" 200 -
 [33mweb_1  |[0m 2018-07-13 14:38:59,531 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
 Gracefully stopping... (press Ctrl+C again to force)
+Attaching to dockerodoo_db_1, dockerodoo_web_1
+[36mdb_1   |[0m 2018-07-13 15:19:02.023 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mdb_1   |[0m 2018-07-13 15:19:02.023 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mdb_1   |[0m 2018-07-13 15:19:02.390 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb_1   |[0m 2018-07-13 15:19:02.770 UTC [22] LOG:  database system was shut down at 2018-07-13 14:39:09 UTC
+[36mdb_1   |[0m 2018-07-13 15:19:03.323 UTC [1] LOG:  database system is ready to accept connections
+[33mweb_1  |[0m ERROR: couldn't create the logfile directory. Logging to the standard output.
+[33mweb_1  |[0m 2018-07-13 15:19:05,152 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+[33mweb_1  |[0m 2018-07-13 15:19:05,153 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+[33mweb_1  |[0m 2018-07-13 15:19:05,153 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+[33mweb_1  |[0m 2018-07-13 15:19:05,153 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+[33mweb_1  |[0m 2018-07-13 15:19:05,153 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+[33mweb_1  |[0m 2018-07-13 15:19:05,153 1 DEBUG ? odoo.netsvc: logger level set: "[':DEBUG']"
+[33mweb_1  |[0m 2018-07-13 15:19:05,153 1 INFO ? odoo: Odoo version 11.0-20180710
+[33mweb_1  |[0m 2018-07-13 15:19:05,153 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+[33mweb_1  |[0m 2018-07-13 15:19:05,153 1 INFO ? odoo: addons paths: ['/var/lib/odoo/addons/11.0', '/mnt/extra-addons', '/usr/lib/python3/dist-packages/odoo/addons']
+[33mweb_1  |[0m 2018-07-13 15:19:05,154 1 INFO ? odoo: database: odoo@db:5432
+[33mweb_1  |[0m 2018-07-13 15:19:05,162 1 DEBUG ? odoo.service.server: Setting signal handlers
+[33mweb_1  |[0m 2018-07-13 15:19:05,165 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on da1356b913bc:8069
+[33mweb_1  |[0m 2018-07-13 15:19:05,165 1 DEBUG ? odoo.service.server: cron0 started!
+[33mweb_1  |[0m 2018-07-13 15:19:05,165 1 DEBUG ? odoo.service.server: cron1 started!
+[33mweb_1  |[0m 2018-07-13 15:19:05,254 1 INFO ? odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+[33mweb_1  |[0m 2018-07-13 15:19:05,317 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,039 1 DEBUG ? odoo.http: Loading account
+[33mweb_1  |[0m 2018-07-13 15:19:07,144 1 DEBUG ? odoo.http: Loading account_asset
+[33mweb_1  |[0m 2018-07-13 15:19:07,151 1 DEBUG ? odoo.http: Loading account_bank_statement_import
+[33mweb_1  |[0m 2018-07-13 15:19:07,153 1 DEBUG ? odoo.http: Loading account_check_printing
+[33mweb_1  |[0m 2018-07-13 15:19:07,157 1 DEBUG ? odoo.http: Loading account_invoicing
+[33mweb_1  |[0m 2018-07-13 15:19:07,158 1 DEBUG ? odoo.http: Loading auth_signup
+[33mweb_1  |[0m 2018-07-13 15:19:07,162 1 DEBUG ? odoo.http: Loading barcodes
+[33mweb_1  |[0m 2018-07-13 15:19:07,164 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Any'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,164 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Alias'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,164 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Unit Product'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,166 1 DEBUG ? odoo.http: Loading base
+[33mweb_1  |[0m 2018-07-13 15:19:07,166 1 DEBUG ? odoo.http: Loading base_import
+[33mweb_1  |[0m 2018-07-13 15:19:07,171 1 DEBUG ? odoo.http: Loading board
+[33mweb_1  |[0m 2018-07-13 15:19:07,173 1 DEBUG ? odoo.http: Loading bus
+[33mweb_1  |[0m 2018-07-13 15:19:07,173 1 DEBUG ? odoo.http: Loading calendar
+[33mweb_1  |[0m 2018-07-13 15:19:07,184 1 DEBUG ? odoo.http: Loading contacts
+[33mweb_1  |[0m 2018-07-13 15:19:07,185 1 DEBUG ? odoo.http: Loading crm
+[33mweb_1  |[0m 2018-07-13 15:19:07,198 1 DEBUG ? odoo.http: Loading document
+[33mweb_1  |[0m 2018-07-13 15:19:07,204 1 DEBUG ? odoo.http: Loading event
+[33mweb_1  |[0m 2018-07-13 15:19:07,212 1 DEBUG ? odoo.http: Loading event_sale
+[33mweb_1  |[0m 2018-07-13 15:19:07,217 1 DEBUG ? odoo.http: Loading fleet
+[33mweb_1  |[0m 2018-07-13 15:19:07,222 1 DEBUG ? odoo.http: Loading gamification
+[33mweb_1  |[0m 2018-07-13 15:19:07,229 1 DEBUG ? odoo.http: Loading google_calendar
+[33mweb_1  |[0m 2018-07-13 15:19:07,236 1 DEBUG ? odoo.http: Loading google_drive
+[33mweb_1  |[0m 2018-07-13 15:19:07,272 1 DEBUG ? odoo.http: Loading google_spreadsheet
+[33mweb_1  |[0m 2018-07-13 15:19:07,275 1 DEBUG ? odoo.http: Loading hr
+[33mweb_1  |[0m 2018-07-13 15:19:07,280 1 DEBUG ? odoo.http: Loading hr_attendance
+[33mweb_1  |[0m 2018-07-13 15:19:07,283 1 DEBUG ? odoo.http: Loading hr_expense
+[33mweb_1  |[0m 2018-07-13 15:19:07,290 1 DEBUG ? odoo.http: Loading hr_gamification
+[33mweb_1  |[0m 2018-07-13 15:19:07,293 1 DEBUG ? odoo.http: Loading hr_holidays
+[33mweb_1  |[0m 2018-07-13 15:19:07,301 1 DEBUG ? odoo.http: Loading hr_org_chart
+[33mweb_1  |[0m 2018-07-13 15:19:07,303 1 DEBUG ? odoo.http: Loading hr_payroll
+[33mweb_1  |[0m 2018-07-13 15:19:07,310 1 DEBUG ? odoo.http: Loading hr_recruitment
+[33mweb_1  |[0m 2018-07-13 15:19:07,315 1 DEBUG ? odoo.http: Loading hr_timesheet
+[33mweb_1  |[0m 2018-07-13 15:19:07,319 1 DEBUG ? odoo.http: Loading iap
+[33mweb_1  |[0m 2018-07-13 15:19:07,321 1 DEBUG ? odoo.http: Loading im_livechat
+[33mweb_1  |[0m 2018-07-13 15:19:07,326 1 DEBUG ? odoo.http: Loading l10n_ae
+[33mweb_1  |[0m 2018-07-13 15:19:07,327 1 DEBUG ? odoo.http: Loading l10n_ar
+[33mweb_1  |[0m 2018-07-13 15:19:07,328 1 DEBUG ? odoo.http: Loading l10n_at
+[33mweb_1  |[0m 2018-07-13 15:19:07,328 1 DEBUG ? odoo.http: Loading l10n_au
+[33mweb_1  |[0m 2018-07-13 15:19:07,329 1 DEBUG ? odoo.http: Loading l10n_be
+[33mweb_1  |[0m 2018-07-13 15:19:07,329 1 DEBUG ? odoo.http: Loading l10n_be_hr_payroll
+[33mweb_1  |[0m 2018-07-13 15:19:07,332 1 DEBUG ? odoo.http: Loading l10n_be_hr_payroll_account
+[33mweb_1  |[0m 2018-07-13 15:19:07,333 1 DEBUG ? odoo.http: Loading l10n_bo
+[33mweb_1  |[0m 2018-07-13 15:19:07,334 1 DEBUG ? odoo.http: Loading l10n_br
+[33mweb_1  |[0m 2018-07-13 15:19:07,335 1 DEBUG ? odoo.http: Loading l10n_ca
+[33mweb_1  |[0m 2018-07-13 15:19:07,336 1 DEBUG ? odoo.http: Loading l10n_ch
+[33mweb_1  |[0m 2018-07-13 15:19:07,340 1 DEBUG ? odoo.http: Loading l10n_cl
+[33mweb_1  |[0m 2018-07-13 15:19:07,340 1 DEBUG ? odoo.http: Loading l10n_cn
+[33mweb_1  |[0m 2018-07-13 15:19:07,341 1 DEBUG ? odoo.http: Loading l10n_co
+[33mweb_1  |[0m 2018-07-13 15:19:07,342 1 DEBUG ? odoo.http: Loading l10n_cr
+[33mweb_1  |[0m 2018-07-13 15:19:07,343 1 DEBUG ? odoo.http: Loading l10n_de
+[33mweb_1  |[0m 2018-07-13 15:19:07,344 1 DEBUG ? odoo.http: Loading l10n_do
+[33mweb_1  |[0m 2018-07-13 15:19:07,346 1 DEBUG ? odoo.http: Loading l10n_ec
+[33mweb_1  |[0m 2018-07-13 15:19:07,346 1 DEBUG ? odoo.http: Loading l10n_es
+[33mweb_1  |[0m 2018-07-13 15:19:07,347 1 DEBUG ? odoo.http: Loading l10n_et
+[33mweb_1  |[0m 2018-07-13 15:19:07,348 1 DEBUG ? odoo.http: Loading l10n_fr
+[33mweb_1  |[0m 2018-07-13 15:19:07,349 1 DEBUG ? odoo.http: Loading l10n_fr_certification
+[33mweb_1  |[0m 2018-07-13 15:19:07,352 1 DEBUG ? odoo.http: Loading l10n_fr_pos_cert
+[33mweb_1  |[0m 2018-07-13 15:19:07,354 1 DEBUG ? odoo.tools.translate: translation went wrong for "'According to the French law, you cannot modify a %s. Forbidden fields: %s.'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,355 1 DEBUG ? odoo.http: Loading l10n_fr_sale_closing
+[33mweb_1  |[0m 2018-07-13 15:19:07,357 1 DEBUG ? odoo.http: Loading l10n_gr
+[33mweb_1  |[0m 2018-07-13 15:19:07,358 1 DEBUG ? odoo.http: Loading l10n_gt
+[33mweb_1  |[0m 2018-07-13 15:19:07,358 1 DEBUG ? odoo.http: Loading l10n_hn
+[33mweb_1  |[0m 2018-07-13 15:19:07,359 1 DEBUG ? odoo.http: Loading l10n_hr
+[33mweb_1  |[0m 2018-07-13 15:19:07,360 1 DEBUG ? odoo.http: Loading l10n_hu
+[33mweb_1  |[0m 2018-07-13 15:19:07,360 1 DEBUG ? odoo.http: Loading l10n_in
+[33mweb_1  |[0m 2018-07-13 15:19:07,363 1 DEBUG ? odoo.http: Loading l10n_in_hr_payroll
+[33mweb_1  |[0m 2018-07-13 15:19:07,370 1 DEBUG ? odoo.http: Loading l10n_in_schedule6
+[33mweb_1  |[0m 2018-07-13 15:19:07,370 1 DEBUG ? odoo.http: Loading l10n_it
+[33mweb_1  |[0m 2018-07-13 15:19:07,371 1 DEBUG ? odoo.http: Loading l10n_jp
+[33mweb_1  |[0m 2018-07-13 15:19:07,372 1 DEBUG ? odoo.http: Loading l10n_lu
+[33mweb_1  |[0m 2018-07-13 15:19:07,373 1 DEBUG ? odoo.http: Loading l10n_ma
+[33mweb_1  |[0m 2018-07-13 15:19:07,374 1 DEBUG ? odoo.http: Loading l10n_mx
+[33mweb_1  |[0m 2018-07-13 15:19:07,377 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Debitable Account'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,377 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Creditable Account'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,379 1 DEBUG ? odoo.http: Loading l10n_nl
+[33mweb_1  |[0m 2018-07-13 15:19:07,381 1 DEBUG ? odoo.http: Loading l10n_no
+[33mweb_1  |[0m 2018-07-13 15:19:07,381 1 DEBUG ? odoo.http: Loading l10n_nz
+[33mweb_1  |[0m 2018-07-13 15:19:07,382 1 DEBUG ? odoo.http: Loading l10n_pa
+[33mweb_1  |[0m 2018-07-13 15:19:07,383 1 DEBUG ? odoo.http: Loading l10n_pe
+[33mweb_1  |[0m 2018-07-13 15:19:07,383 1 DEBUG ? odoo.http: Loading l10n_pl
+[33mweb_1  |[0m 2018-07-13 15:19:07,384 1 DEBUG ? odoo.http: Loading l10n_ro
+[33mweb_1  |[0m 2018-07-13 15:19:07,385 1 DEBUG ? odoo.http: Loading l10n_sa
+[33mweb_1  |[0m 2018-07-13 15:19:07,386 1 DEBUG ? odoo.http: Loading l10n_sg
+[33mweb_1  |[0m 2018-07-13 15:19:07,387 1 DEBUG ? odoo.http: Loading l10n_si
+[33mweb_1  |[0m 2018-07-13 15:19:07,387 1 DEBUG ? odoo.http: Loading l10n_th
+[33mweb_1  |[0m 2018-07-13 15:19:07,388 1 DEBUG ? odoo.http: Loading l10n_tr
+[33mweb_1  |[0m 2018-07-13 15:19:07,389 1 DEBUG ? odoo.http: Loading l10n_uk
+[33mweb_1  |[0m 2018-07-13 15:19:07,389 1 DEBUG ? odoo.http: Loading l10n_us
+[33mweb_1  |[0m 2018-07-13 15:19:07,391 1 DEBUG ? odoo.http: Loading l10n_uy
+[33mweb_1  |[0m 2018-07-13 15:19:07,391 1 DEBUG ? odoo.http: Loading l10n_ve
+[33mweb_1  |[0m 2018-07-13 15:19:07,392 1 DEBUG ? odoo.http: Loading l10n_vn
+[33mweb_1  |[0m 2018-07-13 15:19:07,393 1 DEBUG ? odoo.http: Loading lunch
+[33mweb_1  |[0m 2018-07-13 15:19:07,397 1 DEBUG ? odoo.http: Loading mail
+[33mweb_1  |[0m 2018-07-13 15:19:07,398 1 DEBUG ? odoo.http: Loading maintenance
+[33mweb_1  |[0m 2018-07-13 15:19:07,401 1 DEBUG ? odoo.http: Loading mass_mailing
+[33mweb_1  |[0m 2018-07-13 15:19:07,422 1 DEBUG ? odoo.http: Loading membership
+[33mweb_1  |[0m 2018-07-13 15:19:07,429 1 DEBUG ? odoo.http: Loading mrp
+[33mweb_1  |[0m 2018-07-13 15:19:07,448 1 DEBUG ? odoo.http: Loading mrp_repair
+[33mweb_1  |[0m 2018-07-13 15:19:07,454 1 DEBUG ? odoo.http: Loading note
+[33mweb_1  |[0m 2018-07-13 15:19:07,456 1 DEBUG ? odoo.http: Loading pad
+[33mweb_1  |[0m 2018-07-13 15:19:07,460 1 DEBUG ? odoo.http: Loading payment
+[33mweb_1  |[0m 2018-07-13 15:19:07,465 1 DEBUG ? odoo.http: Loading payment_adyen
+[33mweb_1  |[0m 2018-07-13 15:19:07,467 1 DEBUG ? odoo.http: Loading payment_authorize
+[33mweb_1  |[0m 2018-07-13 15:19:07,472 1 DEBUG ? odoo.http: Loading payment_buckaroo
+[33mweb_1  |[0m 2018-07-13 15:19:07,474 1 DEBUG ? odoo.http: Loading payment_ogone
+[33mweb_1  |[0m 2018-07-13 15:19:07,479 1 DEBUG ? odoo.http: Loading payment_paypal
+[33mweb_1  |[0m 2018-07-13 15:19:07,481 1 DEBUG ? odoo.http: Loading payment_payumoney
+[33mweb_1  |[0m 2018-07-13 15:19:07,483 1 DEBUG ? odoo.http: Loading payment_sips
+[33mweb_1  |[0m 2018-07-13 15:19:07,486 1 DEBUG ? odoo.http: Loading payment_stripe
+[33mweb_1  |[0m 2018-07-13 15:19:07,489 1 DEBUG ? odoo.http: Loading payment_transfer
+[33mweb_1  |[0m 2018-07-13 15:19:07,492 1 DEBUG ? odoo.http: Loading point_of_sale
+[33mweb_1  |[0m 2018-07-13 15:19:07,494 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Weighted Product'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,494 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Priced Product'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,494 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Discounted Product'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,494 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Client'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,495 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Cashier'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,512 1 DEBUG ? odoo.http: Loading portal
+[33mweb_1  |[0m 2018-07-13 15:19:07,513 1 DEBUG ? odoo.http: Loading pos_cache
+[33mweb_1  |[0m 2018-07-13 15:19:07,515 1 DEBUG ? odoo.http: Loading pos_data_drinks
+[33mweb_1  |[0m 2018-07-13 15:19:07,516 1 DEBUG ? odoo.http: Loading pos_discount
+[33mweb_1  |[0m 2018-07-13 15:19:07,517 1 DEBUG ? odoo.http: Loading pos_mercury
+[33mweb_1  |[0m 2018-07-13 15:19:07,518 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Credit Card'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,520 1 DEBUG ? odoo.http: Loading pos_reprint
+[33mweb_1  |[0m 2018-07-13 15:19:07,520 1 DEBUG ? odoo.http: Loading pos_restaurant
+[33mweb_1  |[0m 2018-07-13 15:19:07,523 1 DEBUG ? odoo.http: Loading product
+[33mweb_1  |[0m 2018-07-13 15:19:07,525 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Consumable'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,525 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Service'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,538 1 DEBUG ? odoo.http: Loading product_email_template
+[33mweb_1  |[0m 2018-07-13 15:19:07,540 1 DEBUG ? odoo.http: Loading product_expiry
+[33mweb_1  |[0m 2018-07-13 15:19:07,544 1 DEBUG ? odoo.http: Loading project
+[33mweb_1  |[0m 2018-07-13 15:19:07,548 1 DEBUG ? odoo.tools.translate: translation went wrong for "'On invitation only'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,548 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Visible by all employees'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,548 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Visible by following customers'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,554 1 DEBUG ? odoo.http: Loading purchase
+[33mweb_1  |[0m 2018-07-13 15:19:07,565 1 DEBUG ? odoo.http: Loading rating
+[33mweb_1  |[0m 2018-07-13 15:19:07,570 1 DEBUG ? odoo.http: Loading sale
+[33mweb_1  |[0m 2018-07-13 15:19:07,585 1 DEBUG ? odoo.http: Loading sale_management
+[33mweb_1  |[0m 2018-07-13 15:19:07,586 1 DEBUG ? odoo.http: Loading sale_stock
+[33mweb_1  |[0m 2018-07-13 15:19:07,591 1 DEBUG ? odoo.http: Loading sale_timesheet
+[33mweb_1  |[0m 2018-07-13 15:19:07,596 1 DEBUG ? odoo.http: Loading sales_team
+[33mweb_1  |[0m 2018-07-13 15:19:07,599 1 DEBUG ? odoo.http: Loading sms
+[33mweb_1  |[0m 2018-07-13 15:19:07,602 1 INFO ? odoo.addons.sms.wizard.send_sms: The `phonenumbers` Python module is not available. Phone number validation will be skipped. Try `pip3 install phonenumbers` to install it.
+[33mweb_1  |[0m 2018-07-13 15:19:07,603 1 DEBUG ? odoo.http: Loading stock
+[33mweb_1  |[0m 2018-07-13 15:19:07,605 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Weighted Product'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,605 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Location'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,605 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Lot'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,606 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Package'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,641 1 DEBUG ? odoo.http: Loading survey
+[33mweb_1  |[0m 2018-07-13 15:19:07,652 1 DEBUG ? odoo.http: Loading test_assetsbundle
+[33mweb_1  |[0m 2018-07-13 15:19:07,653 1 DEBUG ? odoo.http: Loading test_exceptions
+[33mweb_1  |[0m 2018-07-13 15:19:07,655 1 DEBUG ? odoo.http: Loading test_main_flows
+[33mweb_1  |[0m 2018-07-13 15:19:07,655 1 DEBUG ? odoo.http: Loading test_new_api
+[33mweb_1  |[0m 2018-07-13 15:19:07,660 1 DEBUG ? odoo.http: Loading theme_bootswatch
+[33mweb_1  |[0m 2018-07-13 15:19:07,661 1 DEBUG ? odoo.http: Loading theme_default
+[33mweb_1  |[0m 2018-07-13 15:19:07,662 1 DEBUG ? odoo.http: Loading transifex
+[33mweb_1  |[0m 2018-07-13 15:19:07,664 1 DEBUG ? odoo.http: Loading web
+[33mweb_1  |[0m 2018-07-13 15:19:07,664 1 DEBUG ? odoo.http: Loading web_diagram
+[33mweb_1  |[0m 2018-07-13 15:19:07,666 1 DEBUG ? odoo.http: Loading web_editor
+[33mweb_1  |[0m 2018-07-13 15:19:07,667 1 DEBUG ? odoo.http: Loading web_kanban_gauge
+[33mweb_1  |[0m 2018-07-13 15:19:07,667 1 DEBUG ? odoo.http: Loading web_planner
+[33mweb_1  |[0m 2018-07-13 15:19:07,669 1 DEBUG ? odoo.http: Loading web_settings_dashboard
+[33mweb_1  |[0m 2018-07-13 15:19:07,671 1 DEBUG ? odoo.http: Loading web_tour
+[33mweb_1  |[0m 2018-07-13 15:19:07,673 1 DEBUG ? odoo.http: Loading website
+[33mweb_1  |[0m 2018-07-13 15:19:07,686 1 DEBUG ? odoo.http: Loading website_blog
+[33mweb_1  |[0m 2018-07-13 15:19:07,690 1 DEBUG ? odoo.http: Loading website_crm
+[33mweb_1  |[0m 2018-07-13 15:19:07,692 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Custom infos'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,693 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Metadata'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,696 1 DEBUG ? odoo.http: Loading website_crm_partner_assign
+[33mweb_1  |[0m 2018-07-13 15:19:07,705 1 DEBUG ? odoo.http: Loading website_customer
+[33mweb_1  |[0m 2018-07-13 15:19:07,708 1 DEBUG ? odoo.http: Loading website_event
+[33mweb_1  |[0m 2018-07-13 15:19:07,710 1 DEBUG ? odoo.http: Loading website_event_questions
+[33mweb_1  |[0m 2018-07-13 15:19:07,714 1 DEBUG ? odoo.http: Loading website_event_sale
+[33mweb_1  |[0m 2018-07-13 15:19:07,716 1 DEBUG ? odoo.http: Loading website_event_track
+[33mweb_1  |[0m 2018-07-13 15:19:07,721 1 DEBUG ? odoo.http: Loading website_form
+[33mweb_1  |[0m 2018-07-13 15:19:07,721 1 DEBUG ? odoo.http: Loading website_forum
+[33mweb_1  |[0m 2018-07-13 15:19:07,731 1 DEBUG ? odoo.http: Loading website_forum_doc
+[33mweb_1  |[0m 2018-07-13 15:19:07,734 1 DEBUG ? odoo.http: Loading website_gengo
+[33mweb_1  |[0m 2018-07-13 15:19:07,736 1 DEBUG ? odoo.http: Loading website_google_map
+[33mweb_1  |[0m 2018-07-13 15:19:07,737 1 DEBUG ? odoo.http: Loading website_hr
+[33mweb_1  |[0m 2018-07-13 15:19:07,738 1 DEBUG ? odoo.http: Loading website_hr_recruitment
+[33mweb_1  |[0m 2018-07-13 15:19:07,741 1 DEBUG ? odoo.http: Loading website_links
+[33mweb_1  |[0m 2018-07-13 15:19:07,743 1 DEBUG ? odoo.http: Loading website_livechat
+[33mweb_1  |[0m 2018-07-13 15:19:07,745 1 DEBUG ? odoo.http: Loading website_mail
+[33mweb_1  |[0m 2018-07-13 15:19:07,748 1 DEBUG ? odoo.http: Loading website_mail_channel
+[33mweb_1  |[0m 2018-07-13 15:19:07,751 1 DEBUG ? odoo.http: Loading website_mass_mailing
+[33mweb_1  |[0m 2018-07-13 15:19:07,754 1 DEBUG ? odoo.http: Loading website_membership
+[33mweb_1  |[0m 2018-07-13 15:19:07,757 1 DEBUG ? odoo.http: Loading website_partner
+[33mweb_1  |[0m 2018-07-13 15:19:07,757 1 DEBUG ? odoo.http: Loading website_payment
+[33mweb_1  |[0m 2018-07-13 15:19:07,759 1 DEBUG ? odoo.http: Loading website_quote
+[33mweb_1  |[0m 2018-07-13 15:19:07,765 1 DEBUG ? odoo.http: Loading website_rating
+[33mweb_1  |[0m 2018-07-13 15:19:07,768 1 DEBUG ? odoo.http: Loading website_rating_project
+[33mweb_1  |[0m 2018-07-13 15:19:07,770 1 DEBUG ? odoo.http: Loading website_sale
+[33mweb_1  |[0m 2018-07-13 15:19:07,781 1 DEBUG ? odoo.http: Loading website_sale_comparison
+[33mweb_1  |[0m 2018-07-13 15:19:07,785 1 DEBUG ? odoo.http: Loading website_sale_delivery
+[33mweb_1  |[0m 2018-07-13 15:19:07,788 1 DEBUG ? odoo.http: Loading website_sale_digital
+[33mweb_1  |[0m 2018-07-13 15:19:07,791 1 DEBUG ? odoo.http: Loading website_sale_management
+[33mweb_1  |[0m 2018-07-13 15:19:07,791 1 DEBUG ? odoo.http: Loading website_sale_options
+[33mweb_1  |[0m 2018-07-13 15:19:07,794 1 DEBUG ? odoo.http: Loading website_sale_stock
+[33mweb_1  |[0m 2018-07-13 15:19:07,798 1 DEBUG ? odoo.http: Loading website_sale_wishlist
+[33mweb_1  |[0m 2018-07-13 15:19:07,801 1 DEBUG ? odoo.http: Loading website_slides
+[33mweb_1  |[0m 2018-07-13 15:19:07,808 1 DEBUG ? odoo.http: Loading website_theme_install
+[33mweb_1  |[0m 2018-07-13 15:19:07,810 1 DEBUG ? odoo.http: Loading website_twitter
+[33mweb_1  |[0m 2018-07-13 15:19:07,813 1 DEBUG ? odoo.tools.translate: translation went wrong for "'There was no new data to return.'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,813 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The request was invalid or cannot be otherwise served. Requests without authentication are considered invalid and will yield this response.'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,813 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Authentication credentials were missing or incorrect. Maybe screen name tweets are protected.'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,813 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The request is understood, but it has been refused or access is not allowed. Please check your Twitter API Key and Secret.'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,813 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Request cannot be served due to the applications rate limit having been exhausted for the resource.'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,813 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Twitter seems broken. Please retry later. You may consider posting an issue on Twitter forums to get help.'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,813 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Twitter is down or being upgraded.'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,813 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The Twitter servers are up, but overloaded with requests. Try again later.'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,813 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The Twitter servers are up, but the request could not be serviced due to some failure within our stack. Try again later.'", skipped
+[33mweb_1  |[0m 2018-07-13 15:19:07,814 1 INFO ? odoo.http: HTTP Configuring static files
+[33mweb_1  |[0m 2018-07-13 15:19:07,817 1 DEBUG ? odoo.http: HTTP sessions stored in: /var/lib/odoo/sessions
+[33mweb_1  |[0m 2018-07-13 15:19:07,828 1 DEBUG UA-DB odoo.modules.registry: Multiprocess load registry signaling: [Registry: 3] [Cache: 6]
+[33mweb_1  |[0m 2018-07-13 15:19:07,831 1 INFO UA-DB odoo.modules.loading: loading 1 modules...
+[33mweb_1  |[0m 2018-07-13 15:19:07,832 1 DEBUG UA-DB odoo.modules.loading: loading module base (1/1)
+[33mweb_1  |[0m 2018-07-13 15:19:07,846 1 INFO UA-DB odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries
+[33mweb_1  |[0m 2018-07-13 15:19:07,859 1 DEBUG UA-DB odoo.modules.loading: Updating graph with 17 more modules
+[33mweb_1  |[0m 2018-07-13 15:19:07,859 1 INFO UA-DB odoo.modules.loading: loading 18 modules...
+[33mweb_1  |[0m 2018-07-13 15:19:07,859 1 DEBUG UA-DB odoo.modules.loading: loading module auth_crypt (2/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,863 1 DEBUG UA-DB odoo.modules.loading: loading module web (3/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,871 1 DEBUG UA-DB odoo.modules.loading: loading module base_import (4/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,874 1 DEBUG UA-DB odoo.modules.loading: loading module base_setup (5/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,877 1 DEBUG UA-DB odoo.modules.loading: loading module bus (6/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,879 1 DEBUG UA-DB odoo.modules.loading: loading module iap (7/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,879 1 DEBUG UA-DB odoo.modules.loading: loading module web_diagram (8/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,880 1 DEBUG UA-DB odoo.modules.loading: loading module web_editor (9/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,885 1 DEBUG UA-DB odoo.modules.loading: loading module web_kanban_gauge (10/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,885 1 DEBUG UA-DB odoo.modules.loading: loading module web_planner (11/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,886 1 DEBUG UA-DB odoo.modules.loading: loading module web_tour (12/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,887 1 DEBUG UA-DB odoo.modules.loading: loading module mail (13/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,892 1 DEBUG UA-DB odoo.modules.loading: loading module web_settings_dashboard (14/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,893 1 DEBUG UA-DB odoo.modules.loading: loading module auth_signup (15/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,895 1 DEBUG UA-DB odoo.modules.loading: loading module fetchmail (16/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,902 1 DEBUG UA-DB odoo.modules.loading: loading module note (17/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,903 1 DEBUG UA-DB odoo.modules.loading: loading module sms (18/18)
+[33mweb_1  |[0m 2018-07-13 15:19:07,905 1 INFO UA-DB odoo.modules.loading: 18 modules loaded in 0.05s, 0 queries
+[33mweb_1  |[0m 2018-07-13 15:19:08,129 1 INFO UA-DB odoo.modules.loading: Modules loaded.
+[33mweb_1  |[0m 2018-07-13 15:19:08,132 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 15:19:08,133 1 INFO UA-DB odoo.addons.base.ir.ir_http: Generating routing map
+[33mweb_1  |[0m 2018-07-13 15:19:08,190 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+[33mweb_1  |[0m 2018-07-13 15:19:48,681 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2018-07-13 15:19:48,683 1 DEBUG UA-DB odoo.api: call note.note(1,).write({'stage_id': 2})
+[33mweb_1  |[0m 2018-07-13 15:19:48,706 1 INFO UA-DB odoo.modules.registry: At least one model cache has been invalidated, signaling through the database.
+[33mweb_1  |[0m 2018-07-13 15:19:48,712 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:19:48] "POST /web/dataset/call_kw/note.note/write HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:19:48,731 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:19:48,732 1 DEBUG UA-DB odoo.api: call note.note(1,).read(['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids', 'display_name'])
+[33mweb_1  |[0m 2018-07-13 15:19:48,743 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:19:48] "POST /web/dataset/call_kw/note.note/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:19:48,761 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:19:48,763 1 DEBUG UA-DB odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2018-07-13 15:19:48,765 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:19:48] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:19:58,194 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:19:58] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:19:58,203 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:20:05,409 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:20:05,416 1 INFO UA-DB odoo.addons.base.ir.ir_cron: Starting job `Mail: Email Queue Manager`.
+[33mweb_1  |[0m 2018-07-13 15:20:05,450 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:20:05,450 1 DEBUG UA-DB odoo.addons.base.ir.ir_cron: cron.object.execute('UA-DB', 1, '*', 'Mail: Email Queue Manager', 90)
+[33mweb_1  |[0m 2018-07-13 15:20:05,455 1 DEBUG UA-DB odoo.addons.base.ir.ir_cron: 0.005s (cron Mail: Email Queue Manager, server action 90 with uid 1)
+[33mweb_1  |[0m 2018-07-13 15:20:06,405 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:20:48,227 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:20:48] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:20:48,236 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:21:05,509 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:21:07,472 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:21:38,262 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:21:38] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:21:38,274 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:22:05,573 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:22:08,492 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:22:08,958 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:22:08,959 1 DEBUG UA-DB odoo.api: call note.note().default_get(['stage_id', 'tag_ids', 'memo', 'message_follower_ids', 'activity_ids', 'message_ids'])
+[33mweb_1  |[0m 2018-07-13 15:22:08,962 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:22:08] "POST /web/dataset/call_kw/note.note/default_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:22:08,990 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:22:08,991 1 DEBUG UA-DB odoo.api: call note.stage().search_read(domain=[['user_id', '=', 1]], fields=['id'])
+[33mweb_1  |[0m 2018-07-13 15:22:08,993 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:22:08] "POST /web/dataset/call_kw/note.stage/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:22:09,030 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:22:09,032 1 DEBUG UA-DB odoo.api: call note.stage(1, 2, 3, 4, 5).name_get()
+[33mweb_1  |[0m 2018-07-13 15:22:09,036 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:22:09] "POST /web/dataset/call_kw/note.stage/name_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:22:18,535 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:22:18,537 1 DEBUG UA-DB odoo.api: call note.note().create({'stage_id': False, 'tag_ids': [[6, False, []]], 'memo': '<p>test note 2<br></p>'})
+[33mweb_1  |[0m 2018-07-13 15:22:18,615 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:22:18] "POST /web/dataset/call_kw/note.note/create HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:22:18,627 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:22:18,629 1 DEBUG UA-DB odoo.api: call note.note(2,).read(['stage_id', 'tag_ids', 'memo', 'message_follower_ids', 'activity_ids', 'message_ids', 'display_name'])
+[33mweb_1  |[0m 2018-07-13 15:22:18,640 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:22:18] "POST /web/dataset/call_kw/note.note/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:22:18,655 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:22:18,656 1 DEBUG UA-DB odoo.api: call note.stage().search_read(domain=['|', ['id', '=', 1], ['user_id', '=', 1]], fields=['id'])
+[33mweb_1  |[0m 2018-07-13 15:22:18,657 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:22:18] "POST /web/dataset/call_kw/note.stage/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:22:18,668 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:22:18,669 1 DEBUG UA-DB odoo.api: call note.stage(1, 2, 3, 4, 5).name_get()
+[33mweb_1  |[0m 2018-07-13 15:22:18,672 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:22:18] "POST /web/dataset/call_kw/note.stage/name_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:22:18,698 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:22:18,712 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:22:18] "POST /mail/read_followers HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:22:18,716 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:22:18,717 1 DEBUG UA-DB odoo.api: call mail.message(4,).message_format()
+[33mweb_1  |[0m 2018-07-13 15:22:18,735 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:22:18] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:22:28,293 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:22:28] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:22:28,301 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:23:05,636 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:23:09,557 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:23:18,320 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:23:18] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:23:18,330 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:24:05,676 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:24:08,353 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:24:08] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:24:08,360 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:24:10,613 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:24:58,378 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:24:58] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:24:58,389 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:25:05,739 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:25:11,677 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:25:48,411 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:25:48] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:25:48,422 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:25:59,258 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:25:59,260 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:25:59] "GET /web/session/logout HTTP/1.1" 303 -
+[33mweb_1  |[0m 2018-07-13 15:25:59,273 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:25:59,275 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:25:59] "GET /web HTTP/1.1" 303 -
+[33mweb_1  |[0m 2018-07-13 15:25:59,286 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:25:59,432 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:25:59] "GET /web/login HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:25:59,472 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:25:59,479 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:25:59,487 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:25:59] "GET /web/content/255-b5edd1e/web.assets_frontend.js HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:25:59,495 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:25:59] "GET /web/content/254-b5edd1e/web.assets_frontend.0.css HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:25:59,499 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:25:59,503 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:25:59] "GET /web/binary/company_logo HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:25:59,638 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:25:59,639 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:25:59] "GET /web/webclient/qweb?mods= HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:25:59,641 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2018-07-13 15:25:59,643 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:25:59] "POST /web/webclient/bootstrap_translations HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:25:59,668 1 INFO ? werkzeug: 172.20.0.1 - - [13/Jul/2018 15:25:59] "GET /web/static/src/img/favicon.ico HTTP/1.1" 304 -
+[33mweb_1  |[0m 2018-07-13 15:26:05,803 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:26:12,740 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2018-07-13 15:26:38,461 1 INFO UA-DB werkzeug: 172.20.0.1 - - [13/Jul/2018 15:26:38] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-13 15:27:05,861 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+Gracefully stopping... (press Ctrl+C again to force)
