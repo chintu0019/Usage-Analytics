@@ -1,0 +1,173 @@
+Create stage/column:
+[33mweb_1  |[0m 2018-07-20 10:41:20,005 1 DEBUG UA-DB odoo.api: call note.stage().name_create('test column')
+[33mweb_1  |[0m 2018-07-20 10:41:20,044 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 10:41:20] "POST /web/dataset/call_kw/note.stage/name_create HTTP/1.1" 200 -
+
+
+Delete stage/column:
+[33mweb_1  |[0m 2018-07-20 10:44:22,173 1 DEBUG UA-DB odoo.api: call note.stage(5,).unlink()
+[33mweb_1  |[0m 2018-07-20 10:44:22,216 1 INFO UA-DB odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [4534]
+[33mweb_1  |[0m 2018-07-20 10:44:22,221 1 INFO UA-DB odoo.models.unlink: User #1 deleted note.stage records with IDs: [5]
+
+
+Rename stage:
+[33mweb_1  |[0m 2018-07-20 10:46:06,906 1 DEBUG UA-DB odoo.api: call note.stage(4,).write({'name': 'renamed'})
+[33mweb_1  |[0m 2018-07-20 10:46:06,932 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 10:46:06] "POST /web/dataset/call_kw/note.stage/write HTTP/1.1" 200 -
+
+
+Search:
+[33mweb_1  |[0m 2018-07-20 10:49:46,133 1 DEBUG UA-DB odoo.api: call note.note().read_group(domain=[['memo', 'ilike', 'search test']], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+
+
+Create Note:
+[33mweb_1  |[0m 2018-07-20 10:58:11,551 1 DEBUG UA-DB odoo.api: call note.note().create({'memo': '<p>test note</p>', 'tag_ids': [[6, False, []]], 'stage_id': False})
+[33mweb_1  |[0m 2018-07-20 10:58:11,658 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 10:58:11] "POST /web/dataset/call_kw/note.note/create HTTP/1.1" 200 -
+
+
+Delete Note:
+[33mweb_1  |[0m 2018-07-20 11:02:28,528 1 DEBUG UA-DB odoo.api: call note.note(1,).unlink()
+[33mweb_1  |[0m 2018-07-20 11:02:28,549 1 INFO UA-DB odoo.models.unlink: User #1 deleted mail.message records with IDs: [3]
+[33mweb_1  |[0m 2018-07-20 11:02:28,558 1 INFO UA-DB odoo.models.unlink: User #1 deleted note.note records with IDs: [1]
+[33mweb_1  |[0m 2018-07-20 11:02:28,567 1 INFO UA-DB odoo.models.unlink: User #1 deleted mail.followers records with IDs: [3]
+
+
+Open Note:
+[33mweb_1  |[0m 2018-07-20 11:19:12,370 1 DEBUG UA-DB odoo.api: call note.note(3,).read(['stage_id', 'tag_ids', 'memo', 'message_follower_ids', 'activity_ids', 'message_ids', 'display_name'])
+[33mweb_1  |[0m 2018-07-20 11:03:38,450 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:03:38] "POST /web/dataset/call_kw/note.note/read HTTP/1.1" 200 -
+
+
+Edit/Write Note:
+[33mweb_1  |[0m 2018-07-20 11:05:44,536 1 DEBUG UA-DB odoo.api: call note.note(3,).write({'memo': '<p><b>edited note</b></p>'})
+[33mweb_1  |[0m 2018-07-20 11:05:44,572 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:05:44] "POST /web/dataset/call_kw/note.note/write HTTP/1.1" 200 -
+
+
+Drag and Drop note in Kanban view:
+[33mweb_1  |[0m 2018-07-20 11:08:39,987 1 DEBUG UA-DB odoo.api: call note.note(3,).write({'stage_id': 2})
+[33mweb_1  |[0m 2018-07-20 11:08:40,005 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:08:40] "POST /web/dataset/call_kw/note.note/write HTTP/1.1" 200 -
+
+
+Move note to different stage after note open:
+[33mweb_1  |[0m 2018-07-20 11:11:27,013 1 DEBUG UA-DB odoo.api: call note.stage(31,).name_get()
+[33mweb_1  |[0m 2018-07-20 11:11:27,016 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:11:27] "POST /web/dataset/call_kw/note.stage/name_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:18:00,219 1 DEBUG UA-DB odoo.api: call note.note(3,).write({'stage_id': 3})
+
+
+Open commenting in note:
+[33mweb_1  |[0m 2018-07-20 11:26:20,119 1 DEBUG UA-DB odoo.api: call note.note(3,).message_get_suggested_recipients()
+[33mweb_1  |[0m 2018-07-20 11:26:20,128 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:26:20] "POST /web/dataset/call_kw/note.note/message_get_suggested_recipients HTTP/1.1" 200 -
+
+
+Attach File:
+[33mweb_1  |[0m 2018-07-20 11:26:33,990 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:26:33] "POST /web/binary/upload_attachment HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:26:54,356 1 DEBUG UA-DB odoo.api: call note.note(3,).message_post(attachment_ids=[271], body='file attachment test', content_subtype='html', message_type='comment', partner_ids=[], subtype='mail.mt_comment')
+
+
+Comment in Note:
+[33mweb_1  |[0m 2018-07-20 11:32:18,519 1 DEBUG UA-DB odoo.api: call note.note(4,).message_post(attachment_ids=[], body='test comment', content_subtype='html', message_type='comment', partner_ids=[], subtype='mail.mt_comment')
+[33mweb_1  |[0m 2018-07-20 11:32:18,588 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:32:18] "POST /web/dataset/call_kw/note.note/message_post HTTP/1.1" 200 -
+
+
+Open Smileys in comments:
+[33mweb_1  |[0m 2018-07-20 11:33:05,082 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/smile.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,082 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/laugh.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,083 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/normal_smile.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,083 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/smile_open_mouth.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,083 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/tears_of_joy.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,093 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/monkey_eye.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,093 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/neutral.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,106 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/confused.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,107 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/monkey_speak.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,108 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/party.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,108 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/scream.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,109 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/wink.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,120 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/open_mouth.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,121 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/evil.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,130 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/coffee.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,132 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/cookie.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,133 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/stuck_out_tongue.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,133 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/trophy.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,138 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/cat.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,150 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/beer.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,150 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/thumbsup.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,150 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/flushed.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,150 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/ghost.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,158 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/heart.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,164 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/angry.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,166 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/bug.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,166 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/thumbsdown.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,167 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/poop.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,171 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/yum.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,176 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/sad.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,178 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/cake.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,178 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/monkey_hear.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:33:05,180 1 INFO ? werkzeug: 136.206.48.106 - - [20/Jul/2018 11:33:05] "GET /mail/static/src/img/smiley/sunglass.png HTTP/1.1" 200 -
+
+
+Invite and Add follower (user_id=7) to note (res_id=4):
+[33mweb_1  |[0m 2018-07-20 11:36:53,663 1 DEBUG UA-DB odoo.api: call res.partner(7,).name_get()
+[33mweb_1  |[0m 2018-07-20 11:36:53,668 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:36:53] "POST /web/dataset/call_kw/res.partner/name_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 11:36:53,706 1 DEBUG UA-DB odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 12 -> 12]
+[33mweb_1  |[0m 2018-07-20 11:36:53,707 1 DEBUG UA-DB odoo.api: call mail.wizard.invite().create({'res_id': 4, 'send_mail': True, 'partner_ids': [[6, False, [7]]], 'message': '<div style="font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"><p style="margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;">Hello,</p><p style="margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;">Administrator invited you to follow Note document: test note 2.</p></div>', 'channel_ids': [[6, False, []]], 'res_model': 'note.note'})
+[33mweb_1  |[0m 2018-07-20 11:36:53,779 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:36:53] "POST /web/dataset/call_kw/mail.wizard.invite/create HTTP/1.1" 200 -
+
+
+Invite User(id=7) to Mail Channel(id=1):
+[33mweb_1  |[0m 2018-07-20 12:04:52,702 1 DEBUG UA-DB odoo.api: call mail.channel(1,).channel_invite(partner_ids=[7])
+[33mweb_1  |[0m 2018-07-20 12:04:52,774 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 12:04:52] "POST /web/dataset/call_kw/mail.channel/channel_invite HTTP/1.1" 200 -
+
+
+Remove follower from note:
+[33mweb_1  |[0m 2018-07-20 11:41:59,632 1 DEBUG UA-DB odoo.api: call note.note(4,).message_unsubscribe([7], None)
+[33mweb_1  |[0m 2018-07-20 11:41:59,647 1 INFO UA-DB odoo.models.unlink: User #1 deleted mail.followers records with IDs: [12]
+[33mweb_1  |[0m 2018-07-20 11:41:59,665 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:41:59] "POST /web/dataset/call_kw/note.note/message_unsubscribe HTTP/1.1" 200 -
+
+
+Create new tag:
+[33mweb_1  |[0m 2018-07-20 11:50:41,476 1 DEBUG UA-DB odoo.api: call note.tag().create({'name': 'test tag 1'})
+[33mweb_1  |[0m 2018-07-20 11:50:41,520 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:50:41] "POST /web/dataset/call_kw/note.tag/create HTTP/1.1" 200 -
+
+
+Add Tag(id=1) to Note(id=4):
+[33mweb_1  |[0m 2018-07-20 11:53:20,572 1 DEBUG UA-DB odoo.api: call note.note(4,).write({'tag_ids': [[6, False, [1]]]})
+[33mweb_1  |[0m 2018-07-20 11:53:20,602 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:53:20] "POST /web/dataset/call_kw/note.note/write HTTP/1.1" 200 -
+
+
+Change Tag(id=1) color(id=1):{color=0 means remove color}
+[33mweb_1  |[0m 2018-07-20 11:54:44,320 1 DEBUG UA-DB odoo.api: call note.tag(1,).write({'color': 1})
+[33mweb_1  |[0m 2018-07-20 11:54:44,344 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:54:44] "POST /web/dataset/call_kw/note.tag/write HTTP/1.1" 200 -
+
+
+Change Note(id=4) color(id=2): {color=0 means remove color}
+[33mweb_1  |[0m 2018-07-20 11:56:02,716 1 DEBUG UA-DB odoo.api: call note.note(4,).write({'color': 2})
+[33mweb_1  |[0m 2018-07-20 11:56:02,740 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 11:56:02] "POST /web/dataset/call_kw/note.note/write HTTP/1.1" 200 -
+
+
+Chat with other user(s):
+[33mweb_1  |[0m 2018-07-20 12:07:56,815 1 DEBUG UA-DB odoo.api: call mail.channel(2,).message_post(attachment_ids=[], body='hello user 1', content_subtype='html', message_type='comment', partner_ids=[], subtype='mail.mt_comment')
+[33mweb_1  |[0m 2018-07-20 12:07:56,880 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 12:07:56] "POST /web/dataset/call_kw/mail.channel/message_post HTTP/1.1" 200 -
+
+
+Mention User in Chat:
+[33mweb_1  |[0m 2018-07-20 12:15:19,958 1 DEBUG UA-DB odoo.api: call mail.channel(1,).message_post(attachment_ids=[], body='<a href="http://136.206.48.84:8069/web#model=res.partner&amp;id=7" class="o_mail_redirect" data-oe-id="7" data-oe-model="res.partner" target="_blank">@User 1</a>\xa0', content_subtype='html', message_type='comment', partner_ids=[7], subtype='mail.mt_comment')
+[33mweb_1  |[0m 2018-07-20 12:15:20,017 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 12:15:20] "POST /web/dataset/call_kw/mail.channel/message_post HTTP/1.1" 200 -
+
+
+Reference a Channel in Chat:
+[33mweb_1  |[0m 2018-07-20 12:17:37,126 1 DEBUG UA-DB odoo.api: call mail.channel(4,).message_post(attachment_ids=[], body='message in <a href="http://136.206.48.84:8069/web#model=mail.channel&amp;id=4" class="o_channel_redirect" data-oe-id="4" data-oe-model="mail.channel" target="_blank">#general 2</a> channel', content_subtype='html', message_type='comment', partner_ids=[], subtype='mail.mt_comment')
+[33mweb_1  |[0m 2018-07-20 12:17:37,204 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 12:17:37] "POST /web/dataset/call_kw/mail.channel/message_post HTTP/1.1" 200 -
+
+
+Remove messaging(chat) channel:
+[33mweb_1  |[0m 2018-07-20 12:19:30,127 1 DEBUG UA-DB odoo.api: call mail.channel().channel_pin('fb84bd35-a08a-4c05-9e0f-e2e043319f3b', False)
+[33mweb_1  |[0m 2018-07-20 12:19:30,186 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 12:19:30] "POST /web/dataset/call_kw/mail.channel/channel_pin HTTP/1.1" 200 -
+
+
+Unfollow from a # Channel:
+[33mweb_1  |[0m 2018-07-20 12:19:54,752 1 DEBUG UA-DB odoo.api: call mail.channel(4,).action_unfollow()
+[33mweb_1  |[0m 2018-07-20 12:19:54,852 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 12:19:54] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2018-07-20 12:19:54,853 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 12:19:54] "POST /web/dataset/call_kw/mail.channel/action_unfollow HTTP/1.1" 200 -
+
+
+Search for Tag (test tag 1) and Note with keyword "edi":
+[33mweb_1  |[0m 2018-07-20 12:23:26,186 1 DEBUG UA-DB odoo.api: call note.note().read_group(domain=[['tag_ids', 'ilike', 'test tag 1'], ['memo', 'ilike', 'edi']], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2018-07-20 12:23:26,210 1 INFO UA-DB werkzeug: 136.206.48.106 - - [20/Jul/2018 12:23:26] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+
