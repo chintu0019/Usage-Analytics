@@ -3,7 +3,7 @@ Odoo Port: 8069
 DNS Server: 136.206.0.1
 
 Odoo database:
-	database name:  Odoo_Database
+	database name:  UA-DB
 	email: 		manojpratnas@gmail.com
 	password: 	d******w
 	language: 	english
