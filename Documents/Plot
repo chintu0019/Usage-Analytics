@@ -1,9 +1,10 @@
 - Time allocated 15 minutes
 
-Following activities could be performed (in the same order?):
+Activity set:
+Following activities should be performed (in the same order):
   1 	Create a new stage (column) - only for administrators*
   2 	Add a note (card) to a stage
-  3 	Move the created note to new column
+  3 	Drag and Drop the created note to new column (create another new column)
   4 	Edit note
     4.1 	Open note
     4.2 	Write something - About your research
@@ -16,19 +17,33 @@ Following activities could be performed (in the same order?):
     5.1 	Notes as HTML
     5.2 	Notes as plain Text
   6 	Collaborate
-    6.1		Invite other (Test) Users
-    6.2 	Share your notes with Test User(s)
-    6.3 	Change access right for Test User
-    6.4 	Send a message to Test User
-	
-Scenario:
+    6.1		Invite other Users
+    6.2 	Share your notes with other User(s)
+    6.3 	Change access right for User
+    6.4 	Send a message to other User
+    6.5   Create a mail channel
+    6.6   Chat with other users
+  7 Search
+    7.1   Search for a note
+    7.2   Search for a tag - all notes in with a tag
+
+Scenario 1 (15-25 Minutes):
 Plan and discuss your research using notes
-  1	create a new note about the research problem (RP)
-  2	create a new note about the hypothesis (H)
-  3	create new notes about research questions (RQ) - one note per question
-  4	edit RP note text - highlight (bold/italic/underline etc) keywords
-  5	edit RQ notes - highlight (bold/italic/underline etc) keywords
-  6	remove one of the RQ notes 
-  7	edit H note - highlight (bold/italic/underline etc) keywords
-  8	Duplicate a RQ note
-  9	reorder/rearrange notes - move duplicated RQ note to "Additional Information" column (drag and drop)
+  1	  create a new note about the research problem (RP)
+  2	  create a new note about the hypothesis (H)
+  3	  create new notes about research questions (RQ) - one note per question
+  4	  edit RP note text - highlight (bold/italic/underline etc) keywords
+  5	  edit RQ notes - highlight (bold/italic/underline etc) keywords
+  6	  remove one of the RQ notes 
+  7	  edit H note - highlight (bold/italic/underline etc) keywords
+  8	  Duplicate a RQ note
+  9   Delete the old RQ note
+  10	Reorder/rearrange notes - move duplicated RQ note to "Additional Information" column (drag and drop)
+  11  Comment on other user's RP, RQ and H notes
+  12  Create a mail channel
+  13  Invite other user to mail channel
+  14  Chat with other user
+
+
+Scenario 2 (15 Minutes):
+Using the activities in the Activity Set above, 
