@@ -1,7 +1,0 @@
-{
-    "workbench.colorTheme": "Tinacious Design",
-    "python.globalModuleInstallation": true,
-    "python.pythonPath": ["/home/manoj/anaconda3/bin/python",
-        "C:\\ProgramData\\Anaconda3\\python.exe"],
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
-}
