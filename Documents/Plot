@@ -1,49 +1,55 @@
-- Time allocated 15 minutes
+USAGE ANALYTICS EXPERIMENT
 
 Activity set:
-Following activities should be performed (in the same order):
-  1 	Create a new stage (column) - only for administrators*
-  2 	Add a note (card) to a stage
-  3 	Drag and Drop the created note to new column (create another new column)
-  4 	Edit note
-    4.1 	Open note
-    4.2 	Write something - About your research
-    4.3 	Change text style - Bold, Italic
-    4.4		Make a list - objectives or RQ's
-    4.4 	Add tag - create new if needed
-    4.5 	Assign a colour to the note
-    4.6		Upload a document
-  5 	Export
-    5.1 	Notes as HTML
-    5.2 	Notes as plain Text
-  6 	Collaborate
-    6.1		Invite other Users
-    6.2 	Share your notes with other User(s)
-    6.3 	Change access right for User
-    6.4 	Send a message to other User
+  1 Create a new stage (column) - only for administrators*
+  2 Add a note (card) to a stage
+  3 Drag and Drop the created note to new column (create another new column)
+  4 Edit note
+    4.1   Open note
+    4.2   Write something - About your research
+    4.3   Change text style - Bold, Italic
+    4.4	  Make a list - objectives or RQ's
+    4.4   Add tag - create new if needed
+    4.5   Assign a colour to the note
+    4.6	  Upload a document
+  5 Export
+    5.1   Notes as HTML
+    5.2   Notes as plain Text
+  6 Collaborate
+    6.1	  Invite other Users
+    6.2   Share your notes with other User(s)
+    6.3   Change access right for User
+    6.4   Send a message to other User
     6.5   Create a mail channel
     6.6   Chat with other users
   7 Search
     7.1   Search for a note
     7.2   Search for a tag - all notes in with a tag
+    
+    
+    
+    
 
-Scenario 1 (15-25 Minutes):
-Plan and discuss your research using notes
-  1	  create a new note about the research problem (RP)
-  2	  create a new note about the hypothesis (H)
-  3	  create new notes about research questions (RQ) - one note per question
-  4	  edit RP note text - highlight (bold/italic/underline etc) keywords
-  5	  edit RQ notes - highlight (bold/italic/underline etc) keywords
-  6	  remove one of the RQ notes 
-  7	  edit H note - highlight (bold/italic/underline etc) keywords
-  8	  Duplicate a RQ note
+Scenario 1 - single user, plot (15-25 Minutes):
+Plan and discuss your research using notes by performing the followig actions in the same order:
+  1   Create a new note about the research problem (RP)
+  2   Create a new note about the hypothesis (H)
+  3   Create new notes about research questions (RQ) - one note per question
+  4   Edit RP note text - highlight (bold/italic/underline etc) keywords
+  5   Edit RQ notes - highlight (bold/italic/underline etc) keywords
+  6   Remove one of the RQ notes 
+  7   Edit H note - highlight (bold/italic/underline etc) keywords
+  8   Duplicate a RQ note
   9   Delete the old RQ note
-  10	Reorder/rearrange notes - move duplicated RQ note to "Additional Information" column (drag and drop)
+  10  Reorder/rearrange notes - move duplicated RQ note to "Additional Information" column (drag and drop)
   11  Comment on other user's RP, RQ and H notes
   12  Create a mail channel
   13  Invite other user to mail channel
   14  Chat with other user
+  
+  
+  
 
 
-Scenario 2 (15 Minutes):
-Using the activities in the Activity Set above, 
+Scenario 2 - single user, free style (15 Minutes):
+- must include the activities in activity set
