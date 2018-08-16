@@ -1,0 +1,5 @@
+#! /bin/bash
+while sleep 8
+do    
+    shutter -f -o 'capture-%D-%T.jpg' -e
+done
