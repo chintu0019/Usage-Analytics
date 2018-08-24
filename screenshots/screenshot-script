@@ -1,5 +1,11 @@
 #! /bin/bash
-while sleep 15
+
+enter "participant's name"
+read name
+cd ./$name
+
+while true;
 do    
-    shutter -f -o 'capture-%D-%T.jpg' -e
+    scrot -d 1 '%Y-%m-%d-%H-%M-%S.png'
+    #sleep 1s
 done
