@@ -2,7 +2,7 @@
 
 echo "enter participant's name"
 read name
-if [ -d "$DIRECTORY" ]; then
+if [ -d $DIRECTORY ]; then
     mkdir ./odoo_logs/$name
     echo "Folder created ./odoo_logs $name"
     echo "Logging to file: odoo_$name.log"
