@@ -1,19 +1,19 @@
 #! /bin/bash
 
 echo "enter participant's name"
-read p_name
-if [ -e "$p_name" ]
+read name
+if [ -e "$name" ]
 then
     echo "Participant folder exist"
-    cd ./$p_name
+    cd ./$name
 else
-    echo "Creating folder $p_name"
-    mkdir ./$p_name
-    cd ./$p_name
+    echo "Creating folder $name"
+    mkdir ./$name
+    cd ./$name
 fi
 
 
-echo "screenshots being stored in ./$p_name ...."
+echo "screenshots being stored in ./$name ...."
 while true;
 do
     scrot -u -c '%y-%m-%d-%H-%M-%S.png'

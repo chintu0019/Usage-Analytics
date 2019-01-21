@@ -2,7 +2,7 @@
 
 echo "enter participant's name"
 read name
-if [ -d $DIRECTORY ]; then
+if [ -e -d $DIRECTORY ]; then
     mkdir ./odoo_logs/$name
     echo "Folder created ./odoo_logs $name"
     echo "Logging to file: odoo_$name.log"
@@ -12,4 +12,4 @@ else
 fi
 
 systemctl start docker
-docker-compose up >> ./odoo_logs/$name/odoo_$name.log
+docker-compose up >> ./odoo_logs/$name/odoo_$name.log 

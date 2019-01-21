@@ -108,3 +108,131 @@ Attaching to docker-odoo-100_db_1, docker-odoo-100_web_1
 [33mweb_1  |[0m 2019-01-19 18:25:20,540 1 DEBUG ? odoo.service.server: cron1 polling for jobs
 [33mweb_1  |[0m 2019-01-19 18:25:20,541 1 DEBUG ? odoo.service.server: cron1 polling for jobs
 Gracefully stopping... (press Ctrl+C again to force)
+Attaching to docker-odoo-100_db_1, docker-odoo-100_web_1
+[36mdb_1   |[0m 2019-01-21 12:31:03.933 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mdb_1   |[0m 2019-01-21 12:31:03.933 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mdb_1   |[0m 2019-01-21 12:31:04.321 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb_1   |[0m 2019-01-21 12:31:04.837 UTC [22] LOG:  database system was shut down at 2019-01-19 18:26:09 UTC
+[36mdb_1   |[0m 2019-01-21 12:31:05.318 UTC [1] LOG:  database system is ready to accept connections
+[33mweb_1  |[0m ERROR: couldn't create the logfile directory. Logging to the standard output.
+[33mweb_1  |[0m 2019-01-21 12:31:15,436 1 DEBUG ? odoo.netsvc: logger level set: "odoo.workflow.workitem:WARNING"
+[33mweb_1  |[0m 2019-01-21 12:31:15,436 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+[33mweb_1  |[0m 2019-01-21 12:31:15,437 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+[33mweb_1  |[0m 2019-01-21 12:31:15,437 1 DEBUG ? odoo.netsvc: logger level set: "odoo.addons.web.http:INFO"
+[33mweb_1  |[0m 2019-01-21 12:31:15,437 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+[33mweb_1  |[0m 2019-01-21 12:31:15,437 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+[33mweb_1  |[0m 2019-01-21 12:31:15,437 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+[33mweb_1  |[0m 2019-01-21 12:31:15,437 1 DEBUG ? odoo.netsvc: logger level set: "[':DEBUG']"
+[33mweb_1  |[0m 2019-01-21 12:31:15,438 1 INFO ? odoo: Odoo version 10.0-20181126
+[33mweb_1  |[0m 2019-01-21 12:31:15,438 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+[33mweb_1  |[0m 2019-01-21 12:31:15,438 1 INFO ? odoo: addons paths: ['/var/lib/odoo/addons/10.0', u'/mnt/extra-addons', '/usr/lib/python2.7/dist-packages/odoo/addons']
+[33mweb_1  |[0m 2019-01-21 12:31:15,439 1 INFO ? odoo: database: odoo@db:5432
+[33mweb_1  |[0m 2019-01-21 12:31:15,700 1 DEBUG ? odoo.service.server: Setting signal handlers
+[33mweb_1  |[0m 2019-01-21 12:31:15,732 1 DEBUG ? odoo.service.server: cron0 started!
+[33mweb_1  |[0m 2019-01-21 12:31:15,734 1 DEBUG ? odoo.service.server: cron1 started!
+[33mweb_1  |[0m 2019-01-21 12:31:15,739 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0accbf999e16:8069
+Gracefully stopping... (press Ctrl+C again to force)
+Gracefully stopping... (press Ctrl+C again to force)
+Attaching to docker-odoo-100_db_1, docker-odoo-100_web_1
+[36mdb_1   |[0m The files belonging to this database system will be owned by user "postgres".
+[36mdb_1   |[0m This user must also own the server process.
+[36mdb_1   |[0m 
+[36mdb_1   |[0m The database cluster will be initialized with locale "en_US.utf8".
+[36mdb_1   |[0m The default database encoding has accordingly been set to "UTF8".
+[36mdb_1   |[0m The default text search configuration will be set to "english".
+[36mdb_1   |[0m 
+[36mdb_1   |[0m Data page checksums are disabled.
+[36mdb_1   |[0m 
+[36mdb_1   |[0m fixing permissions on existing directory /var/lib/postgresql/data/pgdata ... ok
+[36mdb_1   |[0m creating subdirectories ... ok
+[36mdb_1   |[0m selecting default max_connections ... 100
+[36mdb_1   |[0m selecting default shared_buffers ... 128MB
+[36mdb_1   |[0m selecting dynamic shared memory implementation ... posix
+[36mdb_1   |[0m creating configuration files ... ok
+[36mdb_1   |[0m running bootstrap script ... ok
+[36mdb_1   |[0m performing post-bootstrap initialization ... ok
+[36mdb_1   |[0m 
+[36mdb_1   |[0m WARNING: enabling "trust" authentication for local connections
+[36mdb_1   |[0m You can change this by editing pg_hba.conf or using the option -A, or
+[36mdb_1   |[0m --auth-local and --auth-host, the next time you run initdb.
+[36mdb_1   |[0m syncing data to disk ... ok
+[36mdb_1   |[0m 
+[36mdb_1   |[0m Success. You can now start the database server using:
+[36mdb_1   |[0m 
+[36mdb_1   |[0m     pg_ctl -D /var/lib/postgresql/data/pgdata -l logfile start
+[36mdb_1   |[0m 
+[36mdb_1   |[0m waiting for server to start....2019-01-19 17:56:56.662 UTC [39] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+[36mdb_1   |[0m 2019-01-19 17:56:56.662 UTC [39] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+[36mdb_1   |[0m 2019-01-19 17:56:56.662 UTC [39] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+[36mdb_1   |[0m 2019-01-19 17:56:57.205 UTC [39] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb_1   |[0m 2019-01-19 17:56:57.388 UTC [40] LOG:  database system was shut down at 2019-01-19 17:56:54 UTC
+[36mdb_1   |[0m 2019-01-19 17:56:57.433 UTC [39] LOG:  database system is ready to accept connections
+[36mdb_1   |[0m  done
+[36mdb_1   |[0m server started
+[36mdb_1   |[0m CREATE DATABASE
+[36mdb_1   |[0m 
+[36mdb_1   |[0m CREATE ROLE
+[36mdb_1   |[0m 
+[36mdb_1   |[0m 
+[36mdb_1   |[0m /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+[36mdb_1   |[0m 
+[36mdb_1   |[0m waiting for server to shut down....2019-01-19 17:57:01.094 UTC [39] LOG:  received fast shutdown request
+[36mdb_1   |[0m 2019-01-19 17:57:01.196 UTC [39] LOG:  aborting any active transactions
+[36mdb_1   |[0m 2019-01-19 17:57:01.212 UTC [39] LOG:  worker process: logical replication launcher (PID 46) exited with exit code 1
+[36mdb_1   |[0m 2019-01-19 17:57:01.213 UTC [41] LOG:  shutting down
+[36mdb_1   |[0m 2019-01-19 17:57:01.932 UTC [39] LOG:  database system is shut down
+[36mdb_1   |[0m  done
+[36mdb_1   |[0m server stopped
+[36mdb_1   |[0m 
+[36mdb_1   |[0m PostgreSQL init process complete; ready for start up.
+[36mdb_1   |[0m 
+[36mdb_1   |[0m 2019-01-19 17:57:02.062 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mdb_1   |[0m 2019-01-19 17:57:02.062 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mdb_1   |[0m 2019-01-19 17:57:02.688 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb_1   |[0m 2019-01-19 17:57:03.097 UTC [66] LOG:  database system was shut down at 2019-01-19 17:57:01 UTC
+[36mdb_1   |[0m 2019-01-19 17:57:03.208 UTC [1] LOG:  database system is ready to accept connections
+[36mdb_1   |[0m 2019-01-19 18:01:09.411 UTC [1] LOG:  received smart shutdown request
+[36mdb_1   |[0m 2019-01-19 18:01:09.473 UTC [1] LOG:  worker process: logical replication launcher (PID 72) exited with exit code 1
+[36mdb_1   |[0m 2019-01-19 18:01:09.474 UTC [67] LOG:  shutting down
+[36mdb_1   |[0m 2019-01-19 18:01:09.784 UTC [1] LOG:  database system is shut down
+[36mdb_1   |[0m 2019-01-19 18:24:15.711 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mdb_1   |[0m 2019-01-19 18:24:15.711 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mdb_1   |[0m 2019-01-19 18:24:15.855 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb_1   |[0m 2019-01-19 18:24:16.180 UTC [22] LOG:  database system was shut down at 2019-01-19 18:01:09 UTC
+[36mdb_1   |[0m 2019-01-19 18:24:16.750 UTC [1] LOG:  database system is ready to accept connections
+[36mdb_1   |[0m 2019-01-19 18:26:09.004 UTC [1] LOG:  received smart shutdown request
+[36mdb_1   |[0m 2019-01-19 18:26:09.062 UTC [1] LOG:  worker process: logical replication launcher (PID 28) exited with exit code 1
+[36mdb_1   |[0m 2019-01-19 18:26:09.064 UTC [23] LOG:  shutting down
+[36mdb_1   |[0m 2019-01-19 18:26:09.323 UTC [1] LOG:  database system is shut down
+[36mdb_1   |[0m 2019-01-21 12:31:03.933 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mdb_1   |[0m 2019-01-21 12:31:03.933 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mdb_1   |[0m 2019-01-21 12:31:04.321 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb_1   |[0m 2019-01-21 12:31:04.837 UTC [22] LOG:  database system was shut down at 2019-01-19 18:26:09 UTC
+[36mdb_1   |[0m 2019-01-21 12:31:05.318 UTC [1] LOG:  database system is ready to accept connections
+[36mdb_1   |[0m 2019-01-21 12:31:25.499 UTC [1] LOG:  received smart shutdown request
+[36mdb_1   |[0m 2019-01-21 12:31:25.556 UTC [1] LOG:  worker process: logical replication launcher (PID 28) exited with exit code 1
+[36mdb_1   |[0m 2019-01-21 12:31:25.557 UTC [23] LOG:  shutting down
+[36mdb_1   |[0m 2019-01-21 12:31:25.829 UTC [1] LOG:  database system is shut down
+[36mdb_1   |[0m 2019-01-21 12:31:45.719 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mdb_1   |[0m 2019-01-21 12:31:45.720 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mdb_1   |[0m 2019-01-21 12:31:45.849 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb_1   |[0m 2019-01-21 12:31:46.110 UTC [22] LOG:  database system was shut down at 2019-01-21 12:31:25 UTC
+[36mdb_1   |[0m 2019-01-21 12:31:46.184 UTC [1] LOG:  database system is ready to accept connections
+[33mweb_1  |[0m ERROR: couldn't create the logfile directory. Logging to the standard output.
+[33mweb_1  |[0m 2019-01-21 12:32:05,180 1 DEBUG ? odoo.netsvc: logger level set: "odoo.workflow.workitem:WARNING"
+[33mweb_1  |[0m 2019-01-21 12:32:05,180 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+[33mweb_1  |[0m 2019-01-21 12:32:05,180 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+[33mweb_1  |[0m 2019-01-21 12:32:05,180 1 DEBUG ? odoo.netsvc: logger level set: "odoo.addons.web.http:INFO"
+[33mweb_1  |[0m 2019-01-21 12:32:05,180 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+[33mweb_1  |[0m 2019-01-21 12:32:05,180 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+[33mweb_1  |[0m 2019-01-21 12:32:05,181 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+[33mweb_1  |[0m 2019-01-21 12:32:05,181 1 DEBUG ? odoo.netsvc: logger level set: "[':DEBUG']"
+[33mweb_1  |[0m 2019-01-21 12:32:05,181 1 INFO ? odoo: Odoo version 10.0-20181126
+[33mweb_1  |[0m 2019-01-21 12:32:05,181 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+[33mweb_1  |[0m 2019-01-21 12:32:05,181 1 INFO ? odoo: addons paths: ['/var/lib/odoo/addons/10.0', u'/mnt/extra-addons', '/usr/lib/python2.7/dist-packages/odoo/addons']
+[33mweb_1  |[0m 2019-01-21 12:32:05,181 1 INFO ? odoo: database: odoo@db:5432
+[33mweb_1  |[0m 2019-01-21 12:32:05,203 1 DEBUG ? odoo.service.server: Setting signal handlers
+[33mweb_1  |[0m 2019-01-21 12:32:05,206 1 DEBUG ? odoo.service.server: cron0 started!
+[33mweb_1  |[0m 2019-01-21 12:32:05,206 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0accbf999e16:8069
+[33mweb_1  |[0m 2019-01-21 12:32:05,207 1 DEBUG ? odoo.service.server: cron1 started!
+Gracefully stopping... (press Ctrl+C again to force)
