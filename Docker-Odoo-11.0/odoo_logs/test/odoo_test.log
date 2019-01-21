@@ -102,3 +102,36 @@ Attaching to docker-odoo-110_db_1, docker-odoo-110_web_1
 [33mweb_1  |[0m 2019-01-21 12:33:45,864 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.'", skipped
 [33mweb_1  |[0m 2019-01-21 12:34:46,178 1 DEBUG ? odoo.service.server: cron0 polling for jobs
 [33mweb_1  |[0m 2019-01-21 12:34:47,197 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:35:46,194 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:35:48,212 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:36:46,253 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:36:49,273 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:37:46,306 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:37:50,335 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:38:46,362 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:38:51,343 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:39:46,416 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:39:52,358 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:40:46,464 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:40:53,415 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:41:46,522 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:41:54,467 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:42:46,583 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:42:55,526 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:43:46,643 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:43:56,588 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:44:46,703 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:44:57,650 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:45:46,764 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:45:58,703 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:46:46,780 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:46:59,726 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:47:46,836 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:48:00,781 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:48:46,897 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:49:01,793 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:49:46,957 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:50:02,855 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:50:47,016 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-21 12:51:03,913 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+Gracefully stopping... (press Ctrl+C again to force)
