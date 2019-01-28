@@ -135,3 +135,1087 @@ Attaching to docker-odoo-110_db_1, docker-odoo-110_web_1
 [33mweb_1  |[0m 2019-01-21 12:50:47,016 1 DEBUG ? odoo.service.server: cron0 polling for jobs
 [33mweb_1  |[0m 2019-01-21 12:51:03,913 1 DEBUG ? odoo.service.server: cron1 polling for jobs
 Gracefully stopping... (press Ctrl+C again to force)
+Attaching to docker-odoo-110_db_1, docker-odoo-110_web_1
+[36mdb_1   |[0m 2019-01-28 21:36:35.882 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mdb_1   |[0m 2019-01-28 21:36:35.883 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mdb_1   |[0m 2019-01-28 21:36:36.030 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb_1   |[0m 2019-01-28 21:36:36.274 UTC [22] LOG:  database system was shut down at 2019-01-28 21:34:52 UTC
+[36mdb_1   |[0m 2019-01-28 21:36:37.024 UTC [1] LOG:  database system is ready to accept connections
+[33mweb_1  |[0m ERROR: couldn't create the logfile directory. Logging to the standard output.
+[33mweb_1  |[0m 2019-01-28 21:36:39,127 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+[33mweb_1  |[0m 2019-01-28 21:36:39,128 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+[33mweb_1  |[0m 2019-01-28 21:36:39,128 1 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+[33mweb_1  |[0m 2019-01-28 21:36:39,128 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+[33mweb_1  |[0m 2019-01-28 21:36:39,128 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+[33mweb_1  |[0m 2019-01-28 21:36:39,128 1 DEBUG ? odoo.netsvc: logger level set: "[':DEBUG']"
+[33mweb_1  |[0m 2019-01-28 21:36:39,128 1 INFO ? odoo: Odoo version 11.0-20181126
+[33mweb_1  |[0m 2019-01-28 21:36:39,128 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+[33mweb_1  |[0m 2019-01-28 21:36:39,128 1 INFO ? odoo: addons paths: ['/var/lib/odoo/addons/11.0', '/mnt/extra-addons', '/usr/lib/python3/dist-packages/odoo/addons']
+[33mweb_1  |[0m 2019-01-28 21:36:39,129 1 INFO ? odoo: database: odoo@db:5432
+[33mweb_1  |[0m 2019-01-28 21:36:39,140 1 DEBUG ? odoo.service.server: Setting signal handlers
+[33mweb_1  |[0m 2019-01-28 21:36:39,143 1 DEBUG ? odoo.service.server: cron0 started!
+[33mweb_1  |[0m 2019-01-28 21:36:39,143 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on f1348988a3c2:8069
+[33mweb_1  |[0m 2019-01-28 21:36:39,143 1 DEBUG ? odoo.service.server: cron1 started!
+[33mweb_1  |[0m 2019-01-28 21:36:39,252 1 INFO ? odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+[33mweb_1  |[0m 2019-01-28 21:36:39,339 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.'", skipped
+[33mweb_1  |[0m 2019-01-28 21:37:39,437 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:37:40,437 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:37:43,987 1 DEBUG ? odoo.http: Loading account
+[33mweb_1  |[0m 2019-01-28 21:37:47,010 1 DEBUG ? odoo.http: Loading account_asset
+[33mweb_1  |[0m 2019-01-28 21:37:47,195 1 DEBUG ? odoo.http: Loading account_bank_statement_import
+[33mweb_1  |[0m 2019-01-28 21:37:47,327 1 DEBUG ? odoo.http: Loading account_check_printing
+[33mweb_1  |[0m 2019-01-28 21:37:47,417 1 DEBUG ? odoo.http: Loading account_invoicing
+[33mweb_1  |[0m 2019-01-28 21:37:47,453 1 DEBUG ? odoo.http: Loading auth_signup
+[33mweb_1  |[0m 2019-01-28 21:37:47,632 1 DEBUG ? odoo.http: Loading barcodes
+[33mweb_1  |[0m 2019-01-28 21:37:47,680 1 DEBUG ? odoo.http: Loading base
+[33mweb_1  |[0m 2019-01-28 21:37:47,890 1 DEBUG ? odoo.http: Loading base_import
+[33mweb_1  |[0m 2019-01-28 21:37:48,092 1 DEBUG ? odoo.http: Loading board
+[33mweb_1  |[0m 2019-01-28 21:37:48,198 1 DEBUG ? odoo.http: Loading bus
+[33mweb_1  |[0m 2019-01-28 21:37:48,219 1 DEBUG ? odoo.http: Loading calendar
+[33mweb_1  |[0m 2019-01-28 21:37:48,333 1 DEBUG ? odoo.http: Loading contacts
+[33mweb_1  |[0m 2019-01-28 21:37:48,367 1 DEBUG ? odoo.http: Loading crm
+[33mweb_1  |[0m 2019-01-28 21:37:48,626 1 DEBUG ? odoo.http: Loading document
+[33mweb_1  |[0m 2019-01-28 21:37:48,747 1 DEBUG ? odoo.http: Loading event
+[33mweb_1  |[0m 2019-01-28 21:37:48,927 1 DEBUG ? odoo.http: Loading event_sale
+[33mweb_1  |[0m 2019-01-28 21:37:49,034 1 DEBUG ? odoo.http: Loading fleet
+[33mweb_1  |[0m 2019-01-28 21:37:49,327 1 DEBUG ? odoo.http: Loading gamification
+[33mweb_1  |[0m 2019-01-28 21:37:49,442 1 DEBUG ? odoo.http: Loading google_calendar
+[33mweb_1  |[0m 2019-01-28 21:37:49,600 1 DEBUG ? odoo.http: Loading google_drive
+[33mweb_1  |[0m 2019-01-28 21:37:50,007 1 DEBUG ? odoo.http: Loading google_spreadsheet
+[33mweb_1  |[0m 2019-01-28 21:37:50,184 1 DEBUG ? odoo.http: Loading hr
+[33mweb_1  |[0m 2019-01-28 21:37:50,639 1 DEBUG ? odoo.http: Loading hr_attendance
+[33mweb_1  |[0m 2019-01-28 21:37:51,320 1 DEBUG ? odoo.http: Loading hr_expense
+[33mweb_1  |[0m 2019-01-28 21:37:52,572 1 DEBUG ? odoo.http: Loading hr_gamification
+[33mweb_1  |[0m 2019-01-28 21:37:52,698 1 DEBUG ? odoo.http: Loading hr_holidays
+[33mweb_1  |[0m 2019-01-28 21:37:52,999 1 DEBUG ? odoo.http: Loading hr_org_chart
+[33mweb_1  |[0m 2019-01-28 21:37:53,078 1 DEBUG ? odoo.http: Loading hr_payroll
+[33mweb_1  |[0m 2019-01-28 21:37:53,298 1 DEBUG ? odoo.http: Loading hr_recruitment
+[33mweb_1  |[0m 2019-01-28 21:37:53,396 1 DEBUG ? odoo.http: Loading hr_timesheet
+[33mweb_1  |[0m 2019-01-28 21:37:54,077 1 DEBUG ? odoo.http: Loading iap
+[33mweb_1  |[0m 2019-01-28 21:37:54,149 1 DEBUG ? odoo.http: Loading im_livechat
+[33mweb_1  |[0m 2019-01-28 21:37:54,232 1 DEBUG ? odoo.http: Loading l10n_ae
+[33mweb_1  |[0m 2019-01-28 21:37:54,258 1 DEBUG ? odoo.http: Loading l10n_ar
+[33mweb_1  |[0m 2019-01-28 21:37:54,267 1 DEBUG ? odoo.http: Loading l10n_at
+[33mweb_1  |[0m 2019-01-28 21:37:54,269 1 DEBUG ? odoo.http: Loading l10n_au
+[33mweb_1  |[0m 2019-01-28 21:37:54,272 1 DEBUG ? odoo.http: Loading l10n_be
+[33mweb_1  |[0m 2019-01-28 21:37:54,275 1 DEBUG ? odoo.http: Loading l10n_be_hr_payroll
+[33mweb_1  |[0m 2019-01-28 21:37:54,422 1 DEBUG ? odoo.http: Loading l10n_be_hr_payroll_account
+[33mweb_1  |[0m 2019-01-28 21:37:54,492 1 DEBUG ? odoo.http: Loading l10n_bo
+[33mweb_1  |[0m 2019-01-28 21:37:54,547 1 DEBUG ? odoo.http: Loading l10n_br
+[33mweb_1  |[0m 2019-01-28 21:37:54,626 1 DEBUG ? odoo.http: Loading l10n_ca
+[33mweb_1  |[0m 2019-01-28 21:37:54,652 1 DEBUG ? odoo.http: Loading l10n_ch
+[33mweb_1  |[0m 2019-01-28 21:37:54,790 1 DEBUG ? odoo.http: Loading l10n_cl
+[33mweb_1  |[0m 2019-01-28 21:37:54,798 1 DEBUG ? odoo.http: Loading l10n_cn
+[33mweb_1  |[0m 2019-01-28 21:37:54,835 1 DEBUG ? odoo.http: Loading l10n_co
+[33mweb_1  |[0m 2019-01-28 21:37:54,884 1 DEBUG ? odoo.http: Loading l10n_cr
+[33mweb_1  |[0m 2019-01-28 21:37:54,968 1 DEBUG ? odoo.http: Loading l10n_de
+[33mweb_1  |[0m 2019-01-28 21:37:55,078 1 DEBUG ? odoo.http: Loading l10n_do
+[33mweb_1  |[0m 2019-01-28 21:37:55,328 1 DEBUG ? odoo.http: Loading l10n_ec
+[33mweb_1  |[0m 2019-01-28 21:37:55,347 1 DEBUG ? odoo.http: Loading l10n_es
+[33mweb_1  |[0m 2019-01-28 21:37:55,382 1 DEBUG ? odoo.http: Loading l10n_et
+[33mweb_1  |[0m 2019-01-28 21:37:55,430 1 DEBUG ? odoo.http: Loading l10n_fr
+[33mweb_1  |[0m 2019-01-28 21:37:55,588 1 DEBUG ? odoo.http: Loading l10n_fr_certification
+[33mweb_1  |[0m 2019-01-28 21:37:55,669 1 DEBUG ? odoo.http: Loading l10n_fr_pos_cert
+[33mweb_1  |[0m 2019-01-28 21:37:55,714 1 DEBUG ? odoo.tools.translate: translation went wrong for "'According to the French law, you cannot modify a %s. Forbidden fields: %s.'", skipped
+[33mweb_1  |[0m 2019-01-28 21:37:55,720 1 DEBUG ? odoo.http: Loading l10n_fr_sale_closing
+[33mweb_1  |[0m 2019-01-28 21:37:55,825 1 DEBUG ? odoo.http: Loading l10n_gr
+[33mweb_1  |[0m 2019-01-28 21:37:55,853 1 DEBUG ? odoo.http: Loading l10n_gt
+[33mweb_1  |[0m 2019-01-28 21:37:55,879 1 DEBUG ? odoo.http: Loading l10n_hn
+[33mweb_1  |[0m 2019-01-28 21:37:55,913 1 DEBUG ? odoo.http: Loading l10n_hr
+[33mweb_1  |[0m 2019-01-28 21:37:55,948 1 DEBUG ? odoo.http: Loading l10n_hu
+[33mweb_1  |[0m 2019-01-28 21:37:55,985 1 DEBUG ? odoo.http: Loading l10n_in
+[33mweb_1  |[0m 2019-01-28 21:37:56,040 1 DEBUG ? odoo.http: Loading l10n_in_hr_payroll
+[33mweb_1  |[0m 2019-01-28 21:37:56,238 1 DEBUG ? odoo.http: Loading l10n_in_schedule6
+[33mweb_1  |[0m 2019-01-28 21:37:56,271 1 DEBUG ? odoo.http: Loading l10n_it
+[33mweb_1  |[0m 2019-01-28 21:37:56,327 1 DEBUG ? odoo.http: Loading l10n_jp
+[33mweb_1  |[0m 2019-01-28 21:37:56,355 1 DEBUG ? odoo.http: Loading l10n_lu
+[33mweb_1  |[0m 2019-01-28 21:37:56,384 1 DEBUG ? odoo.http: Loading l10n_ma
+[33mweb_1  |[0m 2019-01-28 21:37:56,659 1 DEBUG ? odoo.http: Loading l10n_mx
+[33mweb_1  |[0m 2019-01-28 21:37:56,822 1 DEBUG ? odoo.http: Loading l10n_nl
+[33mweb_1  |[0m 2019-01-28 21:37:56,888 1 DEBUG ? odoo.http: Loading l10n_no
+[33mweb_1  |[0m 2019-01-28 21:37:56,901 1 DEBUG ? odoo.http: Loading l10n_nz
+[33mweb_1  |[0m 2019-01-28 21:37:56,906 1 DEBUG ? odoo.http: Loading l10n_pa
+[33mweb_1  |[0m 2019-01-28 21:37:56,920 1 DEBUG ? odoo.http: Loading l10n_pe
+[33mweb_1  |[0m 2019-01-28 21:37:56,926 1 DEBUG ? odoo.http: Loading l10n_pl
+[33mweb_1  |[0m 2019-01-28 21:37:56,931 1 DEBUG ? odoo.http: Loading l10n_ro
+[33mweb_1  |[0m 2019-01-28 21:37:56,954 1 DEBUG ? odoo.http: Loading l10n_sa
+[33mweb_1  |[0m 2019-01-28 21:37:56,959 1 DEBUG ? odoo.http: Loading l10n_sg
+[33mweb_1  |[0m 2019-01-28 21:37:56,963 1 DEBUG ? odoo.http: Loading l10n_si
+[33mweb_1  |[0m 2019-01-28 21:37:56,966 1 DEBUG ? odoo.http: Loading l10n_th
+[33mweb_1  |[0m 2019-01-28 21:37:56,969 1 DEBUG ? odoo.http: Loading l10n_tr
+[33mweb_1  |[0m 2019-01-28 21:37:56,976 1 DEBUG ? odoo.http: Loading l10n_uk
+[33mweb_1  |[0m 2019-01-28 21:37:57,002 1 DEBUG ? odoo.http: Loading l10n_us
+[33mweb_1  |[0m 2019-01-28 21:37:57,038 1 DEBUG ? odoo.http: Loading l10n_uy
+[33mweb_1  |[0m 2019-01-28 21:37:57,060 1 DEBUG ? odoo.http: Loading l10n_ve
+[33mweb_1  |[0m 2019-01-28 21:37:57,070 1 DEBUG ? odoo.http: Loading l10n_vn
+[33mweb_1  |[0m 2019-01-28 21:37:57,080 1 DEBUG ? odoo.http: Loading lunch
+[33mweb_1  |[0m 2019-01-28 21:37:57,180 1 DEBUG ? odoo.http: Loading mail
+[33mweb_1  |[0m 2019-01-28 21:37:57,184 1 DEBUG ? odoo.http: Loading maintenance
+[33mweb_1  |[0m 2019-01-28 21:37:57,246 1 DEBUG ? odoo.http: Loading mass_mailing
+[33mweb_1  |[0m 2019-01-28 21:37:57,731 1 DEBUG ? odoo.http: Loading membership
+[33mweb_1  |[0m 2019-01-28 21:37:57,810 1 DEBUG ? odoo.http: Loading mrp
+[33mweb_1  |[0m 2019-01-28 21:37:57,889 1 DEBUG ? odoo.http: Loading mrp_repair
+[33mweb_1  |[0m 2019-01-28 21:37:57,991 1 DEBUG ? odoo.http: Loading note
+[33mweb_1  |[0m 2019-01-28 21:37:58,071 1 DEBUG ? odoo.http: Loading pad
+[33mweb_1  |[0m 2019-01-28 21:37:58,154 1 DEBUG ? odoo.http: Loading payment
+[33mweb_1  |[0m 2019-01-28 21:37:58,258 1 DEBUG ? odoo.http: Loading payment_adyen
+[33mweb_1  |[0m 2019-01-28 21:37:58,312 1 DEBUG ? odoo.http: Loading payment_authorize
+[33mweb_1  |[0m 2019-01-28 21:37:58,348 1 DEBUG ? odoo.http: Loading payment_buckaroo
+[33mweb_1  |[0m 2019-01-28 21:37:58,380 1 DEBUG ? odoo.http: Loading payment_ogone
+[33mweb_1  |[0m 2019-01-28 21:37:58,491 1 DEBUG ? odoo.http: Loading payment_paypal
+[33mweb_1  |[0m 2019-01-28 21:37:58,538 1 DEBUG ? odoo.http: Loading payment_payumoney
+[33mweb_1  |[0m 2019-01-28 21:37:58,645 1 DEBUG ? odoo.http: Loading payment_sips
+[33mweb_1  |[0m 2019-01-28 21:37:58,890 1 DEBUG ? odoo.http: Loading payment_stripe
+[33mweb_1  |[0m 2019-01-28 21:37:58,933 1 DEBUG ? odoo.http: Loading payment_transfer
+[33mweb_1  |[0m 2019-01-28 21:37:58,995 1 DEBUG ? odoo.http: Loading point_of_sale
+[33mweb_1  |[0m 2019-01-28 21:37:59,303 1 DEBUG ? odoo.http: Loading portal
+[33mweb_1  |[0m 2019-01-28 21:37:59,313 1 DEBUG ? odoo.http: Loading pos_cache
+[33mweb_1  |[0m 2019-01-28 21:37:59,352 1 DEBUG ? odoo.http: Loading pos_data_drinks
+[33mweb_1  |[0m 2019-01-28 21:37:59,387 1 DEBUG ? odoo.http: Loading pos_discount
+[33mweb_1  |[0m 2019-01-28 21:37:59,417 1 DEBUG ? odoo.http: Loading pos_mercury
+[33mweb_1  |[0m 2019-01-28 21:37:59,478 1 DEBUG ? odoo.http: Loading pos_reprint
+[33mweb_1  |[0m 2019-01-28 21:37:59,501 1 DEBUG ? odoo.http: Loading pos_restaurant
+[33mweb_1  |[0m 2019-01-28 21:37:59,548 1 DEBUG ? odoo.http: Loading product
+[33mweb_1  |[0m 2019-01-28 21:37:59,731 1 DEBUG ? odoo.http: Loading product_email_template
+[33mweb_1  |[0m 2019-01-28 21:37:59,774 1 DEBUG ? odoo.http: Loading product_expiry
+[33mweb_1  |[0m 2019-01-28 21:37:59,822 1 DEBUG ? odoo.http: Loading project
+[33mweb_1  |[0m 2019-01-28 21:38:00,067 1 DEBUG ? odoo.http: Loading purchase
+[33mweb_1  |[0m 2019-01-28 21:38:00,311 1 DEBUG ? odoo.http: Loading rating
+[33mweb_1  |[0m 2019-01-28 21:38:00,366 1 DEBUG ? odoo.http: Loading sale
+[33mweb_1  |[0m 2019-01-28 21:38:00,885 1 DEBUG ? odoo.http: Loading sale_management
+[33mweb_1  |[0m 2019-01-28 21:38:00,940 1 DEBUG ? odoo.http: Loading sale_stock
+[33mweb_1  |[0m 2019-01-28 21:38:01,159 1 DEBUG ? odoo.http: Loading sale_timesheet
+[33mweb_1  |[0m 2019-01-28 21:38:01,270 1 DEBUG ? odoo.http: Loading sales_team
+[33mweb_1  |[0m 2019-01-28 21:38:01,363 1 DEBUG ? odoo.http: Loading sms
+[33mweb_1  |[0m 2019-01-28 21:38:01,460 1 INFO ? odoo.addons.sms.wizard.send_sms: The `phonenumbers` Python module is not available. Phone number validation will be skipped. Try `pip3 install phonenumbers` to install it.
+[33mweb_1  |[0m 2019-01-28 21:38:01,472 1 DEBUG ? odoo.http: Loading stock
+[33mweb_1  |[0m 2019-01-28 21:38:01,766 1 DEBUG ? odoo.http: Loading survey
+[33mweb_1  |[0m 2019-01-28 21:38:02,010 1 DEBUG ? odoo.http: Loading test_assetsbundle
+[33mweb_1  |[0m 2019-01-28 21:38:02,091 1 DEBUG ? odoo.http: Loading test_exceptions
+[33mweb_1  |[0m 2019-01-28 21:38:02,128 1 DEBUG ? odoo.http: Loading test_main_flows
+[33mweb_1  |[0m 2019-01-28 21:38:02,140 1 DEBUG ? odoo.http: Loading test_new_api
+[33mweb_1  |[0m 2019-01-28 21:38:02,203 1 DEBUG ? odoo.http: Loading theme_bootswatch
+[33mweb_1  |[0m 2019-01-28 21:38:02,224 1 DEBUG ? odoo.http: Loading theme_default
+[33mweb_1  |[0m 2019-01-28 21:38:02,235 1 DEBUG ? odoo.http: Loading transifex
+[33mweb_1  |[0m 2019-01-28 21:38:02,256 1 DEBUG ? odoo.http: Loading web
+[33mweb_1  |[0m 2019-01-28 21:38:02,279 1 DEBUG ? odoo.http: Loading web_diagram
+[33mweb_1  |[0m 2019-01-28 21:38:02,358 1 DEBUG ? odoo.http: Loading web_editor
+[33mweb_1  |[0m 2019-01-28 21:38:02,369 1 DEBUG ? odoo.http: Loading web_kanban_gauge
+[33mweb_1  |[0m 2019-01-28 21:38:02,409 1 DEBUG ? odoo.http: Loading web_planner
+[33mweb_1  |[0m 2019-01-28 21:38:02,448 1 DEBUG ? odoo.http: Loading web_settings_dashboard
+[33mweb_1  |[0m 2019-01-28 21:38:02,650 1 DEBUG ? odoo.http: Loading web_tour
+[33mweb_1  |[0m 2019-01-28 21:38:02,863 1 DEBUG ? odoo.http: Loading website
+[33mweb_1  |[0m 2019-01-28 21:38:03,769 1 DEBUG ? odoo.http: Loading website_blog
+[33mweb_1  |[0m 2019-01-28 21:38:03,885 1 DEBUG ? odoo.http: Loading website_crm
+[33mweb_1  |[0m 2019-01-28 21:38:03,935 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Custom infos'", skipped
+[33mweb_1  |[0m 2019-01-28 21:38:03,938 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Metadata'", skipped
+[33mweb_1  |[0m 2019-01-28 21:38:04,077 1 DEBUG ? odoo.http: Loading website_crm_partner_assign
+[33mweb_1  |[0m 2019-01-28 21:38:04,387 1 DEBUG ? odoo.http: Loading website_customer
+[33mweb_1  |[0m 2019-01-28 21:38:04,437 1 DEBUG ? odoo.http: Loading website_event
+[33mweb_1  |[0m 2019-01-28 21:38:04,472 1 DEBUG ? odoo.http: Loading website_event_questions
+[33mweb_1  |[0m 2019-01-28 21:38:04,528 1 DEBUG ? odoo.http: Loading website_event_sale
+[33mweb_1  |[0m 2019-01-28 21:38:04,558 1 DEBUG ? odoo.http: Loading website_event_track
+[33mweb_1  |[0m 2019-01-28 21:38:04,707 1 DEBUG ? odoo.http: Loading website_form
+[33mweb_1  |[0m 2019-01-28 21:38:04,753 1 DEBUG ? odoo.http: Loading website_forum
+[33mweb_1  |[0m 2019-01-28 21:38:05,164 1 DEBUG ? odoo.http: Loading website_forum_doc
+[33mweb_1  |[0m 2019-01-28 21:38:05,215 1 DEBUG ? odoo.http: Loading website_gengo
+[33mweb_1  |[0m 2019-01-28 21:38:05,244 1 DEBUG ? odoo.http: Loading website_google_map
+[33mweb_1  |[0m 2019-01-28 21:38:05,263 1 DEBUG ? odoo.http: Loading website_hr
+[33mweb_1  |[0m 2019-01-28 21:38:05,275 1 DEBUG ? odoo.http: Loading website_hr_recruitment
+[33mweb_1  |[0m 2019-01-28 21:38:05,291 1 DEBUG ? odoo.http: Loading website_links
+[33mweb_1  |[0m 2019-01-28 21:38:05,297 1 DEBUG ? odoo.http: Loading website_livechat
+[33mweb_1  |[0m 2019-01-28 21:38:05,309 1 DEBUG ? odoo.http: Loading website_mail
+[33mweb_1  |[0m 2019-01-28 21:38:05,330 1 DEBUG ? odoo.http: Loading website_mail_channel
+[33mweb_1  |[0m 2019-01-28 21:38:05,338 1 DEBUG ? odoo.http: Loading website_mass_mailing
+[33mweb_1  |[0m 2019-01-28 21:38:05,378 1 DEBUG ? odoo.http: Loading website_membership
+[33mweb_1  |[0m 2019-01-28 21:38:05,395 1 DEBUG ? odoo.http: Loading website_partner
+[33mweb_1  |[0m 2019-01-28 21:38:05,396 1 DEBUG ? odoo.http: Loading website_payment
+[33mweb_1  |[0m 2019-01-28 21:38:05,424 1 DEBUG ? odoo.http: Loading website_quote
+[33mweb_1  |[0m 2019-01-28 21:38:05,445 1 DEBUG ? odoo.http: Loading website_rating
+[33mweb_1  |[0m 2019-01-28 21:38:05,484 1 DEBUG ? odoo.http: Loading website_rating_project
+[33mweb_1  |[0m 2019-01-28 21:38:05,784 1 DEBUG ? odoo.http: Loading website_sale
+[33mweb_1  |[0m 2019-01-28 21:38:05,842 1 DEBUG ? odoo.http: Loading website_sale_comparison
+[33mweb_1  |[0m 2019-01-28 21:38:05,875 1 DEBUG ? odoo.http: Loading website_sale_delivery
+[33mweb_1  |[0m 2019-01-28 21:38:06,130 1 DEBUG ? odoo.http: Loading website_sale_digital
+[33mweb_1  |[0m 2019-01-28 21:38:06,224 1 DEBUG ? odoo.http: Loading website_sale_management
+[33mweb_1  |[0m 2019-01-28 21:38:06,232 1 DEBUG ? odoo.http: Loading website_sale_options
+[33mweb_1  |[0m 2019-01-28 21:38:06,323 1 DEBUG ? odoo.http: Loading website_sale_stock
+[33mweb_1  |[0m 2019-01-28 21:38:06,346 1 DEBUG ? odoo.http: Loading website_sale_wishlist
+[33mweb_1  |[0m 2019-01-28 21:38:06,409 1 DEBUG ? odoo.http: Loading website_slides
+[33mweb_1  |[0m 2019-01-28 21:38:06,453 1 DEBUG ? odoo.http: Loading website_theme_install
+[33mweb_1  |[0m 2019-01-28 21:38:06,461 1 DEBUG ? odoo.http: Loading website_twitter
+[33mweb_1  |[0m 2019-01-28 21:38:06,474 1 DEBUG ? odoo.tools.translate: translation went wrong for "'There was no new data to return.'", skipped
+[33mweb_1  |[0m 2019-01-28 21:38:06,474 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The request was invalid or cannot be otherwise served. Requests without authentication are considered invalid and will yield this response.'", skipped
+[33mweb_1  |[0m 2019-01-28 21:38:06,474 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Authentication credentials were missing or incorrect. Maybe screen name tweets are protected.'", skipped
+[33mweb_1  |[0m 2019-01-28 21:38:06,474 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The request is understood, but it has been refused or access is not allowed. Please check your Twitter API Key and Secret.'", skipped
+[33mweb_1  |[0m 2019-01-28 21:38:06,475 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Request cannot be served due to the applications rate limit having been exhausted for the resource.'", skipped
+[33mweb_1  |[0m 2019-01-28 21:38:06,475 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Twitter seems broken. Please retry later. You may consider posting an issue on Twitter forums to get help.'", skipped
+[33mweb_1  |[0m 2019-01-28 21:38:06,476 1 DEBUG ? odoo.tools.translate: translation went wrong for "'Twitter is down or being upgraded.'", skipped
+[33mweb_1  |[0m 2019-01-28 21:38:06,476 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The Twitter servers are up, but overloaded with requests. Try again later.'", skipped
+[33mweb_1  |[0m 2019-01-28 21:38:06,476 1 DEBUG ? odoo.tools.translate: translation went wrong for "'The Twitter servers are up, but the request could not be serviced due to some failure within our stack. Try again later.'", skipped
+[33mweb_1  |[0m 2019-01-28 21:38:06,477 1 INFO ? odoo.http: HTTP Configuring static files
+[33mweb_1  |[0m 2019-01-28 21:38:06,480 1 DEBUG ? odoo.http: HTTP sessions stored in: /var/lib/odoo/sessions
+[33mweb_1  |[0m 2019-01-28 21:38:07,741 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess load registry signaling: [Registry: 3] [Cache: 3]
+[33mweb_1  |[0m 2019-01-28 21:38:08,104 1 INFO odoo_DB_11 odoo.modules.loading: loading 1 modules...
+[33mweb_1  |[0m 2019-01-28 21:38:08,106 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module base (1/1)
+[33mweb_1  |[0m 2019-01-28 21:38:08,178 1 INFO odoo_DB_11 odoo.modules.loading: 1 modules loaded in 0.07s, 0 queries
+[33mweb_1  |[0m 2019-01-28 21:38:08,375 1 DEBUG odoo_DB_11 odoo.modules.loading: Updating graph with 17 more modules
+[33mweb_1  |[0m 2019-01-28 21:38:08,375 1 INFO odoo_DB_11 odoo.modules.loading: loading 18 modules...
+[33mweb_1  |[0m 2019-01-28 21:38:08,377 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module auth_crypt (2/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,406 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module web (3/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,433 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module base_import (4/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,439 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module base_setup (5/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,538 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module bus (6/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,548 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module iap (7/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,556 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module web_diagram (8/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,562 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module web_editor (9/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,592 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module web_kanban_gauge (10/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,595 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module web_planner (11/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,598 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module web_tour (12/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,601 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module mail (13/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,613 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module web_settings_dashboard (14/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,615 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module auth_signup (15/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,617 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module fetchmail (16/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,895 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module note (17/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,905 1 DEBUG odoo_DB_11 odoo.modules.loading: loading module sms (18/18)
+[33mweb_1  |[0m 2019-01-28 21:38:08,917 1 INFO odoo_DB_11 odoo.modules.loading: 18 modules loaded in 0.54s, 0 queries
+[33mweb_1  |[0m 2019-01-28 21:38:09,831 1 INFO odoo_DB_11 odoo.modules.loading: Modules loaded.
+[33mweb_1  |[0m 2019-01-28 21:38:10,152 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 3 -> 3]
+[33mweb_1  |[0m 2019-01-28 21:38:10,155 1 INFO odoo_DB_11 odoo.addons.base.ir.ir_http: Generating routing map
+[33mweb_1  |[0m 2019-01-28 21:38:11,054 1 INFO odoo_DB_11 odoo.modules.registry: At least one model cache has been invalidated, signaling through the database.
+[33mweb_1  |[0m 2019-01-28 21:38:11,680 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:11] "GET / HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:12,193 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:15,740 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:15] "GET /web HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:15,763 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:15,770 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:15,775 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:15,802 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:15,852 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:15] "GET /web/content/253-892c99f/web.assets_backend.1.css HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:15,934 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:15] "GET /web/content/247-f8c91a6/web_editor.summernote.js HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:15,947 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:15] "GET /web/content/245-e08fd71/web.assets_common.js HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:16,023 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:16] "GET /web/content/254-892c99f/web.assets_backend.js HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:16,330 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:16,445 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:16,448 1 DEBUG odoo_DB_11 odoo.api: call ir.ui.view().read_template('web_editor.colorpicker')
+[33mweb_1  |[0m 2019-01-28 21:38:16,470 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:16] "POST /web/dataset/call HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:16,724 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:16] "GET /web/webclient/qweb?mods=web,base,bus,web_tour,mail,note,auth_signup,base_import,iap,sms,web_diagram,web_editor,web_kanban_gauge,web_planner,web_settings_dashboard HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:16,765 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:16,825 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:16] "POST /web/webclient/translations HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:16,851 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:16,854 1 DEBUG odoo_DB_11 odoo.addons.web.controllers.main: No moment locale for code en-us
+[33mweb_1  |[0m 2019-01-28 21:38:16,854 1 DEBUG odoo_DB_11 odoo.addons.web.controllers.main: No moment locale for code en
+[33mweb_1  |[0m 2019-01-28 21:38:16,855 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:16] "GET /web/webclient/locale/en_US HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:16,863 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:16,898 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:16,902 1 DEBUG odoo_DB_11 odoo.api: call res.users().activity_user_count()
+[33mweb_1  |[0m 2019-01-28 21:38:16,916 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:16,917 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:16,922 1 DEBUG odoo_DB_11 odoo.api: call web.planner().search_read()
+[33mweb_1  |[0m 2019-01-28 21:38:16,922 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:16,923 1 DEBUG odoo_DB_11 odoo.api: call res.users(1,).read(['action_id'])
+[33mweb_1  |[0m 2019-01-28 21:38:16,927 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:16] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:16,939 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:16,987 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:16] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:17,112 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:17] "POST /web/dataset/call_kw/web.planner/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:17,135 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:17] "POST /web/dataset/call_kw/res.users/activity_user_count HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:17,247 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:17] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:17,285 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:17,288 1 DEBUG odoo_DB_11 odoo.api: call mail.message().load_views(options={}, views=[[None, 'search']])
+[33mweb_1  |[0m 2019-01-28 21:38:17,466 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:17] "POST /mail/client_action HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:17,529 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:17] "POST /web/dataset/call_kw/mail.message/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:17,530 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:17,565 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:17,566 1 DEBUG odoo_DB_11 odoo.api: call ir.filters().get_filters('mail.message', 87)
+[33mweb_1  |[0m 2019-01-28 21:38:17,641 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:17] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:17,658 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+[33mweb_1  |[0m 2019-01-28 21:38:17,731 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:17,740 1 DEBUG odoo_DB_11 odoo.api: call mail.message().message_fetch([['needaction', '=', True]], limit=25)
+[33mweb_1  |[0m 2019-01-28 21:38:17,746 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:17,748 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:17] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:17,751 1 DEBUG odoo_DB_11 odoo.api: call mail.message().message_fetch([['needaction', '=', True]], limit=25)
+[33mweb_1  |[0m 2019-01-28 21:38:17,757 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:17] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:38,188 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:38,370 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:38] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:38,383 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:38,385 1 DEBUG odoo_DB_11 odoo.api: call note.note().load_views(options={'toolbar': True, 'action_id': 100, 'load_filters': True}, views=[[None, 'kanban'], [None, 'list'], [None, 'form'], [297, 'search']])
+[33mweb_1  |[0m 2019-01-28 21:38:38,464 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:38] "POST /web/dataset/call_kw/note.note/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:38,505 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:38,507 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 21:38:38,561 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:38] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:38,605 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:38,657 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:38] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:38,671 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:38,673 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 21:38:38,673 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:38,676 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:38] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:38,677 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 21:38:38,683 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:38:38] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:38:39,490 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:38:39,547 1 INFO odoo_DB_11 odoo.addons.base.ir.ir_cron: Starting job `Base: Auto-vacuum internal data`.
+[33mweb_1  |[0m 2019-01-28 21:38:39,580 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:39,583 1 DEBUG odoo_DB_11 odoo.addons.base.ir.ir_cron: cron.object.execute('odoo_DB_11', 1, '*', 'Base: Auto-vacuum internal data', 28)
+[33mweb_1  |[0m 2019-01-28 21:38:39,714 1 INFO odoo_DB_11 odoo.addons.base.ir.ir_attachment: filestore gc 8 checked, 2 removed
+[33mweb_1  |[0m 2019-01-28 21:38:40,123 1 INFO odoo_DB_11 odoo.models.unlink: User #1 deleted base.language.install records with IDs: [1]
+[33mweb_1  |[0m 2019-01-28 21:38:40,289 1 INFO odoo_DB_11 odoo.addons.base.ir.ir_autovacuum: GC'd 0 user log entries
+[33mweb_1  |[0m 2019-01-28 21:38:40,290 1 DEBUG odoo_DB_11 odoo.addons.base.ir.ir_cron: 0.706s (cron Base: Auto-vacuum internal data, server action 28 with uid 1)
+[33mweb_1  |[0m 2019-01-28 21:38:40,839 1 INFO odoo_DB_11 odoo.addons.base.ir.ir_cron: Starting job `Mail: Email Queue Manager`.
+[33mweb_1  |[0m 2019-01-28 21:38:40,874 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:38:40,875 1 DEBUG odoo_DB_11 odoo.addons.base.ir.ir_cron: cron.object.execute('odoo_DB_11', 1, '*', 'Mail: Email Queue Manager', 90)
+[33mweb_1  |[0m 2019-01-28 21:38:40,916 1 DEBUG odoo_DB_11 odoo.addons.base.ir.ir_cron: 0.041s (cron Mail: Email Queue Manager, server action 90 with uid 1)
+[33mweb_1  |[0m 2019-01-28 21:38:41,486 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:39:07,669 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:39:07] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:39:07,702 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:39:41,087 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:39:42,556 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:39:57,757 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:39:57] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:39:57,794 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:40:41,157 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:40:43,627 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:40:47,894 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:40:47] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:40:47,927 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:41:38,003 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:41:38] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:41:38,031 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:41:41,207 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:41:44,671 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:42:28,070 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:42:28] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:42:28,102 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:42:41,229 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:42:45,712 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:43:18,150 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:43:18] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:43:18,164 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:43:41,297 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:43:46,779 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:44:08,346 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:44:08] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:44:08,355 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:44:41,366 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:44:47,836 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:44:58,439 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:44:58] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:44:58,446 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:45:41,435 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:45:41,449 1 INFO odoo_DB_11 odoo.addons.base.ir.ir_cron: Starting job `Mail: Email Queue Manager`.
+[33mweb_1  |[0m 2019-01-28 21:45:41,474 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:45:41,476 1 DEBUG odoo_DB_11 odoo.addons.base.ir.ir_cron: cron.object.execute('odoo_DB_11', 1, '*', 'Mail: Email Queue Manager', 90)
+[33mweb_1  |[0m 2019-01-28 21:45:41,482 1 DEBUG odoo_DB_11 odoo.addons.base.ir.ir_cron: 0.006s (cron Mail: Email Queue Manager, server action 90 with uid 1)
+[33mweb_1  |[0m 2019-01-28 21:45:48,492 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:45:48] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:45:48,521 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:45:48,903 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:46:38,570 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:46:38] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:46:38,599 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:46:41,508 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:46:49,915 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:47:29,032 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:47:29] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:47:29,075 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:47:41,563 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:47:50,985 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:48:19,140 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:48:19] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:48:19,191 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:48:41,629 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:48:52,054 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:49:09,252 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:49:09] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:49:09,313 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:49:41,643 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:49:53,101 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:49:59,390 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:49:59] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:49:59,434 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:50:41,710 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:50:49,506 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:50:49] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:50:49,551 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:50:54,166 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:51:39,634 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:51:39] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:51:39,679 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:51:41,777 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:51:55,236 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:52:29,753 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:52:29] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:52:29,804 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:52:41,845 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:52:56,297 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:53:19,890 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:53:19] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:53:19,915 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:53:41,883 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:53:57,314 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:54:09,974 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:54:09] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:54:10,020 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:54:41,951 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:54:58,355 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:55:00,072 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:55:00] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:55:00,082 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:55:42,020 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:55:50,115 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:55:50] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:55:50,126 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:55:59,408 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:56:40,181 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:56:40] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:56:40,217 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:56:42,089 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:57:00,429 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:57:30,268 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:57:30] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:57:30,319 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:57:42,117 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:58:01,485 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:58:20,388 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:58:20] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:58:20,432 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:58:42,185 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:59:02,533 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 21:59:10,507 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 21:59:10] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 21:59:10,517 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 21:59:42,254 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:00:00,557 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:00:00] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:00:00,598 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:00:03,546 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:00:42,322 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:00:50,681 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:00:50] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:00:50,737 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:01:04,604 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:01:40,795 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:01:40] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:01:40,822 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:01:42,391 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:02:05,634 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:02:30,881 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:30] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:02:30,906 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:02:31,417 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:02:31,420 1 DEBUG odoo_DB_11 odoo.api: call mail.activity().load_views(options={'toolbar': False}, views=[[None, 'form']])
+[33mweb_1  |[0m 2019-01-28 22:02:31,496 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:31] "POST /web/dataset/call_kw/mail.activity/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:02:31,508 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:02:31,510 1 DEBUG odoo_DB_11 odoo.api: call mail.activity().default_get(['activity_category', 'res_model', 'res_model_id', 'res_id', 'previous_activity_type_id', 'has_recommended_activities', 'recommended_activity_type_id', 'activity_type_id', 'summary', 'date_deadline', 'user_id', 'note'])
+[33mweb_1  |[0m 2019-01-28 22:02:31,564 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:31] "POST /web/dataset/call_kw/mail.activity/default_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:02:31,581 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:02:31,583 1 DEBUG odoo_DB_11 odoo.api: call mail.activity().onchange({'note': False, 'summary': False, 'recommended_activity_type_id': False, 'res_model_id': 140, 'date_deadline': '2019-01-28', 'activity_type_id': False, 'activity_category': False, 'previous_activity_type_id': False, 'res_model': 'note.note', 'has_recommended_activities': False, 'res_id': 1, 'user_id': 1}, ['activity_category', 'res_model', 'res_model_id', 'res_id', 'previous_activity_type_id', 'has_recommended_activities', 'recommended_activity_type_id', 'activity_type_id', 'summary', 'date_deadline', 'user_id', 'note'], {'note': '', 'summary': '', 'recommended_activity_type_id': '1', 'res_model_id': '1', 'date_deadline': '', 'activity_type_id': '1', 'activity_category': '', 'previous_activity_type_id': '1', 'user_id': '', 'has_recommended_activities': '', 'res_id': '', 'res_model': ''})
+[33mweb_1  |[0m 2019-01-28 22:02:31,595 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:31] "POST /web/dataset/call_kw/mail.activity/onchange HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:02:31,605 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:02:31,607 1 DEBUG odoo_DB_11 odoo.api: call res.users(1,).name_get()
+[33mweb_1  |[0m 2019-01-28 22:02:31,612 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:31] "POST /web/dataset/call_kw/res.users/name_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:02:31,624 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:02:31,627 1 DEBUG odoo_DB_11 odoo.api: call mail.activity.type().search_read(domain=[['previous_type_ids', '=', False]], fields=['id'])
+[33mweb_1  |[0m 2019-01-28 22:02:31,704 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:31] "POST /web/dataset/call_kw/mail.activity.type/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:02:31,750 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:02:31,760 1 DEBUG odoo_DB_11 odoo.api: call mail.activity.type(1, 2, 3, 4).name_get()
+[33mweb_1  |[0m 2019-01-28 22:02:31,781 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:31] "POST /web/dataset/call_kw/mail.activity.type/name_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:02:31,973 1 INFO ? werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:31] "GET /web/static/src/xml/dialog.xml HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:02:34,520 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:02:34,523 1 DEBUG odoo_DB_11 odoo.api: call mail.activity.type().name_search(args=['|', ['res_model_id', '=', False], ['res_model_id', '=', 140]], limit=8, name='', operator='ilike')
+[33mweb_1  |[0m 2019-01-28 22:02:34,531 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:34] "POST /web/dataset/call_kw/mail.activity.type/name_search HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:02:42,457 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:02:43,801 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:02:43,804 1 DEBUG odoo_DB_11 odoo.api: call note.note(1,).read(['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids', 'display_name'])
+[33mweb_1  |[0m 2019-01-28 22:02:43,818 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:43] "POST /web/dataset/call_kw/note.note/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:02:43,852 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:02:43,857 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:02:43,860 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:43] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:02:43,864 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:02:43,866 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:02:43,870 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:02:43] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:03:06,688 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:03:20,967 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:03:20] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:03:21,048 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:03:42,462 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:04:07,757 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:04:11,101 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:11] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:11,134 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:34,871 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:34,895 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:34] "GET /web HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:35,487 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:35,546 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:35] "GET /web/webclient/qweb?mods=web,base,bus,web_tour,mail,note,auth_signup,base_import,iap,sms,web_diagram,web_editor,web_kanban_gauge,web_planner,web_settings_dashboard HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:35,602 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:35,607 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:35] "POST /web/webclient/translations HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:35,649 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:35,651 1 DEBUG odoo_DB_11 odoo.api: call ir.ui.view().read_template('web_editor.colorpicker')
+[33mweb_1  |[0m 2019-01-28 22:04:35,655 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:35] "POST /web/dataset/call HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:35,665 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:35,690 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:35] "POST /mail/client_action HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:35,786 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:35,789 1 DEBUG odoo_DB_11 odoo.api: call res.users().activity_user_count()
+[33mweb_1  |[0m 2019-01-28 22:04:35,802 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:35] "POST /web/dataset/call_kw/res.users/activity_user_count HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:35,805 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:35,805 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:35,816 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:35,820 1 DEBUG odoo_DB_11 odoo.api: call web.planner().search_read()
+[33mweb_1  |[0m 2019-01-28 22:04:35,832 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:35] "POST /web/dataset/call_kw/web.planner/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:35,837 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:35,845 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:35] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:35,869 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:35] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:36,047 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:36,050 1 DEBUG odoo_DB_11 odoo.api: call note.note().load_views(options={'toolbar': True, 'action_id': 100, 'load_filters': True}, views=[[None, 'kanban'], [None, 'list'], [None, 'form'], [297, 'search']])
+[33mweb_1  |[0m 2019-01-28 22:04:36,102 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:36] "POST /web/dataset/call_kw/note.note/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:36,454 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:36,456 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:04:36,468 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:36] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:36,493 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:36,505 1 INFO ? werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:36] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:36,510 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:36] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:36,539 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:36,544 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:04:36,546 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:36,547 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:36] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:36,549 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:04:36,553 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:36] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:42,476 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:04:45,024 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:45,034 1 DEBUG odoo_DB_11 odoo.api: call note.stage().load_views(options={}, views=[[None, 'form']])
+[33mweb_1  |[0m 2019-01-28 22:04:45,114 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:45] "POST /web/dataset/call_kw/note.stage/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:04:45,127 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:04:45,130 1 DEBUG odoo_DB_11 odoo.api: call note.stage(1,).read(['name', 'fold', 'display_name'])
+[33mweb_1  |[0m 2019-01-28 22:04:45,132 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:04:45] "POST /web/dataset/call_kw/note.stage/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:01,187 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:01] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:08,828 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:05:25,901 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:25] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:25,926 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:05:42,544 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:05:44,804 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:05:44,807 1 DEBUG odoo_DB_11 odoo.api: call base_import.import().create({'res_model': 'note.note'})
+[33mweb_1  |[0m 2019-01-28 22:05:44,848 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:44] "POST /web/dataset/call_kw/base_import.import/create HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:45,206 1 INFO ? werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:45] "GET /web/static/lib/select2/select2.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:53,393 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:05:53,396 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:05:53,407 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:53] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:53,417 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:05:53,432 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:53] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:53,442 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:05:53,444 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:05:53,447 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:53] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:53,449 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:05:53,452 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:05:53,456 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:53] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:53,497 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:05:53,499 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:05:53,511 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:53] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:53,528 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:05:53,545 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:53] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:53,560 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:05:53,562 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:05:53,563 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:05:53,566 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:05:53,567 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:53] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:05:53,572 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:05:53] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:06:09,897 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:06:15,969 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:06:15] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:06:16,014 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:06:42,604 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:07:06,090 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:07:06] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:07:06,132 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:07:10,960 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:07:42,669 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:07:56,204 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:07:56] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:07:56,236 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:07,168 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:07,197 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:07] "GET /web HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:07,715 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:07,780 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:07] "GET /web/webclient/qweb?mods=web,base,bus,web_tour,mail,note,auth_signup,base_import,iap,sms,web_diagram,web_editor,web_kanban_gauge,web_planner,web_settings_dashboard HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:07,814 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:07,816 1 DEBUG odoo_DB_11 odoo.api: call ir.ui.view().read_template('web_editor.colorpicker')
+[33mweb_1  |[0m 2019-01-28 22:08:07,819 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:07] "POST /web/dataset/call HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,161 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,167 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "POST /web/webclient/translations HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,516 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,546 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,557 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 304 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,565 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,568 1 DEBUG odoo_DB_11 odoo.api: call res.users().activity_user_count()
+[33mweb_1  |[0m 2019-01-28 22:08:08,579 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "POST /web/dataset/call_kw/res.users/activity_user_count HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,582 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,586 1 DEBUG odoo_DB_11 odoo.api: call web.planner().search_read()
+[33mweb_1  |[0m 2019-01-28 22:08:08,597 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "POST /web/dataset/call_kw/web.planner/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,597 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "POST /mail/client_action HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,604 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,638 1 INFO ? werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,638 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,657 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,676 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,679 1 DEBUG odoo_DB_11 odoo.api: call note.note().load_views(options={'toolbar': True, 'action_id': 100, 'load_filters': True}, views=[[None, 'kanban'], [None, 'list'], [None, 'form'], [297, 'search']])
+[33mweb_1  |[0m 2019-01-28 22:08:08,726 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "POST /web/dataset/call_kw/note.note/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,783 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,786 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:08:08,797 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,849 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,866 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,877 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,879 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:08:08,884 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:08,886 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:08,888 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:08:08,892 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:08] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:10,689 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:10,695 1 DEBUG odoo_DB_11 odoo.api: call note.note(1,).read(['stage_id', 'tag_ids', 'memo', 'message_follower_ids', 'activity_ids', 'message_ids', 'display_name'])
+[33mweb_1  |[0m 2019-01-28 22:08:10,732 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:10] "POST /web/dataset/call_kw/note.note/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:10,764 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:10,771 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:08:10,786 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:10] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:10,817 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:10,820 1 DEBUG odoo_DB_11 odoo.api: call note.stage().search_read(domain=['|', ['id', '=', 1], ['user_id', '=', 1]], fields=['id'])
+[33mweb_1  |[0m 2019-01-28 22:08:10,823 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:10] "POST /web/dataset/call_kw/note.stage/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:10,833 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:10,835 1 DEBUG odoo_DB_11 odoo.api: call note.stage(1, 2, 3, 4, 5).name_get()
+[33mweb_1  |[0m 2019-01-28 22:08:10,838 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:10] "POST /web/dataset/call_kw/note.stage/name_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:10,955 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:10,967 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:10,980 1 DEBUG odoo_DB_11 odoo.api: call mail.message(3,).message_format()
+[33mweb_1  |[0m 2019-01-28 22:08:10,984 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:10] "POST /mail/read_followers HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:11,006 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:11] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:11,051 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:11,060 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:11] "GET /web/image/res.partner/3/image_small HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:11,981 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:08:42,715 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:08:46,333 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:46] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:48,288 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:08:48,293 1 DEBUG odoo_DB_11 odoo.api: call note.note(1,).message_get_suggested_recipients()
+[33mweb_1  |[0m 2019-01-28 22:08:48,308 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:48] "POST /web/dataset/call_kw/note.note/message_get_suggested_recipients HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:58,696 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:08:58] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:08:58,725 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:09:12,989 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:09:42,784 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:09:45,638 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:09:45,641 1 DEBUG odoo_DB_11 odoo.api: call note.note(1,).message_post(attachment_ids=[], body='some message in note 11', content_subtype='html', message_type='comment', partner_ids=[], subtype='mail.mt_comment')
+[33mweb_1  |[0m 2019-01-28 22:09:45,780 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:09:45] "POST /web/dataset/call_kw/note.note/message_post HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:09:45,788 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:09:45,790 1 DEBUG odoo_DB_11 odoo.api: call mail.message(4,).message_format()
+[33mweb_1  |[0m 2019-01-28 22:09:45,803 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:09:45] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:09:48,765 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:09:48] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:09:48,773 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:10:14,057 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:10:38,799 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:10:38] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:10:38,822 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:10:42,840 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:11:15,123 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:11:28,872 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:11:28] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:11:28,896 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:11:42,898 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:12:16,167 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:12:18,944 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:12:18] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:12:18,976 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:12:42,964 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:13:09,022 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:13:09] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:13:09,054 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:13:17,239 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:13:43,030 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:13:59,113 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:13:59] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:13:59,142 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:14:18,306 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:14:28,593 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:14:28,598 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:14:28,612 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:14:28] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:14:28,624 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:14:28,637 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:14:28] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:14:28,646 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:14:28,648 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:14:28,651 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:14:28] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:14:28,653 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:14:28,656 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:14:28,660 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:14:28] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:14:28,688 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:14:28,703 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:14:28] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:14:28,712 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:14:28,716 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:14:28,717 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:14:28,718 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:14:28] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:14:28,720 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:14:28,724 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:14:28] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:14:43,098 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:14:49,184 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:14:49] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:14:49,213 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:15:19,375 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:15:39,253 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:15:39] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:15:39,283 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:15:43,137 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:16:13,188 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:13,217 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:13] "GET /web HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:13,673 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:13,735 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:13] "GET /web/webclient/qweb?mods=web,base,bus,web_tour,mail,note,auth_signup,base_import,iap,sms,web_diagram,web_editor,web_kanban_gauge,web_planner,web_settings_dashboard HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:13,763 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:13,766 1 DEBUG odoo_DB_11 odoo.api: call ir.ui.view().read_template('web_editor.colorpicker')
+[33mweb_1  |[0m 2019-01-28 22:16:13,770 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:13] "POST /web/dataset/call HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,100 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,106 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "POST /web/webclient/translations HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,441 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,464 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "POST /mail/client_action HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,475 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,478 1 DEBUG odoo_DB_11 odoo.api: call res.users().activity_user_count()
+[33mweb_1  |[0m 2019-01-28 22:16:14,488 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "POST /web/dataset/call_kw/res.users/activity_user_count HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,489 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,493 1 DEBUG odoo_DB_11 odoo.api: call web.planner().search_read()
+[33mweb_1  |[0m 2019-01-28 22:16:14,497 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "POST /web/dataset/call_kw/web.planner/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,500 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,509 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,523 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,551 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,573 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,599 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,602 1 DEBUG odoo_DB_11 odoo.api: call note.note().load_views(options={'toolbar': True, 'action_id': 100, 'load_filters': True}, views=[[None, 'kanban'], [None, 'list'], [None, 'form'], [297, 'search']])
+[33mweb_1  |[0m 2019-01-28 22:16:14,605 1 INFO ? werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,653 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "POST /web/dataset/call_kw/note.note/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,706 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,708 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:16:14,718 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,732 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,745 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,763 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,763 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:14,766 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:16:14,767 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:16:14,769 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:14,773 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:14] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:18,405 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:18,408 1 DEBUG odoo_DB_11 odoo.api: call note.note(1,).write({'stage_id': 2})
+[33mweb_1  |[0m 2019-01-28 22:16:18,472 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:18] "POST /web/dataset/call_kw/note.note/write HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:18,514 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:18,516 1 DEBUG odoo_DB_11 odoo.api: call note.note(1,).read(['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids', 'display_name'])
+[33mweb_1  |[0m 2019-01-28 22:16:18,531 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:18] "POST /web/dataset/call_kw/note.note/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:18,543 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:18,547 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:16:18,550 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:18] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:18,558 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:16:18,560 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:16:18,564 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:18] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:20,417 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:16:29,320 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:16:29] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:16:43,207 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:17:04,588 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:17:04] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:17:04,620 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:17:07,648 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:17:07,657 1 DEBUG odoo_DB_11 odoo.api: call mail.message().message_fetch([['needaction', '=', True]], limit=25)
+[33mweb_1  |[0m 2019-01-28 22:17:07,675 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:17:07] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:17:07,707 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:17:07,709 1 DEBUG odoo_DB_11 odoo.api: call mail.channel(1,).channel_fetch_preview()
+[33mweb_1  |[0m 2019-01-28 22:17:07,727 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:17:07] "POST /web/dataset/call_kw/mail.channel/channel_fetch_preview HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:17:07,747 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:17:07,760 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:17:07] "GET /web/image/mail.channel/1/image_small HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:17:21,487 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:17:33,448 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:17:33,469 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:17:33] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:17:33,484 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:17:33,540 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:17:33] "POST /web_settings_dashboard/data HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:17:33,549 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:17:33,551 1 DEBUG odoo_DB_11 odoo.api: call iap.account().get_account_url()
+[33mweb_1  |[0m 2019-01-28 22:17:33,555 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:17:33] "POST /web/dataset/call_kw HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:17:33,559 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:17:33,562 1 DEBUG odoo_DB_11 odoo.api: call web.planner().search_read()
+[33mweb_1  |[0m 2019-01-28 22:17:33,564 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:17:33] "POST /web/dataset/call_kw/web.planner/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:17:43,273 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:17:54,674 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:17:54] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:17:54,703 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:18:22,545 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:18:43,344 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:18:44,743 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:18:44] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:18:44,752 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:19:23,610 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:19:34,793 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:19:34] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:19:34,812 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:19:43,399 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:20:24,665 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:20:24,855 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:20:24] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:20:24,881 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:20:43,457 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:21:14,934 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:21:14] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:21:14,964 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:21:25,711 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:21:31,182 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:21:31,337 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:21:31] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:21:31,347 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:21:31,349 1 DEBUG odoo_DB_11 odoo.api: call res.config.settings().load_views(options={'toolbar': False, 'action_id': 77}, views=[[None, 'form']])
+[33mweb_1  |[0m 2019-01-28 22:21:31,409 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:21:31] "POST /web/dataset/call_kw/res.config.settings/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:21:31,427 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:21:31,429 1 DEBUG odoo_DB_11 odoo.api: call res.config.settings().default_get(['paperformat_id', 'external_report_layout', 'default_external_email_server', 'alias_domain', 'default_user_rights', 'auth_signup_uninvited', 'auth_signup_reset_password', 'module_base_import', 'company_id', 'group_multi_company', 'company_share_partner', 'module_inter_company_rules', 'module_pad', 'module_google_calendar', 'module_google_drive', 'module_google_spreadsheet', 'module_auth_oauth', 'module_auth_ldap', 'module_base_gengo'])
+[33mweb_1  |[0m 2019-01-28 22:21:31,684 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:21:31] "POST /web/dataset/call_kw/res.config.settings/default_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:21:31,715 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:21:31,721 1 DEBUG odoo_DB_11 odoo.api: call res.config.settings().onchange({'auth_signup_uninvited': 'b2b', 'external_report_layout': False, 'module_google_spreadsheet': False, 'module_auth_oauth': False, 'default_user_rights': False, 'alias_domain': 'localhost', 'default_external_email_server': False, 'paperformat_id': False, 'module_base_gengo': False, 'module_auth_ldap': False, 'company_share_partner': True, 'auth_signup_reset_password': False, 'company_id': 1, 'module_base_import': True, 'module_pad': False, 'group_multi_company': False, 'module_google_calendar': False, 'module_google_drive': False, 'module_inter_company_rules': False}, ['paperformat_id', 'external_report_layout', 'default_external_email_server', 'alias_domain', 'default_user_rights', 'auth_signup_uninvited', 'auth_signup_reset_password', 'module_base_import', 'company_id', 'group_multi_company', 'company_share_partner', 'module_inter_company_rules', 'module_pad', 'module_google_calendar', 'module_google_drive', 'module_google_spreadsheet', 'module_auth_oauth', 'module_auth_ldap', 'module_base_gengo'], {'auth_signup_uninvited': '', 'auth_signup_reset_password': '', 'module_google_spreadsheet': '1', 'module_auth_oauth': '1', 'default_user_rights': '', 'alias_domain': '', 'default_external_email_server': '', 'paperformat_id': '', 'module_base_gengo': '1', 'module_auth_ldap': '1', 'company_share_partner': '', 'external_report_layout': '', 'company_id': '1', 'module_base_import': '1', 'module_pad': '1', 'group_multi_company': '', 'module_google_calendar': '1', 'module_google_drive': '1', 'module_inter_company_rules': '1'})
+[33mweb_1  |[0m 2019-01-28 22:21:31,779 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:21:31] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:21:31,791 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:21:31,794 1 DEBUG odoo_DB_11 odoo.api: call report.paperformat(1,).name_get()
+[33mweb_1  |[0m 2019-01-28 22:21:31,798 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:21:31] "POST /web/dataset/call_kw/report.paperformat/name_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:21:32,022 1 INFO ? werkzeug: 172.19.0.1 - - [28/Jan/2019 22:21:32] "GET /base/static/description/settings.png HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:21:43,523 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:22:05,015 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:05] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:05,045 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:22:26,733 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:22:43,566 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:22:55,108 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:55] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:55,146 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:22:56,693 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 4 -> 4]
+[33mweb_1  |[0m 2019-01-28 22:22:56,698 1 DEBUG odoo_DB_11 odoo.api: call res.config.settings().create({'auth_signup_uninvited': 'b2b', 'external_report_layout': False, 'module_google_spreadsheet': False, 'module_auth_oauth': False, 'default_user_rights': False, 'alias_domain': 'localhost', 'default_external_email_server': False, 'paperformat_id': 1, 'module_base_gengo': False, 'module_auth_ldap': False, 'company_share_partner': True, 'auth_signup_reset_password': False, 'company_id': 1, 'module_base_import': True, 'module_pad': False, 'group_multi_company': False, 'module_google_calendar': False, 'module_google_drive': False, 'module_inter_company_rules': False})
+[33mweb_1  |[0m 2019-01-28 22:22:56,804 1 INFO odoo_DB_11 odoo.modules.registry: At least one model cache has been invalidated, signaling through the database.
+[33mweb_1  |[0m 2019-01-28 22:22:56,805 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:56] "POST /web/dataset/call_kw/res.config.settings/create HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:56,814 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 5 -> 5]
+[33mweb_1  |[0m 2019-01-28 22:22:56,817 1 DEBUG odoo_DB_11 odoo.api: call res.config.settings(1,).read(['paperformat_id', 'external_report_layout', 'default_external_email_server', 'alias_domain', 'default_user_rights', 'auth_signup_uninvited', 'auth_signup_reset_password', 'module_base_import', 'company_id', 'group_multi_company', 'company_share_partner', 'module_inter_company_rules', 'module_pad', 'module_google_calendar', 'module_google_drive', 'module_google_spreadsheet', 'module_auth_oauth', 'module_auth_ldap', 'module_base_gengo', 'display_name'])
+[33mweb_1  |[0m 2019-01-28 22:22:56,829 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:56] "POST /web/dataset/call_kw/res.config.settings/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:56,842 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 5 -> 5]
+[33mweb_1  |[0m 2019-01-28 22:22:56,844 1 DEBUG odoo_DB_11 odoo.api: call res.config.settings(1,).execute()
+[33mweb_1  |[0m 2019-01-28 22:22:57,003 1 INFO odoo_DB_11 odoo.modules.registry: At least one model cache has been invalidated, signaling through the database.
+[33mweb_1  |[0m 2019-01-28 22:22:57,005 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:57] "POST /web/dataset/call_button HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:57,018 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:57,599 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:57] "GET /web? HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:58,064 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:58,130 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:58] "GET /web/webclient/qweb?mods=web,base,bus,web_tour,mail,note,auth_signup,base_import,iap,sms,web_diagram,web_editor,web_kanban_gauge,web_planner,web_settings_dashboard HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:58,156 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:58,159 1 DEBUG odoo_DB_11 odoo.api: call ir.ui.view().read_template('web_editor.colorpicker')
+[33mweb_1  |[0m 2019-01-28 22:22:58,172 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:58] "POST /web/dataset/call HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:58,480 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:58,485 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:58] "POST /web/webclient/translations HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:58,832 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:58,861 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:58,880 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:58] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 304 -
+[33mweb_1  |[0m 2019-01-28 22:22:58,889 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:58,889 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:58,894 1 DEBUG odoo_DB_11 odoo.api: call web.planner().search_read()
+[33mweb_1  |[0m 2019-01-28 22:22:58,895 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:58,899 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:58] "POST /web/dataset/call_kw/web.planner/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:58,908 1 DEBUG odoo_DB_11 odoo.api: call res.users().activity_user_count()
+[33mweb_1  |[0m 2019-01-28 22:22:58,914 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:58] "POST /mail/client_action HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:58,919 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:58] "POST /web/dataset/call_kw/res.users/activity_user_count HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:58,962 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:58,972 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:58] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:58,988 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:58,991 1 DEBUG odoo_DB_11 odoo.api: call res.config.settings().load_views(options={'toolbar': False, 'action_id': 77}, views=[[None, 'form']])
+[33mweb_1  |[0m 2019-01-28 22:22:59,038 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:59] "POST /web/dataset/call_kw/res.config.settings/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:59,062 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:59,065 1 DEBUG odoo_DB_11 odoo.api: call res.config.settings().default_get(['paperformat_id', 'external_report_layout', 'default_external_email_server', 'alias_domain', 'default_user_rights', 'auth_signup_uninvited', 'auth_signup_reset_password', 'module_base_import', 'company_id', 'group_multi_company', 'company_share_partner', 'module_inter_company_rules', 'module_pad', 'module_google_calendar', 'module_google_drive', 'module_google_spreadsheet', 'module_auth_oauth', 'module_auth_ldap', 'module_base_gengo'])
+[33mweb_1  |[0m 2019-01-28 22:22:59,113 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:59] "POST /web/dataset/call_kw/res.config.settings/default_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:59,127 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:59,129 1 DEBUG odoo_DB_11 odoo.api: call res.config.settings().onchange({'auth_signup_uninvited': 'b2b', 'external_report_layout': False, 'module_google_spreadsheet': False, 'module_auth_oauth': False, 'default_user_rights': False, 'alias_domain': 'localhost', 'default_external_email_server': False, 'paperformat_id': False, 'module_base_gengo': False, 'module_auth_ldap': False, 'company_share_partner': True, 'auth_signup_reset_password': False, 'company_id': 1, 'module_base_import': True, 'module_pad': False, 'group_multi_company': False, 'module_google_calendar': False, 'module_google_drive': False, 'module_inter_company_rules': False}, ['paperformat_id', 'external_report_layout', 'default_external_email_server', 'alias_domain', 'default_user_rights', 'auth_signup_uninvited', 'auth_signup_reset_password', 'module_base_import', 'company_id', 'group_multi_company', 'company_share_partner', 'module_inter_company_rules', 'module_pad', 'module_google_calendar', 'module_google_drive', 'module_google_spreadsheet', 'module_auth_oauth', 'module_auth_ldap', 'module_base_gengo'], {'auth_signup_uninvited': '', 'auth_signup_reset_password': '', 'module_google_spreadsheet': '1', 'module_auth_oauth': '1', 'default_user_rights': '', 'alias_domain': '', 'default_external_email_server': '', 'paperformat_id': '', 'module_base_gengo': '1', 'module_auth_ldap': '1', 'company_share_partner': '', 'external_report_layout': '', 'company_id': '1', 'module_base_import': '1', 'module_pad': '1', 'group_multi_company': '', 'module_google_calendar': '1', 'module_google_drive': '1', 'module_inter_company_rules': '1'})
+[33mweb_1  |[0m 2019-01-28 22:22:59,156 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:59] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:22:59,166 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:22:59,168 1 DEBUG odoo_DB_11 odoo.api: call report.paperformat(1,).name_get()
+[33mweb_1  |[0m 2019-01-28 22:22:59,170 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:22:59] "POST /web/dataset/call_kw/report.paperformat/name_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:23:27,803 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:23:43,632 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:23:45,210 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:23:45] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:23:48,485 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:23:48,564 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:23:48] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:23:48,576 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:23:48,578 1 DEBUG odoo_DB_11 odoo.api: call note.note().load_views(options={'toolbar': True, 'action_id': 100, 'load_filters': True}, views=[[None, 'kanban'], [None, 'list'], [None, 'form'], [297, 'search']])
+[33mweb_1  |[0m 2019-01-28 22:23:48,624 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:23:48] "POST /web/dataset/call_kw/note.note/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:23:48,673 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:23:48,676 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:23:48,685 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:23:48] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:23:48,723 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:23:48,728 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:23:48] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:23:49,003 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:23:49] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:23:49,042 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:05,424 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:05,469 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:05] "GET /web? HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:05,958 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:06,023 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:06] "GET /web/webclient/qweb?mods=web,base,bus,web_tour,mail,note,auth_signup,base_import,iap,sms,web_diagram,web_editor,web_kanban_gauge,web_planner,web_settings_dashboard HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:06,049 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:06,052 1 DEBUG odoo_DB_11 odoo.api: call ir.ui.view().read_template('web_editor.colorpicker')
+[33mweb_1  |[0m 2019-01-28 22:24:06,055 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:06] "POST /web/dataset/call HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:06,375 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:06,380 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:06] "POST /web/webclient/translations HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:06,708 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:06,735 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:06,744 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:06] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 304 -
+[33mweb_1  |[0m 2019-01-28 22:24:06,759 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:06] "POST /mail/client_action HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:06,768 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:06,770 1 DEBUG odoo_DB_11 odoo.api: call res.users().activity_user_count()
+[33mweb_1  |[0m 2019-01-28 22:24:06,782 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:06] "POST /web/dataset/call_kw/res.users/activity_user_count HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:06,785 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:06,787 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:06,788 1 DEBUG odoo_DB_11 odoo.api: call web.planner().search_read()
+[33mweb_1  |[0m 2019-01-28 22:24:06,792 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:06] "POST /web/dataset/call_kw/web.planner/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:06,801 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:06,826 1 INFO ? werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:06] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:06,839 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:06] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:06,859 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:06,861 1 DEBUG odoo_DB_11 odoo.api: call note.note().load_views(options={'toolbar': True, 'action_id': 100, 'load_filters': True}, views=[[None, 'kanban'], [None, 'list'], [None, 'form'], [297, 'search']])
+[33mweb_1  |[0m 2019-01-28 22:24:06,904 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:06] "POST /web/dataset/call_kw/note.note/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:06,953 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:06,956 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:24:06,966 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:06] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:07,007 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:07,011 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:07] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:28,838 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:24:39,115 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:39] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:43,679 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:24:56,855 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:56] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:56,888 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:58,108 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:58,132 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:58] "GET /web? HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:58,586 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:58,648 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:58] "GET /web/webclient/qweb?mods=web,base,bus,web_tour,mail,note,auth_signup,base_import,iap,sms,web_diagram,web_editor,web_kanban_gauge,web_planner,web_settings_dashboard HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:58,673 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:58,676 1 DEBUG odoo_DB_11 odoo.api: call ir.ui.view().read_template('web_editor.colorpicker')
+[33mweb_1  |[0m 2019-01-28 22:24:58,680 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:58] "POST /web/dataset/call HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,001 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,006 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "POST /web/webclient/translations HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,351 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,373 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "POST /mail/client_action HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,396 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,398 1 DEBUG odoo_DB_11 odoo.api: call res.users().activity_user_count()
+[33mweb_1  |[0m 2019-01-28 22:24:59,420 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "POST /web/dataset/call_kw/res.users/activity_user_count HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,422 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,424 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,428 1 DEBUG odoo_DB_11 odoo.api: call web.planner().search_read()
+[33mweb_1  |[0m 2019-01-28 22:24:59,433 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "POST /web/dataset/call_kw/web.planner/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,442 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,454 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,457 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,479 1 INFO ? werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,494 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,519 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,521 1 DEBUG odoo_DB_11 odoo.api: call note.note().load_views(options={'toolbar': True, 'action_id': 100, 'load_filters': True}, views=[[None, 'kanban'], [None, 'list'], [None, 'form'], [297, 'search']])
+[33mweb_1  |[0m 2019-01-28 22:24:59,571 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "POST /web/dataset/call_kw/note.note/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,621 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,624 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:24:59,635 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,650 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,661 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,674 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,679 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:24:59,680 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:24:59,681 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:24:59,683 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:24:59,687 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:24:59] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:02,632 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:02,635 1 DEBUG odoo_DB_11 odoo.api: call note.note(1,).read(['stage_id', 'tag_ids', 'memo', 'message_follower_ids', 'activity_ids', 'message_ids', 'display_name'])
+[33mweb_1  |[0m 2019-01-28 22:25:02,649 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:02] "POST /web/dataset/call_kw/note.note/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:02,661 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:02,663 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:25:02,667 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:02] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:02,680 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:02,682 1 DEBUG odoo_DB_11 odoo.api: call note.stage().search_read(domain=['|', ['id', '=', 2], ['user_id', '=', 1]], fields=['id'])
+[33mweb_1  |[0m 2019-01-28 22:25:02,684 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:02] "POST /web/dataset/call_kw/note.stage/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:02,692 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:02,694 1 DEBUG odoo_DB_11 odoo.api: call note.stage(1, 2, 3, 4, 5).name_get()
+[33mweb_1  |[0m 2019-01-28 22:25:02,698 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:02] "POST /web/dataset/call_kw/note.stage/name_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:02,814 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:02,826 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:02,831 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:02] "POST /mail/read_followers HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:02,834 1 DEBUG odoo_DB_11 odoo.api: call mail.message(4, 3).message_format()
+[33mweb_1  |[0m 2019-01-28 22:25:02,868 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:02] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:02,900 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:02,915 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:02] "GET /web/image/res.partner/3/image_small HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:08,483 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:08,487 1 DEBUG odoo_DB_11 odoo.api: call note.tag().name_search(args=[['id', 'not in', [1]]], limit=8, name='', operator='ilike')
+[33mweb_1  |[0m 2019-01-28 22:25:08,490 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:08] "POST /web/dataset/call_kw/note.tag/name_search HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:29,855 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:25:32,881 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:32,883 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:25:32,893 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:32] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:32,908 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:32,924 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:32] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:32,936 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:32,940 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:25:32,940 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:32,942 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:32] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:32,943 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:25:32,949 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:32] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:38,764 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:38,766 1 DEBUG odoo_DB_11 odoo.api: call note.note(1,).write({'stage_id': 1})
+[33mweb_1  |[0m 2019-01-28 22:25:38,798 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:38] "POST /web/dataset/call_kw/note.note/write HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:38,807 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:38,809 1 DEBUG odoo_DB_11 odoo.api: call note.note(1,).read(['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids', 'display_name'])
+[33mweb_1  |[0m 2019-01-28 22:25:38,820 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:38] "POST /web/dataset/call_kw/note.note/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:38,830 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:38,835 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:25:38,837 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:25:38,837 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:38] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:38,839 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:25:38,842 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:38] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:43,749 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:25:46,933 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:46] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:49,523 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:25:49] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:25:49,553 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:17,259 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:17,289 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:17] "GET /web? HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:17,800 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:17,878 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:17] "GET /web/webclient/qweb?mods=web,base,bus,web_tour,mail,note,auth_signup,base_import,iap,sms,web_diagram,web_editor,web_kanban_gauge,web_planner,web_settings_dashboard HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:17,907 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:17,909 1 DEBUG odoo_DB_11 odoo.api: call ir.ui.view().read_template('web_editor.colorpicker')
+[33mweb_1  |[0m 2019-01-28 22:26:17,913 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:17] "POST /web/dataset/call HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,239 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,245 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "POST /web/webclient/translations HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,579 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,601 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "POST /mail/client_action HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,605 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,616 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 304 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,617 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,623 1 DEBUG odoo_DB_11 odoo.api: call res.users().activity_user_count()
+[33mweb_1  |[0m 2019-01-28 22:26:18,633 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,641 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "POST /web/dataset/call_kw/res.users/activity_user_count HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,642 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,645 1 DEBUG odoo_DB_11 odoo.api: call web.planner().search_read()
+[33mweb_1  |[0m 2019-01-28 22:26:18,648 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "POST /web/dataset/call_kw/web.planner/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,658 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,703 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,725 1 INFO ? werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,743 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,746 1 DEBUG odoo_DB_11 odoo.api: call note.note().load_views(options={'toolbar': True, 'action_id': 100, 'load_filters': True}, views=[[None, 'kanban'], [None, 'list'], [None, 'form'], [297, 'search']])
+[33mweb_1  |[0m 2019-01-28 22:26:18,792 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "POST /web/dataset/call_kw/note.note/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,845 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,847 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:26:18,859 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,873 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,887 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,900 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,903 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:26:18,906 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:18,906 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:18,908 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:26:18,913 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:18] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:23,318 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:23,327 1 DEBUG odoo_DB_11 odoo.api: call note.note().default_get(['stage_id', 'tag_ids', 'memo', 'message_follower_ids', 'activity_ids', 'message_ids'])
+[33mweb_1  |[0m 2019-01-28 22:26:23,332 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:23] "POST /web/dataset/call_kw/note.note/default_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:23,358 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:23,361 1 DEBUG odoo_DB_11 odoo.api: call note.stage().search_read(domain=[['user_id', '=', 1]], fields=['id'])
+[33mweb_1  |[0m 2019-01-28 22:26:23,363 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:23] "POST /web/dataset/call_kw/note.stage/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:23,372 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:23,374 1 DEBUG odoo_DB_11 odoo.api: call note.stage(1, 2, 3, 4, 5).name_get()
+[33mweb_1  |[0m 2019-01-28 22:26:23,378 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:23] "POST /web/dataset/call_kw/note.stage/name_get HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:25,022 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:25,024 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:26:25,034 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:25] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:25,044 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:25,055 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:25] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:25,065 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:25,069 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:26:25,070 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:25,073 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:25] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:25,074 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:26:25,080 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:25] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:30,925 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:26:39,601 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:39] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:26:43,790 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:26:50,773 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 6 -> 6]
+[33mweb_1  |[0m 2019-01-28 22:26:50,783 1 DEBUG odoo_DB_11 odoo.api: call note.stage(4,).unlink()
+[33mweb_1  |[0m 2019-01-28 22:26:50,865 1 INFO odoo_DB_11 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [4536]
+[33mweb_1  |[0m 2019-01-28 22:26:50,897 1 INFO odoo_DB_11 odoo.models.unlink: User #1 deleted note.stage records with IDs: [4]
+[33mweb_1  |[0m 2019-01-28 22:26:50,907 1 INFO odoo_DB_11 odoo.modules.registry: At least one model cache has been invalidated, signaling through the database.
+[33mweb_1  |[0m 2019-01-28 22:26:50,913 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:26:50] "POST /web/dataset/call_kw/note.stage/unlink HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:05,804 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:06,379 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:06] "GET /web? HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:06,862 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:06,920 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:06] "GET /web/webclient/qweb?mods=web,base,bus,web_tour,mail,note,auth_signup,base_import,iap,sms,web_diagram,web_editor,web_kanban_gauge,web_planner,web_settings_dashboard HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:06,947 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:06,948 1 DEBUG odoo_DB_11 odoo.api: call ir.ui.view().read_template('web_editor.colorpicker')
+[33mweb_1  |[0m 2019-01-28 22:27:06,962 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:06] "POST /web/dataset/call HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,269 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,274 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "POST /web/webclient/translations HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,611 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,638 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,648 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 304 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,659 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,664 1 DEBUG odoo_DB_11 odoo.api: call res.users().activity_user_count()
+[33mweb_1  |[0m 2019-01-28 22:27:07,670 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,680 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "POST /web/dataset/call_kw/res.users/activity_user_count HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,685 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "POST /mail/client_action HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,685 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,687 1 DEBUG odoo_DB_11 odoo.api: call web.planner().search_read()
+[33mweb_1  |[0m 2019-01-28 22:27:07,695 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "POST /web/dataset/call_kw/web.planner/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,700 1 INFO ? werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,722 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,768 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "POST /web/action/load HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,785 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,787 1 DEBUG odoo_DB_11 odoo.api: call note.note().load_views(options={'toolbar': True, 'action_id': 100, 'load_filters': True}, views=[[None, 'kanban'], [None, 'list'], [None, 'form'], [297, 'search']])
+[33mweb_1  |[0m 2019-01-28 22:27:07,832 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "POST /web/dataset/call_kw/note.note/load_views HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,881 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,883 1 DEBUG odoo_DB_11 odoo.api: call note.note().read_group(domain=[], fields=['color', 'sequence', 'name', 'stage_id', 'open', 'memo', 'date_done', 'message_partner_ids', 'activity_ids', 'activity_state', 'tag_ids'], groupby=['stage_id'], lazy=True, orderby='')
+[33mweb_1  |[0m 2019-01-28 22:27:07,895 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "POST /web/dataset/call_kw/note.note/read_group HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,939 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,952 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "POST /web/dataset/search_read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,963 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,967 1 DEBUG odoo_DB_11 odoo.api: call res.partner(3,).read(['display_name'])
+[33mweb_1  |[0m 2019-01-28 22:27:07,968 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+[33mweb_1  |[0m 2019-01-28 22:27:07,969 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:07,971 1 DEBUG odoo_DB_11 odoo.api: call note.tag(1,).read(['display_name', 'color'])
+[33mweb_1  |[0m 2019-01-28 22:27:07,976 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:07] "POST /web/dataset/call_kw/note.tag/read HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:08,869 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:08] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:31,995 1 DEBUG ? odoo.service.server: cron1 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:27:43,859 1 DEBUG ? odoo.service.server: cron0 polling for jobs
+[33mweb_1  |[0m 2019-01-28 22:27:57,777 1 INFO odoo_DB_11 werkzeug: 172.19.0.1 - - [28/Jan/2019 22:27:57] "POST /longpolling/poll HTTP/1.1" 200 -
+[33mweb_1  |[0m 2019-01-28 22:27:57,793 1 DEBUG odoo_DB_11 odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 7 -> 7]
+Gracefully stopping... (press Ctrl+C again to force)

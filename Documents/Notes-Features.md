@@ -26,3 +26,11 @@ Source: https://www.odoo.com/page/notes-features
 7. Access Settings         - Choose what others can do with your notes by granting viewing or editing access
 8. Chat                    - Enable chat for real time discussion with the people following your notes
    1. Show Connected Users*   - See who is connected to your notes right now
+
+# Feature changes:
+| Feature                       | v10 | v11 | v12 |
+| 1. Search                     |  X  |  X  |    |
+| 1.1. Filter by tags           |  X  |  X  |    |
+| 1.2. Filter by activities     |     |  X  |    |
+| 2. Schedule activity to notes |     |  X  |    |
+| 3. File import in dashboard   |     |  X  |    |
