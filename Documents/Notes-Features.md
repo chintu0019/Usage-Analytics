@@ -28,9 +28,11 @@ Source: https://www.odoo.com/page/notes-features
    1. Show Connected Users*   - See who is connected to your notes right now
 
 # Feature changes:
-| Feature                       | v10 | v11 | v12 |
-| 1. Search                     |  X  |  X  |    |
-| 1.1. Filter by tags           |  X  |  X  |    |
-| 1.2. Filter by activities     |     |  X  |    |
-| 2. Schedule activity to notes |     |  X  |    |
-| 3. File import in dashboard   |     |  X  |    |
+| **Feature**                               | **v10** | **v11** |
+|---------------------------------------------------------------|
+| 1. Search                                 |    X    |    X    | 
+|    1.1. Filter by tags                    |    X    |    X    | 
+|    1.2. Filter by activities              |         |    X    | 
+| 2. Schedule activity to notes             |         |    X    | 
+| 3. File import option in dashboard        |         |    X    | 
+| 4. 
