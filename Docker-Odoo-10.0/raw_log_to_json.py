@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import argparse
+import re
 
 from collections import deque
 
@@ -15,18 +16,36 @@ class State:
         self.lines = deque()
         self.features = []
         self.current_time_stamp = None
+        self.delete_state_id = None
+        self.delete_state_user = None
 
     def add_line(self, line):
         self.lines.append(line)
         if len(self.lines) > self.nr_lines:
             self.lines.popleft()
 
+    def add_delete_stage_feature(self):
+        if not (self.current_time_stamp and self.delete_state_id and self.delete_state_user):
+            raise RuntimeError('Trying to add an incomplete delete stage feature')
+
+        self.features.append( ('Delete Stage', self.current_time_stamp, self.delete_state_user, self.delete_state_id) )
+        eprint('Adding Delete Stage:', self.current_time_stamp, ' User id:', self.delete_state_user, ' State id:', self.delete_state_id)
+
+        self.current_time_stamp = None
+        self.delete_state_id = None
+        self.delete_state_user = None
+
+
     def add_feature(self):
         pass
 
 
 def has_note_dot_stage(state):
-    pass
+    line = state.lines[-1]
+    delete_state_id = has_note_dot_stage.delete_state_id_re.search(line)
+    if delete_state_id:
+        state.delete_state_id = delete_state_id.group(1)
+has_note_dot_stage.delete_state_id_re = re.compile(r"note\.stage\((\d+),\)\.unlink\(\)")
 
 
 def has_note_and_something_else(state):
@@ -41,7 +60,15 @@ def has_note(state):
 
 
 def no_note(state):
-    print(state.lines[-1])
+    line = state.lines[-1]
+    if 'odoo.models.unlink' in line:
+        delete_state_user = no_note.delete_state_user_re.search(line)
+        if delete_state_user:
+            state.delete_state_user = delete_state_user.group(1)
+        if state.delete_state_user and state.delete_state_id:
+            state.add_delete_stage_feature()
+
+no_note.delete_state_user_re = re.compile(r'odoo\.models\.unlink: User #(\d+) deleted')
 
 
 def line_contains_note(state):
