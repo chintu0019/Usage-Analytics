@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+    odoo10:
+        depends_on:
+            - db
+        build: ./Odoo10
+        volumes:
+            - "./odoo:/usr/lib/python2.7/dist-packages/odoo"
+        ports:
+            - "8010:8069"
+
+    db:
+        image: postgres:10.0
+        environment:
+            - POSTGRES_PASSWORD=odoo
+            - POSTGRES_USER=odoo
+            - PGDATA=/var/lib/postgresql/data/pgdata
+        volumes:
+            - odoo-db-data-odoo10:/var/lib/postgresql/data/pgdata
+
+volumes:
+    odoo-db-data-odoo10:
+
