@@ -22,6 +22,7 @@ RUN set -x; \
             python3-setuptools \
             python3-vobject \
             python3-watchdog \
+            patch \
             xz-utils \
             psmisc \
             rsync \
@@ -53,8 +54,23 @@ RUN set -x; \
         && echo "${ODOO_SHA} odoo.deb" | sha1sum -c - \
         && dpkg --force-depends -i odoo.deb \
         && apt-get update \
-        && apt-get -y install -f --no-install-recommends \
-        && mv /usr/lib/python3/dist-packages/odoo /usr/lib/python3/dist-packages/odoo.orig \
+        && apt-get -y install -f --no-install-recommends
+
+COPY ./odoo.conf /usr/lib/python3/dist-packages/odoo
+COPY ./cvs_writer.py /usr/lib/python3/dist-packages/odoo
+
+COPY ./00_better_log.patch /usr/lib/python3/dist-packages/00_better_log.patch
+COPY ./01_cvs_writer.py /usr/lib/python3/dist-packages/01_cvs_writer.py
+
+RUN cd /usr/lib/python3/dist-packages \
+        && cat 00_better_log.patch \
+        && patch -p0 < 00_better_log.patch \
+        && rm 00_better_log.patch \
+        && patch -p0 < 01_cvs_writer.py \
+        && rm 01_cvs_writer.py \
+        && cd -
+
+RUN mv /usr/lib/python3/dist-packages/odoo /usr/lib/python3/dist-packages/odoo.orig \
         && mkdir /usr/lib/python3/dist-packages/odoo \
         && rm -rf /var/lib/apt/lists/* odoo.deb
 
@@ -62,7 +78,6 @@ RUN set -x; \
 RUN pip3 install num2words xlwt
 COPY ./entrypoint.sh /
 RUN chmod 755 /entrypoint.sh
-COPY ./odoo.conf /etc/odoo/
 RUN chown odoo /etc/odoo/odoo.conf
 
 # Mount /var/lib/odoo to allow restoring filestore and /mnt/extra-addons for users addons
@@ -74,7 +89,7 @@ VOLUME ["/var/lib/odoo", "/mnt/extra-addons"]
 EXPOSE 8069 8071
 
 # Set the default config file
-ENV ODOO_RC /etc/odoo/odoo.conf
+ENV ODOO_RC /usr/lib/python3/dist-packages/odoo/odoo.conf
 
 # Set default user when running the container
 # USER odoo
