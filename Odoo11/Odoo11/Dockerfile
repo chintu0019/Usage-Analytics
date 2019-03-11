@@ -22,6 +22,7 @@ RUN set -x; \
             python3-setuptools \
             python3-vobject \
             python3-watchdog \
+            patch \
             xz-utils \
             psmisc \
             rsync \
@@ -56,6 +57,13 @@ RUN set -x; \
         && apt-get -y install -f --no-install-recommends
 
 COPY ./odoo.conf /usr/lib/python3/dist-packages/odoo
+COPY ./00_better_log.patch /usr/lib/python3/dist-packages/00_better_log.patch
+
+RUN cd /usr/lib/python3/dist-packages \
+        && cat 00_better_log.patch \
+        && patch -p0 < 00_better_log.patch \
+        && rm 00_better_log.patch \
+        && cd -
 
 RUN mv /usr/lib/python3/dist-packages/odoo /usr/lib/python3/dist-packages/odoo.orig \
         && mkdir /usr/lib/python3/dist-packages/odoo \
