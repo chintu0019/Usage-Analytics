@@ -57,12 +57,17 @@ RUN set -x; \
         && apt-get -y install -f --no-install-recommends
 
 COPY ./odoo.conf /usr/lib/python3/dist-packages/odoo
+COPY ./cvs_writer.py /usr/lib/python3/dist-packages/odoo
+
 COPY ./00_better_log.patch /usr/lib/python3/dist-packages/00_better_log.patch
+COPY ./01_cvs_writer.py /usr/lib/python3/dist-packages/01_cvs_writer.py
 
 RUN cd /usr/lib/python3/dist-packages \
         && cat 00_better_log.patch \
         && patch -p0 < 00_better_log.patch \
         && rm 00_better_log.patch \
+        && patch -p0 < 01_cvs_writer.py \
+        && rm 01_cvs_writer.py \
         && cd -
 
 RUN mv /usr/lib/python3/dist-packages/odoo /usr/lib/python3/dist-packages/odoo.orig \
