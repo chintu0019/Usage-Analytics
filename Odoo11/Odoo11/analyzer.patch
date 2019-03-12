@@ -1,6 +1,6 @@
 diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-01-26 05:51:12.000000000 +0000
-+++ odoo/api.py	2019-03-12 16:56:39.554055055 +0000
++++ odoo/api.py	2019-03-12 17:52:38.147578738 +0000
 @@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
@@ -12,7 +12,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -664,22 +668,125 @@
+@@ -664,22 +668,143 @@
      return decorator(func) if not hasattr(func, '_api') else func
  
  
@@ -84,6 +84,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +cvs_write.dispatch['unlink.note.note'] = partial(first_id_action, "Delete Note")
 +cvs_write.dispatch['read.note.stage'] = partial(first_id_action, "Open Note")
 +
++
 +def write_note_note(cvsw, user_id, method_name, recs, params, ids):
 +    try:
 +        memo = params.args[0]['memo']
@@ -94,26 +95,43 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +            'text': memo,
 +        })
 +        return
-+    except IndexError:
++
++    except KeyError:
 +        pass
 +
 +    try:
 +        stage_id = params.args[0]['stage_id']
++        if write_note_note.user_moving.get(user_id, None) == stage_id:
++            del write_note_note.user_moving[user_id]
++            actionName = 'Move Note'
++        else:
++            actionName = 'Drag and Drop note'
 +        cvsw.write({
-+            'actionName': 'Drag and Drop note',
++            'actionName': actionName,
 +            'userId': user_id,
 +            'id': ids[0],
 +            'stageId': stage_id,
 +        })
 +        return
-+    except IndexError:
-+        pass
 +
++    except KeyError:
++        pass
++write_note_note.user_moving = {}
 +cvs_write.dispatch['write.note.note'] = write_note_note
 +
 +
++def move_note_step1(cvsw, user_id, method_name, recs, params, ids):
++    if type(ids) == int: write_note_note.user_moving[user_id] = ids
++cvs_write.dispatch['name_get.note.stage'] = move_note_step1
 +
 +
++def open_note_commenting(cvsw, user_id, method_name, recs, params, ids):
++    cvsw.write({
++        'actionName': 'Open commenting in note',
++        'userId': user_id,
++        'id': ids[0],
++    })
++cvs_write.dispatch['message_get_suggested_recipients.note.note'] = open_note_commenting
 +
  
  def call_kw_model(method, self, args, kwargs):
