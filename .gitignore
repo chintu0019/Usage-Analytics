@@ -1,3 +1,5 @@
 *.ini
 *.pyc
 \.vscode/
+Odoo11/odoo
+Odoo10/odoo
