@@ -1,6 +1,6 @@
 diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-03-11 17:21:50.689527113 +0000
-+++ odoo/api.py	2019-03-12 11:59:40.308461147 +0000
++++ odoo/api.py	2019-03-12 14:07:40.913142160 +0000
 @@ -57,6 +57,9 @@
  
  from odoo.tools import frozendict, classproperty
@@ -11,7 +11,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -669,21 +672,57 @@
+@@ -669,21 +672,70 @@
          return obj.env.uid
      return -1
  
@@ -29,13 +29,13 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +cvs_write.multi_recs_dis = {}
 +
 +
-+def create(cvsw, user_id, method_name, recs, params, _):
-+    recs_name = str(recs).split('(', 1)[0]
++def check_recs_name(cvsw, user_id, method_name, recs, params, _):
++    recs_name = method_name + '.' + recs._name
 +    writer = cvs_write.model_recs_dis.get(recs_name, None)
 +    if writer != None:
 +        writer(cvsw, user_id, method_name, recs, params)
-+cvs_write.model_dis['create'] = create
-+
++cvs_write.model_dis['create'] = check_recs_name
++cvs_write.model_dis['read_group'] = check_recs_name
 +
 +def create_note(cvsw, user_id, method_name, recs, params):
 +    cvsw.write({
@@ -44,8 +44,21 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +        'id': params.args[0]['tag_ids'][0][0],
 +        'text': params.args[0]['memo'],
 +    })
-+cvs_write.model_recs_dis['note.note'] = create_note
++cvs_write.model_recs_dis['create.note.note'] = create_note
 +
++def search(cvsw, user_id, method_name, recs, params):
++    try:
++        text = params.kwargs['domain'][0][2]
++    except IndexError:
++        text = ''
++    cvsw.write({
++        'actionName': 'Search',
++        'userId': user_id,
++        'text': text,
++    })
++cvs_write.model_recs_dis['read_group.note.note'] = search
++
++import inspect
 +
  def call_kw_model(method, self, args, kwargs):
      context, args, kwargs = split_context(method, args, kwargs)
@@ -73,8 +86,8 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
      method = getattr(type(model), name)
 diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/cvs_writer.py odoo/cvs_writer.py
 --- odoo.orig/cvs_writer.py	2019-03-11 17:21:50.699527275 +0000
-+++ odoo/cvs_writer.py	2019-03-12 11:59:40.305127764 +0000
-@@ -1,42 +1,53 @@
++++ odoo/cvs_writer.py	2019-03-12 14:10:27.062265671 +0000
+@@ -1,42 +1,55 @@
 -#!/usr/bin/env python3
 -
 -import os
@@ -155,6 +168,8 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/cvs_writer.py odoo/cvs_writer.py
 +            csv.writer(f).writerow(label_row)
 +
 +    def connect_id_to_ip(self, userId, userIp):
++        if userId == None: return
++
 +        with self.write_lock:
 +            self.id_to_ip[userId] = userIp
 +
