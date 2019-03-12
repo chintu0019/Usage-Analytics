@@ -1,6 +1,6 @@
 diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-03-11 17:21:50.689527113 +0000
-+++ odoo/api.py	2019-03-12 14:34:26.513566108 +0000
++++ odoo/api.py	2019-03-12 15:54:28.031550111 +0000
 @@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
@@ -12,7 +12,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -669,21 +673,89 @@
+@@ -669,21 +673,120 @@
          return obj.env.uid
      return -1
  
@@ -35,6 +35,8 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +    if writer != None:
 +        writer(cvsw, user_id, method_name, recs, params, ids)
 +cvs_write.multi_dis['unlink'] = multi_check_recs_name
++cvs_write.multi_dis['write'] = multi_check_recs_name
++cvs_write.multi_dis['read'] = multi_check_recs_name
 +
 +def model_check_recs_name(cvsw, user_id, method_name, recs, params, _):
 +    recs_name = method_name + '.' + recs._name
@@ -43,16 +45,37 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +        writer(cvsw, user_id, method_name, recs, params)
 +cvs_write.model_dis['create'] = model_check_recs_name
 +cvs_write.model_dis['read_group'] = model_check_recs_name
++cvs_write.model_dis['name_create'] = model_check_recs_name
 +
 +
-+def delete_X(X, cvsw, user_id, method_name, recs, params, ids):
++def create_stage(cvsw, user_id, method_name, recs, params):
 +    cvsw.write({
-+        'actionName': X,
++        'actionName': "Create Stage",
++        'userId': user_id,
++        'id': params.args[0],
++    })
++cvs_write.model_recs_dis['name_create.note.stage'] = create_stage
++
++
++def first_id_action(action, cvsw, user_id, method_name, recs, params, ids):
++    cvsw.write({
++        'actionName': action,
 +        'userId': user_id,
 +        'id': ids[0],
 +    })
-+cvs_write.multi_recs_dis['unlink.note.note'] = partial(delete_X, "Delete Note")
-+cvs_write.multi_recs_dis['unlink.note.stage'] = partial(delete_X, "Delete Stage")
++cvs_write.multi_recs_dis['unlink.note.note'] = partial(first_id_action, "Delete Note")
++cvs_write.multi_recs_dis['unlink.note.stage'] = partial(first_id_action, "Delete Stage")
++cvs_write.multi_recs_dis['unlink.note.stage'] = partial(first_id_action, "Open Note")
++
++
++def rename_stage(cvsw, user_id, method_name, recs, params, ids):
++    cvsw.write({
++        'actionName': "Rename Stage",
++        'userId': user_id,
++        'id': ids[0],
++        'text': params.args[0]['name'],
++    })
++cvs_write.multi_recs_dis['write.note.stage'] = rename_stage
 +
 +
 +def create_note(cvsw, user_id, method_name, recs, params):
@@ -77,6 +100,14 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +        'text': text,
 +    })
 +cvs_write.model_recs_dis['read_group.note.note'] = search
++
++
++def open_note(cvsw, user_id, method_name, recs, params, ids):
++    cvsw.write({
++        'actionName': "Rename Stage",
++        'userId': user_id,
++        'id': ids[0],
++    })
 +
 +
 +
