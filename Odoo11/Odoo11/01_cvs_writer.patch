@@ -1,6 +1,6 @@
 diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-03-11 17:21:50.689527113 +0000
-+++ odoo/api.py	2019-03-12 15:54:28.031550111 +0000
++++ odoo/api.py	2019-03-12 16:25:26.209366261 +0000
 @@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
@@ -12,49 +12,27 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -669,21 +673,120 @@
+@@ -669,21 +673,95 @@
          return obj.env.uid
      return -1
  
-+def cvs_write(dispatch, user_id, method_name, recs, params, ids = None):
++def cvs_write(user_id, method_name, recs, params, ids = None):
++    # multi have ids, models do not
 +    cvsw = cw.CvsWriter(config.misc['cvs']['location'])
-+    writer = dispatch.get(method_name, None)
++    recs_name = method_name + '.' + recs._name
++    writer = cvs_write.dispatch.get(recs_name, None)
 +    if writer != None:
 +        writer(cvsw, user_id, method_name, recs, params, ids)
-+
-+# (no ids)
-+cvs_write.model_dis = {}
-+cvs_write.model_recs_dis = {}
-+
-+cvs_write.multi_dis = {}
-+cvs_write.multi_recs_dis = {}
-+
-+def multi_check_recs_name(cvsw, user_id, method_name, recs, params, ids):
-+    recs_name = method_name + '.' + recs._name
-+    writer = cvs_write.multi_recs_dis.get(recs_name, None)
-+    if writer != None:
-+        writer(cvsw, user_id, method_name, recs, params, ids)
-+cvs_write.multi_dis['unlink'] = multi_check_recs_name
-+cvs_write.multi_dis['write'] = multi_check_recs_name
-+cvs_write.multi_dis['read'] = multi_check_recs_name
-+
-+def model_check_recs_name(cvsw, user_id, method_name, recs, params, _):
-+    recs_name = method_name + '.' + recs._name
-+    writer = cvs_write.model_recs_dis.get(recs_name, None)
-+    if writer != None:
-+        writer(cvsw, user_id, method_name, recs, params)
-+cvs_write.model_dis['create'] = model_check_recs_name
-+cvs_write.model_dis['read_group'] = model_check_recs_name
-+cvs_write.model_dis['name_create'] = model_check_recs_name
++cvs_write.dispatch = {}
 +
 +
-+def create_stage(cvsw, user_id, method_name, recs, params):
++def create_stage(cvsw, user_id, method_name, recs, params, _):
 +    cvsw.write({
 +        'actionName': "Create Stage",
 +        'userId': user_id,
 +        'id': params.args[0],
 +    })
-+cvs_write.model_recs_dis['name_create.note.stage'] = create_stage
++cvs_write.dispatch['name_create.note.stage'] = create_stage
 +
 +
 +def first_id_action(action, cvsw, user_id, method_name, recs, params, ids):
@@ -63,9 +41,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +        'userId': user_id,
 +        'id': ids[0],
 +    })
-+cvs_write.multi_recs_dis['unlink.note.note'] = partial(first_id_action, "Delete Note")
-+cvs_write.multi_recs_dis['unlink.note.stage'] = partial(first_id_action, "Delete Stage")
-+cvs_write.multi_recs_dis['unlink.note.stage'] = partial(first_id_action, "Open Note")
++cvs_write.dispatch['unlink.note.stage'] = partial(first_id_action, "Delete Stage")
 +
 +
 +def rename_stage(cvsw, user_id, method_name, recs, params, ids):
@@ -75,20 +51,10 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +        'id': ids[0],
 +        'text': params.args[0]['name'],
 +    })
-+cvs_write.multi_recs_dis['write.note.stage'] = rename_stage
++cvs_write.dispatch['write.note.stage'] = rename_stage
 +
 +
-+def create_note(cvsw, user_id, method_name, recs, params):
-+    cvsw.write({
-+        'actionName': 'Create Note',
-+        'userId': user_id,
-+        'id': params.args[0]['tag_ids'][0][0],
-+        'text': params.args[0]['memo'],
-+    })
-+cvs_write.model_recs_dis['create.note.note'] = create_note
-+
-+
-+def search(cvsw, user_id, method_name, recs, params):
++def search(cvsw, user_id, method_name, recs, params, _):
 +    try:
 +        text = params.kwargs['domain'][0][2]
 +    except IndexError:
@@ -99,15 +65,24 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +        'userId': user_id,
 +        'text': text,
 +    })
-+cvs_write.model_recs_dis['read_group.note.note'] = search
++cvs_write.dispatch['read_group.note.note'] = search
 +
-+
-+def open_note(cvsw, user_id, method_name, recs, params, ids):
++def create_note(cvsw, user_id, method_name, recs, params, _):
 +    cvsw.write({
-+        'actionName': "Rename Stage",
++        'actionName': 'Create Note',
 +        'userId': user_id,
-+        'id': ids[0],
++        'id': params.args[0]['tag_ids'][0][0],
++        'text': params.args[0]['memo'],
 +    })
++cvs_write.dispatch['create.note.note'] = create_note
++
++
++cvs_write.dispatch['unlink.note.note'] = partial(first_id_action, "Delete Note")
++cvs_write.dispatch['read.note.stage'] = partial(first_id_action, "Open Note")
++
++
++
++
 +
 +
 +
@@ -116,7 +91,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
      recs = self.with_context(context or {})
 -    _logger.debug("User %s calls %s.%s(%s)", get_user_id(self), recs, method.__name__, Params(args, kwargs))
 +    _logger.debug("(Model) ++ User: %s, call method: %s, recs: %s, params: %s", get_user_id(self), method.__name__, recs, Params(args, kwargs))
-+    cvs_write(cvs_write.model_dis, get_user_id(self), method.__name__, recs, Params(args, kwargs))
++    cvs_write(get_user_id(self), method.__name__, recs, Params(args, kwargs))
      result = method(recs, *args, **kwargs)
      return downgrade(method, result, recs, args, kwargs)
  
@@ -127,7 +102,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
      recs = self.with_context(context or {}).browse(ids)
 -    _logger.debug("User %s calls %s.%s(%s)", get_user_id(self), recs, method.__name__, Params(args, kwargs))
 +    _logger.debug("(Multi) ++ User: %s, call method: %s, recs: %s, ids: %s, params: %s", get_user_id(self), method.__name__, recs, ids, Params(args, kwargs))
-+    cvs_write(cvs_write.multi_dis, get_user_id(self), method.__name__, recs, Params(args, kwargs), ids)
++    cvs_write(get_user_id(self), method.__name__, recs, Params(args, kwargs), ids)
      result = method(recs, *args, **kwargs)
      return downgrade(method, result, recs, args, kwargs)
  
