@@ -1,17 +1,18 @@
 diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-03-11 17:21:50.689527113 +0000
-+++ odoo/api.py	2019-03-12 14:07:40.913142160 +0000
-@@ -57,6 +57,9 @@
++++ odoo/api.py	2019-03-12 14:34:26.513566108 +0000
+@@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
  
++from functools import partial
 +from odoo.tools import config
 +import odoo.cvs_writer as cw
 +
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -669,21 +672,70 @@
+@@ -669,21 +673,89 @@
          return obj.env.uid
      return -1
  
@@ -28,14 +29,31 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +cvs_write.multi_dis = {}
 +cvs_write.multi_recs_dis = {}
 +
++def multi_check_recs_name(cvsw, user_id, method_name, recs, params, ids):
++    recs_name = method_name + '.' + recs._name
++    writer = cvs_write.multi_recs_dis.get(recs_name, None)
++    if writer != None:
++        writer(cvsw, user_id, method_name, recs, params, ids)
++cvs_write.multi_dis['unlink'] = multi_check_recs_name
 +
-+def check_recs_name(cvsw, user_id, method_name, recs, params, _):
++def model_check_recs_name(cvsw, user_id, method_name, recs, params, _):
 +    recs_name = method_name + '.' + recs._name
 +    writer = cvs_write.model_recs_dis.get(recs_name, None)
 +    if writer != None:
 +        writer(cvsw, user_id, method_name, recs, params)
-+cvs_write.model_dis['create'] = check_recs_name
-+cvs_write.model_dis['read_group'] = check_recs_name
++cvs_write.model_dis['create'] = model_check_recs_name
++cvs_write.model_dis['read_group'] = model_check_recs_name
++
++
++def delete_X(X, cvsw, user_id, method_name, recs, params, ids):
++    cvsw.write({
++        'actionName': X,
++        'userId': user_id,
++        'id': ids[0],
++    })
++cvs_write.multi_recs_dis['unlink.note.note'] = partial(delete_X, "Delete Note")
++cvs_write.multi_recs_dis['unlink.note.stage'] = partial(delete_X, "Delete Stage")
++
 +
 +def create_note(cvsw, user_id, method_name, recs, params):
 +    cvsw.write({
@@ -46,11 +64,13 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +    })
 +cvs_write.model_recs_dis['create.note.note'] = create_note
 +
++
 +def search(cvsw, user_id, method_name, recs, params):
 +    try:
 +        text = params.kwargs['domain'][0][2]
 +    except IndexError:
-+        text = ''
++        return
++
 +    cvsw.write({
 +        'actionName': 'Search',
 +        'userId': user_id,
@@ -58,7 +78,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +    })
 +cvs_write.model_recs_dis['read_group.note.note'] = search
 +
-+import inspect
++
 +
  def call_kw_model(method, self, args, kwargs):
      context, args, kwargs = split_context(method, args, kwargs)
