@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
+import csv
+from datetime import datetime
 import os
 import threading
-import csv
 
 class CvsWriter:
     writers = {}
@@ -23,6 +24,7 @@ class CvsWriter:
         self.write_lock = threading.Lock()
         self.column_names = {}
         self.filename = os.path.abspath(filename)
+        self.id_to_ip = {}
 
         label_row = []
         for idx, column_name in enumerate(column_names_tuple):
@@ -32,8 +34,17 @@ class CvsWriter:
         with self.write_lock, open(self.filename, 'w') as f:
             csv.writer(f).writerow(label_row)
 
+    def connect_id_to_ip(self, userId, userIp):
+        with self.write_lock:
+            self.id_to_ip[userId] = userIp
+
     def write(self, elements_dict):
         with self.write_lock, open(self.filename, 'a') as f:
+            if 'userId' in elements_dict and not 'ipAddr' in elements_dict:
+                elements_dict['ipAddr'] = self.id_to_ip.get(elements_dict['userId'], '')
+            if not 'timestamp' in elements_dict:
+                elements_dict['timestamp'] = datetime.now()
+
             row = ['']*len(self.column_names)
 
             for column_name, value in elements_dict.items():
