@@ -1,6 +1,6 @@
 diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-01-26 05:51:12.000000000 +0000
-+++ odoo/api.py	2019-03-13 12:21:33.309847748 +0000
++++ odoo/api.py	2019-03-13 13:54:17.936746706 +0000
 @@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
@@ -12,7 +12,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -664,22 +668,158 @@
+@@ -664,22 +668,171 @@
      return decorator(func) if not hasattr(func, '_api') else func
  
  
@@ -148,6 +148,19 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +    cvsw.write(to_write)
 +cvs_write.dispatch['message_post.note.note'] = comment_in_note
 +
++
++def invite_and_add_follower(cvsw, user_id, method_name, recs, params, ids):
++    cvsw.write({
++        'actionName': 'Invite and Add follower',
++        'userId': user_id,
++        'id': params.args[0]['res_id'],
++        'partnerId': params.args[0]['partner_ids'][0][0],
++        'text': params.args[0]['message'],
++    })
++cvs_write.dispatch['create.mail.wizard.invite'] = invite_and_add_follower
++
++
++
  
  def call_kw_model(method, self, args, kwargs):
      context, args, kwargs = split_context(method, args, kwargs)
@@ -275,7 +288,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/service/server.py odoo/service/server.
              self.db_index = (self.db_index + 1) % len(db_names)
 diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/tools/config.py odoo/tools/config.py
 --- odoo.orig/tools/config.py	2018-10-12 05:54:23.000000000 +0100
-+++ odoo/tools/config.py	2019-03-13 11:21:46.183161169 +0000
++++ odoo/tools/config.py	2019-03-13 13:46:26.282993369 +0000
 @@ -12,6 +12,7 @@
  import sys
  import odoo
@@ -284,7 +297,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/tools/config.py odoo/tools/config.py
  from . import appdirs, pycompat
  
  from passlib.context import CryptContext
-@@ -550,6 +551,15 @@
+@@ -550,6 +551,16 @@
              pass
          except ConfigParser.NoSectionError:
              pass
@@ -293,8 +306,9 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/tools/config.py odoo/tools/config.py
 +            'actionName',
 +            'userId',
 +            'ipAddr',
-+            'stageId',
 +            'id',
++            'stageId',
++            'partnerId',
 +            'text',
 +        ))
  
