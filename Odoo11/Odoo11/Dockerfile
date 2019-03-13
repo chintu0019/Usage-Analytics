@@ -59,13 +59,9 @@ RUN set -x; \
 COPY ./odoo.conf /usr/lib/python3/dist-packages/odoo
 COPY ./analyzer.patch /usr/lib/python3/dist-packages/
 
-RUN cd /usr/lib/python3/dist-packages \
-        && patch -p0 ./analyzer.patch \
-        && rm ./analyzer.patch \
-        && cd -
-
-RUN mv /usr/lib/python3/dist-packages/odoo /usr/lib/python3/dist-packages/odoo.orig \
+RUN mv /usr/lib/python3/dist-packages/odoo /usr/lib/python3/dist-packages/odoo.untouched \
         && mkdir /usr/lib/python3/dist-packages/odoo \
+        && mkdir /usr/lib/python3/dist-packages/odoo.orig \
         && rm -rf /var/lib/apt/lists/* odoo.deb
 
 # Copy entrypoint script and Odoo configuration file
