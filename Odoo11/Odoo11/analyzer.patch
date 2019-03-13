@@ -1,6 +1,6 @@
 diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-01-26 05:51:12.000000000 +0000
-+++ odoo/api.py	2019-03-13 14:14:06.824853152 +0000
++++ odoo/api.py	2019-03-13 16:45:00.887226401 +0000
 @@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
@@ -12,7 +12,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -664,22 +668,181 @@
+@@ -664,22 +668,250 @@
      return decorator(func) if not hasattr(func, '_api') else func
  
  
@@ -63,16 +63,21 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +
 +
 +def search(cvsw, user_id, method_name, recs, params, _):
++    to_write = {
++        'userId': user_id,
++    }
++
 +    try:
-+        text = params.kwargs['domain'][0][2]
++        to_write['text'] = [x[2] for x in params.kwargs['domain'] if x[0] == 'memo'][0]
++        tag_id = [x[2] for x in params.kwargs['domain'] if x[0] == 'tag_ids']
 +    except IndexError:
 +        return
 +
-+    cvsw.write({
-+        'actionName': 'Search',
-+        'userId': user_id,
-+        'text': text,
-+    })
++    if tag_id:
++        to_write['actionName'] = 'Search for Tag and Note with keyword'
++        to_write['id'] = tag_id[0]
++    else:
++        to_write['actionName'] = 'Search'
 +cvs_write.dispatch['read_group.note.note'] = search
 +
 +
@@ -99,7 +104,6 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +            'text': memo,
 +        })
 +        return
-+
 +    except KeyError:
 +        pass
 +
@@ -117,9 +121,32 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +            'stageId': stage_id,
 +        })
 +        return
-+
 +    except KeyError:
 +        pass
++
++    try:
++        _ = params.args[0]['tag_ids']
++        cvsw.write({
++            'actionName': "Add tag",
++            'userId': user_id,
++            'id': ids[0]
++        })
++        return
++    except KeyError:
++        pass
++
++    try:
++        _ = params.args[0]['color']
++        cvsw.write({
++            'actionName': "Change note",
++            'userId': user_id,
++            'id': ids[0]
++        })
++        return
++    except KeyError:
++        pass
++
++
 +write_note_note.user_moving = {}
 +cvs_write.dispatch['write.note.note'] = write_note_note
 +
@@ -168,8 +195,50 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +    })
 +cvs_write.dispatch['create.note.tag'] = create_new_tag
 +
-+cvs_write.dispatch['channel_invite.mail.channel'] = just_log_it_loudly
++
++def create_new_tag2(cvsw, user_id, method_name, recs, params, ids):
++    cvsw.write({
++        'actionName': 'Create new tag',
++        'userId': user_id,
++        'text': params.args[0],
++    })
++cvs_write.dispatch['name_create.note.tag'] = create_new_tag2
++
 +cvs_write.dispatch['message_unsubscribe.note.note'] = partial(first_id_action, "Remove follower from note")
++cvs_write.dispatch['write.note.tag'] = partial(first_id_action, "Change Tag Colour")
++
++def message_post_mail(cvsw, user_id, method_name, recs, params, ids):
++    to_write = {
++        'userId': user_id,
++        'text': params.kwargs['body'],
++        'id': ids,
++    }
++
++    if len(params.kwargs['partner_ids']) > 0:
++        to_write['actionName'] = "Mention user in chat"
++        to_write['partnerId'] = params.kwargs['partner_ids'][0]
++    elif 'class="o_channel_redirect"' in to_write['text']:
++        to_write['actionName'] = "Reference channel in chat"
++    else:
++        to_write['actionName'] = "Chat with other users"
++    cvsw.write(to_write)
++cvs_write.dispatch['message_post.mail.channel'] = message_post_mail
++
++def remove_mess_channel(cvsw, user_id, method_name, recs, params, ids):
++    cvsw.write({
++        'actionName': "Remove messaging channel",
++        'userId': user_id,
++    })
++cvs_write.dispatch['channel_pin.mail.channel'] = remove_mess_channel
++
++cvs_write.dispatch['action_unfollow.mail.channel'] = partial(first_id_action, "Unfollow from a Channel")
++
++
++#???????????????????????? Open Smileys
++cvs_write.dispatch['channel_invite.mail.channel'] = just_log_it_loudly #invite user
++cvs_write.dispatch['channel_pin.mail.channel'] = just_log_it_loudly #remove messaging channel
++
++
 +
  
  def call_kw_model(method, self, args, kwargs):
