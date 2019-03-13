@@ -5,8 +5,12 @@ services:
         depends_on:
             - db
         build: ./Odoo11
+        environment:
+            # put your user id (the output of id -u)
+            - HOST_USER=1000
         volumes:
             - "./odoo:/usr/lib/python3/dist-packages/odoo"
+            - "./odoo.orig:/usr/lib/python3/dist-packages/odoo.orig"
         ports:
             - "8011:8069"
 
