@@ -1,6 +1,6 @@
 diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-01-26 05:51:12.000000000 +0000
-+++ odoo/api.py	2019-03-13 13:54:17.936746706 +0000
++++ odoo/api.py	2019-03-13 14:14:06.824853152 +0000
 @@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
@@ -12,7 +12,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -664,22 +668,171 @@
+@@ -664,22 +668,181 @@
      return decorator(func) if not hasattr(func, '_api') else func
  
  
@@ -160,6 +160,16 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +cvs_write.dispatch['create.mail.wizard.invite'] = invite_and_add_follower
 +
 +
++def create_new_tag(cvsw, user_id, method_name, recs, params, ids):
++    cvsw.write({
++        'actionName': 'Create new tag',
++        'userId': user_id,
++        'text': params.args[0]['name'],
++    })
++cvs_write.dispatch['create.note.tag'] = create_new_tag
++
++cvs_write.dispatch['channel_invite.mail.channel'] = just_log_it_loudly
++cvs_write.dispatch['message_unsubscribe.note.note'] = partial(first_id_action, "Remove follower from note")
 +
  
  def call_kw_model(method, self, args, kwargs):
