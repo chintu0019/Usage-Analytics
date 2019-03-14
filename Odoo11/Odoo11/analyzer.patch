@@ -1,4 +1,4 @@
-diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/api.py odoo/api.py
+diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-01-26 05:51:12.000000000 +0000
 +++ odoo/api.py	2019-03-13 17:24:05.456418418 +0000
 @@ -57,6 +57,10 @@
@@ -265,7 +265,69 @@ diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/api.py odoo/api.py
  def call_kw(model, name, args, kwargs):
      """ Invoke the given method ``name`` on the recordset ``model``. """
      method = getattr(type(model), name)
-diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/http.py odoo/http.py
+diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/csv_writer.py odoo/csv_writer.py
+--- odoo.orig/csv_writer.py	1970-01-01 01:00:00.000000000 +0100
++++ odoo/csv_writer.py	2019-03-13 17:22:07.964651013 +0000
+@@ -0,0 +1,58 @@
++#!/usr/bin/env python3
++
++import csv
++from datetime import datetime
++import os
++from os import path
++import threading
++import time
++
++class CsvWriter:
++    writers = {}
++
++    def __init__(self, dirname, column_names_tuple = None):
++        if column_names_tuple == None:
++            self._recover(dirname)
++        else:
++            self._first_init(dirname, column_names_tuple)
++
++    def _recover(self, dirname):
++        dirname = os.path.abspath(dirname)
++        self.__dict__ = CsvWriter.writers[dirname]
++
++    def _first_init(self, dirname, column_names_tuple):
++        dirname = os.path.abspath(dirname)
++        CsvWriter.writers[dirname] = {}
++        self.__dict__ = CsvWriter.writers[dirname]
++
++        self.filename = path.join(os.path.abspath(dirname), time.strftime("%Y%m%d-%H%M%S", time.gmtime()) + '.csv')
++
++        self.write_lock = threading.Lock()
++        self.column_names = {}
++        self.id_to_ip = {}
++
++        label_row = []
++        for idx, column_name in enumerate(column_names_tuple):
++            self.column_names[column_name] = idx
++            label_row.append(column_name)
++
++        with self.write_lock, open(self.filename, 'w') as f:
++            csv.writer(f).writerow(label_row)
++
++    def connect_id_to_ip(self, userId, userIp):
++        with self.write_lock:
++            self.id_to_ip[userId] = userIp
++
++    def write(self, elements_dict):
++        with self.write_lock, open(self.filename, 'a') as f:
++            if 'userId' in elements_dict and not 'ipAddr' in elements_dict:
++                elements_dict['ipAddr'] = self.id_to_ip.get(elements_dict['userId'], '')
++            if not 'timestamp' in elements_dict:
++                elements_dict['timestamp'] = datetime.now()
++
++            row = ['']*len(self.column_names)
++
++            for column_name, value in elements_dict.items():
++                row[ self.column_names[column_name] ] = str(value)
++
++            csv.writer(f).writerow(row)
+diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/http.py odoo/http.py
 --- odoo.orig/http.py	2018-11-23 05:55:29.000000000 +0000
 +++ odoo/http.py	2019-03-13 17:18:39.514850497 +0000
 @@ -51,6 +51,9 @@
@@ -289,7 +351,7 @@ diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/http.py odoo/http.py
          request = self
          if self.endpoint.routing['type'] != self._request_type:
              msg = "%s, %s: Function declared as capable of handling request of type '%s' but called with a request of type '%s'"
-diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/odoo.conf odoo/odoo.conf
+diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf odoo/odoo.conf
 --- odoo.orig/odoo.conf	2019-03-11 17:09:45.000000000 +0000
 +++ odoo/odoo.conf	2019-03-13 17:18:12.397776321 +0000
 @@ -35,5 +35,6 @@
@@ -301,7 +363,7 @@ diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/odoo.conf odoo/odoo.conf
 +[csv]
 +location = /usr/lib/python3/dist-packages/odoo/csvfolder
 +
-diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/service/server.py odoo/service/server.py
+diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/service/server.py odoo/service/server.py
 --- odoo.orig/service/server.py	2018-11-03 05:47:26.000000000 +0000
 +++ odoo/service/server.py	2019-03-13 11:21:46.179827785 +0000
 @@ -227,7 +227,6 @@
@@ -320,7 +382,7 @@ diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/service/server.py odoo/servi
          db_names = self._db_list()
          if len(db_names):
              self.db_index = (self.db_index + 1) % len(db_names)
-diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/tools/config.py odoo/tools/config.py
+diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/tools/config.py odoo/tools/config.py
 --- odoo.orig/tools/config.py	2018-10-12 05:54:23.000000000 +0100
 +++ odoo/tools/config.py	2019-03-13 17:18:47.491637043 +0000
 @@ -12,6 +12,7 @@
