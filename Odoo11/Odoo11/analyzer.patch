@@ -1,6 +1,6 @@
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-01-26 05:51:12.000000000 +0000
-+++ odoo/api.py	2019-03-14 11:40:52.449983390 +0000
++++ odoo/api.py	2019-03-14 17:43:55.859900293 +0000
 @@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
@@ -12,7 +12,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -664,22 +668,250 @@
+@@ -664,22 +668,318 @@
      return decorator(func) if not hasattr(func, '_api') else func
  
  
@@ -20,6 +20,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +    if hasattr(obj, "env") and hasattr(obj.env, "uid"):
 +        return obj.env.uid
 +    return -1
++
 +
 +def csv_write(user_id, method_name, recs, params, ids = None):
 +    # multi have ids, models do not
@@ -29,6 +30,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +    if writer != None:
 +        writer(csvw, user_id, method_name, recs, params, ids)
 +csv_write.dispatch = {}
++
 +
 +def just_log_it_loudly(csvw, user_id, method_name, recs, params, ids):
 +    _logger.debug("LOUDLY! -- User: %s, call method: %s, recs: %s, ids: %s, params: %s", user_id, method_name, recs, ids, params)
@@ -40,6 +42,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        'userId': user_id,
 +        'id': params.args[0],
 +    })
++    _logger.debug("AAAAAAAAAAHHHHHHHHHH!!!!!!!!!")
 +csv_write.dispatch['name_create.note.stage'] = create_stage
 +
 +
@@ -63,21 +66,37 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +
 +
 +def search(csvw, user_id, method_name, recs, params, _):
++    if not 'domain' in params.kwargs:
++        return
++
 +    to_write = {
 +        'userId': user_id,
 +    }
++    
++    keywords = []
++    tags_or_notes = 0
 +
-+    try:
-+        to_write['text'] = [x[2] for x in params.kwargs['domain'] if x[0] == 'memo'][0]
-+        tag_id = [x[2] for x in params.kwargs['domain'] if x[0] == 'tag_ids']
-+    except IndexError:
++    for element in params.kwargs['domain']:
++        if not (type(element) == list and len(element) == 3):
++            continue
++        if element[0] == 'memo':
++            tags_or_notes = tags_or_notes | 1
++            keywords.append(element[2])
++        elif element[0] == 'tag_ids':
++            tags_or_notes = tags_or_notes | 2
++            keywords.append(element[2])
++
++    if tags_or_notes == 0:
 +        return
++    elif tags_or_notes == 1:
++        to_write['actionName'] = 'Search with Note'
++    elif tags_or_notes == 2:
++        to_write['actionName'] = 'Search with Tag'
++    elif tags_or_notes == 3:
++        to_write['actionName'] = 'Search with both Tag and Note'
 +
-+    if tag_id:
-+        to_write['actionName'] = 'Search for Tag and Note with keyword'
-+        to_write['id'] = tag_id[0]
-+    else:
-+        to_write['actionName'] = 'Search'
++    to_write['text'] = ', '.join(keywords)
++    csvw.write(to_write)
 +csv_write.dispatch['read_group.note.note'] = search
 +
 +
@@ -88,13 +107,38 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        'id': params.args[0]['tag_ids'][0][0],
 +        'text': params.args[0]['memo'],
 +    })
++    open_note.ignored[user_id] = 1
 +csv_write.dispatch['create.note.note'] = create_note
 +
++
++def create_note_dash(csvw, user_id, method_name, recs, params, _):
++    csvw.write({
++        'actionName': 'Create Note',
++        'userId': user_id,
++        'text': params.args[0],
++    })
++csv_write.dispatch['name_create.note.note'] = create_note_dash
++
++
 +csv_write.dispatch['unlink.note.note'] = partial(first_id_action, "Delete Note")
-+csv_write.dispatch['read.note.stage'] = partial(first_id_action, "Open Note")
++
++
++def open_note(csvw, user_id, method_name, recs, params, ids):
++    nr_ignore = open_note.ignored.get(user_id, 0)
++    if nr_ignore > 0:
++        open_note.ignored[user_id] = open_note.ignored[user_id] - 1
++        return
++    csvw.write({
++        'actionName': 'Open Note',
++        'userId': user_id,
++        'id': ids[0],
++    })
++open_note.ignored = {}
++csv_write.dispatch['read.note.note'] = open_note
 +
 +
 +def write_note_note(csvw, user_id, method_name, recs, params, ids):
++    open_note.ignored[user_id] = 1
 +    try:
 +        memo = params.args[0]['memo']
 +        csvw.write({
@@ -114,6 +158,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +            actionName = 'Move Note'
 +        else:
 +            actionName = 'Drag and Drop note'
++            open_note.ignored[user_id] = open_note.ignored[user_id] + 1
 +        csvw.write({
 +            'actionName': actionName,
 +            'userId': user_id,
@@ -138,15 +183,13 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +    try:
 +        _ = params.args[0]['color']
 +        csvw.write({
-+            'actionName': "Change note",
++            'actionName': "Change Note Colour",
 +            'userId': user_id,
 +            'id': ids[0]
 +        })
 +        return
 +    except KeyError:
 +        pass
-+
-+
 +write_note_note.user_moving = {}
 +csv_write.dispatch['write.note.note'] = write_note_note
 +
@@ -184,7 +227,17 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        'partnerId': params.args[0]['partner_ids'][0][0],
 +        'text': params.args[0]['message'],
 +    })
++    open_note.ignored[user_id] = 1
 +csv_write.dispatch['create.mail.wizard.invite'] = invite_and_add_follower
++
++
++def invite_user(csvw, user_id, method_name, recs, params, _):
++    csvw.write({
++        'actionName': 'Invite User',
++        'userId': user_id,
++        'partnerId': params.args[0],
++    })
++csv_write.dispatch['web_dashboard_create_users.res.users'] = invite_user
 +
 +
 +def create_new_tag(csvw, user_id, method_name, recs, params, ids):
@@ -204,8 +257,19 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +    })
 +csv_write.dispatch['name_create.note.tag'] = create_new_tag2
 +
-+csv_write.dispatch['message_unsubscribe.note.note'] = partial(first_id_action, "Remove follower from note")
++
++def remove_follower_from_note(csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
++        'actionName': "Remove follower from note",
++        'userId': user_id,
++        'id': ids[0],
++    })
++    open_note.ignored[user_id] = 1
++csv_write.dispatch['message_unsubscribe.note.note'] = remove_follower_from_note
++
++
 +csv_write.dispatch['write.note.tag'] = partial(first_id_action, "Change Tag Colour")
++
 +
 +def message_post_mail(csvw, user_id, method_name, recs, params, ids):
 +    to_write = {
@@ -214,15 +278,26 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        'id': ids,
 +    }
 +
++    user_or_channel = 0
++
 +    if len(params.kwargs['partner_ids']) > 0:
-+        to_write['actionName'] = "Mention user in chat"
-+        to_write['partnerId'] = params.kwargs['partner_ids'][0]
-+    elif 'class="o_channel_redirect"' in to_write['text']:
-+        to_write['actionName'] = "Reference channel in chat"
-+    else:
++        to_write['partnerId'] = params.kwargs['partner_ids']
++        user_or_channel = user_or_channel | 1
++    if 'class="o_channel_redirect"' in to_write['text']:
++        user_or_channel = user_or_channel | 2
++
++    if user_or_channel == 0:
 +        to_write['actionName'] = "Chat with other users"
++    elif user_or_channel == 1:
++        to_write['actionName'] = "Mention user in chat"
++    elif user_or_channel == 2:
++        to_write['actionName'] = "Reference channel in chat"
++    elif user_or_channel == 3:
++        to_write['actionName'] = "Mention user and reference channel in chat"
++    
 +    csvw.write(to_write)
 +csv_write.dispatch['message_post.mail.channel'] = message_post_mail
++
 +
 +def remove_mess_channel(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
@@ -233,19 +308,12 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +
 +csv_write.dispatch['action_unfollow.mail.channel'] = partial(first_id_action, "Unfollow from a Channel")
 +
-+
-+#???????????????????????? Open Smileys
-+csv_write.dispatch['channel_invite.mail.channel'] = just_log_it_loudly #invite user
-+csv_write.dispatch['channel_pin.mail.channel'] = just_log_it_loudly #remove messaging channel
-+
-+
-+
  
  def call_kw_model(method, self, args, kwargs):
      context, args, kwargs = split_context(method, args, kwargs)
      recs = self.with_context(context or {})
 -    _logger.debug("call %s.%s(%s)", recs, method.__name__, Params(args, kwargs))
-+    _logger.debug("(Model) ++ User: %s, call method: %s, recs: %s, params: %s", get_user_id(self), method.__name__, recs, Params(args, kwargs))
++    _logger.debug("(Model) ++ User: %s, call method: %s.%s, recs: %s, params: %s", get_user_id(self), method.__name__, recs._name, recs, Params(args, kwargs))
 +    csv_write(get_user_id(self), method.__name__, recs, Params(args, kwargs))
      result = method(recs, *args, **kwargs)
      return downgrade(method, result, recs, args, kwargs)
@@ -256,7 +324,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
      context, args, kwargs = split_context(method, args, kwargs)
      recs = self.with_context(context or {}).browse(ids)
 -    _logger.debug("call %s.%s(%s)", recs, method.__name__, Params(args, kwargs))
-+    _logger.debug("(Multi) ++ User: %s, call method: %s, recs: %s, ids: %s, params: %s", get_user_id(self), method.__name__, recs, ids, Params(args, kwargs))
++    _logger.debug("(Multi) ++ User: %s, call method: %s.%s, recs: %s, ids: %s, params: %s", get_user_id(self), method.__name__, recs._name, recs, ids, Params(args, kwargs))
 +    csv_write(get_user_id(self), method.__name__, recs, Params(args, kwargs), ids)
      result = method(recs, *args, **kwargs)
      return downgrade(method, result, recs, args, kwargs)
@@ -267,7 +335,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
      method = getattr(type(model), name)
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/csv_writer.py odoo/csv_writer.py
 --- odoo.orig/csv_writer.py	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/csv_writer.py	2019-03-14 11:40:52.459983390 +0000
++++ odoo/csv_writer.py	2019-03-14 12:02:31.679978434 +0000
 @@ -0,0 +1,58 @@
 +#!/usr/bin/env python3
 +
@@ -329,7 +397,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/csv_writer.py odoo/csv_wr
 +            csv.writer(f).writerow(row)
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/http.py odoo/http.py
 --- odoo.orig/http.py	2018-11-23 05:55:29.000000000 +0000
-+++ odoo/http.py	2019-03-14 11:40:52.459983390 +0000
++++ odoo/http.py	2019-03-14 12:02:31.679978434 +0000
 @@ -51,6 +51,9 @@
  
  from .modules.module import module_manifest
@@ -353,7 +421,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/http.py odoo/http.py
              msg = "%s, %s: Function declared as capable of handling request of type '%s' but called with a request of type '%s'"
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf odoo/odoo.conf
 --- odoo.orig/odoo.conf	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/odoo.conf	2019-03-14 11:00:44.000000000 +0000
++++ odoo/odoo.conf	2019-03-14 12:02:31.679978434 +0000
 @@ -0,0 +1,39 @@
 +[options]
 +addons_path = /mnt/extra-addons
@@ -396,7 +464,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf odoo/odoo.conf
 +location = /usr/lib/python3/dist-packages/odoo/csvfolder
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf.orig odoo/odoo.conf.orig
 --- odoo.orig/odoo.conf.orig	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/odoo.conf.orig	2019-03-14 11:40:52.459983390 +0000
++++ odoo/odoo.conf.orig	2019-03-14 12:02:31.679978434 +0000
 @@ -0,0 +1,39 @@
 +[options]
 +addons_path = /mnt/extra-addons
@@ -439,7 +507,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf.orig odoo/odoo.
 +location = /usr/lib/python3/dist-packages/odoo/csvfolder
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf.rej odoo/odoo.conf.rej
 --- odoo.orig/odoo.conf.rej	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/odoo.conf.rej	2019-03-14 11:40:52.459983390 +0000
++++ odoo/odoo.conf.rej	2019-03-14 12:02:31.679978434 +0000
 @@ -0,0 +1,11 @@
 +--- odoo.orig/odoo.conf	2019-03-11 17:09:45.000000000 +0000
 ++++ odoo/odoo.conf	2019-03-13 17:18:12.397776321 +0000
@@ -454,7 +522,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf.rej odoo/odoo.c
 ++
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/service/server.py odoo/service/server.py
 --- odoo.orig/service/server.py	2018-11-03 05:47:26.000000000 +0000
-+++ odoo/service/server.py	2019-03-14 11:40:52.459983390 +0000
++++ odoo/service/server.py	2019-03-14 12:02:31.679978434 +0000
 @@ -227,7 +227,6 @@
          while True:
              time.sleep(SLEEP_INTERVAL + number)     # Steve Reich timing style
@@ -473,7 +541,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/service/server.py odoo/se
              self.db_index = (self.db_index + 1) % len(db_names)
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/tools/config.py odoo/tools/config.py
 --- odoo.orig/tools/config.py	2018-10-12 05:54:23.000000000 +0100
-+++ odoo/tools/config.py	2019-03-14 11:40:52.459983390 +0000
++++ odoo/tools/config.py	2019-03-14 12:02:31.679978434 +0000
 @@ -12,6 +12,7 @@
  import sys
  import odoo
