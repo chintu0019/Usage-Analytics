@@ -49,9 +49,6 @@
             ]
         },
         {
-            "Open Smileys in comments": "/mail/static/src/img/smiley/*.png HTTP/1.1"
-        },
-        {
             "Invite and Add follower": [
                 "call res.partner(ID,).name_get()",
                 "/web/dataset/call_kw/res.partner/name_get HTTP/1.1",
@@ -97,9 +94,6 @@
                 "mail.channel(ID,).message_post(attachment_ids=[], body='message in <a href=\"http://136.206.48.84:8069/web#model=mail.channel&amp;id=4\" class=\"o_channel_redirect\" data-oe-id=\"4\" data-oe-model=\"mail.channel\" target=\"_blank\">#general 2</a> channel', content_subtype='html', message_type='comment', partner_ids=[], subtype='mail.mt_comment')",
                 "/web/dataset/call_kw/mail.channel/message_post HTTP/1.1"
             ]
-        },
-        {
-            "Remove messaging channel": "mail.channel().channel_pin('fb84bd35-a08a-4c05-9e0f-e2e043319f3b', False)"
         },
         {
             "Unfollow from a Channel": "mail.channel(ID,).action_unfollow()"
