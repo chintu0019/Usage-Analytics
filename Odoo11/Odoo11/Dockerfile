@@ -56,13 +56,14 @@ RUN set -x; \
         && apt-get update \
         && apt-get -y install -f --no-install-recommends
 
-COPY ./odoo.conf /usr/lib/python3/dist-packages/odoo
+#COPY ./odoo.conf /usr/lib/python3/dist-packages/odoo
 COPY ./analyzer.patch /usr/lib/python3/dist-packages/
 
 RUN mv /usr/lib/python3/dist-packages/odoo /usr/lib/python3/dist-packages/odoo.untouched \
         && mkdir /usr/lib/python3/dist-packages/odoo \
         && mkdir /usr/lib/python3/dist-packages/odoo.orig \
-        && rm -rf /var/lib/apt/lists/* odoo.deb
+        && rm -rf /var/lib/apt/lists/* odoo.deb \
+        && mkdir /usr/lib/python3/dist-packages/odoo.untouched/csvfolder
 
 # Copy entrypoint script and Odoo configuration file
 RUN pip3 install num2words xlwt
