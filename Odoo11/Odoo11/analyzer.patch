@@ -1,18 +1,18 @@
-diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
+diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-01-26 05:51:12.000000000 +0000
-+++ odoo/api.py	2019-03-12 17:52:38.147578738 +0000
++++ odoo/api.py	2019-03-13 17:24:05.456418418 +0000
 @@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
  
 +from functools import partial
 +from odoo.tools import config
-+import odoo.cvs_writer as cw
++import odoo.csv_writer as cw
 +
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -664,22 +668,143 @@
+@@ -664,22 +668,250 @@
      return decorator(func) if not hasattr(func, '_api') else func
  
  
@@ -21,81 +21,89 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +        return obj.env.uid
 +    return -1
 +
-+def cvs_write(user_id, method_name, recs, params, ids = None):
++def csv_write(user_id, method_name, recs, params, ids = None):
 +    # multi have ids, models do not
-+    cvsw = cw.CvsWriter(config.misc['cvs']['location'])
++    csvw = cw.CsvWriter(config.misc['csv']['location'])
 +    recs_name = method_name + '.' + recs._name
-+    writer = cvs_write.dispatch.get(recs_name, None)
++    writer = csv_write.dispatch.get(recs_name, None)
 +    if writer != None:
-+        writer(cvsw, user_id, method_name, recs, params, ids)
-+cvs_write.dispatch = {}
++        writer(csvw, user_id, method_name, recs, params, ids)
++csv_write.dispatch = {}
++
++def just_log_it_loudly(csvw, user_id, method_name, recs, params, ids):
++    _logger.debug("LOUDLY! -- User: %s, call method: %s, recs: %s, ids: %s, params: %s", user_id, method_name, recs, ids, params)
 +
 +
-+def create_stage(cvsw, user_id, method_name, recs, params, _):
-+    cvsw.write({
++def create_stage(csvw, user_id, method_name, recs, params, _):
++    csvw.write({
 +        'actionName': "Create Stage",
 +        'userId': user_id,
 +        'id': params.args[0],
 +    })
-+cvs_write.dispatch['name_create.note.stage'] = create_stage
++csv_write.dispatch['name_create.note.stage'] = create_stage
 +
 +
-+def first_id_action(action, cvsw, user_id, method_name, recs, params, ids):
-+    cvsw.write({
++def first_id_action(action, csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
 +        'actionName': action,
 +        'userId': user_id,
 +        'id': ids[0],
 +    })
-+cvs_write.dispatch['unlink.note.stage'] = partial(first_id_action, "Delete Stage")
++csv_write.dispatch['unlink.note.stage'] = partial(first_id_action, "Delete Stage")
 +
 +
-+def rename_stage(cvsw, user_id, method_name, recs, params, ids):
-+    cvsw.write({
++def rename_stage(csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
 +        'actionName': "Rename Stage",
 +        'userId': user_id,
 +        'id': ids[0],
 +        'text': params.args[0]['name'],
 +    })
-+cvs_write.dispatch['write.note.stage'] = rename_stage
++csv_write.dispatch['write.note.stage'] = rename_stage
 +
 +
-+def search(cvsw, user_id, method_name, recs, params, _):
++def search(csvw, user_id, method_name, recs, params, _):
++    to_write = {
++        'userId': user_id,
++    }
++
 +    try:
-+        text = params.kwargs['domain'][0][2]
++        to_write['text'] = [x[2] for x in params.kwargs['domain'] if x[0] == 'memo'][0]
++        tag_id = [x[2] for x in params.kwargs['domain'] if x[0] == 'tag_ids']
 +    except IndexError:
 +        return
 +
-+    cvsw.write({
-+        'actionName': 'Search',
-+        'userId': user_id,
-+        'text': text,
-+    })
-+cvs_write.dispatch['read_group.note.note'] = search
++    if tag_id:
++        to_write['actionName'] = 'Search for Tag and Note with keyword'
++        to_write['id'] = tag_id[0]
++    else:
++        to_write['actionName'] = 'Search'
++csv_write.dispatch['read_group.note.note'] = search
 +
-+def create_note(cvsw, user_id, method_name, recs, params, _):
-+    cvsw.write({
++
++def create_note(csvw, user_id, method_name, recs, params, _):
++    csvw.write({
 +        'actionName': 'Create Note',
 +        'userId': user_id,
 +        'id': params.args[0]['tag_ids'][0][0],
 +        'text': params.args[0]['memo'],
 +    })
-+cvs_write.dispatch['create.note.note'] = create_note
++csv_write.dispatch['create.note.note'] = create_note
 +
-+cvs_write.dispatch['unlink.note.note'] = partial(first_id_action, "Delete Note")
-+cvs_write.dispatch['read.note.stage'] = partial(first_id_action, "Open Note")
++csv_write.dispatch['unlink.note.note'] = partial(first_id_action, "Delete Note")
++csv_write.dispatch['read.note.stage'] = partial(first_id_action, "Open Note")
 +
 +
-+def write_note_note(cvsw, user_id, method_name, recs, params, ids):
++def write_note_note(csvw, user_id, method_name, recs, params, ids):
 +    try:
 +        memo = params.args[0]['memo']
-+        cvsw.write({
++        csvw.write({
 +            'actionName': 'Edit Note',
 +            'userId': user_id,
 +            'id': ids[0],
 +            'text': memo,
 +        })
 +        return
-+
 +    except KeyError:
 +        pass
 +
@@ -106,32 +114,131 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
 +            actionName = 'Move Note'
 +        else:
 +            actionName = 'Drag and Drop note'
-+        cvsw.write({
++        csvw.write({
 +            'actionName': actionName,
 +            'userId': user_id,
 +            'id': ids[0],
 +            'stageId': stage_id,
 +        })
 +        return
-+
 +    except KeyError:
 +        pass
++
++    try:
++        _ = params.args[0]['tag_ids']
++        csvw.write({
++            'actionName': "Add tag",
++            'userId': user_id,
++            'id': ids[0]
++        })
++        return
++    except KeyError:
++        pass
++
++    try:
++        _ = params.args[0]['color']
++        csvw.write({
++            'actionName': "Change note",
++            'userId': user_id,
++            'id': ids[0]
++        })
++        return
++    except KeyError:
++        pass
++
++
 +write_note_note.user_moving = {}
-+cvs_write.dispatch['write.note.note'] = write_note_note
++csv_write.dispatch['write.note.note'] = write_note_note
 +
 +
-+def move_note_step1(cvsw, user_id, method_name, recs, params, ids):
++def move_note_step1(csvw, user_id, method_name, recs, params, ids):
 +    if type(ids) == int: write_note_note.user_moving[user_id] = ids
-+cvs_write.dispatch['name_get.note.stage'] = move_note_step1
++csv_write.dispatch['name_get.note.stage'] = move_note_step1
 +
 +
-+def open_note_commenting(cvsw, user_id, method_name, recs, params, ids):
-+    cvsw.write({
++def open_note_commenting(csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
 +        'actionName': 'Open commenting in note',
 +        'userId': user_id,
 +        'id': ids[0],
 +    })
-+cvs_write.dispatch['message_get_suggested_recipients.note.note'] = open_note_commenting
++csv_write.dispatch['message_get_suggested_recipients.note.note'] = open_note_commenting
++
++
++def comment_in_note(csvw, user_id, method_name, recs, params, ids):
++    to_write = { 'userId': user_id, }
++    if len(params.kwargs['attachment_ids']) == 0:
++        to_write['actionName'] = 'Comment in Note'
++    else:
++        to_write['actionName'] = 'Attach file'
++    to_write['text'] = params.kwargs['body']
++    csvw.write(to_write)
++csv_write.dispatch['message_post.note.note'] = comment_in_note
++
++
++def invite_and_add_follower(csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
++        'actionName': 'Invite and Add follower',
++        'userId': user_id,
++        'id': params.args[0]['res_id'],
++        'partnerId': params.args[0]['partner_ids'][0][0],
++        'text': params.args[0]['message'],
++    })
++csv_write.dispatch['create.mail.wizard.invite'] = invite_and_add_follower
++
++
++def create_new_tag(csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
++        'actionName': 'Create new tag',
++        'userId': user_id,
++        'text': params.args[0]['name'],
++    })
++csv_write.dispatch['create.note.tag'] = create_new_tag
++
++
++def create_new_tag2(csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
++        'actionName': 'Create new tag',
++        'userId': user_id,
++        'text': params.args[0],
++    })
++csv_write.dispatch['name_create.note.tag'] = create_new_tag2
++
++csv_write.dispatch['message_unsubscribe.note.note'] = partial(first_id_action, "Remove follower from note")
++csv_write.dispatch['write.note.tag'] = partial(first_id_action, "Change Tag Colour")
++
++def message_post_mail(csvw, user_id, method_name, recs, params, ids):
++    to_write = {
++        'userId': user_id,
++        'text': params.kwargs['body'],
++        'id': ids,
++    }
++
++    if len(params.kwargs['partner_ids']) > 0:
++        to_write['actionName'] = "Mention user in chat"
++        to_write['partnerId'] = params.kwargs['partner_ids'][0]
++    elif 'class="o_channel_redirect"' in to_write['text']:
++        to_write['actionName'] = "Reference channel in chat"
++    else:
++        to_write['actionName'] = "Chat with other users"
++    csvw.write(to_write)
++csv_write.dispatch['message_post.mail.channel'] = message_post_mail
++
++def remove_mess_channel(csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
++        'actionName': "Remove messaging channel",
++        'userId': user_id,
++    })
++csv_write.dispatch['channel_pin.mail.channel'] = remove_mess_channel
++
++csv_write.dispatch['action_unfollow.mail.channel'] = partial(first_id_action, "Unfollow from a Channel")
++
++
++#???????????????????????? Open Smileys
++csv_write.dispatch['channel_invite.mail.channel'] = just_log_it_loudly #invite user
++csv_write.dispatch['channel_pin.mail.channel'] = just_log_it_loudly #remove messaging channel
++
++
 +
  
  def call_kw_model(method, self, args, kwargs):
@@ -139,7 +246,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
      recs = self.with_context(context or {})
 -    _logger.debug("call %s.%s(%s)", recs, method.__name__, Params(args, kwargs))
 +    _logger.debug("(Model) ++ User: %s, call method: %s, recs: %s, params: %s", get_user_id(self), method.__name__, recs, Params(args, kwargs))
-+    cvs_write(get_user_id(self), method.__name__, recs, Params(args, kwargs))
++    csv_write(get_user_id(self), method.__name__, recs, Params(args, kwargs))
      result = method(recs, *args, **kwargs)
      return downgrade(method, result, recs, args, kwargs)
  
@@ -150,7 +257,7 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
      recs = self.with_context(context or {}).browse(ids)
 -    _logger.debug("call %s.%s(%s)", recs, method.__name__, Params(args, kwargs))
 +    _logger.debug("(Multi) ++ User: %s, call method: %s, recs: %s, ids: %s, params: %s", get_user_id(self), method.__name__, recs, ids, Params(args, kwargs))
-+    cvs_write(get_user_id(self), method.__name__, recs, Params(args, kwargs), ids)
++    csv_write(get_user_id(self), method.__name__, recs, Params(args, kwargs), ids)
      result = method(recs, *args, **kwargs)
      return downgrade(method, result, recs, args, kwargs)
  
@@ -158,72 +265,15 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/api.py odoo/api.py
  def call_kw(model, name, args, kwargs):
      """ Invoke the given method ``name`` on the recordset ``model``. """
      method = getattr(type(model), name)
-diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/cvs_writer.py odoo/cvs_writer.py
---- odoo.orig/cvs_writer.py	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/cvs_writer.py	2019-03-12 11:55:50.000000000 +0000
-@@ -0,0 +1,53 @@
-+#!/usr/bin/env python3
-+
-+import csv
-+from datetime import datetime
-+import os
-+import threading
-+
-+class CvsWriter:
-+    writers = {}
-+
-+    def __init__(self, filename, column_names_tuple = None):
-+        if column_names_tuple == None:
-+            self._recover(filename)
-+        else:
-+            self._first_init(filename, column_names_tuple)
-+
-+    def _recover(self, filename):
-+        self.__dict__ = CvsWriter.writers[filename]
-+
-+    def _first_init(self, filename, column_names_tuple):
-+        CvsWriter.writers[filename] = CvsWriter.writers.get(filename, {})
-+        self.__dict__ = CvsWriter.writers[filename]
-+
-+        self.write_lock = threading.Lock()
-+        self.column_names = {}
-+        self.filename = os.path.abspath(filename)
-+        self.id_to_ip = {}
-+
-+        label_row = []
-+        for idx, column_name in enumerate(column_names_tuple):
-+            self.column_names[column_name] = idx
-+            label_row.append(column_name)
-+
-+        with self.write_lock, open(self.filename, 'w') as f:
-+            csv.writer(f).writerow(label_row)
-+
-+    def connect_id_to_ip(self, userId, userIp):
-+        with self.write_lock:
-+            self.id_to_ip[userId] = userIp
-+
-+    def write(self, elements_dict):
-+        with self.write_lock, open(self.filename, 'a') as f:
-+            if 'userId' in elements_dict and not 'ipAddr' in elements_dict:
-+                elements_dict['ipAddr'] = self.id_to_ip.get(elements_dict['userId'], '')
-+            if not 'timestamp' in elements_dict:
-+                elements_dict['timestamp'] = datetime.now()
-+
-+            row = ['']*len(self.column_names)
-+
-+            for column_name, value in elements_dict.items():
-+                row[ self.column_names[column_name] ] = str(value)
-+
-+            csv.writer(f).writerow(row)
-diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/http.py odoo/http.py
+diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/http.py odoo/http.py
 --- odoo.orig/http.py	2018-11-23 05:55:29.000000000 +0000
-+++ odoo/http.py	2019-03-12 16:53:26.000000000 +0000
++++ odoo/http.py	2019-03-13 17:18:39.514850497 +0000
 @@ -51,6 +51,9 @@
  
  from .modules.module import module_manifest
  
 +from odoo.tools import config
-+import odoo.cvs_writer as cw
++import odoo.csv_writer as cw
 +
  _logger = logging.getLogger(__name__)
  rpc_request = logging.getLogger(__name__ + '.rpc.request')
@@ -233,15 +283,27 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/http.py odoo/http.py
  
      def _call_function(self, *args, **kwargs):
 +        _logger.debug("User: %s Remote addr: %s", self.uid, self.httprequest.remote_addr)
-+        cvsw = cw.CvsWriter (config.misc['cvs']['location'])
-+        cvsw.connect_id_to_ip(self.uid, self.httprequest.remote_addr)
++        csvw = cw.CsvWriter (config.misc['csv']['location'])
++        csvw.connect_id_to_ip(self.uid, self.httprequest.remote_addr)
 +
          request = self
          if self.endpoint.routing['type'] != self._request_type:
              msg = "%s, %s: Function declared as capable of handling request of type '%s' but called with a request of type '%s'"
-diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/service/server.py odoo/service/server.py
+diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/odoo.conf odoo/odoo.conf
+--- odoo.orig/odoo.conf	2019-03-11 17:09:45.000000000 +0000
++++ odoo/odoo.conf	2019-03-13 17:18:12.397776321 +0000
+@@ -35,5 +35,6 @@
+ ; xmlrpcs = True
+ ; xmlrpcs_interface = 
+ ; xmlrpcs_port = 8071
+-[cvs]
+-location = /usr/lib/python3/dist-packages/odoo/analyser_log.cvs
++[csv]
++location = /usr/lib/python3/dist-packages/odoo/csvfolder
++
+diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/service/server.py odoo/service/server.py
 --- odoo.orig/service/server.py	2018-11-03 05:47:26.000000000 +0000
-+++ odoo/service/server.py	2019-03-12 16:53:26.000000000 +0000
++++ odoo/service/server.py	2019-03-13 11:21:46.179827785 +0000
 @@ -227,7 +227,6 @@
          while True:
              time.sleep(SLEEP_INTERVAL + number)     # Steve Reich timing style
@@ -258,28 +320,29 @@ diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/service/server.py odoo/service/server.
          db_names = self._db_list()
          if len(db_names):
              self.db_index = (self.db_index + 1) % len(db_names)
-diff -x '*.pyc' -x '*.cvs' -Nru odoo.orig/tools/config.py odoo/tools/config.py
+diff -x '*.pyc' -x '*.csv' -x 'csv*' -Nru odoo.orig/tools/config.py odoo/tools/config.py
 --- odoo.orig/tools/config.py	2018-10-12 05:54:23.000000000 +0100
-+++ odoo/tools/config.py	2019-03-12 16:53:26.000000000 +0000
++++ odoo/tools/config.py	2019-03-13 17:18:47.491637043 +0000
 @@ -12,6 +12,7 @@
  import sys
  import odoo
  from .. import release, conf, loglevels
-+from .. import cvs_writer as cw
++from .. import csv_writer as cw
  from . import appdirs, pycompat
  
  from passlib.context import CryptContext
-@@ -550,6 +551,15 @@
+@@ -550,6 +551,16 @@
              pass
          except ConfigParser.NoSectionError:
              pass
-+        cw.CvsWriter(self.misc['cvs']['location'], (
++        cw.CsvWriter(self.misc['csv']['location'], (
 +            'timestamp',
 +            'actionName',
 +            'userId',
 +            'ipAddr',
-+            'stageId',
 +            'id',
++            'stageId',
++            'partnerId',
 +            'text',
 +        ))
  

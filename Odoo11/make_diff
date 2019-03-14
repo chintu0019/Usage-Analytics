@@ -1,1 +1,1 @@
-diff -x *.pyc -x *.cvs  -Nru odoo.orig odoo >Odoo11/analyzer.patch
+diff -x '*.pyc' -x '*.csv' -x 'csv*'  -Nru odoo.orig odoo >Odoo11/analyzer.patch
