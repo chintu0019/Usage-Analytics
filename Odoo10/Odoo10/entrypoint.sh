@@ -1,10 +1,22 @@
 #!/bin/bash
 set -e
 
-if [ ! -f /init ] ;then
+cd /
+if [ ! -e /usr/lib/python2.7/dist-packages/odoo/__init__.py ] ;then
+
     echo "Copying odoo code in the host"
-    rsync -rtu --delete /usr/lib/python2.7/dist-packages/odoo.orig/* "/usr/lib/python2.7/dist-packages/odoo"
-    touch /init
+    HOST_USER="${HOST_USER:=root}"
+    HOST_GROUP="${HOST_GROUP:=root}"
+
+    echo rsync --owner --group --chown="$HOST_USER":"$HOST_GROUP" -rtu --delete /usr/lib/python2.7/dist-packages/odoo.untouched/'*' "/usr/lib/python2.7/dist-packages/odoo.orig"
+    rsync --owner --group --chown="$HOST_USER":"$HOST_GROUP" -rtu --delete /usr/lib/python2.7/dist-packages/odoo.untouched/* "/usr/lib/python2.7/dist-packages/odoo.orig"
+
+    echo rsync --owner --group --chown="$HOST_USER":"$HOST_GROUP" -rtu --delete /usr/lib/python2.7/dist-packages/odoo.untouched/'*' "/usr/lib/python2.7/dist-packages/odoo"
+    rsync --owner --group --chown="$HOST_USER":"$HOST_GROUP" -rtu --delete /usr/lib/python2.7/dist-packages/odoo.untouched/* "/usr/lib/python2.7/dist-packages/odoo"
+
+    cd /usr/lib/python2.7/dist-packages
+    patch -p0 <./analyzer.patch
+    cd /
 fi
 
 # set the postgres database host, port, user and password according to the environment
