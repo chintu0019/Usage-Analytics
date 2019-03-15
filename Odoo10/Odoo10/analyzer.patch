@@ -1,17 +1,18 @@
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2017-10-10 08:37:51.000000000 +0100
-+++ odoo/api.py	2019-03-15 14:20:30.383822561 +0000
-@@ -57,6 +57,9 @@
++++ odoo/api.py	2019-03-15 16:42:15.159069768 +0000
+@@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
  
++from functools import partial
 +from odoo.tools import config
 +import odoo.csv_writer as cw
 +
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -664,11 +667,303 @@
+@@ -664,11 +668,304 @@
      return decorator(func) if not hasattr(func, '_api') else func
  
  
@@ -102,10 +103,9 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +    csvw.write({
 +        'actionName': 'Create Note',
 +        'userId': user_id,
-+        'id': params.args[0]['tag_ids'][0][0],
 +        'text': params.args[0]['memo'],
 +    })
-+    open_note.ignored[user_id] = 1
++#    open_note.ignored[user_id] = 1
 +csv_write.dispatch['create.note.note'] = create_note
 +
 +
@@ -115,6 +115,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        'userId': user_id,
 +        'text': params.args[0],
 +    })
++    open_note.ignored[user_id] = 1
 +csv_write.dispatch['name_create.note.note'] = create_note_dash
 +
 +
@@ -136,7 +137,6 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +
 +
 +def write_note_note(csvw, user_id, method_name, recs, params, ids):
-+    open_note.ignored[user_id] = 1
 +    try:
 +        memo = params.args[0]['memo']
 +        csvw.write({
@@ -151,12 +151,8 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +
 +    try:
 +        stage_id = params.args[0]['stage_id']
-+        if write_note_note.user_moving.get(user_id, None) == stage_id:
-+            del write_note_note.user_moving[user_id]
-+            actionName = 'Move Note'
-+        else:
-+            actionName = 'Drag and Drop note'
-+            open_note.ignored[user_id] = open_note.ignored[user_id] + 1
++        open_note.ignored[user_id] = 1
++        actionName = 'Move Note'
 +        csvw.write({
 +            'actionName': actionName,
 +            'userId': user_id,
@@ -168,11 +164,11 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        pass
 +
 +    try:
-+        _ = params.args[0]['tag_ids']
++        tag_ids = params.args[0]['tag_ids']
 +        csvw.write({
 +            'actionName': "Add tag",
 +            'userId': user_id,
-+            'id': ids[0]
++            'id': tag_ids[0][2],
 +        })
 +        return
 +    except KeyError:
@@ -193,7 +189,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +
 +
 +def move_note_step1(csvw, user_id, method_name, recs, params, ids):
-+    if type(ids) == int: write_note_note.user_moving[user_id] = ids
++    write_note_note.user_moving[user_id] = ids
 +csv_write.dispatch['name_get.note.stage'] = move_note_step1
 +
 +
@@ -225,7 +221,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        'partnerId': params.args[0]['partner_ids'][0][0],
 +        'text': params.args[0]['message'],
 +    })
-+    open_note.ignored[user_id] = 1
++#    open_note.ignored[user_id] = 1
 +csv_write.dispatch['create.mail.wizard.invite'] = invite_and_add_follower
 +
 +
@@ -262,11 +258,17 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        'userId': user_id,
 +        'id': ids[0],
 +    })
-+    open_note.ignored[user_id] = 1
++#    open_note.ignored[user_id] = 1
 +csv_write.dispatch['message_unsubscribe.note.note'] = remove_follower_from_note
 +
 +
-+csv_write.dispatch['write.note.tag'] = partial(first_id_action, "Change Tag Colour")
++def change_tag_color(action, csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
++        'actionName': "Change Tag Colour",
++        'userId': user_id,
++        'id': params.args['color'],
++    })
++csv_write.dispatch['write.note.tag'] = change_tag_color
 +
 +
 +def message_post_mail(csvw, user_id, method_name, recs, params, ids):
@@ -316,7 +318,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
      result = method(recs, *args, **kwargs)
      return downgrade(method, result, recs, args, kwargs)
  
-@@ -676,7 +971,8 @@
+@@ -676,7 +973,8 @@
      ids, args = args[0], args[1:]
      context, args, kwargs = split_context(method, args, kwargs)
      recs = self.with_context(context or {}).browse(ids)
@@ -326,9 +328,73 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
      result = method(recs, *args, **kwargs)
      return downgrade(method, result, recs, args, kwargs)
  
+diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/csv_writer.py odoo/csv_writer.py
+--- odoo.orig/csv_writer.py	1970-01-01 01:00:00.000000000 +0100
++++ odoo/csv_writer.py	2019-03-15 16:21:30.947072271 +0000
+@@ -0,0 +1,60 @@
++#!/usr/bin/env python3
++
++
++import csv
++from datetime import datetime
++import os
++from os import path
++import threading
++import time
++
++class CsvWriter:
++    writers = {}
++
++    def __init__(self, dirname, column_names_tuple = None):
++        if column_names_tuple == None:
++            self._recover(dirname)
++        else:
++            self._first_init(dirname, column_names_tuple)
++
++    def _recover(self, dirname):
++        dirname = os.path.abspath(dirname)
++        self.__dict__ = CsvWriter.writers[dirname]
++
++    def _first_init(self, dirname, column_names_tuple):
++
++        dirname = os.path.abspath(dirname)
++        CsvWriter.writers[dirname] = {}
++        self.__dict__ = CsvWriter.writers[dirname]
++
++        self.filename = path.join(os.path.abspath(dirname), time.strftime("%Y%m%d-%H%M%S", time.gmtime()) + '.csv')
++
++        self.write_lock = threading.Lock()
++        self.column_names = {}
++        self.id_to_ip = {}
++
++        label_row = []
++        for idx, column_name in enumerate(column_names_tuple):
++            self.column_names[column_name] = idx
++            label_row.append(column_name)
++
++        with self.write_lock, open(self.filename, 'w') as f:
++            csv.writer(f).writerow(label_row)
++
++    def connect_id_to_ip(self, userId, userIp):
++        with self.write_lock:
++            self.id_to_ip[userId] = userIp
++
++    def write(self, elements_dict):
++        with self.write_lock, open(self.filename, 'a') as f:
++            if 'userId' in elements_dict and not 'ipAddr' in elements_dict:
++                elements_dict['ipAddr'] = self.id_to_ip.get(elements_dict['userId'], '')
++            if not 'timestamp' in elements_dict:
++                elements_dict['timestamp'] = datetime.now()
++
++            row = ['']*len(self.column_names)
++
++            for column_name, value in elements_dict.items():
++                row[ self.column_names[column_name] ] = unicode(value).encode('utf-8')
++
++            csv.writer(f).writerow(row)
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf odoo/odoo.conf
 --- odoo.orig/odoo.conf	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/odoo.conf	2019-03-15 14:23:40.586683929 +0000
++++ odoo/odoo.conf	2019-03-15 14:32:42.381517690 +0000
 @@ -0,0 +1,39 @@
 +[options]
 +addons_path = /mnt/extra-addons,/usr/lib/python2.7/dist-packages/odoo/addons
@@ -371,30 +437,34 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf odoo/odoo.conf
 +location = /usr/lib/python2.7/dist-packages/odoo/csvfolder
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/tools/config.py odoo/tools/config.py
 --- odoo.orig/tools/config.py	2018-10-11 04:39:19.000000000 +0100
-+++ odoo/tools/config.py	2019-03-15 14:21:47.604984324 +0000
-@@ -12,6 +12,8 @@
++++ odoo/tools/config.py	2019-03-15 15:19:51.441159664 +0000
+@@ -12,6 +12,10 @@
  import odoo.release as release
  import appdirs
  
++import time
++
 +from .. import csv_writer as cw
 +
  class MyOption (optparse.Option, object):
      """ optparse Option with two additional attributes.
  
-@@ -526,6 +528,16 @@
+@@ -526,6 +530,18 @@
              pass
          except ConfigParser.NoSectionError:
              pass
-+        cw.CsvWriter(self.misc['csv']['location'], (
-+            'timestamp',
-+            'actionName',
-+            'userId',
-+            'ipAddr',
-+            'id',
-+            'stageId',
-+            'partnerId',
-+            'text',
-+        ))
++        if not hasattr(self, 'csv_init'):
++            self.csv_init = True
++            cw.CsvWriter(self.misc['csv']['location'], (
++                'timestamp',
++                'actionName',
++                'userId',
++                'ipAddr',
++                'id',
++                'stageId',
++                'partnerId',
++                'text',
++            ))
  
      def save(self):
          p = ConfigParser.ConfigParser()
