@@ -1,6 +1,6 @@
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2019-01-26 05:51:12.000000000 +0000
-+++ odoo/api.py	2019-03-14 17:43:55.859900293 +0000
++++ odoo/api.py	2019-03-19 12:06:52.991508827 +0000
 @@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
@@ -12,7 +12,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -664,22 +668,318 @@
+@@ -664,22 +668,326 @@
      return decorator(func) if not hasattr(func, '_api') else func
  
  
@@ -42,7 +42,6 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        'userId': user_id,
 +        'id': params.args[0],
 +    })
-+    _logger.debug("AAAAAAAAAAHHHHHHHHHH!!!!!!!!!")
 +csv_write.dispatch['name_create.note.stage'] = create_stage
 +
 +
@@ -258,6 +257,15 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +csv_write.dispatch['name_create.note.tag'] = create_new_tag2
 +
 +
++def create_channel(csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
++        'actionName': 'Create Channel',
++        'userId': user_id,
++        'text': params.args[0],
++    })
++csv_write.dispatch['channel_create.mail.channel'] = create_channel
++
++
 +def remove_follower_from_note(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': "Remove follower from note",
@@ -335,7 +343,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
      method = getattr(type(model), name)
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/csv_writer.py odoo/csv_writer.py
 --- odoo.orig/csv_writer.py	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/csv_writer.py	2019-03-14 12:02:31.679978434 +0000
++++ odoo/csv_writer.py	2019-03-15 13:24:31.669851660 +0000
 @@ -0,0 +1,58 @@
 +#!/usr/bin/env python3
 +
@@ -397,7 +405,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/csv_writer.py odoo/csv_wr
 +            csv.writer(f).writerow(row)
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/http.py odoo/http.py
 --- odoo.orig/http.py	2018-11-23 05:55:29.000000000 +0000
-+++ odoo/http.py	2019-03-14 12:02:31.679978434 +0000
++++ odoo/http.py	2019-03-15 13:24:31.673185044 +0000
 @@ -51,6 +51,9 @@
  
  from .modules.module import module_manifest
@@ -421,7 +429,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/http.py odoo/http.py
              msg = "%s, %s: Function declared as capable of handling request of type '%s' but called with a request of type '%s'"
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf odoo/odoo.conf
 --- odoo.orig/odoo.conf	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/odoo.conf	2019-03-14 12:02:31.679978434 +0000
++++ odoo/odoo.conf	2019-03-15 13:24:31.673185044 +0000
 @@ -0,0 +1,39 @@
 +[options]
 +addons_path = /mnt/extra-addons
@@ -464,7 +472,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf odoo/odoo.conf
 +location = /usr/lib/python3/dist-packages/odoo/csvfolder
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf.orig odoo/odoo.conf.orig
 --- odoo.orig/odoo.conf.orig	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/odoo.conf.orig	2019-03-14 12:02:31.679978434 +0000
++++ odoo/odoo.conf.orig	2019-03-15 13:24:31.673185044 +0000
 @@ -0,0 +1,39 @@
 +[options]
 +addons_path = /mnt/extra-addons
@@ -507,7 +515,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf.orig odoo/odoo.
 +location = /usr/lib/python3/dist-packages/odoo/csvfolder
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf.rej odoo/odoo.conf.rej
 --- odoo.orig/odoo.conf.rej	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/odoo.conf.rej	2019-03-14 12:02:31.679978434 +0000
++++ odoo/odoo.conf.rej	2019-03-15 13:24:31.673185044 +0000
 @@ -0,0 +1,11 @@
 +--- odoo.orig/odoo.conf	2019-03-11 17:09:45.000000000 +0000
 ++++ odoo/odoo.conf	2019-03-13 17:18:12.397776321 +0000
@@ -522,7 +530,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf.rej odoo/odoo.c
 ++
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/service/server.py odoo/service/server.py
 --- odoo.orig/service/server.py	2018-11-03 05:47:26.000000000 +0000
-+++ odoo/service/server.py	2019-03-14 12:02:31.679978434 +0000
++++ odoo/service/server.py	2019-03-15 13:24:31.673185044 +0000
 @@ -227,7 +227,6 @@
          while True:
              time.sleep(SLEEP_INTERVAL + number)     # Steve Reich timing style
@@ -541,7 +549,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/service/server.py odoo/se
              self.db_index = (self.db_index + 1) % len(db_names)
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/tools/config.py odoo/tools/config.py
 --- odoo.orig/tools/config.py	2018-10-12 05:54:23.000000000 +0100
-+++ odoo/tools/config.py	2019-03-14 12:02:31.679978434 +0000
++++ odoo/tools/config.py	2019-03-15 13:24:31.673185044 +0000
 @@ -12,6 +12,7 @@
  import sys
  import odoo

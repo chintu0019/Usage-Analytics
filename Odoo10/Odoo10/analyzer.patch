@@ -1,6 +1,6 @@
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2017-10-10 08:37:51.000000000 +0100
-+++ odoo/api.py	2019-03-19 10:58:29.300604258 +0000
++++ odoo/api.py	2019-03-19 12:09:29.890589835 +0000
 @@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
@@ -12,7 +12,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -664,11 +668,307 @@
+@@ -664,11 +668,316 @@
      return decorator(func) if not hasattr(func, '_api') else func
  
  
@@ -254,6 +254,15 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +csv_write.dispatch['name_create.note.tag'] = create_new_tag2
 +
 +
++def create_channel(csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
++        'actionName': 'Create Channel',
++        'userId': user_id,
++        'text': params.args[0],
++    })
++csv_write.dispatch['channel_create.mail.channel'] = create_channel
++
++
 +def remove_follower_from_note(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': "Remove follower from note",
@@ -321,7 +330,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
      result = method(recs, *args, **kwargs)
      return downgrade(method, result, recs, args, kwargs)
  
-@@ -676,7 +976,8 @@
+@@ -676,7 +985,8 @@
      ids, args = args[0], args[1:]
      context, args, kwargs = split_context(method, args, kwargs)
      recs = self.with_context(context or {}).browse(ids)
