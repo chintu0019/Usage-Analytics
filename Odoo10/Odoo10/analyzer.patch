@@ -1,6 +1,6 @@
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2017-10-10 08:37:51.000000000 +0100
-+++ odoo/api.py	2019-03-15 16:42:15.159069768 +0000
++++ odoo/api.py	2019-03-19 10:58:29.300604258 +0000
 @@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
@@ -12,7 +12,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -664,11 +668,304 @@
+@@ -664,11 +668,307 @@
      return decorator(func) if not hasattr(func, '_api') else func
  
  
@@ -181,6 +181,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +            'userId': user_id,
 +            'id': ids[0]
 +        })
++        open_note.ignored[user_id] = 1
 +        return
 +    except KeyError:
 +        pass
@@ -221,7 +222,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        'partnerId': params.args[0]['partner_ids'][0][0],
 +        'text': params.args[0]['message'],
 +    })
-+#    open_note.ignored[user_id] = 1
++    open_note.ignored[user_id] = 1
 +csv_write.dispatch['create.mail.wizard.invite'] = invite_and_add_follower
 +
 +
@@ -240,6 +241,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        'userId': user_id,
 +        'text': params.args[0]['name'],
 +    })
++    open_note.ignored[user_id] = 1
 +csv_write.dispatch['create.note.tag'] = create_new_tag
 +
 +
@@ -258,16 +260,17 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        'userId': user_id,
 +        'id': ids[0],
 +    })
-+#    open_note.ignored[user_id] = 1
++    open_note.ignored[user_id] = 1
 +csv_write.dispatch['message_unsubscribe.note.note'] = remove_follower_from_note
 +
 +
-+def change_tag_color(action, csvw, user_id, method_name, recs, params, ids):
++def change_tag_color(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': "Change Tag Colour",
 +        'userId': user_id,
-+        'id': params.args['color'],
++        'id': params.args[0]['color'],
 +    })
++    open_note.ignored[user_id] = 1
 +csv_write.dispatch['write.note.tag'] = change_tag_color
 +
 +
@@ -318,7 +321,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
      result = method(recs, *args, **kwargs)
      return downgrade(method, result, recs, args, kwargs)
  
-@@ -676,7 +973,8 @@
+@@ -676,7 +976,8 @@
      ids, args = args[0], args[1:]
      context, args, kwargs = split_context(method, args, kwargs)
      recs = self.with_context(context or {}).browse(ids)
