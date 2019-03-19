@@ -1,0 +1,1 @@
+diff -x '*.pyc' -x '*.csv' -x 'csvfolder'  -Nru odoo.orig odoo >Odoo10/analyzer.patch

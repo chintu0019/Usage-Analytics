@@ -7,6 +7,7 @@ RUN set -x; \
         && apt-get install -y --no-install-recommends \
             rsync \
             psmisc \
+            patch \
             ca-certificates \
             curl \
             dirmngr \
@@ -50,14 +51,14 @@ RUN set -x; \
         && apt-get update \
         && apt-get -y install -f --no-install-recommends \
         && rm -rf /var/lib/apt/lists/* odoo.deb \
-        && mv "/usr/lib/python2.7/dist-packages/odoo" "/usr/lib/python2.7/dist-packages/odoo.orig" \
+        && mkdir "/usr/lib/python2.7/dist-packages/odoo/csvfolder" \
+        && mv "/usr/lib/python2.7/dist-packages/odoo" "/usr/lib/python2.7/dist-packages/odoo.untouched" \
         && mkdir "/usr/lib/python2.7/dist-packages/odoo"
 
+COPY ./analyzer.patch /usr/lib/python2.7/dist-packages
 # Copy entrypoint script and Odoo configuration file
 COPY ./entrypoint.sh /
 RUN chmod 755 ./entrypoint.sh
-COPY ./odoo.conf /etc/odoo/
-RUN chown odoo /etc/odoo/odoo.conf
 
 # Mount /var/lib/odoo to allow restoring filestore and /mnt/extra-addons for users addons
 RUN mkdir -p /mnt/extra-addons \
@@ -68,10 +69,8 @@ VOLUME ["/var/lib/odoo", "/mnt/extra-addons"]
 EXPOSE 8069 8071
 
 # Set the default config file
-ENV ODOO_RC /etc/odoo/odoo.conf
+ENV ODOO_RC /usr/lib/python2.7/dist-packages/odoo/odoo.conf
 
-# Set default user when running the container
-#USER odoo
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["odoo"]
