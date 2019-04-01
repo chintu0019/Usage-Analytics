@@ -31,13 +31,20 @@ if [ -f "$ofile" ]; then
 fi
 
 
+function deltmp {
+    rm -f "$ofile".tmp
+}
+trap deltmp EXIT INT TERM
+
 first=1
 for file in "${ifiles[@]}" ;do
     if [ $first -eq 1 ] ;then
         first=0
-        cp "$file" "$ofile"
+        cp "$file" "$ofile".tmp
     else
-        tail -n +2 "$file" >> "$ofile"
+        tail -n +2 "$file" >> "$ofile".tmp
     fi
 done
+head -1 "$ofile".tmp > "$ofile"
+tail -n +2 "$ofile".tmp | LC_ALL=C sort >>"$ofile"
 
