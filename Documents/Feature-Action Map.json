@@ -1,7 +1,8 @@
 {
     "Features": [
         {
-            "Create Stage": "note.stage().name_create('NAME')"
+            "name" : "create stage",
+            "ID" : "1"
         },
         {
             "Delete Stage": "note.stage(ID,).unlink()"
