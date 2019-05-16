@@ -27,7 +27,7 @@ def convert_id2nnames(name2id, patterns):
     return npatterns
 
 
-def real_main(length, csvlog_fn, jsonnumber_fn):
+def real_main(min_length, csvlog_fn, jsonnumber_fn):
     with open(jsonnumber_fn, 'r') as jsonnumber:
         name2id = json.load(jsonnumber)
 
@@ -44,7 +44,7 @@ def real_main(length, csvlog_fn, jsonnumber_fn):
             else:
                 actions.append( name2id[row[1]] )
 
-    found_patterns = convert_id2nnames(name2id, patterns.find_repetitions(actions, length))
+    found_patterns = convert_id2nnames(name2id, patterns.find_repetitions(actions, min_length))
 
     for itm, times in found_patterns.items():
         print(times, ":", itm)
@@ -63,14 +63,14 @@ def main(argv=None):
         argv = sys.argv
 
     try:
-        length = int(argv[1])
+        min_length = int(argv[1])
         csvlog = argv[2]
         jsonnumber = argv[3]
     except:
         eprint('Usage: prg len cvs_log json_numbers')
         return 1
 
-    return real_main(length, csvlog, jsonnumber)
+    return real_main(min_length, csvlog, jsonnumber)
 
 if __name__ == "__main__":
     sys.exit(main())
