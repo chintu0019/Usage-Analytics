@@ -1,12 +1,21 @@
 #!/bin/bash
 set -e
 
+HOST_USER="${HOST_USER:=root}"
+HOST_GROUP="${HOST_GROUP:=root}"
+
+function reset_mode_bits {
+    cd "/usr/lib/python2.7/dist-packages/odoo/csvfolder"
+    chmod "$HOST_USER:$HOST_GROUP" *.csv
+    cd -
+    exit 0
+}
+trap reset_mode_bits TERM
+
+
 cd /
 if [ ! -e /usr/lib/python2.7/dist-packages/odoo/__init__.py ] ;then
-
     echo "Copying odoo code in the host"
-    HOST_USER="${HOST_USER:=root}"
-    HOST_GROUP="${HOST_GROUP:=root}"
 
     echo rsync --owner --group --chown="$HOST_USER":"$HOST_GROUP" -rtu --delete /usr/lib/python2.7/dist-packages/odoo.untouched/'*' "/usr/lib/python2.7/dist-packages/odoo.orig"
     rsync --owner --group --chown="$HOST_USER":"$HOST_GROUP" -rtu --delete /usr/lib/python2.7/dist-packages/odoo.untouched/* "/usr/lib/python2.7/dist-packages/odoo.orig"

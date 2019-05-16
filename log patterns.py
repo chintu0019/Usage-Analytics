@@ -38,16 +38,18 @@ def real_main(length, csvlog_fn, jsonnumber_fn):
         for row in csvlog_reader:
             if first:
                 first = False
-                header_row = row
                 if row[1] != 'actionName':
-                    eprint('Error, second column is not "actionName", are you sure this is a log?')
+                    eprint('Error, the second column is not "actionName", are you sure this is a log?')
                     return 1
             else:
                 actions.append( name2id[row[1]] )
 
-    a = convert_id2nnames(name2id, patterns.find_repetitions(actions, length))
+    found_patterns = convert_id2nnames(name2id, patterns.find_repetitions(actions, length))
 
-    print(a)
+    for itm, times in found_patterns.items():
+        print(times, ":", itm)
+
+    return 0
 
 
 
