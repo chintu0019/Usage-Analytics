@@ -13,5 +13,5 @@ docker-compose up
 
 cd odoo/csvfolder
 find  -type f  -iname '*.csv'  -size +63c  -exec echo cp '{}' ../../results ';'
-echo rm *
+rm *
 
