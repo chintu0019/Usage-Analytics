@@ -1,12 +1,20 @@
 #!/bin/bash
 set -e
 
+HOST_USER="${HOST_USER:=root}"
+HOST_GROUP="${HOST_GROUP:=root}"
+
+reset_mode_bits() {
+    echo "Fixing csv mode bits"
+    cd "/usr/lib/python2.7/dist-packages/odoo/csvfolder"
+    chown "$HOST_USER:$HOST_GROUP" *.csv
+    cd -
+}
+
+
 cd /
 if [ ! -e /usr/lib/python2.7/dist-packages/odoo/__init__.py ] ;then
-
     echo "Copying odoo code in the host"
-    HOST_USER="${HOST_USER:=root}"
-    HOST_GROUP="${HOST_GROUP:=root}"
 
     echo rsync --owner --group --chown="$HOST_USER":"$HOST_GROUP" -rtu --delete /usr/lib/python2.7/dist-packages/odoo.untouched/'*' "/usr/lib/python2.7/dist-packages/odoo.orig"
     rsync --owner --group --chown="$HOST_USER":"$HOST_GROUP" -rtu --delete /usr/lib/python2.7/dist-packages/odoo.untouched/* "/usr/lib/python2.7/dist-packages/odoo.orig"
@@ -40,14 +48,20 @@ check_config "db_port" "$PORT"
 check_config "db_user" "$USER"
 check_config "db_password" "$PASSWORD"
 
+
+trap reset_mode_bits INT KILL TERM
+
 case "$1" in
     -- | odoo)
         shift
         if [[ "$1" == "scaffold" ]] ; then
-            odoo "$@"
+            odoo "$@" &
         else
-            odoo "$@" "${DB_ARGS[@]}"
+            odoo "$@" "${DB_ARGS[@]}" &
         fi
+        wait "$!"
+        wait "$!"
+
         ;;
     -*)
         exec odoo "$@" "${DB_ARGS[@]}"
