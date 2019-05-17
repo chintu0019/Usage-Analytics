@@ -4,13 +4,12 @@ set -e
 HOST_USER="${HOST_USER:=root}"
 HOST_GROUP="${HOST_GROUP:=root}"
 
-function reset_mode_bits {
+reset_mode_bits() {
+    echo "Fixing csv mode bits"
     cd "/usr/lib/python2.7/dist-packages/odoo/csvfolder"
-    chmod "$HOST_USER:$HOST_GROUP" *.csv
+    chown "$HOST_USER:$HOST_GROUP" *.csv
     cd -
-    exit 0
 }
-trap reset_mode_bits TERM
 
 
 cd /
@@ -49,14 +48,20 @@ check_config "db_port" "$PORT"
 check_config "db_user" "$USER"
 check_config "db_password" "$PASSWORD"
 
+
+trap reset_mode_bits INT KILL TERM
+
 case "$1" in
     -- | odoo)
         shift
         if [[ "$1" == "scaffold" ]] ; then
-            odoo "$@"
+            odoo "$@" &
         else
-            odoo "$@" "${DB_ARGS[@]}"
+            odoo "$@" "${DB_ARGS[@]}" &
         fi
+        wait "$!"
+        wait "$!"
+
         ;;
     -*)
         exec odoo "$@" "${DB_ARGS[@]}"
