@@ -1,0 +1,23 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-05-20 10:45:03.771838,Open Note,1,,1,,,
+2019-05-20 10:45:06.366827,Open Note,1,,1,,,
+2019-05-20 10:45:08.471808,Open Note,1,,1,,,
+2019-05-20 10:45:10.470314,Open Note,1,,1,,,
+2019-05-20 10:45:20.994761,Create Note,1,,,,,dddddddddd
+2019-05-20 10:45:25.040414,Create Note,1,,,,,eeeeeeeeee
+2019-05-20 10:45:28.335879,Create Note,1,,,,,fffffffffffffffff
+2019-05-20 10:45:31.262405,Create Note,1,,,,,ggggggggggggggg
+2019-05-20 10:45:34.266717,Create Note,1,,,,,hhhhhhhhhhhh
+2019-05-20 10:45:37.406847,Create Note,1,,,,,iiiiiiiiiiiiii
+2019-05-20 10:45:40.465634,Create Note,1,,,,,jjjjjjjjjjjjjjjjjjjjj
+2019-05-20 10:45:44.465482,Delete Note,1,,9,,,
+2019-05-20 10:45:47.740788,Delete Note,1,,8,,,
+2019-05-20 10:45:50.379100,Delete Note,1,,7,,,
+2019-05-20 10:45:53.336173,Delete Note,1,,6,,,
+2019-05-20 10:45:55.750227,Delete Note,1,,5,,,
+2019-05-20 10:45:57.989046,Delete Note,1,,4,,,
+2019-05-20 10:46:53.715427,Open Note,1,,3,,,
+2019-05-20 10:47:00.922624,Open commenting in note,1,,3,,,
+2019-05-20 10:47:06.342602,Edit Note,1,,3,,,<p>dddddddddd</p><p>dd11</p>
+2019-05-20 10:47:44.779046,Open Note,1,,3,,,
+2019-05-20 10:47:49.184813,Edit Note,1,,3,,,<p>dddddddddd</p><p>&nbsp;</p>

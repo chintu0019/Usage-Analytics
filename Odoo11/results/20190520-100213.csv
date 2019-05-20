@@ -1,0 +1,3 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-05-20 10:03:00.686504,Create Note,1,172.19.0.1,,,,aaaaaaaaaa
+2019-05-20 10:03:01.148954,Open Note,1,172.19.0.1,12,,,
