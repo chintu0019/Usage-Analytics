@@ -38,17 +38,13 @@ def _get_first_window(actions, time_window):
     if endtime == None:
         raise EmptyLog
 
-    return ( [starttime, freqs], end_idx)
+    return ( [starttime, freqs], endtime, end_idx)
 
 
 
 def rotate_on_actions(actions, time_window):
-    freq, end_idx = _get_first_window(actions, time_window)
-
-    endtime = freq[0] + time_window
     start_idx = 0
-    end_idx = 0
-
+    freq, endtime, end_idx = _get_first_window(actions, time_window)
 
     while True:
         freq[1][ ( actions[start_idx][2], actions[start_idx][1] ) ] -= 1
