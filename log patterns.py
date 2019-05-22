@@ -7,6 +7,7 @@ from operator import itemgetter
 
 import patterns
 import levenshtein
+import log_utils
 
 
 def eprint(*args, **kwargs):
@@ -50,30 +51,10 @@ def _sort_results(found_patterns, sort_by):
 
 
 
-def _read_actions(csvlog_fn, name2id):
-    actions = []
-    with open(csvlog_fn, 'r') as csvlog:
-        csvlog_reader = csv.reader(csvlog)
-        first = True
-        for row in csvlog_reader:
-            if first:
-                first = False
-                if row[1] != 'actionName':
-                    return None
-            else:
-                actions.append( name2id[row[1]] )
-    return actions
-
-
 
 def real_main(min_length, csvlog_fn, jsonnumber_fn, numbers, sort_by):
-    with open(jsonnumber_fn, 'r') as jsonnumber:
-        name2id = json.load(jsonnumber)
-
-    actions = _read_actions(csvlog_fn, name2id)
-    if actions == None:
-        eprint('Error, the second column is not "actionName", are you sure this is a log?')
-        return 1
+    name2id = log_utils.load_name2id(jsonnumber_fn)
+    actions = log_utils.read_actions(csvlog_fn, { 1 : log_utils.name2id_tsfr(name2id), }, 1)
 
     found_patterns = patterns.find_repetitions(actions, min_length)
     found_patterns = _sort_results(found_patterns, sort_by)
@@ -119,7 +100,11 @@ def main(argv=None):
         eprint('')
         return 1
 
-    return real_main(min_length, csvlog, jsonnumber, numbers, sort_by)
+    try:
+        return real_main(min_length, csvlog, jsonnumber, numbers, sort_by)
+    except log_utils.NotLog:
+        eprint('Error, the second column is not "actionName", are you sure this is a log?')
+        return 2
 
 if __name__ == "__main__":
     sys.exit(main())
