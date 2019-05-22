@@ -17,22 +17,6 @@ class EmptyLog(Exception):
 
 
 
-def _read_actions(csvlog_fn, name2id):
-    actions = []
-    with open(csvlog_fn, 'r') as csvlog:
-        csvlog_reader = csv.reader(csvlog)
-        first = True
-        for row in csvlog_reader:
-            if first:
-                first = False
-                if row[1] != 'actionName':
-                    return None
-            else:
-                actions.append( (row[0], name2id[row[1]], row[2]) )
-    return actions
-
-
-
 def _get_first_window(actions, time_window):
     endtime = None
     starttime = None
