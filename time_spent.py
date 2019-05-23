@@ -38,42 +38,37 @@ def find_group(user_id, groups):
 
 
 def compute_timings(actions, groups):
-    pp = pprint.PrettyPrinter(indent=4).pprint
     results = {} # results associates a user,action pair to its time delta
     windows = {} # window associates a user,action pair to its starting time point
 
     #readable indexes
-    userw = 0
-    usera = 2
+    user_group = 0
+    user = 2
     action = 1
     timestamp = 0
 
     for actn in actions:
         if not is_in_group(_user_action(actn), windows):
             # open the window
-            windows[ ( find_group(actn[usera], groups), actn[action] ) ] = actn[timestamp]
+            windows[ ( find_group(actn[user], groups), actn[action] ) ] = actn[timestamp]
             if not is_in_group(_user_action(actn), results):
-                results[ ( find_group(actn[usera], groups), actn[action] ) ] = datetime.timedelta(0)
-
+                results[ ( find_group(actn[user], groups), actn[action] ) ] = datetime.timedelta(0)
 
         # it is probably not a good idea modify the variable windows while iterating over it
         nwindows = deepcopy(windows)
         for win in windows:
-            if actn[usera] not in win[userw]:
+            if actn[user] not in win[user_group]:
                 continue
 
-            # in the user group
-            group = find_group(actn[usera], groups)
-            if win[action] == actn[action]:
-                # just add the time
-                results[win] += actn[timestamp] - nwindows[win]
-                nwindows[win] = actn[timestamp]
+            results[win] += actn[timestamp] - nwindows[win]
 
-            elif win[action] != actn[action]:
-                # add up and close the window
-                results[win] += actn[timestamp] - nwindows[win]
+            if win[action] == actn[action]:
+                nwindows[win] = actn[timestamp]
+            else:
                 del nwindows[win]
+
         windows = nwindows
+
 
     return results
 
@@ -90,6 +85,7 @@ def real_main(csvlog_fn, jsonnumber_fn, user_groups):
         },
         (0,1,2)
     )
+
     results = compute_timings(actions, user_groups)
     pp( results )
 
