@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import sys
 import log_utils
 from datetime import timedelta
@@ -82,6 +83,7 @@ def real_main(csvlog_fn, jsonnumber_fn, time_window, output_fn):
 
 
 def main(argv=None):
+    prgname = os.path.basename(__file__) if '__file__' in globals() else 'prg'
     if argv is None:
         argv = sys.argv
 
@@ -91,7 +93,7 @@ def main(argv=None):
         time_window = timedelta(minutes=float(argv[3]))
         output = argv[4]
     except:
-        eprint('Usage: prg cvs_log json_numbers time_window output')
+        eprint('Usage:', prgname, 'cvs_log json_numbers time_window output')
         eprint('\nThe time_window is in minutes\n')
         return 1
 
