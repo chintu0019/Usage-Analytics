@@ -58,6 +58,8 @@ def rotate_on_actions(actions, time_window):
     start_idx = 0
     freq, endtime, end_idx = _get_first_window(actions, time_window)
 
+    yield freq
+
     starttime = 0
     timestamp = 0
     nr_times = 1
