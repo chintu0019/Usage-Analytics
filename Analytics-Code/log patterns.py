@@ -4,6 +4,7 @@ import csv
 import json
 import sys
 from operator import itemgetter
+import os
 
 import patterns
 import levenshtein
@@ -76,6 +77,7 @@ def main(argv=None):
         argv is initialized by the command line arguments
     """
 
+    prgname = os.path.basename(__file__) if '__file__' in globals() else 'prg'
     if argv is None:
         argv = sys.argv
 
@@ -93,7 +95,7 @@ def main(argv=None):
                 sort_by = tuple(int(x.strip()) for x in argv[idx + 1].split(','))
 
     except:
-        eprint('Usage: prg len cvslog json_numbers [-n] [-s 1,2,...,n]')
+        eprint('Usage:', prgname, 'len cvslog json_numbers [-n] [-s 1,2,...,n]')
         eprint('')
         eprint('-n display output in numbers, instead of action names')
         eprint('-s sort the results by distance from input sequence')
