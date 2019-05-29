@@ -1,0 +1,22 @@
+
+You are working in a software company and this Odoo10 Notes is
+about a software project. The project result should allow to
+manage document files.
+
+The teams are the Yellow team, the Green team, and the Blue team.
+You act as manager and work in the Blue team.
+
+The situation is:
+
+The Yellow team finished the Normalization Function and so it should
+be tested by the Green team.
+
+The Yellow team should start working so that the Search Function
+goes in subdirectories.
+
+
+You are in the Blue team, it is unclear what does "similar enough"
+means, you should ask more in the chat.
+
+
+

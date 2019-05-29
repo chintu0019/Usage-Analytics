@@ -1,0 +1,8 @@
+
+To get a copy of volume odoo10_odoo-db-data-odoo10 in the file volume.tar.bz2
+$ docker run -it --rm -v odoo10_odoo-db-data-odoo10:/volume -v "`readlink -e .`":/backup alpine tar -vcjf /backup/volume.tar.bz2 -C /volume ./
+
+
+
+To put back the file contents of volume.tar.bz2 in the volume odoo10_odoo-db-data-odoo10
+$ docker run -it --rm -v odoo10_odoo-db-data-odoo10:/volume -v "`readlink -e .`":/backup alpine sh -c "find /volume -mindepth 1 -delete ; tar -C /volume/ -xvjf /backup/volume.tar.bz2"
