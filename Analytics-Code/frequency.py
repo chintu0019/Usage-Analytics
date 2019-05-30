@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import utils
 import os
 import pprint
 import sys
@@ -18,39 +19,34 @@ class EmptyLog(Exception):
     pass
 
 
+
 def _get_first_window(actions, time_window):
     endtime = None
     starttime = None
     end_idx = 0
     freqs = {}
 
-    timestamp = 0
-    actionidx = 1
-    username = 2
-
     for action in actions:
         if endtime == None:
-            starttime = action[timestamp]
+            starttime = action['timestamp']
             endtime = starttime + time_window
 
-        if action[timestamp] >= endtime:
+        if action['timestamp'] >= endtime:
             break
 
-        v = freqs.get( (action[username], action[actionidx]), 0 )
-        freqs[ (action[username], action[actionidx]) ] = v + 1
+        v = freqs.get( (action['user'], action['action']), 0 )
+        freqs[ (action['user'], action['action']) ] = v + 1
         end_idx += 1
 
     if endtime == None:
         raise EmptyLog
 
-    return ( [starttime, freqs], endtime, end_idx )
+    return ( { 'starttime': starttime, 'freqs': freqs}, endtime, end_idx )
 
 
 
 def _user_action(actions, idx):
-    action = 1
-    username = 2
-    return ( actions[idx][username], actions[idx][action] )
+    return ( actions[idx]['user'], actions[idx]['action'] )
 
 
 
@@ -60,42 +56,60 @@ def rotate_on_actions(actions, time_window):
 
     yield freq
 
-    starttime = 0
-    timestamp = 0
-    nr_times = 1
-
     while True:
-        freq[nr_times][ _user_action(actions, start_idx) ] -= 1
-        if freq[nr_times][ _user_action(actions, start_idx) ] == 0:
-            del freq[nr_times][ _user_action(actions, start_idx) ]
+        freq['freqs'][ _user_action(actions, start_idx) ] -= 1
+        if freq['freqs'][ _user_action(actions, start_idx) ] == 0:
+            del freq['freqs'][ _user_action(actions, start_idx) ]
 
         start_idx += 1
         if start_idx == len(actions):
             break
 
-        freq[starttime] = actions[start_idx][timestamp]
-        endtime = actions[start_idx][timestamp] + time_window
+        freq['starttime'] = actions[start_idx]['timestamp']
+        endtime = actions[start_idx]['timestamp'] + time_window
 
-        while end_idx < len(actions)  and  actions[end_idx][timestamp] < endtime:
-            v = freq[nr_times].get( _user_action(actions, end_idx), 0 )
-            freq[nr_times][ _user_action(actions, end_idx ) ] = v + 1
+        while end_idx < len(actions)  and  actions[end_idx]['timestamp'] < endtime:
+            v = freq['freqs'].get( _user_action(actions, end_idx), 0 )
+            freq['freqs'][ _user_action(actions, end_idx ) ] = v + 1
             end_idx += 1
 
         yield freq
 
 
 
-def real_main(csvlog_fn, jsonnumber_fn, time_window, output_fn):
-    pp = pprint.PrettyPrinter(indent=4).pprint
-    name2id = log_utils.load_name2id(jsonnumber_fn)
-    actions = log_utils.read_actions(csvlog_fn,
-        {
-            0 : log_utils.timestap2date_tsfr,
-            1 : log_utils.name2id_tsfr(name2id),
-        },
-        (0,1,2) )
+class Real_main_opt(utils.Frozen):
+    def __init__(self):
+        self.csvlog_fn = None
+        self.jsonnumber_fn= None
+        self.time_window_length = None
 
-    for f in rotate_on_actions(actions, time_window):
+        self.log_begin = None
+        self.log_end = None
+
+        self.frozen = True
+
+
+
+def real_main(opt):
+    pp = pprint.PrettyPrinter(indent=4).pprint
+    name2id = log_utils.load_name2id(opt.jsonnumber_fn)
+
+    raopt = log_utils.Read_action_opt()
+    raopt.csvlog_fn = opt.csvlog_fn
+    raopt.transformators = {
+        0 : log_utils.timestap2date_tsfr,
+        1 : log_utils.name2id_tsfr(name2id),
+    }
+    raopt.col_names = {
+        0 : 'timestamp',
+        1 : 'action',
+        2 : 'user',
+    }
+    raopt.filter = log_utils.in_date_range(opt.log_begin, opt.log_end, 'timestamp')
+
+    actions = log_utils.read_actions_ex(raopt)
+
+    for f in rotate_on_actions(actions, opt.time_window_length):
         pp(f)
 
 
@@ -105,18 +119,18 @@ def main(argv=None):
     if argv is None:
         argv = sys.argv
 
+    opt = Real_main_opt()
     try:
-        csvlog = argv[1]
-        jsonnumber = argv[2]
-        time_window = timedelta(minutes=float(argv[3]))
-        output = argv[4]
+        opt.csvlog_fn = argv[1]
+        opt.jsonnumber_fn = argv[2]
+        opt.time_window_length = timedelta(minutes=float(argv[3]))
     except:
-        eprint('Usage:', prgname, 'cvs_log json_numbers time_window output')
+        eprint('Usage:', prgname, 'cvs_log json_numbers time_window')
         eprint('\nThe time_window is in minutes\n')
         return 1
 
     try:
-        return real_main(csvlog, jsonnumber, time_window, output)
+        return real_main(opt)
     except log_utils.NotLog:
         eprint('Error, the second column is not "actionName", are you sure this is a log?')
         return 2
@@ -126,3 +140,4 @@ def main(argv=None):
 
 if __name__ == "__main__":
     sys.exit(main())
+

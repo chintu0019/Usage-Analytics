@@ -2,6 +2,7 @@
 
 import csv
 import json
+import utils
 from datetime import datetime 
 
 class NotLog(Exception):
@@ -58,3 +59,60 @@ def read_actions(csvlog_fn, transformators, cols_id):
                 actions.append( _get_line(transformators, row, cols_id) )
 
     return actions
+
+
+
+def in_date_range(start, end, colname):
+    def lower(row):
+        return row[colname] >= start
+    def upper(row):
+        return row[colname] < end
+
+    if start == None and end == None:
+        return lambda x : True
+
+    if start == None:
+        return upper
+
+    if end == None:
+        return lower
+
+    return lambda x : lower(x) and upper(x)
+
+
+
+class Read_action_opt(utils.Frozen):
+    def __init__(self):
+        self.csvlog_fn = None
+        self.transformators = {}
+        self.col_names = {}
+        self.filter = lambda x : True
+
+        self.frozen = True
+
+
+
+def _get_line_ex(opt, row):
+    action = {}
+    for idx, readable_name in opt.col_names.items():
+        action[readable_name] = opt.transformators.get(idx, lambda x:x)( row[idx] )
+    return action if opt.filter(action) else None
+
+
+
+def read_actions_ex(opt):
+    actions = []
+    with open(opt.csvlog_fn, 'r') as csvlog:
+        csvlog_reader = csv.reader(csvlog)
+        first = True
+        for row in csvlog_reader:
+            if first:
+                first = False
+                if row[1] != 'actionName':
+                    raise NotLog
+            else:
+                action = _get_line_ex(opt, row)
+                if action: actions.append(action)
+
+    return actions
+
