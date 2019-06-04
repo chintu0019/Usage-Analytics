@@ -1,0 +1,46 @@
+USAGE ANALYTICS EXPERIMENT - Odoo Notes
+
+You are working in a software company and use Odoo10 Notes tool to manage software projects. The software company is currently working on project X.
+
+The teams are the Yellow team, the Green team, and the Blue team. Each team has different responsibilities and depending on the your chosen team, you are required to perform the tasks as follows:
+All tasks are required to be performed using Odoo notes application.
+
+
+Dos and Don'ts:
+Odoo notes is a kanban-style application, for the purpose of this experiment all the notes (sticky notes) are color-coded (and the new ones should be color-coded) depending on the team you are assigned.
+You are allowed to delete and edit the notes created by your team (can be recognised by the team color) and should asign the same color for all the new notes created by you. 
+For example, if you belong to GREEN team, you can edit or delete notes with GREEN color and assign GREEN color to all the notes created by you. But you can comment on the appropriate note as required depending on the task.
+
+
+The situation is:
+
+GREEN TEAM:
+You are GREEN team manager.
+The Yellow team is the development team finished the Normalization Function and so it should
+be tested by the Green team (testing team).
+
+You are required to perform the following tasks:
+- refer to design team notes (BLUE) and development team notes (YELLOW) on the Normalization Function  
+- consult the yellow and blue team about the Normalization Function for any clarification required (may create new GREEN note or comment on the existing YELLOW note)
+- create new testing related tasks (what software testing tasks should be performed) and assign the tasks to your team members (create one or more notes)
+- inform the team member(s) over a chat about the new task assigned to them
+- include "more" information on the task in the comments section of the note (task note created by you, which you have assigned to your team)
+- you encountered a bug and have to report to the development team to fix it
+- suggestions to design team (BLUE color) on improvement of the product under development (may create multiple notes)
+- 
+
+
+YELLOW TEAM:
+The Yellow team (development team) should start working so that the Search Function
+goes in subdirectories.
+-
+-
+
+
+BLUE TEAM:
+You are in the Blue team (design team), it is unclear what does "similar enough"
+means, you should discuss it with the yellow and green team.
+-
+-
+
+
