@@ -1,13 +1,13 @@
 USAGE ANALYTICS EXPERIMENT - Odoo Notes
 
-You are working in a software company and use Odoo10 Notes tool to manage software projects. The software company is currently working on project X.
+You are working in a software company and use Odoo10 Notes tool to manage software projects. The software company is currently working on project X. This project involves development of a software application, currently working on providing an update. The current iteration includes the development team, testing and a design team. The development team has finished working on the Normalization Function and should start working on the Search Function, the testing team should test the Normalization Function and the design team should design a new functionality (feature).   
 
 The teams are the RED team (Development), the Green team (Software testing), and the Blue team (Design). Each team has different responsibilities and depending on the your chosen team, you are required to perform the tasks as follows:
 All tasks are required to be performed using Odoo notes application.
 
 
 Experiment Guidelines:
-Odoo notes is a kanban-style application, for the purpose of this experiment all the notes (sticky notes) are color-coded (and the new ones should be color-coded) depending on the team you are assigned.
+Odoo notes is a kanban-style application, for the purpose of this experiment all the notes (sticky notes) are color-coded (and the new ones should be color-coded as well) depending on the team you are assigned.
 You are allowed to delete and edit the notes created by your team (can be recognised by the team color) and should asign the same color for all the new notes created by you. 
 For example, if you belong to GREEN team, you can edit or delete notes with GREEN color and assign GREEN color to all the notes created by you. But you can comment on the appropriate note as required depending on the task.
 
@@ -31,7 +31,6 @@ You are required to perform the following tasks:
 - delete unnecessary notes (non-color-coded or old GREEN notes)
 - move notes to appropriate columns
 - search created notes and correct any typos
-
 
 
 RED TEAM:
@@ -59,5 +58,3 @@ You are in the Blue team (design team), it is unclear what does "similar enough"
 means, you should discuss it with the RED and green team.
 -
 -
-
-
