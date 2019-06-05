@@ -6,7 +6,7 @@ The teams are the Yellow team, the Green team, and the Blue team. Each team has 
 All tasks are required to be performed using Odoo notes application.
 
 
-Dos and Don'ts:
+Experiment Guidelines:
 Odoo notes is a kanban-style application, for the purpose of this experiment all the notes (sticky notes) are color-coded (and the new ones should be color-coded) depending on the team you are assigned.
 You are allowed to delete and edit the notes created by your team (can be recognised by the team color) and should asign the same color for all the new notes created by you. 
 For example, if you belong to GREEN team, you can edit or delete notes with GREEN color and assign GREEN color to all the notes created by you. But you can comment on the appropriate note as required depending on the task.
@@ -16,28 +16,45 @@ The situation is:
 
 GREEN TEAM:
 You are GREEN team manager.
-The Yellow team is the development team finished the Normalization Function and so it should
-be tested by the Green team (testing team).
+The Yellow team is the development team finished the Normalization Function and so it should be tested by the Green team (testing team).
 
 You are required to perform the following tasks:
-- refer to design team notes (BLUE) and development team notes (YELLOW) on the Normalization Function  
+- refer to design team notes (BLUE) and development team notes (YELLOW) on the Normalization Function (use search box on the top right - search with note and/or tag)  
+- you can re-use the existing notes (related and necessary) by changing the color to GREEN
 - consult the yellow and blue team about the Normalization Function for any clarification required (may create new GREEN note or comment on the existing YELLOW note)
 - create new testing related tasks (what software testing tasks should be performed) and assign the tasks to your team members (create one or more notes)
 - inform the team member(s) over a chat about the new task assigned to them
-- include "more" information on the task in the comments section of the note (task note created by you, which you have assigned to your team)
+- include "more" information on the task in the comments section of the note (task note created by you, which you have assigned to your team), attach the testing guidelines document in the comment
+- remove follower from older/completed notes
 - you encountered a bug and have to report to the development team to fix it
 - suggestions to design team (BLUE color) on improvement of the product under development (may create multiple notes)
-- 
+- delete unnecessary notes (non-color-coded or old GREEN notes)
+- move notes to appropriate columns
+- search created notes and correct any typos
+
 
 
 YELLOW TEAM:
+You are YELLOW team manager.
 The Yellow team (development team) should start working so that the Search Function
 goes in subdirectories.
--
--
+- refer to design team notes (BLUE) on the Search Function (use search box on the top right - search with note and/or tag)
+- you can re-use the existing notes (related and necessary) by changing the color to GREEN
+- consult the design team about the Search Function (may create new YELLOW notes or comment on the related existing BLUE notes)
+- create and assign development tasks for your team  (create YELLOW notes)
+- inform the assigned team members about the task(s) to be performed over a chat
+- include "more" information on the task in the comment section of the note (task note created by you, which you assigned to your team), attach the development guidelines document in the comment
+- create note(s) for the testing team to refer later
+- remove follower from older/completed notes
+- suggestions to design team (BLUE color) on improvement of the product under development (may create multiple notes)
+- delete unnecessary notes (non-color-coded or old YELLOW notes)
+- move notes to appropriate columns
+- search created notes and correct any typos
+- 
 
 
 BLUE TEAM:
+You are BLUE team manager.
 You are in the Blue team (design team), it is unclear what does "similar enough"
 means, you should discuss it with the yellow and green team.
 -
