@@ -1,6 +1,7 @@
 System IP: 136.206.48.84
-Odoo Port: 8069
+Odoo Port: 8010, 8011
 DNS Server: 136.206.0.1
+
 
 Odoo database:
 	database name:  UA-DB
@@ -10,3 +11,24 @@ Odoo database:
 	country:	Ireland
 
 
+Users available:
+- Odoo 10
+	- purple
+		-
+		-
+	- red
+		- 
+		- 
+	- blue
+		- 
+		- 
+- Odoo 11
+	- purple
+		-
+		-
+	- red
+		- 
+		- 
+	- blue
+		- 
+		- 
