@@ -1,4 +1,0 @@
-timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
-2019-05-20 10:39:31.034517,Create Note,1,,,,,<p>bbbbbbbbbb</p>
-2019-05-20 10:39:39.215632,Create Note,1,,,,,cccccccccccc
-2019-05-20 10:40:02.674704,Open Note,1,,2,,,

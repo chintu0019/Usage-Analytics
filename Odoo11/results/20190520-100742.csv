@@ -1,3 +1,0 @@
-timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
-2019-05-20 10:08:36.822432,Open Note,1,172.19.0.1,12,,,
-2019-05-20 10:08:48.683251,Delete Note,1,172.19.0.1,12,,,
