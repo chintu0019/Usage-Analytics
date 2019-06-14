@@ -2,6 +2,8 @@
 set -euo pipefail
 IFS=$'\n\t'
 
+odoov=11
+
 SCRIPTNAME="`readlink -e "$0"`"
 SCRIPTDIR="`dirname "$SCRIPTNAME"`"
 
@@ -50,13 +52,13 @@ if [[ -n ${database+x} ]] ;then
         >&2 echo "Database file exists!"
         exit 1
     fi
+    mkdir -p "`dirname "$database"`"
 
-    dbfpath="`readlink -e "$database"`"
+    dbfpath="`readlink -f "$database"`"
     dbdir="`dirname "$dbfpath"`"
     dbfname="`basename "$dbfpath"`"
 
-    mkdir -p "$dbdir"
-    docker run --rm -v odoo11_odoo-db-data-odoo11:/volume -v "$dbdir":/backup alpine tar -cjf /backup/"$dbfname" -C /volume ./
+    docker run --rm -v odoo"$odoov"_odoo-db-data-odoo"$odoov":/volume -v "$dbdir":/backup alpine tar -cjf /backup/"$dbfname" -C /volume ./
 
     echo "Done."
 fi
