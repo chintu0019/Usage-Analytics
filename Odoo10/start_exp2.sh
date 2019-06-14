@@ -1,0 +1,93 @@
+#!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
+
+odoov=10
+
+SCRIPTNAME="`readlink -e "$0"`"
+SCRIPTDIR="`dirname "$SCRIPTNAME"`"
+
+while [[ $# -gt 0 ]] ;do
+key="$1"
+
+case "$key" in
+    -h|--help)
+
+        >&2 echo "Start an experiment session"
+        >&2 echo "--database|-d database.tar.bz2  -- Set up the db from this backup file."
+        >&2 echo "--clean_table|-c 1234567        -- Clean the db filestore of docker machine 1234567 (implies -n)"
+        >&2 echo "--no_experiment|-n              -- Do the other action, but skip the experiment."
+
+        exit 1
+    ;;
+    -d|--database)
+        shift
+        database="$1"
+        shift
+    ;;
+    -c|--clean_table)
+        shift
+        docker_machine="$1"
+        shift
+    ;;
+    -n|--no_experiment)
+        shift
+        no_experiment=''
+    ;;
+    *)
+        >&2 echo "Ignored: "$1
+        shift
+    ;;
+esac
+done
+
+if [[ -n ${docker_machine+x} ]] ;then
+    no_experiment=''
+fi
+
+if [[ -n ${docker_machine+x} ]] && [[ -n ${database+x} ]] ;then
+    >&2 echo "To the clean the table require the docker machine running."
+    >&2 echo "To the restore the db requires the machine to be stopped."
+    >&2 echo "Cannot do both!"
+    exit 1
+fi
+
+
+
+if [[ -n ${database+x} ]] ;then
+    echo "Copying db $database in the volume"
+    if [ ! -f "$database" ] ;then
+        >&2 echo "Database file is missing!"
+        exit 1
+    fi
+
+    dbfpath="`readlink -e "$database"`"
+    dbdir="`dirname "$dbfpath"`"
+    dbfname="`basename "$dbfpath"`"
+
+    docker run --rm -v odoo"$odoov"_odoo-db-data-odoo"$odoov":/volume -v "$dbdir":/backup alpine sh -c "find /volume -mindepth 1 -delete ; tar -C /volume/ -xjf /backup/$dbfname"
+
+    echo "Done."
+fi
+
+if [[ -n ${docker_machine+x} ]] ;then
+    echo "Cleaning table"
+    docker exec "$docker_machine" /usr/bin/psql -U postgres -d odoo"$odoov" -c 'delete from ir_attachment;'
+fi
+
+
+if [[ -n ${no_experiment+x} ]] ;then
+    echo "Experiment skipped as requested."
+    exit 0
+fi
+
+
+cd "$SCRIPTDIR"
+mkdir -p results
+docker-compose up --build
+
+cd odoo/csvfolder
+
+find  -type f  -iname '*.csv'  -size +63c  -exec cp -v '{}' ../../results ';'
+rm *
+
