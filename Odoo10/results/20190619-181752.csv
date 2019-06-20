@@ -1,0 +1,13 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-06-19 18:21:58.184239,Open Note,1,,5,,,
+2019-06-19 18:22:50.744280,Invite and Add follower,1,,5,,6,"<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: Allow multiline messages</p></div>"
+2019-06-19 18:23:00.763597,Open Note,1,,12,,,
+2019-06-19 18:23:11.619835,Invite and Add follower,1,,12,,6,"<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: Test note</p></div>"
+2019-06-19 18:24:19.540470,Remove follower from note,1,,12,,,
+2019-06-19 18:27:26.276643,Open Note,1,,5,,,
+2019-06-19 18:28:10.043934,Invite and Add follower,1,,5,,6,"<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: Allow multiline messages</p></div>"
+2019-06-19 18:28:41.516545,Open Note,1,,5,,,
+2019-06-19 18:28:55.876753,Open Note,1,,5,,,
+2019-06-19 18:29:01.424020,Move Note,1,,5,3,,
+2019-06-19 18:29:24.142275,Move Note,1,,5,1,,
+2019-06-19 18:29:27.320430,Move Note,1,,5,2,,
