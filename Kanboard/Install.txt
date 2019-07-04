@@ -1,0 +1,27 @@
+KANBOARD
+
+$ git clone https://github.com/kanboard/kanboard
+
+In docker-compose.yml change the line under the "volumes" section
+from   kanboard_data:/var/www/app/data
+to     ../kanboard_volumes/data:/var/www/app/data
+
+Create the directory for the volume
+(assuming pwd is in the same directory of docker-compose.yml)
+$ mkdir -p ../kanboard_volumes/data
+
+Execute the docker once
+$ docker-compose up --build
+
+Stop it ( CTRL-C ).
+
+Copy config.default.php in the data folder with config.php name
+$ cp config.default.php ../kanboard_volumes/data/config.php
+
+Edit the configuration. In particular you might want to enable the debug mode.
+
+
+
+LOG WRITER SERVER
+
+Use a virtualenv and install flask flask_restful
