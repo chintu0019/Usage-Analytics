@@ -1,27 +1,50 @@
 KANBOARD
 
+
 $ git clone https://github.com/kanboard/kanboard
+
+
+In the Dockerfile file comment, or remove, all the VOLUME lines.
+
 
 In docker-compose.yml change the line under the "volumes" section
 from   kanboard_data:/var/www/app/data
 to     ../kanboard_volumes/data:/var/www/app/data
 
+
 Create the directory for the volume
 (assuming pwd is in the same directory of docker-compose.yml)
 $ mkdir -p ../kanboard_volumes/data
 
+
 Execute the docker once
 $ docker-compose up --build
 
-Stop it ( CTRL-C ).
+
+Open 127.0.0.1 with your browser and login ( name/password is admin/admin )
+Kanboard will create db.sqlite in the data directory.
+
+
+Stop kanboard ( CTRL-C ).
+
 
 Copy config.default.php in the data folder with config.php name
 $ cp config.default.php ../kanboard_volumes/data/config.php
 
-Edit the configuration. In particular you might want to enable the debug mode.
+
+Edit the configuration.
+In particular you might want to enable the debug mode.
+
+i.e.,
+define('DEBUG', true);
+define('LOG_DRIVER', 'file');
+
 
 
 
 LOG WRITER SERVER
 
-Use a virtualenv and install flask flask_restful
+Use a virtualenv and install flask and flask_restful
+(.gitignore assumes the name lwvenv)
+
+Create a directory called "results"
