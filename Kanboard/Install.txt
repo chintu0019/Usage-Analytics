@@ -33,9 +33,11 @@ $ cp config.default.php ../kanboard_volumes/data/config.php
 
 
 Edit the configuration.
-In particular you might want to enable the debug mode.
+In particular you might want to enable the debug mode and put the data dir in
+the data volume.
 
 i.e.,
+define('DATA_DIR', __DIR__.DIRECTORY_SEPARATOR);
 define('DEBUG', true);
 define('LOG_DRIVER', 'file');
 
