@@ -1,0 +1,23 @@
+{
+    "Move Note Column": 1,
+    "Edit Note": 2,
+    "Comment in Note": 3,
+    "Comment Edit": 4,
+    "Comment Delete": 5,
+    "Attach File": 6,
+    "Move Note Position": 7,
+    "Move Note Swimlane": 8,
+    "Close Note": 9,
+    "Open Note": 10,
+    "Note Change Assignee": 11,
+    "Subtask Create": 12,
+    "Subtask Update": 13,
+    "Subtask Delete": 14,
+    "Create Internal Link": 15,
+    "Delete Internal Link": 16,
+    "Create Note": 10,
+    "Move Note Project": 11,
+    "END": 2147483647
+}
+
+
