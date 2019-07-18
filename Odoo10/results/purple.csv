@@ -1,0 +1,47 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-07-17 12:30:58.752179,Search with Note,1,172.18.0.1,,,,chat
+2019-07-17 12:31:01.051120,Open Note,1,172.18.0.1,4,,,
+2019-07-17 12:31:08.068105,Search with Note,1,172.18.0.1,,,,chat
+2019-07-17 12:31:09.121244,Open Note,1,172.18.0.1,7,,,
+2019-07-17 12:31:12.736017,Search with Note,1,172.18.0.1,,,,chat
+2019-07-17 12:31:32.603126,Open Note,1,172.18.0.1,7,,,
+2019-07-17 12:31:35.529417,Open commenting in note,1,172.18.0.1,7,,,
+2019-07-17 12:32:10.547186,Comment in Note,1,172.18.0.1,,,,Is this basically a shortcut to create a n-to-n chat with only two players in play?
+2019-07-17 12:32:13.087780,Search with Note,1,172.18.0.1,,,,chat
+2019-07-17 12:33:15.317166,Create Note,1,172.18.0.1,,,,<p>Test the new real time search feature<br></p>
+2019-07-17 12:33:30.531732,Open commenting in note,1,172.18.0.1,23,,,
+2019-07-17 12:33:37.009864,Change Note Colour,1,172.18.0.1,23,,,
+2019-07-17 12:34:11.188831,Create Note,1,172.18.0.1,,,,<p>Test the new function that looks up for the users while typing</p><p><br></p>
+2019-07-17 12:36:07.242246,Change Note Colour,1,172.18.0.1,24,,,
+2019-07-17 12:38:16.765051,Chat with other users,1,172.18.0.1,1,,,@odoo10purplea I set up new tests
+2019-07-17 12:39:11.508358,Open Note,1,172.18.0.1,12,,,
+2019-07-17 12:39:16.992908,Open Note,1,172.18.0.1,12,,,
+2019-07-17 12:39:20.642969,Open Note,1,172.18.0.1,22,,,
+2019-07-17 12:39:25.248635,Open Note,1,172.18.0.1,12,,,
+2019-07-17 12:39:29.921442,Open Note,1,172.18.0.1,6,,,
+2019-07-17 12:39:43.857394,Open Note,1,172.18.0.1,5,,,
+2019-07-17 12:40:17.535821,Open Note,1,172.18.0.1,9,,,
+2019-07-17 12:40:21.003985,Open Note,1,172.18.0.1,9,,,
+2019-07-17 12:40:23.337674,Open Note,1,172.18.0.1,7,,,
+2019-07-17 12:40:25.681255,Open Note,1,172.18.0.1,7,,,
+2019-07-17 12:41:26.799008,Create Note,1,172.18.0.1,,,,<p>I tried the new 1-to-1 chat trying to chat with myself. The program crashes!<br></p>
+2019-07-17 12:41:37.666775,Change Note Colour,1,172.18.0.1,25,,,
+2019-07-17 12:42:40.207048,Create Note,1,172.18.0.1,,,,<p>Windows98-like buttons appear somewhat out of place nowadays. It would not possible to make the GUI look like it is from our century?<br></p>
+2019-07-17 12:42:45.044367,Change Note Colour,1,172.18.0.1,26,,,
+2019-07-17 12:43:37.068938,Delete Note,1,172.18.0.1,12,,,
+2019-07-17 12:43:40.383695,Delete Note,1,172.18.0.1,22,,,
+2019-07-17 12:43:57.568916,Open Note,1,172.18.0.1,6,,,
+2019-07-17 12:44:05.316863,Open Note,1,172.18.0.1,25,,,
+2019-07-17 12:44:09.656250,Add tag,1,172.18.0.1,[3],,,
+2019-07-17 12:44:23.200178,Open Note,1,172.18.0.1,5,,,
+2019-07-17 12:44:48.937967,Edit Note,1,172.18.0.1,5,,,"<p>Allow multiline messages</p><p><br></p><p>Enter sends the message, and even if one copies and paste text with newlines those are&nbsp;replaced with spaces. The current behavior is quite bad, overall when sharing pieces of code.<br></p>"
+2019-07-17 12:44:51.734736,Open Note,1,172.18.0.1,6,,,
+2019-07-17 12:45:14.813206,Edit Note,1,172.18.0.1,6,,,<p>Allow the whole unicode</p><p><br></p><p>At the moment we use the UTF-16LE. Many of our customers are Mathematicians and they would like to write mathematical symbols outside the BMP. At the moment the application crashes when trying to send a non-BMP character.<br></p>
+2019-07-17 12:45:21.899244,Open Note,1,172.18.0.1,26,,,
+2019-07-17 12:45:31.374726,Open Note,1,172.18.0.1,25,,,
+2019-07-17 12:45:39.553561,Open Note,1,172.18.0.1,23,,,
+2019-07-17 12:45:59.821075,Open Note,1,172.18.0.1,4,,,
+2019-07-17 12:46:12.888119,Open Note,1,172.18.0.1,10,,,
+2019-07-17 12:46:19.865002,Open Note,1,172.18.0.1,11,,,
+2019-07-17 12:46:24.329153,Open Note,1,172.18.0.1,8,,,
+2019-07-17 12:49:13.153908,Create Channel,1,172.18.0.1,,,,Testing team

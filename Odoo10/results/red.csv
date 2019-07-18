@@ -1,0 +1,27 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-07-17 13:44:38.876425,Open Note,1,172.18.0.1,7,,,
+2019-07-17 13:44:46.353019,Open commenting in note,1,172.18.0.1,7,,,
+2019-07-17 13:46:53.345707,Create Note,1,172.18.0.1,,,,<p>1-to-1 chat should not show the list of partecipants<br></p><p><br></p><p>To use the normal n-to-n chat with just two players is a lazy fix. The list of partecipants should be at very list reduced<br></p>
+2019-07-17 13:47:18.160796,Open Note,1,172.18.0.1,23,,,
+2019-07-17 13:47:23.293894,Change Note Colour,1,172.18.0.1,23,,,
+2019-07-17 13:48:36.327598,Change Note Colour,1,172.18.0.1,6,,,
+2019-07-17 13:48:38.730169,Change Note Colour,1,172.18.0.1,5,,,
+2019-07-17 13:50:14.951284,Open Note,1,172.18.0.1,5,,,
+2019-07-17 13:50:31.293966,Invite and Add follower,1,172.18.0.1,5,,"[6, False, [10]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: Allow multiline messages</p></div>"
+2019-07-17 13:50:51.157956,Invite and Add follower,1,172.18.0.1,5,,"[6, False, [11, 12]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: Allow multiline messages</p></div>"
+2019-07-17 13:54:51.211075,Open Note,1,172.18.0.1,23,,,
+2019-07-17 13:54:53.434469,Open commenting in note,1,172.18.0.1,23,,,
+2019-07-17 13:55:21.860127,Comment in Note,1,172.18.0.1,,,,"A bit more space would be welcome, doubly so for cellphone users<br>"
+2019-07-17 13:56:02.222713,Create Note,1,172.18.0.1,,,,<p>Test the 1to1 chat<br></p>
+2019-07-17 13:56:10.259028,Change Note Colour,1,172.18.0.1,24,,,
+2019-07-17 13:56:11.935039,Change Note Colour,1,172.18.0.1,24,,,
+2019-07-17 13:56:21.538518,Open Note,1,172.18.0.1,12,,,
+2019-07-17 13:56:23.888708,Open Note,1,172.18.0.1,12,,,
+2019-07-17 13:56:26.061587,Open Note,1,172.18.0.1,22,,,
+2019-07-17 13:56:27.325100,Open Note,1,172.18.0.1,22,,,
+2019-07-17 13:56:46.297321,Move Note,1,172.18.0.1,10,3,,
+2019-07-17 13:56:47.084125,Move Note,1,172.18.0.1,8,3,,
+2019-07-17 13:56:57.049018,Delete Note,1,172.18.0.1,12,,,
+2019-07-17 13:57:00.504176,Delete Note,1,172.18.0.1,22,,,
+2019-07-17 13:57:02.573425,Open Note,1,172.18.0.1,5,,,
+2019-07-17 13:57:06.695218,Open Note,1,172.18.0.1,5,,,

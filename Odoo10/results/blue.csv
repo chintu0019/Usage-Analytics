@@ -1,0 +1,30 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-07-17 15:37:13.410951,Open Note,1,172.18.0.1,5,,,
+2019-07-17 15:37:15.473279,Open commenting in note,1,172.18.0.1,5,,,
+2019-07-17 15:37:28.967844,Comment in Note,1,172.18.0.1,,,,I suggest to use CTRL+Enter to send
+2019-07-17 15:37:38.352682,Open Note,1,172.18.0.1,6,,,
+2019-07-17 15:37:47.295636,Open commenting in note,1,172.18.0.1,6,,,
+2019-07-17 15:39:56.123908,Open Note,1,172.18.0.1,6,,,
+2019-07-17 15:40:00.329629,Open commenting in note,1,172.18.0.1,6,,,
+2019-07-17 15:40:09.911019,Comment in Note,1,172.18.0.1,,,,utf8 for the win<br>
+2019-07-17 15:40:13.655528,Open Note,1,172.18.0.1,5,,,
+2019-07-17 15:40:52.951945,Create Note,1,172.18.0.1,,,,<p>dictation input<br></p>
+2019-07-17 15:41:12.150436,Change Note Colour,1,172.18.0.1,23,,,
+2019-07-17 15:53:37.918678,Open Note,1,172.18.0.1,23,,,
+2019-07-17 15:53:45.574594,Invite and Add follower,1,172.18.0.1,23,,"[6, False, [7]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: dictation input</p></div>"
+2019-07-17 15:54:06.153625,Open Note,1,172.18.0.1,23,,,
+2019-07-17 15:55:33.051274,Edit Note,1,172.18.0.1,23,,,"<p>dictation input<a href=""/web/content/313?unique=da39a3ee5e6b4b0d3255bfef95601890afd80709&amp;download=true"" class=""o_image"" title=""document.txt"" data-mimetype=""text/plain""></a><br></p>"
+2019-07-17 15:55:55.971301,Open Note,1,172.18.0.1,23,,,
+2019-07-17 15:56:11.844131,Chat with other users,1,172.18.0.1,1,,,@odoo10purplea go to work!
+2019-07-17 15:56:25.609363,Move Note,1,172.18.0.1,23,2,,
+2019-07-17 15:56:26.711010,Move Note,1,172.18.0.1,5,2,,
+2019-07-17 15:56:27.965183,Move Note,1,172.18.0.1,6,2,,
+2019-07-17 15:56:28.944051,Move Note,1,172.18.0.1,10,3,,
+2019-07-17 15:56:30.457472,Move Note,1,172.18.0.1,4,3,,
+2019-07-17 15:56:35.850202,Open Note,1,172.18.0.1,12,,,
+2019-07-17 15:56:38.844224,Open Note,1,172.18.0.1,12,,,
+2019-07-17 15:56:41.829693,Open Note,1,172.18.0.1,22,,,
+2019-07-17 15:56:44.828552,Open Note,1,172.18.0.1,22,,,
+2019-07-17 15:56:47.170912,Open Note,1,172.18.0.1,22,,,
+2019-07-17 15:56:53.135975,Delete Note,1,172.18.0.1,12,,,
+2019-07-17 15:56:56.163413,Delete Note,1,172.18.0.1,22,,,
