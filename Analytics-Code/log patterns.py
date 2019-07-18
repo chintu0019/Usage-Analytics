@@ -95,6 +95,8 @@ def main(argv=None):
                 sort_by = tuple(int(x.strip()) for x in argv[idx + 1].split(','))
 
     except:
+        eprint('Outputs the sequence of actions that are repeated at least twice')
+        eprint('')
         eprint('Usage:', prgname, 'len cvslog json_numbers [-n] [-s 1,2,...,n]')
         eprint('')
         eprint('-n display output in numbers, instead of action names')

@@ -48,18 +48,16 @@ def real_main(csvlog_fn):
 
 
 def main(argv=None):
-    """ Program starting point, it can started by the OS or as normal function
-
-        If it's a normal function argv won't be None if started by the OS
-        argv is initialized by the command line arguments
-    """
+    prgname = os.path.basename(__file__) if '__file__' in globals() else 'prg'
     if argv is None:
         argv = sys.argv
 
     try:
         csvlog = argv[1]
     except:
-        eprint('Usage: prg log_name')
+        eprint('Split the logs in different files, one per userId')
+        eprint('')
+        eprint('Usage:', prgname, 'log_name')
         return 1
 
     return real_main(csvlog)

@@ -125,6 +125,8 @@ def main(argv=None):
         opt.jsonnumber_fn = argv[2]
         opt.time_window_length = timedelta(minutes=float(argv[3]))
     except:
+        eprint('Output how many times an actions happens in a time window')
+        eprint('')
         eprint('Usage:', prgname, 'cvs_log json_numbers time_window')
         eprint('\nThe time_window is in minutes\n')
         return 1
