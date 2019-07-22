@@ -1,7 +1,7 @@
 ﻿USAGE ANALYTICS EXPERIMENT - Odoo Notes
 
 Scenario
-You are working in a software company and use Odoo10 Notes tool to manage software projects. The software company is currently working on project X. This project involves development of a chat application, currently working on providing an update. The current iteration includes the development team, testing and a design team. The development team has finished working on the chat feature and should start working on the Search Function, the testing team should test the chat function and the design team should design a new functionality (feature).   
+You are working in a software company and use Odoo10 Notes tool to manage software projects. The software company is currently working on project X. This project involves development of a chat application, currently working on providing an update. The current iteration includes the development team, testing and a design team. The development team has finished working on the chat feature and should start working on the Search Function, the testing team should test the chat function and the design team should design a new functionality (feature).
 
 The teams are the RED team (Development), the PURPLE team (Software testing), and the BLUE team (Design). Each team has different responsibilities and depending on the your chosen team, you are required to perform the tasks as described below.
 All tasks are required to be performed using Odoo notes application.
@@ -20,7 +20,7 @@ You are PURPLE team (testing team) manager.
 The RED team is the development team finished the chat function and so it should be tested by the PURPLE team.
 
 You are required to perform the following tasks:
-- refer to design team notes (BLUE) and development team notes (RED) on the chat function (use search box on the top right - search with note and/or tag)  
+- refer to design team notes (BLUE) and development team notes (RED) on the chat function (use search box on the top right - search with note and/or tag)
 - you can re-use the existing notes (related and necessary) by changing the color to PURPLE
 - consult the RED and BLUE team about the chat function for any clarification required (may create new PURPLE note or comment on the existing RED note)
 - create new testing related tasks (what software testing tasks should be performed) and assign the tasks to your team members (add team member as a follower to the note)
@@ -67,6 +67,7 @@ Your team is responsible for designing new functionalites (features) and/or upda
 
 You are required to perform the following tasks:
 - refer to development (RED) and testing (PURPLE) team notes for suggestions (use search box on the top right - search with note and/or tag)
+- you can re-use the existing notes (related and necessary) by changing the color to BLUE
 - respond to the suggestions in the comments section
 - create a new note (BLUE) for each new idea and briefly describe the idea
 - create tasks (new notes) to perform for your team members and assign them to the note (add team member as a follower to the note)

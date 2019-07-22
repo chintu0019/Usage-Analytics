@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+# Set up and start a http server on port 5000 that receives
+# POST webhooks from kanboard on /hook
+
+# e.g. 127.0.0.1:5000/hook
+
+
 import sys
 import csv
 import pprint
