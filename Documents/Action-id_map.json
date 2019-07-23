@@ -28,5 +28,6 @@
     "Mention user and reference channel in chat": 28,
     "Create Channel": 29,
     "Remove messaging channel": 30,
-    "Unfollow from a Channel": 31
+    "Unfollow from a Channel": 31,
+    "Invite user to channel": 32
 }
