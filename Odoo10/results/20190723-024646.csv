@@ -1,0 +1,5 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-07-23 02:48:37.528545,Create Channel,1,,,,,something
+2019-07-23 02:48:50.477725,Chat with other users,1,,2,,,@odoobluea
+2019-07-23 02:49:18.191818,Mention user in chat,1,,3,,[13],"<a href=""http://127.0.0.1:8010/web#model=res.partner&amp;id=13"" class=""o_mail_redirect"" data-oe-id=""13"" data-oe-model=""res.partner"" target=""_blank"">@odoo10bluea</a> "
+2019-07-23 02:49:33.946244,Chat with other users,1,,1,,,@odoo10blueb
