@@ -4,8 +4,15 @@ IFS=$'\n\t'
 
 odoov=10
 
-SCRIPTNAME="`readlink -e "$0"`"
+function kill_screenshot {
+    kill -15 $ss ||true
+}
+
+
+SCRIPTNAME="`readlink -n -e "$0"`"
 SCRIPTDIR="`dirname "$SCRIPTNAME"`"
+
+user=unnamed
 
 while [[ $# -gt 0 ]] ;do
 key="$1"
@@ -15,6 +22,8 @@ case "$key" in
 
         >&2 echo "Start an experiment session"
         >&2 echo "--database|-d database.tar.bz2  -- Set up the db from this backup file."
+        >&2 echo "--user|-u username              -- Output in this directory, default: unnamed."
+        >&2 echo "--screenshots|-s                -- Do screenshots."
         >&2 echo "--clean_table|-c 1234567        -- Clean the db filestore of docker machine 1234567 (implies -n)"
         >&2 echo "--no_experiment|-n              -- Do the other action, but skip the experiment."
 
@@ -29,6 +38,15 @@ case "$key" in
         shift
         docker_machine="$1"
         shift
+    ;;
+    -u|--user)
+        shift
+        user="$1"
+        shift
+    ;;
+    -s|--screenshots)
+        shift
+        screenshots=''
     ;;
     -n|--no_experiment)
         shift
@@ -61,7 +79,7 @@ if [[ -n ${database+x} ]] ;then
         exit 1
     fi
 
-    dbfpath="`readlink -e "$database"`"
+    dbfpath="`readlink -n -e "$database"`"
     dbdir="`dirname "$dbfpath"`"
     dbfname="`basename "$dbfpath"`"
 
@@ -81,13 +99,22 @@ if [[ -n ${no_experiment+x} ]] ;then
     exit 0
 fi
 
+mkdir -p "$user"
+user="`readlink -n -e "$user"`"
+
+if [[ -n ${screenshots+x} ]] ;then
+    cd "$user"
+    "$SCRIPTDIR"/screenshot.sh &
+    ss=$!
+    trap kill_screenshot EXIT INT TERM
+fi
+
 
 cd "$SCRIPTDIR"
-mkdir -p results
 docker-compose up --build
 
 cd odoo/csvfolder
 
-find  -type f  -iname '*.csv'  -size +63c  -exec cp -v '{}' ../../results ';'
+find  -type f  -iname '*.csv'  -size +63c  -exec cp -v '{}' "$user" ';'
 rm *
 
