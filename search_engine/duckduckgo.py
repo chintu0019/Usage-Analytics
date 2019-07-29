@@ -50,8 +50,9 @@ def ask_duckduckgo(query):
                 result['snippet'] = tag
 
             return False
-        raw_results.find_all(add_result, recursive=False);
+        raw_results.find_all(add_result, recursive=True);
         results.append(result)
+        #print('results=',results)
     return results
 
 
@@ -60,8 +61,10 @@ def main(argv=None):
     prgname = os.path.basename(__file__) if '__file__' in globals() else 'prg'
     if argv is None:
         argv = sys.argv
+   
+    query = ' '.join(argv[1:])
+    #print('query=',query)
 
-    query = ' '.join(argv)
     for result in ask_duckduckgo(query):
         print(' ==============================\n')
         print(result)
