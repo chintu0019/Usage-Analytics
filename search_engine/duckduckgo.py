@@ -30,7 +30,8 @@ def duckduckgo_raw_results(query):
     eprint(duckduckgo)
     soup = BeautifulSoup(urllib.request.urlopen(duckduckgo), 'html.parser')
     results_div = soup.find(has_class('results'))
-    return results_div.find_all(has_class('result'), recusive=False)
+    return results_div.find_all(has_class('result'), recursive=False)
+    # is this a typo? "recusive"?  
 
 
 
