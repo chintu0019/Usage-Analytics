@@ -6,5 +6,5 @@ $ docker run -it --rm -v odoo10_odoo-db-data-odoo10:/volume -v "`readlink -e .`"
 To put back the file contents of volume.tar.bz2 in the volume odoo10_odoo-db-data-odoo10
 $ docker run -it --rm -v odoo10_odoo-db-data-odoo10:/volume -v "`readlink -e .`":/backup alpine sh -c "find /volume -mindepth 1 -delete ; tar -C /volume/ -xvjf /backup/volume.tar.bz2"
 
-
-$ docker exec -ti 0b9b92e732e3 /usr/bin/psql -U postgres -d odoo10 -c 'delete from ir_attachment;'
+Fix bug - delete the record ir_attachment from the DB 
+$ docker exec -ti POSTGRES_CONTAINER_ID /usr/bin/psql -U postgres -d odoo10 -c 'delete from ir_attachment;'

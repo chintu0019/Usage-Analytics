@@ -1,0 +1,8 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-08-28 10:26:18.369181,Open Note,1,,22,,,
+2019-08-28 10:26:30.002860,Delete Note,1,,22,,,
+2019-08-28 10:26:38.587123,Open Note,1,,12,,,
+2019-08-28 10:26:43.740320,Open Note,1,,12,,,
+2019-08-28 10:26:52.124814,Edit Note,1,,12,,,<p>Test note</p><p><br></p><p>something</p>
+2019-08-28 10:27:16.045051,Open Note,1,,12,,,
+2019-08-28 10:27:27.760664,Delete Note,1,,12,,,
