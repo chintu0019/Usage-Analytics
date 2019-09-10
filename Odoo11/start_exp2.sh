@@ -118,3 +118,7 @@ cd odoo/csvfolder
 find  -type f  -iname '*.csv'  -size +63c  -exec cp -v '{}' "$user" ';'
 rm *
 
+if [$user != "unnamed"]
+then
+    python update_userid.py $userdir $user
+fi
