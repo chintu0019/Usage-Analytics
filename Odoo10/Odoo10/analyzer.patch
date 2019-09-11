@@ -1,627 +1,18 @@
-diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/addons/login_user_detail/doc/changelog.rst odoo/addons/login_user_detail/doc/changelog.rst
---- odoo.orig/addons/login_user_detail/doc/changelog.rst	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/addons/login_user_detail/doc/changelog.rst	2019-08-27 05:01:10.000000000 +0100
-@@ -0,0 +1,13 @@
-+Changelog
-+=========
-+* Saritha Sahadevan   contact: saritha@cybrosys.in
-+
-+
-+`10.0.2.0.0`
-+------------
-+- Time Issue fix.
-+
-+
-+`10.0.3.0.0`
-+------------
-+- Access right issue fix.
-diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/addons/login_user_detail/doc/changelog.rst~ odoo/addons/login_user_detail/doc/changelog.rst~
---- odoo.orig/addons/login_user_detail/doc/changelog.rst~	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/addons/login_user_detail/doc/changelog.rst~	2019-08-27 05:01:10.000000000 +0100
-@@ -0,0 +1,14 @@
-+Changelog
-+=========
-+* Saritha Sahadevan   contact: saritha@cybrosys.in
-+
-+
-+`10.0.2.0.0`
-+------------
-+- Time Issue fix.
-+- Access right issue fix.
-+
-+
-+`10.0.3.0.0`
-+------------
-+- Access right issue fix.
-diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/addons/login_user_detail/__init__.py odoo/addons/login_user_detail/__init__.py
---- odoo.orig/addons/login_user_detail/__init__.py	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/addons/login_user_detail/__init__.py	2019-08-27 05:01:10.000000000 +0100
-@@ -0,0 +1,20 @@
-+# -*- coding: utf-8 -*-
-+##############################################################################
-+#
-+#    Cybrosys Technologies Pvt. Ltd.
-+#    Copyright (C) 2016-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
-+#    Author: Saritha Sahadevan(<https://www.cybrosys.com>)
-+#    you can modify it under the terms of the GNU LESSER
-+#    GENERAL PUBLIC LICENSE (LGPL v3), Version 3.
-+
-+#    This program is distributed in the hope that it will be useful,
-+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-+#    GNU LESSER GENERAL PUBLIC LICENSE (LGPL v3) for more details.
-+#
-+#    You should have received a copy of the GNU LESSER GENERAL PUBLIC LICENSE
-+#    GENERAL PUBLIC LICENSE (LGPL v3) along with this program.
-+#    If not, see <https://www.gnu.org/licenses/>.
-+#
-+##############################################################################
-+from . import models
-diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/addons/login_user_detail/__manifest__.py odoo/addons/login_user_detail/__manifest__.py
---- odoo.orig/addons/login_user_detail/__manifest__.py	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/addons/login_user_detail/__manifest__.py	2019-08-27 05:01:10.000000000 +0100
-@@ -0,0 +1,38 @@
-+# -*- coding: utf-8 -*-
-+##############################################################################
-+#
-+#    Cybrosys Technologies Pvt. Ltd.
-+#    Copyright (C) 2016-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
-+#    Author: Saritha Sahadevan(<https://www.cybrosys.com>)
-+#    you can modify it under the terms of the GNU LESSER
-+#    GENERAL PUBLIC LICENSE (LGPL v3), Version 3.
-+
-+#    This program is distributed in the hope that it will be useful,
-+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-+#    GNU LESSER GENERAL PUBLIC LICENSE (LGPL v3) for more details.
-+#
-+#    You should have received a copy of the GNU LESSER GENERAL PUBLIC LICENSE
-+#    GENERAL PUBLIC LICENSE (LGPL v3) along with this program.
-+#    If not, see <https://www.gnu.org/licenses/>.
-+#
-+##############################################################################
-+{
-+    'name': "User Log Details",
-+    'version': '10.0.3.0.0',
-+    'summary': """Login User Details & IP Address""",
-+    'description': """This module records login information of user""",
-+    'author': "Cybrosys Techno Solutions ",
-+    'company': "Cybrosys Techno Solutions ",
-+    'maintainer': 'Cybrosys Techno Solutions',
-+    'website': "https://www.cybrosys.com",
-+    'category': 'Tools',
-+    'depends': ['base'],
-+    'license': 'AGPL-3',
-+    'data': [
-+        'security/ir.model.access.csv',
-+        'views/login_user_views.xml'],
-+    'images': ['static/description/banner.png'],
-+    'installable': True,
-+    'auto_install': False,
-+}
-diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/addons/login_user_detail/models/__init__.py odoo/addons/login_user_detail/models/__init__.py
---- odoo.orig/addons/login_user_detail/models/__init__.py	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/addons/login_user_detail/models/__init__.py	2019-08-27 05:01:10.000000000 +0100
-@@ -0,0 +1,20 @@
-+# -*- coding: utf-8 -*-
-+##############################################################################
-+#
-+#    Cybrosys Technologies Pvt. Ltd.
-+#    Copyright (C) 2016-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
-+#    Author: Saritha Sahadevan(<https://www.cybrosys.com>)
-+#    you can modify it under the terms of the GNU LESSER
-+#    GENERAL PUBLIC LICENSE (LGPL v3), Version 3.
-+
-+#    This program is distributed in the hope that it will be useful,
-+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-+#    GNU LESSER GENERAL PUBLIC LICENSE (LGPL v3) for more details.
-+#
-+#    You should have received a copy of the GNU LESSER GENERAL PUBLIC LICENSE
-+#    GENERAL PUBLIC LICENSE (LGPL v3) along with this program.
-+#    If not, see <https://www.gnu.org/licenses/>.
-+#
-+##############################################################################
-+from . import login_user_details
-diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/addons/login_user_detail/models/login_user_details.py odoo/addons/login_user_detail/models/login_user_details.py
---- odoo.orig/addons/login_user_detail/models/login_user_details.py	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/addons/login_user_detail/models/login_user_details.py	2019-08-27 05:01:10.000000000 +0100
-@@ -0,0 +1,50 @@
-+# -*- coding: utf-8 -*-
-+##############################################################################
-+#
-+#    Cybrosys Technologies Pvt. Ltd.
-+#    Copyright (C) 2016-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
-+#    Author: Saritha Sahadevan(<https://www.cybrosys.com>)
-+#    you can modify it under the terms of the GNU LESSER
-+#    GENERAL PUBLIC LICENSE (LGPL v3), Version 3.
-+
-+#    This program is distributed in the hope that it will be useful,
-+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-+#    GNU LESSER GENERAL PUBLIC LICENSE (LGPL v3) for more details.
-+#
-+#    You should have received a copy of the GNU LESSER GENERAL PUBLIC LICENSE
-+#    GENERAL PUBLIC LICENSE (LGPL v3) along with this program.
-+#    If not, see <https://www.gnu.org/licenses/>.
-+#
-+##############################################################################
-+import logging
-+from itertools import chain
-+from odoo.http import request
-+from odoo import models, fields, api
-+
-+_logger = logging.getLogger(__name__)
-+USER_PRIVATE_FIELDS = ['password']
-+concat = chain.from_iterable
-+
-+
-+class LoginUserDetail(models.Model):
-+    _inherit = 'res.users'
-+
-+    @api.model
-+    def check_credentials(self, password):
-+        result = super(LoginUserDetail, self).check_credentials(password)
-+        ip_address = request.httprequest.environ['REMOTE_ADDR']
-+        vals = {'name': self.name,
-+                'ip_address': ip_address
-+                }
-+        self.env['login.detail'].sudo().create(vals)
-+        return result
-+
-+
-+class LoginUpdate(models.Model):
-+    _name = 'login.detail'
-+
-+    name = fields.Char(string="User Name")
-+    date_time = fields.Datetime(string="Login Date And Time", default=lambda self: fields.datetime.now())
-+    ip_address = fields.Char(string="IP Address")
-+
-diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/addons/login_user_detail/README.rst odoo/addons/login_user_detail/README.rst
---- odoo.orig/addons/login_user_detail/README.rst	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/addons/login_user_detail/README.rst	2019-08-27 05:01:10.000000000 +0100
-@@ -0,0 +1,20 @@
-+User Log Details v10
-+====================
-+
-+This module developed to  record  login details of user.
-+
-+Installation
-+============
-+
-+Just select it from available modules to install it, there is no need to extra installations.
-+
-+Configuration
-+=============
-+
-+Nothing to configure.
-+
-+Credits
-+=======
-+
-+Developer: Saritha @ cybrosys
-+
-Binary files odoo.orig/addons/login_user_detail/static/description/banner.png and odoo/addons/login_user_detail/static/description/banner.png differ
-Binary files odoo.orig/addons/login_user_detail/static/description/cybro_logo.png and odoo/addons/login_user_detail/static/description/cybro_logo.png differ
-Binary files odoo.orig/addons/login_user_detail/static/description/cybrosys-login-user-details.png and odoo/addons/login_user_detail/static/description/cybrosys-login-user-details.png differ
-Binary files odoo.orig/addons/login_user_detail/static/description/icon.png and odoo/addons/login_user_detail/static/description/icon.png differ
-diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/addons/login_user_detail/static/description/index.html odoo/addons/login_user_detail/static/description/index.html
---- odoo.orig/addons/login_user_detail/static/description/index.html	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/addons/login_user_detail/static/description/index.html	2019-08-27 05:01:10.000000000 +0100
-@@ -0,0 +1,310 @@
-+<section class="oe_container" style="background-image:url(https://www.cybrosys.com/images/odoo-index-header-banner.png);background-repeat:no-repeat;background-size:100%;padding: 4% 0% 2% 15%;background-position-y: -107px;">
-+    <div class="oe_row oe_spaced">
-+        <h2 class="oe_slogan" style="font-size: 35px;color: #fff;font-weight: 900;text-transform: uppercase;text-align: left;margin: 0;margin-bottom: 16px;">
-+            User Log Details
-+        </h2>
-+        <h3 class="oe_slogan" style="font-size: 25px;color: #fff;font-weight: 600;text-align: left;opacity: 1;margin: 0 !important;">
-+            Records User Log Details
-+        </h3>
-+        <h5 class="oe_slogan" style="text-align: left;background: #fff;width: 293px;padding: 10px;color: #080808 !important;opacity: 1 !important;font-weight: 600;font-size: 20px;">
-+            <a style="color: #080808 !important;" href="https://www.cybrosys.com" target="_blank">Cybrosys Technologies</a>
-+        </h5>
-+        <a style="color: #080808 !important;" href="https://www.cybrosys.com" target="_blank">
-+            <div style="width: 215px;margin-left: 57%;text-align: center;background: #ffffff;height: 215px;border-radius: 100%;display: flex;justify-content: center;align-items: center;box-shadow: 0 0 12px 4px #00000059;">
-+                    <img src="https://www.cybrosys.com/images/cybro-logo-oca.png" alt="cybrosys technologies" style="width: 180px;"/>
-+            </div>
-+        </a>
-+    </div>
-+</section>
-+
-+<section class="oe_container" style="padding: 3% 0% 3% 15%;">
-+    <div class="oe_row oe_spaced">
-+        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-+            Overview
-+        </h2>
-+        <h3 class="oe_slogan" style="text-align: left;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 24px;">
-+            User Log Details, Record login date,IP Address of login user.
-+         </h3>
-+    </div>
-+</section>
-+<section class="oe_container" style="padding: 3% 0% 0% 15%;">
-+    <div class="oe_row oe_spaced">
-+        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-+            Screenshots
-+        </h2>
-+        <h3 class="oe_slogan" style="text-align: left;padding: 5% 0% 0% 0%;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 24px;">
-+            <img src="https://www.cybrosys.com/images/ico-tick.png">
-+            Login Details
-+         </h3>
-+        <div class="oe_row oe_spaced">
-+            <img src="cybrosys-login-user-details.png" alt="" style="width: 95%;"/>
-+        </div>
-+    </div>
-+</section>
-+
-+<section class="oe_container" style="padding: 7px 0% 0% 3%;">
-+     <div class="oe_row oe_spaced">
-+         <a style="color: #080808 !important;" href="https://apps.odoo.com/apps/modules/browse?search=cybrosys" target="_blank"><img src="https://www.cybrosys.com/images/view-more-apps.jpg" alt="cybrosys technologies" style="width: 100%;margin-bottom: 50px;"/></a>
-+     </div>
-+</section>
-+<section class="oe_container" style="padding: 1% 0% 0% 3%;">
-+    <div class="oe_row oe_spaced">
-+        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-+            Our Services
-+        </h2>
-+        <div style="display:flex;padding-top: 20px;justify-content: space-between;">
-+            <div style="flex-basis: 18%;">
-+
-+                    <div style="width:75px;height:75px;background:#fff; border-radius:100%;margin: auto;">
-+                            <a href="https://www.cybrosys.com/odoo-customization-and-installation/" target="_blank">
-+                            <img src="https://www.cybrosys.com/images/odoo-customization.png" style="width: 100%;border-radius: 100%;"/>
-+                            </a>
-+                    </div>
-+                     <h3 class="oe_slogan" style="font-weight: 800;text-align: center;font-size: 14px;width: 100%;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;">
-+                         <a href="https://www.cybrosys.com/odoo-customization-and-installation/" target="_blank">
-+                        Odoo Customization
-+                         </a>
-+                     </h3>
-+
-+            </div>
-+             <div style="flex-basis: 18%;">
-+
-+                <div style="width:75px;height:75px;background:#fff; border-radius:100%;margin: auto;">
-+                        <a href="https://www.cybrosys.com/odoo-erp-implementation/" target="_blank">
-+                            <img src="https://www.cybrosys.com/images/odoo-erp-implementation.png" style="width: 100%;border-radius: 100%;"/>
-+                        </a>
-+                </div>
-+                 <h3 class="oe_slogan" style="font-weight: 800;text-align: center;font-size: 14px;width: 100%;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;">
-+                    <a href="https://www.cybrosys.com/odoo-erp-implementation/" target="_blank">
-+                        Odoo Implementation </a>
-+                 </h3>
-+
-+            </div>
-+             <div style="flex-basis: 18%;">
-+
-+                <div style="width:75px;height:75px;background:#fff; border-radius:100%;margin: auto;">
-+                    <a href="https://www.cybrosys.com/odoo-erp-integration/" target="_blank">
-+                        <img src="https://www.cybrosys.com/images/odoo-erp-integration.png" style="width: 100%;border-radius: 100%;"/>
-+                    </a>
-+                </div>
-+                 <h3 class="oe_slogan" style="font-weight: 800;text-align: center;font-size: 14px;width: 100%;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;">
-+                    <a href="https://www.cybrosys.com/odoo-erp-integration/" target="_blank">
-+                        Odoo Integration
-+                    </a>
-+                 </h3>
-+
-+            </div>
-+             <div style="flex-basis: 18%;">
-+
-+                <div style="width:75px;height:75px;background:#fff; border-radius:100%;margin: auto;">
-+                        <a href="https://www.cybrosys.com/odoo-erp-support/" target="_blank">
-+                            <img src="https://www.cybrosys.com/images/odoo-erp-support.png" style="width: 100%;border-radius: 100%;"/>
-+                        </a>
-+                </div>
-+                 <h3 class="oe_slogan" style="font-weight: 800;text-align: center;font-size: 14px;width: 100%;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;">
-+                    <a href="https://www.cybrosys.com/odoo-erp-support/" target="_blank">
-+                        Odoo Support</a>
-+                 </h3>
-+
-+            </div>
-+             <div style="flex-basis: 18%;">
-+
-+                <div style="width:75px;height:75px;background:#fff; border-radius:100%;margin: auto;">
-+                        <a href="https://www.cybrosys.com/hire-odoo-developer/" target="_blank">
-+                            <img src="https://www.cybrosys.com/images/hire-odoo-developer.png" style="width: 100%;border-radius: 100%;"/>
-+                        </a>
-+                </div>
-+                 <h3 class="oe_slogan" style="font-weight: 800;text-align: center;font-size: 14px;width: 100%;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;">
-+                    <a href="https://www.cybrosys.com/hire-odoo-developer/" target="_blank">
-+                        Hire Odoo Developers</a>
-+                 </h3>
-+                     </a>
-+            </div>
-+        </div>
-+    </div>
-+</section>
-+<section class="oe_container" style="padding: 1% 0% 0% 3%;">
-+     <div class="oe_row oe_spaced">
-+        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-+            Our Industries
-+        </h2>
-+        <div style="display:flex;justify-content: space-between;flex-wrap:wrap;">
-+            <div style="flex-basis: 32%;padding-top: 20px;">
-+
-+                    <div style="width:30%; float:left;">
-+                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-+                            <a href="https://www.cybrosys.com/odoo/industries/best-trading-erp/" target="_blank">
-+                            <img src="https://www.cybrosys.com/images/odoo-index-industry-1.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-+                            </a>
-+                        </div>
-+                    </div>
-+                    <div style="width:70%;float:left;">
-+                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-+                         <a href="https://www.cybrosys.com/odoo/industries/best-trading-erp/" target="_blank">
-+                        Trading
-+                         </a>
-+                     </h3>
-+                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-+                        Easily procure and sell your products.
-+                     </h3>
-+                        </div>
-+
-+            </div>
-+            <div style="flex-basis: 32%;padding-top: 20px;">
-+
-+                    <div style="width:30%; float:left;">
-+                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-+                            <a href="https://www.cybrosys.com/odoo/industries/manufacturing-erp-software/" target="_blank">
-+                            <img src="https://www.cybrosys.com/images/odoo-index-industry-2.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-+                            </a>
-+                        </div>
-+                    </div>
-+                    <div style="width:70%;float:left;">
-+                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-+                        <a href="https://www.cybrosys.com/odoo/industries/manufacturing-erp-software/" target="_blank">
-+                            Manufacturing</a>
-+                     </h3>
-+                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-+                        Plan, track and schedule your operations.
-+                     </h3>
-+                        </div>
-+
-+            </div>
-+            <div style="flex-basis: 32%;padding-top: 20px;">
-+
-+                    <div style="width:30%; float:left;">
-+                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-+                            <a href="https://www.cybrosys.com/odoo/industries/restaurant-management/" target="_blank">
-+                                <img src="https://www.cybrosys.com/images/odoo-index-industry-3.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-+                            </a>
-+                        </div>
-+                    </div>
-+                    <div style="width:70%;float:left;">
-+                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-+                        <a href="https://www.cybrosys.com/odoo/industries/restaurant-management/" target="_blank">
-+                            Restaurant</a>
-+                     </h3>
-+                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-+                        Run your bar or restaurant methodical.
-+                     </h3>
-+                        </div>
-+
-+            </div>
-+            <div style="flex-basis: 32%;padding-top: 20px;">
-+
-+                    <div style="width:30%; float:left;">
-+                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-+                            <a href="https://www.cybrosys.com/odoo/industries/pos/" target="_blank">
-+                                <img src="https://www.cybrosys.com/images/odoo-index-industry-4.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-+                            </a>
-+                        </div>
-+                    </div>
-+                    <div style="width:70%;float:left;">
-+                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-+                        <a href="https://www.cybrosys.com/odoo/industries/pos/" target="_blank">
-+                            POS</a>
-+                     </h3>
-+                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-+                        Easy configuring and convivial selling.
-+                     </h3>
-+                        </div>
-+
-+            </div>
-+            <div style="flex-basis: 32%;padding-top: 20px;">
-+
-+                    <div style="width:30%; float:left;">
-+                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-+                            <a href="https://www.cybrosys.com/odoo/industries/ecommerce-website/" target="_blank">
-+                            <img src="https://www.cybrosys.com/images/odoo-index-industry-5.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-+                            </a>
-+                        </div>
-+                    </div>
-+                    <div style="width:70%;float:left;">
-+                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 0px;margin-left: 16px;">
-+                        <a href="https://www.cybrosys.com/odoo/industries/ecommerce-website/" target="_blank">
-+                            E-commerce & Website</a>
-+                     </h3>
-+                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-+                        Mobile friendly, awe-inspiring product pages.
-+                     </h3>
-+                    </div>
-+            </div>
-+            <div style="flex-basis: 32%;padding-top: 20px;">
-+
-+                    <div style="width:30%; float:left;">
-+                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-+                            <a href="https://www.cybrosys.com/odoo/industries/hotel-management-erp/" target="_blank">
-+                            <img src="https://www.cybrosys.com/images/odoo-index-industry-6.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-+                            </a>
-+                        </div>
-+                    </div>
-+                    <div style="width:70%;float:left;">
-+                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-+                        <a href="https://www.cybrosys.com/odoo/industries/hotel-management-erp/" target="_blank">
-+                            Hotel Management</a>
-+                     </h3>
-+                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-+                        An all-inclusive hotel management application.
-+                     </h3>
-+                        </div>
-+            </div>
-+            <div style="flex-basis: 32%;padding-top: 20px;">
-+
-+                    <div style="width:30%; float:left;">
-+                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-+                            <a href="https://www.cybrosys.com/odoo/industries/education-erp-software/" target="_blank">
-+                            <img src="https://www.cybrosys.com/images/odoo-index-industry-7.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-+                            </a>
-+                        </div>
-+                    </div>
-+                    <div style="width:70%;float:left;">
-+                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-+                        <a href="https://www.cybrosys.com/odoo/industries/education-erp-software/" target="_blank">
-+                            Education</a>
-+                     </h3>
-+                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-+                        A Collaborative platform for educational management.
-+                     </h3>
-+                        </div>
-+            </div>
-+             <div style="flex-basis: 32%;padding-top: 20px;">
-+
-+                    <div style="width:30%; float:left;">
-+                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-+                            <a href="https://www.cybrosys.com/odoo/industries/service-management/" target="_blank">
-+                                <img src="https://www.cybrosys.com/images/odoo-index-industry-8.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-+                            </a>
-+                        </div>
-+                    </div>
-+                    <div style="width:70%;float:left;">
-+                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-+                        <a href="https://www.cybrosys.com/odoo/industries/service-management/" target="_blank">
-+                            Service Management</a>
-+                     </h3>
-+                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-+                        Keep track of services and invoice accordingly.
-+                     </h3>
-+                        </div>
-+            </div>
-+        </div>
-+    </div>
-+</section>
-+<section class="oe_container" style="background-image:url(https://www.cybrosys.com/images/odoo-index-footer-bg.png); background-repeat:no-repeat; background-size:100%;padding: 13% 0% 6% 0%;">
-+    <div class="oe_slogan" style="margin-top:10px !important;margin-bottom: 0px;">
-+        <div>
-+            <a style="color: #5c5c5c !important;border-radius: 0;background: none;border: none;background: #fff;box-shadow: 0 10px 40px 0 rgba(62,57,107,0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.05);border-radius: 30px;font-size: 12px;padding: 9px 26px;margin-right: 9px;width: 200px;text-transform: capitalize;" class="btn btn-primary btn-lg mt8" style="color: #FFFFFF !important;border-radius: 0;" href="mailto:odoo@cybrosys.com"><i class="fa fa-envelope"></i> Email us </a>
-+            <a style="color: #5c5c5c !important;border-radius: 0;background: none;border: none;background: #fff;box-shadow: 0 10px 40px 0 rgba(62,57,107,0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.05);border-radius: 30px;font-size: 12px;padding: 9px 26px;margin-right: 9px;width: 200px;text-transform: capitalize;" class="btn btn-primary btn-lg mt8" style="color: #FFFFFF !important;border-radius: 0;" href="https://www.cybrosys.com/contact/"><i class="fa fa-phone"></i> Contact Us </a>
-+            <a style="color: #5c5c5c !important;border-radius: 0;background: none;border: none;background: #fff;box-shadow: 0 10px 40px 0 rgba(62,57,107,0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.05);border-radius: 30px;font-size: 12px;padding: 9px 26px;margin-right: 9px;width: 200px;text-transform: capitalize;" class="btn btn-primary btn-lg mt8" style="color: #FFFFFF !important;border-radius: 0;" href="https://www.cybrosys.com/contact/"><i class="fa fa-check-square"></i> Request Customization </a>
-+        </div>
-+        <br>
-+        <img src="https://www.cybrosys.com/images/logo.png" style="width: 190px; margin-bottom: 25px;margin-top: 30px;" class="center-block">
-+        <div>
-+          <a href="https://twitter.com/cybrosys" target="_blank"><i class="fa fa-2x fa-twitter" style="color:white;background: #00a0d1;width:35px;height: 35px;padding-top: 7px;font-size: 21px;margin-right: 6px;border-radius: 100%;"></i></a></td>
-+          <a href="https://www.linkedin.com/company/cybrosys-technologies-pvt-ltd" target="_blank"><i class="fa fa-2x fa-linkedin" style="color:white;background: #31a3d6;width:35px;padding-left: 3px;height: 35px;padding-top: 7px;font-size: 21px;margin-right: 6px;border-radius: 100%;"></i></a></td>
-+          <a href="https://www.facebook.com/cybrosystechnologies" target="_blank"><i class="fa fa-2x fa-facebook" style="color:white;background: #3b5998;width:35px; ;height: 35px;padding-top: 7px;font-size: 21px;margin-right: 6px;border-radius: 100%;"></i></a></td>
-+          <a href="https://plus.google.com/106641282743045431892/about" target="_blank"><i class="fa fa-2x fa-google-plus" style="color:white;background: #c53c2c;width:35px;padding-left: 3px;height: 35px;padding-top: 7px;font-size: 21px;margin-right: 6px;border-radius: 100%;"></i></a></td>
-+          <a href="https://in.pinterest.com/cybrosys" target="_blank"><i class="fa fa-2x fa-pinterest" style="color:white;background: #ac0f18;width:35px;padding-left: 3px;height: 35px;padding-top: 7px;font-size: 21px;margin-right: 6px;border-radius: 100%;"></i></a></td>
-+        </div>
-+    </div>
-+</section>
-+
-Binary files odoo.orig/addons/login_user_detail/static/description/login.png and odoo/addons/login_user_detail/static/description/login.png differ
-diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/addons/login_user_detail/views/login_user_views.xml odoo/addons/login_user_detail/views/login_user_views.xml
---- odoo.orig/addons/login_user_detail/views/login_user_views.xml	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/addons/login_user_detail/views/login_user_views.xml	2019-08-27 05:01:10.000000000 +0100
-@@ -0,0 +1,42 @@
-+<?xml version="1.0" encoding="utf-8"?>
-+<odoo>
-+    <data>
-+        <record model="ir.ui.view" id="login_user_detail_form_view">
-+            <field name="name">Login User Details</field>
-+            <field name="model">login.detail</field>
-+            <field name="arch" type="xml">
-+            <form>
-+                <sheet>
-+                    <group>
-+                        <field name="name"/>
-+                        <field name="date_time"/>
-+                        <field name="ip_address"/>
-+                    </group>
-+                </sheet>
-+            </form>
-+            </field>
-+        </record>
-+
-+        <record model="ir.ui.view" id="login_user_detail_tree_view">
-+            <field name="name">Login User Details</field>
-+            <field name="model">login.detail</field>
-+            <field name="arch" type="xml">
-+                <tree>
-+                    <field name="name"/>
-+                    <field name="date_time"/>
-+                    <field name="ip_address"/>
-+                </tree>
-+            </field>
-+        </record>
-+
-+        <record model="ir.actions.act_window" id="login_user_detail_action_window">
-+            <field name="name">Login User Details</field>
-+            <field name="res_model">login.detail</field>
-+            <field name="view_mode">tree,form</field>
-+        </record>
-+
-+    <menuitem name="Login Details" id="login_user_detail.menu_1_list" parent="base.menu_users"
-+              action="login_user_detail_action_window"/>
-+
-+  </data>
-+</odoo>
-\ No newline at end of file
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 --- odoo.orig/api.py	2017-10-10 08:37:51.000000000 +0100
-+++ odoo/api.py	2019-09-09 21:45:56.696331688 +0100
-@@ -54,9 +54,20 @@
- 
- from decorator import decorator
- from werkzeug.local import Local, release_local
-+from werkzeug import Request
-+import werkzeug
++++ odoo/api.py	2019-07-23 18:22:22.973815565 +0100
+@@ -57,6 +57,10 @@
  
  from odoo.tools import frozendict, classproperty
  
 +from functools import partial
 +from odoo.tools import config
 +import odoo.csv_writer as cw
-+import socket
-+
-+#from odoo.http import request
-+#from odoo import models, fields, api
-+
 +
  _logger = logging.getLogger(__name__)
  
  # The following attributes are used, and reflected on wrapping methods:
-@@ -76,6 +87,29 @@
- 
- INHERITED_ATTRS = ('_returns',)
- 
-+hostname = socket.gethostname()    
-+#IPAddr = socket.gethostbyname(hostname)
-+#IPAddr = httprequest.remote_addr
-+#ip_address = request.httprequest.environ['REMOTE_ADDR']
-+
-+'''
-+_request_stack = werkzeug.local.LocalStack()
-+request = _request_stack()
-+wsgienv = request.httprequest.environ
-+IPAddr = wsgienv['REMOTE_ADDR']
-+'''
-+
-+'''
-+_request_stack = werkzeug.local.LocalStack()
-+
-+request = _request_stack()
-+
-+wsgienv = request.httprequest.environ
-+
-+HTTP_HOST=wsgienv['HTTP_HOST'],
-+IPAddr=wsgienv['REMOTE_ADDR'],
-+'''
-+
- 
- class Params(object):
-     def __init__(self, args, kwargs):
-@@ -664,11 +698,317 @@
+@@ -664,11 +668,331 @@
      return decorator(func) if not hasattr(func, '_api') else func
  
  
@@ -641,45 +32,52 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +csv_write.dispatch = {}
 +
 +
++def call_if(name):
++    def call_if_impl(f):
++        csv_write.dispatch[name] = f
++        return f
++    return call_if_impl
++
++
 +def just_log_it_loudly(csvw, user_id, method_name, recs, params, ids):
 +    _logger.debug("LOUDLY! -- User: %s, call method: %s, recs: %s, ids: %s, params: %s", user_id, method_name, recs, ids, params)
 +
 +
++@call_if('name_create.note.stage')
 +def create_stage(csvw, user_id, method_name, recs, params, _):
 +    csvw.write({
 +        'actionName': "Create Stage",
-+        #'userId': user_id,
++        'userId': user_id,
 +        'id': params.args[0],
-+        #'ipAddr': IPAddr,
 +    })
-+csv_write.dispatch['name_create.note.stage'] = create_stage
 +
 +
 +def first_id_action(action, csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': action,
-+        #'userId': user_id,
++        'userId': user_id,
 +        'id': ids[0],
 +    })
 +csv_write.dispatch['unlink.note.stage'] = partial(first_id_action, "Delete Stage")
 +
 +
++@call_if('write.note.stage')
 +def rename_stage(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': "Rename Stage",
-+        #'userId': user_id,
++        'userId': user_id,
 +        'id': ids[0],
 +        'text': params.args[0]['name'],
 +    })
-+csv_write.dispatch['write.note.stage'] = rename_stage
 +
 +
++@call_if('read_group.note.note')
 +def search(csvw, user_id, method_name, recs, params, _):
 +    if not 'domain' in params.kwargs:
 +        return
 +
 +    to_write = {
-+        #'userId': user_id,
++        'userId': user_id,
 +    }
 +    
 +    keywords = []
@@ -706,32 +104,31 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +
 +    to_write['text'] = ', '.join(keywords)
 +    csvw.write(to_write)
-+csv_write.dispatch['read_group.note.note'] = search
 +
 +
++@call_if('create.note.note')
 +def create_note(csvw, user_id, method_name, recs, params, _):
 +    csvw.write({
 +        'actionName': 'Create Note',
-+        #'userId': user_id,
++        'userId': user_id,
 +        'text': params.args[0]['memo'],
 +    })
-+#    open_note.ignored[user_id] = 1
-+csv_write.dispatch['create.note.note'] = create_note
 +
 +
++@call_if('name_create.note.note')
 +def create_note_dash(csvw, user_id, method_name, recs, params, _):
 +    csvw.write({
 +        'actionName': 'Create Note',
-+        #'userId': user_id,
++        'userId': user_id,
 +        'text': params.args[0],
 +    })
 +    open_note.ignored[user_id] = 1
-+csv_write.dispatch['name_create.note.note'] = create_note_dash
 +
 +
 +csv_write.dispatch['unlink.note.note'] = partial(first_id_action, "Delete Note")
 +
 +
++@call_if('read.note.note')
 +def open_note(csvw, user_id, method_name, recs, params, ids):
 +    nr_ignore = open_note.ignored.get(user_id, 0)
 +    if nr_ignore > 0:
@@ -739,19 +136,19 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        return
 +    csvw.write({
 +        'actionName': 'Open Note',
-+        #'userId': user_id,
++        'userId': user_id,
 +        'id': ids[0],
 +    })
 +open_note.ignored = {}
-+csv_write.dispatch['read.note.note'] = open_note
 +
 +
++@call_if('write.note.note')
 +def write_note_note(csvw, user_id, method_name, recs, params, ids):
 +    try:
 +        memo = params.args[0]['memo']
 +        csvw.write({
 +            'actionName': 'Edit Note',
-+            #'userId': user_id,
++            'userId': user_id,
 +            'id': ids[0],
 +            'text': memo,
 +        })
@@ -765,7 +162,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        actionName = 'Move Note'
 +        csvw.write({
 +            'actionName': actionName,
-+            #'userId': user_id,
++            'userId': user_id,
 +            'id': ids[0],
 +            'stageId': stage_id,
 +        })
@@ -777,7 +174,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        tag_ids = params.args[0]['tag_ids']
 +        csvw.write({
 +            'actionName': "Add tag",
-+            #'userId': user_id,
++            'userId': user_id,
 +            'id': tag_ids[0][2],
 +        })
 +        return
@@ -788,7 +185,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +        _ = params.args[0]['color']
 +        csvw.write({
 +            'actionName': "Change Note Colour",
-+            #'userId': user_id,
++            'userId': user_id,
 +            'id': ids[0]
 +        })
 +        open_note.ignored[user_id] = 1
@@ -796,106 +193,106 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +    except KeyError:
 +        pass
 +write_note_note.user_moving = {}
-+csv_write.dispatch['write.note.note'] = write_note_note
 +
 +
++@call_if('name_get.note.stage')
 +def move_note_step1(csvw, user_id, method_name, recs, params, ids):
 +    write_note_note.user_moving[user_id] = ids
-+csv_write.dispatch['name_get.note.stage'] = move_note_step1
 +
 +
++@call_if('message_get_suggested_recipients.note.note')
 +def open_note_commenting(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': 'Open commenting in note',
-+        #'userId': user_id,
++        'userId': user_id,
 +        'id': ids[0],
 +    })
-+csv_write.dispatch['message_get_suggested_recipients.note.note'] = open_note_commenting
 +
 +
++@call_if('message_post.note.note')
 +def comment_in_note(csvw, user_id, method_name, recs, params, ids):
-+    to_write = { #'userId': user_id, }
++    to_write = { 'userId': user_id, }
 +    if len(params.kwargs['attachment_ids']) == 0:
 +        to_write['actionName'] = 'Comment in Note'
 +    else:
 +        to_write['actionName'] = 'Attach file'
 +    to_write['text'] = params.kwargs['body']
 +    csvw.write(to_write)
-+csv_write.dispatch['message_post.note.note'] = comment_in_note
 +
 +
++@call_if('create.mail.wizard.invite')
 +def invite_and_add_follower(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': 'Invite and Add follower',
-+        #'userId': user_id,
++        'userId': user_id,
 +        'id': params.args[0]['res_id'],
-+        'partnerId': params.args[0]['partner_ids'][0][0],
++        'partnerId': params.args[0]['partner_ids'][0],
 +        'text': params.args[0]['message'],
 +    })
 +    open_note.ignored[user_id] = 1
-+csv_write.dispatch['create.mail.wizard.invite'] = invite_and_add_follower
 +
 +
++@call_if('web_dashboard_create_users.res.users')
 +def invite_user(csvw, user_id, method_name, recs, params, _):
 +    csvw.write({
 +        'actionName': 'Invite User',
-+        #'userId': user_id,
++        'userId': user_id,
 +        'partnerId': params.args[0],
 +    })
-+csv_write.dispatch['web_dashboard_create_users.res.users'] = invite_user
 +
 +
++@call_if('create.note.tag')
 +def create_new_tag(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': 'Create new tag',
-+        #'userId': user_id,
++        'userId': user_id,
 +        'text': params.args[0]['name'],
 +    })
 +    open_note.ignored[user_id] = 1
-+csv_write.dispatch['create.note.tag'] = create_new_tag
 +
 +
++@call_if('name_create.note.tag')
 +def create_new_tag2(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': 'Create new tag',
-+        #'userId': user_id,
++        'userId': user_id,
 +        'text': params.args[0],
 +    })
-+csv_write.dispatch['name_create.note.tag'] = create_new_tag2
 +
 +
++@call_if('channel_create.mail.channel')
 +def create_channel(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': 'Create Channel',
-+        #'userId': user_id,
++        'userId': user_id,
 +        'text': params.args[0],
 +    })
-+csv_write.dispatch['channel_create.mail.channel'] = create_channel
 +
 +
++@call_if('message_unsubscribe.note.note')
 +def remove_follower_from_note(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': "Remove follower from note",
-+        #'userId': user_id,
++        'userId': user_id,
 +        'id': ids[0],
 +    })
 +    open_note.ignored[user_id] = 1
-+csv_write.dispatch['message_unsubscribe.note.note'] = remove_follower_from_note
 +
 +
++@call_if('write.note.tag')
 +def change_tag_color(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': "Change Tag Colour",
-+        #'userId': user_id,
++        'userId': user_id,
 +        'id': params.args[0]['color'],
 +    })
 +    open_note.ignored[user_id] = 1
-+csv_write.dispatch['write.note.tag'] = change_tag_color
 +
 +
++@call_if('message_post.mail.channel')
 +def message_post_mail(csvw, user_id, method_name, recs, params, ids):
 +    to_write = {
-+        #'userId': user_id,
++        'userId': user_id,
 +        'text': params.kwargs['body'],
 +        'id': ids,
 +    }
@@ -917,17 +314,25 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
 +    elif user_or_channel == 3:
 +        to_write['actionName'] = "Mention user and reference channel in chat"
 +    csvw.write(to_write)
-+csv_write.dispatch['message_post.mail.channel'] = message_post_mail
 +
 +
++@call_if('channel_pin.mail.channel')
 +def remove_mess_channel(csvw, user_id, method_name, recs, params, ids):
 +    csvw.write({
 +        'actionName': "Remove messaging channel",
-+        #'userId': user_id,
++        'userId': user_id,
 +    })
-+csv_write.dispatch['channel_pin.mail.channel'] = remove_mess_channel
 +
 +csv_write.dispatch['action_unfollow.mail.channel'] = partial(first_id_action, "Unfollow from a Channel")
++
++
++@call_if('channel_invite.mail.channel')
++def channel_invite_user(csvw, user_id, method_name, recs, params, ids):
++    csvw.write({
++        'actionName': "Invite user to channel",
++        'userId': user_id,
++        'partnerId': params.kwargs['partner_ids'],
++    })
 +
 +
  
@@ -940,7 +345,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
      result = method(recs, *args, **kwargs)
      return downgrade(method, result, recs, args, kwargs)
  
-@@ -676,7 +1016,8 @@
+@@ -676,7 +1000,8 @@
      ids, args = args[0], args[1:]
      context, args, kwargs = split_context(method, args, kwargs)
      recs = self.with_context(context or {}).browse(ids)
@@ -952,7 +357,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/api.py odoo/api.py
  
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/csv_writer.py odoo/csv_writer.py
 --- odoo.orig/csv_writer.py	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/csv_writer.py	2019-05-20 11:33:01.939983644 +0100
++++ odoo/csv_writer.py	2019-09-11 10:17:38.468895936 +0100
 @@ -0,0 +1,60 @@
 +#!/usr/bin/env python3
 +
@@ -1004,7 +409,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/csv_writer.py odoo/csv_wr
 +    def write(self, elements_dict):
 +        with self.write_lock, open(self.filename, 'a') as f:
 +            if 'userId' in elements_dict and not 'ipAddr' in elements_dict:
-+                elements_dict['ipAddr'] = self.id_to_ip.get(elements_dict['userId'], '')
++                elements_dict['ipAddr'] = self.id_to_ip.get(elements_dict['userId'], 'unknown')
 +            if not 'timestamp' in elements_dict:
 +                elements_dict['timestamp'] = datetime.now()
 +
@@ -1014,9 +419,33 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/csv_writer.py odoo/csv_wr
 +                row[ self.column_names[column_name] ] = unicode(value).encode('utf-8')
 +
 +            csv.writer(f).writerow(row)
+diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/http.py odoo/http.py
+--- odoo.orig/http.py	2018-08-07 14:42:46.000000000 +0100
++++ odoo/http.py	2019-06-24 15:41:48.630218688 +0100
+@@ -52,6 +52,9 @@
+ 
+ from odoo.modules.module import module_manifest
+ 
++from odoo.tools import config
++import odoo.csv_writer as cw
++
+ _logger = logging.getLogger(__name__)
+ rpc_request = logging.getLogger(__name__ + '.rpc.request')
+ rpc_response = logging.getLogger(__name__ + '.rpc.response')
+@@ -303,6 +306,10 @@
+ 
+     def _call_function(self, *args, **kwargs):
+         request = self
++
++        csvw = cw.CsvWriter (config.misc['csv']['location'])
++        csvw.connect_id_to_ip(request.uid, request.httprequest.remote_addr)
++
+         if self.endpoint.routing['type'] != self._request_type:
+             msg = "%s, %s: Function declared as capable of handling request of type '%s' but called with a request of type '%s'"
+             params = (self.endpoint.original, self.httprequest.path, self.endpoint.routing['type'], self._request_type)
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf odoo/odoo.conf
 --- odoo.orig/odoo.conf	1970-01-01 01:00:00.000000000 +0100
-+++ odoo/odoo.conf	2019-05-20 11:33:01.939983644 +0100
++++ odoo/odoo.conf	2019-03-15 14:32:42.381517690 +0000
 @@ -0,0 +1,39 @@
 +[options]
 +addons_path = /mnt/extra-addons,/usr/lib/python2.7/dist-packages/odoo/addons
@@ -1059,7 +488,7 @@ diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/odoo.conf odoo/odoo.conf
 +location = /usr/lib/python2.7/dist-packages/odoo/csvfolder
 diff -x '*.pyc' -x '*.csv' -x csvfolder -Nru odoo.orig/tools/config.py odoo/tools/config.py
 --- odoo.orig/tools/config.py	2018-10-11 04:39:19.000000000 +0100
-+++ odoo/tools/config.py	2019-05-20 11:33:01.939983644 +0100
++++ odoo/tools/config.py	2019-03-15 15:19:51.441159664 +0000
 @@ -12,6 +12,10 @@
  import odoo.release as release
  import appdirs

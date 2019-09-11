@@ -99,6 +99,11 @@ if [[ -n ${no_experiment+x} ]] ;then
     exit 0
 fi
 
+
+cd "$SCRIPTDIR"/results
+mkdir -p "$user"
+userdir="`readlink -n -e "$user"`"
+
 if [[ -n ${screenshots+x} ]] ;then
     cd "$userdir"
     "$SCRIPTDIR"/screenshot.sh &
@@ -106,19 +111,18 @@ if [[ -n ${screenshots+x} ]] ;then
     trap kill_screenshot EXIT INT TERM
 fi
 
-cd results
-mkdir -p "$user"
-userdir="`readlink -n -e "$user"`"
 
 cd "$SCRIPTDIR"
 docker-compose up --build
 
-cd odoo/csvfolder
 
+cd odoo/csvfolder
 find  -type f  -iname '*.csv'  -size +63c  -exec cp -v '{}' "$userdir" ';'
 rm *
 
-if [$user != "unnamed"]
-then
-    python update_userid.py $userdir $user
+
+cd "$SCRIPTDIR"
+if [ "$user" != "unnamed" ] ;then
+    python3 update_userid.py "$userdir" "$user"
 fi
+
