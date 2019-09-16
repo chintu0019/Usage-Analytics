@@ -1,0 +1,39 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-09-16 18:34:17.798898,Search with Note,1,192.168.1.18,,,,search
+2019-09-16 18:34:32.800933,Open Note,1,192.168.1.18,11,,,
+2019-09-16 18:35:33.769619,Search with Note,1,192.168.1.18,,,,search
+2019-09-16 18:35:43.793001,Change Note Colour,1,192.168.1.18,11,,,
+2019-09-16 18:35:49.766421,Open Note,1,192.168.1.18,11,,,
+2019-09-16 18:36:00.814813,Search with Note,1,192.168.1.18,,,,search
+2019-09-16 18:36:14.759541,Open Note,1,192.168.1.18,11,,,
+2019-09-16 18:36:19.758494,Open commenting in note,1,192.168.1.18,11,,,
+2019-09-16 18:37:15.744713,Comment in Note,1,192.168.1.18,,,,development team comment
+2019-09-16 18:37:20.800092,Search with Note,1,192.168.1.18,,,,search
+2019-09-16 18:39:18.721001,Create Note,1,192.168.1.18,,,,task 1: improve some function
+2019-09-16 18:39:27.697102,Change Note Colour,1,192.168.1.18,23,,,
+2019-09-16 18:39:30.692245,Open Note,1,192.168.1.18,23,,,
+2019-09-16 18:39:50.688328,Change Tag Colour,1,192.168.1.18,4,,,
+2019-09-16 18:40:26.681997,Create new tag,1,192.168.1.18,,,,task1
+2019-09-16 18:40:31.676414,Add tag,1,192.168.1.18,"[5, 7]",,,
+2019-09-16 18:42:52.634330,Create new tag,1,192.168.1.18,,,,task2
+2019-09-16 18:43:14.623362,Create Note,1,192.168.1.18,,,,<p>task2: improve something else<br></p>
+2019-09-16 18:43:41.619933,Change Note Colour,1,192.168.1.18,24,,,
+2019-09-16 18:44:00.612625,Move Note,1,192.168.1.18,23,2,,
+2019-09-16 18:45:22.582428,Delete Stage,1,192.168.1.18,6,,,
+2019-09-16 18:45:33.580079,Delete Note,1,192.168.1.18,3,,,
+2019-09-16 18:45:38.577398,Delete Note,1,192.168.1.18,1,,,
+2019-09-16 18:45:42.592585,Delete Note,1,192.168.1.18,2,,,
+2019-09-16 18:45:46.579535,Open Note,1,192.168.1.18,22,,,
+2019-09-16 18:45:56.577398,Delete Note,1,192.168.1.18,22,,,
+2019-09-16 18:46:00.568899,Delete Note,1,192.168.1.18,12,,,
+2019-09-16 18:49:36.524605,Open Note,1,192.168.1.18,23,,,
+2019-09-16 18:50:18.500521,Invite and Add follower,1,192.168.1.18,23,,"[6, False, [10]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: task 1: improve some function</p></div>"
+2019-09-16 18:50:34.485745,Open Note,1,192.168.1.18,24,,,
+2019-09-16 18:51:14.474299,Invite and Add follower,1,192.168.1.18,24,,"[6, False, [11]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: task2: improve something else</p></div>"
+2019-09-16 18:51:41.473232,Open commenting in note,1,192.168.1.18,24,,,
+2019-09-16 18:52:12.468124,Comment in Note,1,192.168.1.18,,,,MORE: something something something
+2019-09-16 18:52:21.454431,Open commenting in note,1,192.168.1.18,24,,,
+2019-09-16 18:53:05.446797,Attach file,1,192.168.1.18,,,,
+2019-09-16 18:53:58.428466,Search with Tag,1,192.168.1.18,,,,test
+2019-09-16 18:54:12.423740,Open Note,1,192.168.1.18,5,,,
+2019-09-16 18:54:33.507050,Search with Tag,1,192.168.1.18,,,,test
