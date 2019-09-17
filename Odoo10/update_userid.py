@@ -15,7 +15,7 @@ def _look_it_up(username):
         for line in pfr:
             if heading:
                 heading = False
-                if line[0] != 'userID': raise RuntimeError('Partecipants file fist column is not userID!')
+                if line[0] != 'userID': raise RuntimeError('Participants file first column is not userID!')
                 continue
 
             line[0] = int(line[0])
@@ -35,7 +35,7 @@ def _add_it(username, new_id):
 
 def get_user_id(username):
     userid, found = _look_it_up(username)
-    if not found: _add_id(username, userid)
+    if not found: _add_it(username, userid)
     return userid
 
 
