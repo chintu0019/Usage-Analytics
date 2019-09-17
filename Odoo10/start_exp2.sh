@@ -123,6 +123,6 @@ rm *
 
 cd "$SCRIPTDIR"
 if [ "$user" != "unnamed" ] ;then
-    python3 update_userid.py "$userdir" "$user"
+    python3 update_userid.py "$user"
 fi
 
