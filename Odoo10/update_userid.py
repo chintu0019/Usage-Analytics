@@ -1,32 +1,96 @@
-import os
-import pandas as pd
-import glob
+#!/usr/bin/env python3
+
 import sys
+import os
+import csv
+import glob
 
 participant_list_file = "results/Participants.csv"
 
-participants = pd.read_csv(participant_list_file, header = 0)
+def _look_it_up(username):
+    with open(participant_list_file, 'r') as pf:
+        pfr = csv.reader(pf)
+        heading = True
+        max_id = 0
+        for line in pfr:
+            if heading:
+                heading = False
+                if line[0] != 'userID': raise RuntimeError('Partecipants file fist column is not userID!')
+                continue
 
-last_userID = participants['userID'].iloc[-1]
+            line[0] = int(line[0])
+            if line[0] > max_id: max_id = line[0]
 
-current_userID = last_userID + 1
+            if line[1] == username:
+                return (line[0], True)
 
-try:
-    user_dir = sys.argv[1]
-    user_name = sys.argv[2]
-    print("user directory="+user_dir)
-    print("user name="+user_name)
-except:
-    print('Error: did not pass a valid user directory')
+    return (max_id + 1, False)
 
-usage_data_file = user_name + "_usage_data.csv"
-os.chdir(user_dir)
-extension = 'csv'
-all_filenames = [i for i in glob.glob('*.{}'.format(extension))]
-#combine all files in the list
-usage_data = pd.concat([pd.read_csv(f) for f in all_filenames ])
-#export to csv
-usage_data.to_csv(usage_data_file, index=False, encoding='utf-8-sig')
-agg_usage_data = pd.read_csv(usage_data_file)
-agg_usage_data['userId'] = current_userID
-agg_usage_data.to_csv(usage_data_file, index=False, encoding='utf-8-sig')
+
+def _add_it(username, new_id):
+    with open(participant_list_file, 'a') as pf:
+        pfr = csv.writer(pf)
+        pfr.writerow([str(new_id), username])
+
+
+def get_user_id(username):
+    userid, found = _look_it_up(username)
+    if not found: _add_id(username, userid)
+    return userid
+
+
+
+def _userId_idx(header):
+    if _userId_idx.v != None: return _userId_idx.v
+    for idx, v in enumerate(header):
+        if v == 'userId':
+            _userId_idx.v = idx
+            return _userId_idx.v
+    raise RuntimeError('csv file misses the userId field!')
+_userId_idx.v = None
+
+
+def _cat_next_file(csv_file, ocsv_writer, userid, done_header):
+    with open(csv_file, 'r') as pf:
+        pfr = csv.reader(pf)
+        heading = True
+        for line in pfr:
+            if heading:
+                heading = False
+                header = line
+                continue
+            if not done_header:
+                ocsv_writer.writerow(header)
+            line[ _userId_idx(header) ] = str(userid)
+            ocsv_writer.writerow(line)
+
+
+def cat_csv_files(username, userid):
+    ocsv_filename = 'results/' + username + '/' + username + '_usage_data.csv'
+    csv_files = glob.glob('results/' + username + '/*.csv')
+    csv_files.sort()
+
+    with open(ocsv_filename, 'w') as ocsv:
+        ocsvw = csv.writer(ocsv)
+        done_header = False
+        for csv_file in csv_files:
+            if csv_file == ocsv_filename:
+                continue
+            _cat_next_file(csv_file, ocsvw, userid, done_header)
+            done_header = True
+
+
+
+def main(argv=None):
+    if argv is None:
+        argv = sys.argv
+
+    username = argv[1]
+
+    user_id = get_user_id(username)
+    cat_csv_files(username, user_id)
+
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main())
