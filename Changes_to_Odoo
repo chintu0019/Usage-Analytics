@@ -1,0 +1,56 @@
+We started from the docker Odoo source code, the first step has been to
+make easy to patch Odoo and execute it.
+
+In the Odoo dockerfile we moved Odoo in a different directory after
+installation.
+
+For example, Odoo10 is installed in:
+/usr/lib/python2.7/dist-packages/odoo
+
+After the installation we moved it in:
+/usr/lib/python2.7/dist-packages/odoo.untouched
+
+
+We set up docker compose
+- to start Odoo and the database it needs to store data.
+- to share the normal installation directory of Odoo with the host system (via volumes).
+
+Docker executes a bash script to start Odoo, we changed the script so
+- it copies Odoo to the host copying it in the normal installation directory that is shared
+- ensures that when Odoo halts the logs are copied in the host
+
+Doing so we can work on Odoo source code and easily execute it.
+
+
+Studying Odoo source code we found that when a user executes an action that
+needs to pass through the server it passes through those two functions, in the
+api.py file:
+
+def call_kw_multi(method, self, args, kwargs)
+def call_kw_model(method, self, args, kwargs)
+
+that act as a generic dispatch for the actions executed in the browser.
+
+The calls in this central dispatch are identified via strings: the method name
+and the object to call the method on.
+
+So we add a call to call_kw_multi and call_kw_model so that the action get
+logged in a external csv file.
+
+
+To find the strings and how the parameters are passed we logged on standard
+output and made experimentation.
+
+Here are few examples:
+
+Create Stage <-> name_create.note.stage
+Delete Stage <-> unlink.note.stage
+Rename Stage <-> write.note.stage
+...
+
+The resulting csv files are the results of the experiments.
+If the users do multiple experiments, the results from the same user are concatenated.
+
+It is important to underline that from the point of view of the user none of
+the changes alter the observable behavoir of Odoo.
+
