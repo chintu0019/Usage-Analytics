@@ -1,0 +1,76 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-09-18 17:39:10.613787,Delete Note,1,136.206.48.137,5,,,
+2019-09-18 17:39:13.279644,Delete Note,1,136.206.48.137,6,,,
+2019-09-18 17:39:16.123465,Delete Note,1,136.206.48.137,12,,,
+2019-09-18 17:39:19.591404,Delete Note,1,136.206.48.137,22,,,
+2019-09-18 17:39:22.652808,Delete Note,1,136.206.48.137,4,,,
+2019-09-18 17:39:25.518389,Delete Note,1,136.206.48.137,10,,,
+2019-09-18 17:39:27.804031,Delete Note,1,136.206.48.137,11,,,
+2019-09-18 17:39:30.053718,Delete Note,1,136.206.48.137,8,,,
+2019-09-18 17:39:32.808101,Delete Note,1,136.206.48.137,9,,,
+2019-09-18 17:39:35.348506,Delete Note,1,136.206.48.137,7,,,
+2019-09-18 17:39:39.712529,Delete Stage,1,136.206.48.137,6,,,
+2019-09-18 17:39:43.128700,Delete Note,1,136.206.48.137,2,,,
+2019-09-18 17:39:45.583036,Delete Note,1,136.206.48.137,1,,,
+2019-09-18 17:39:48.299656,Delete Note,1,136.206.48.137,3,,,
+2019-09-18 17:40:18.688152,Create Note,1,136.206.48.137,,,,write paper
+2019-09-18 17:40:30.341522,Create Note,1,136.206.48.137,,,,finish experiment
+2019-09-18 17:40:51.768916,Create Note,1,136.206.48.137,,,,write conference paper
+2019-09-18 17:40:54.473386,Open Note,1,136.206.48.137,23,,,
+2019-09-18 17:41:01.079428,Edit Note,1,136.206.48.137,23,,,<p>write journa paper</p>
+2019-09-18 17:41:06.980644,Edit Note,1,136.206.48.137,23,,,<p>write journal paper</p>
+2019-09-18 17:41:09.505576,Open Note,1,136.206.48.137,24,,,
+2019-09-18 17:41:12.080637,Open commenting in note,1,136.206.48.137,24,,,
+2019-09-18 17:41:22.338923,Comment in Note,1,136.206.48.137,,,,odoo experiment
+2019-09-18 17:41:25.986722,Open commenting in note,1,136.206.48.137,24,,,
+2019-09-18 17:41:57.736791,Attach file,1,136.206.48.137,,,,upload UA logo file
+2019-09-18 17:42:13.828039,Change Note Colour,1,136.206.48.137,23,,,
+2019-09-18 17:42:18.696072,Change Note Colour,1,136.206.48.137,24,,,
+2019-09-18 17:42:25.513522,Change Note Colour,1,136.206.48.137,25,,,
+2019-09-18 17:42:28.044179,Open Note,1,136.206.48.137,23,,,
+2019-09-18 17:42:32.982140,Create new tag,1,136.206.48.137,,,,paper
+2019-09-18 17:42:50.210829,Add tag,1,136.206.48.137,[4],,,
+2019-09-18 17:42:59.681894,Change Tag Colour,1,136.206.48.137,1,,,
+2019-09-18 17:43:09.824541,Add tag,1,136.206.48.137,[4],,,
+2019-09-18 17:43:16.366005,Open Note,1,136.206.48.137,24,,,
+2019-09-18 17:43:31.456612,Create new tag,1,136.206.48.137,,,,private
+2019-09-18 17:43:43.107027,Change Tag Colour,1,136.206.48.137,0,,,
+2019-09-18 17:43:44.973329,Add tag,1,136.206.48.137,[5],,,
+2019-09-18 17:43:59.427319,Create new tag,1,136.206.48.137,,,,public
+2019-09-18 17:44:01.154792,Change Tag Colour,1,136.206.48.137,6,,,
+2019-09-18 17:44:03.196128,Add tag,1,136.206.48.137,"[4, 6]",,,
+2019-09-18 17:44:11.902008,Add tag,1,136.206.48.137,"[4, 6]",,,
+2019-09-18 17:44:13.876590,Open Note,1,136.206.48.137,24,,,
+2019-09-18 17:44:40.013751,Create Stage,1,136.206.48.137,shared,,,
+2019-09-18 17:44:58.872512,Create Note,1,136.206.48.137,,,,review conference paper
+2019-09-18 17:45:00.887620,Open Note,1,136.206.48.137,26,,,
+2019-09-18 17:45:08.688987,Invite and Add follower,1,136.206.48.137,26,,"[6, False, [13]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: review conference paper</p></div>"
+2019-09-18 17:45:14.886068,Add tag,1,136.206.48.137,"[4, 6]",,,
+2019-09-18 17:45:40.697704,Change Note Colour,1,136.206.48.137,26,,,
+2019-09-18 17:45:43.644713,Change Note Colour,1,136.206.48.137,23,,,
+2019-09-18 17:45:48.744048,Change Note Colour,1,136.206.48.137,24,,,
+2019-09-18 17:45:51.647024,Change Note Colour,1,136.206.48.137,24,,,
+2019-09-18 17:46:16.909041,Search with Tag,1,136.206.48.137,,,,private
+2019-09-18 17:46:20.026455,Open Note,1,136.206.48.137,24,,,
+2019-09-18 17:46:26.624549,Search with Tag,1,136.206.48.137,,,,private
+2019-09-18 17:46:32.363117,Search with Note,1,136.206.48.137,,,,paper
+2019-09-18 17:46:50.778781,Move Note,1,136.206.48.137,23,2,,
+2019-09-18 17:46:57.132632,Open Note,1,136.206.48.137,23,,,
+2019-09-18 17:47:04.030796,Invite and Add follower,1,136.206.48.137,23,,"[6, False, [15]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: write journal paper</p></div>"
+2019-09-18 17:48:15.190547,Create Note,1,136.206.48.137,,,,test note
+2019-09-18 17:48:19.968168,Delete Note,1,136.206.48.137,27,,,
+2019-09-18 17:48:29.697419,Open Note,1,136.206.48.137,24,,,
+2019-09-18 17:48:31.622678,Move Note,1,136.206.48.137,24,3,,
+2019-09-18 17:49:14.089162,Edit Note,1,136.206.48.137,23,,,"<p><img src=""/web/image/314/UA%20logo.png"" style=""width: 25%;"" class=""pull-left"">write journal paper</p>"
+2019-09-18 17:50:01.622095,Create Channel,1,136.206.48.137,,,,test channel
+2019-09-18 17:50:49.536461,Mention user in chat,1,136.206.48.137,2,,[3],"<a href=""http://136.206.48.185:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> "
+2019-09-18 17:51:09.106782,Chat with other users,1,136.206.48.137,2,,,@odoo10bluec
+2019-09-18 17:51:15.754526,Reference channel in chat,1,136.206.48.137,2,,,"<a href=""http://136.206.48.185:8010/web#model=mail.channel&amp;id=1"" class=""o_channel_redirect"" data-oe-id=""1"" data-oe-model=""mail.channel"" target=""_blank"">#general</a> "
+2019-09-18 17:54:46.061100,Open Note,1,136.206.48.137,25,,,
+2019-09-18 17:54:51.408863,Open Note,1,136.206.48.137,23,,,
+2019-09-18 17:54:58.456045,Remove follower from note,1,136.206.48.137,23,,,
+2019-09-18 17:55:36.051798,Chat with other users,1,136.206.48.137,3,,,Hi BlueA
+2019-09-18 17:55:41.485256,Chat with other users,1,136.206.48.137,3,,,how are you?
+2019-09-18 17:56:07.536329,Mention user and reference channel in chat,1,136.206.48.137,3,,[13],"<a href=""http://136.206.48.185:8010/web#model=res.partner&amp;id=13"" class=""o_mail_redirect"" data-oe-id=""13"" data-oe-model=""res.partner"" target=""_blank"">@odoo10bluea</a>  check out <a href=""http://136.206.48.185:8010/web#model=mail.channel&amp;id=1"" class=""o_channel_redirect"" data-oe-id=""1"" data-oe-model=""mail.channel"" target=""_blank"">#general</a> "
+2019-09-18 17:56:21.086794,Unfollow from a Channel,1,136.206.48.137,2,,,
+2019-09-18 17:56:45.318414,Create Channel,1,136.206.48.137,,,,hey channel
