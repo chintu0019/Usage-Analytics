@@ -21,24 +21,23 @@ You are required to use the Odoo Notes application to organise your daily tasks 
 11. Move Note (open note and select the stage)
 12. Drag and Drop note
 13. Open commenting in note
-14. Attach File
+14. Attach File in note
 15. Comment in Note
 16. Attach file in the comment
 17. Invite and Add follower to the note
-18. Invite User
-19. Remove follower from note
-20. Create new tag
-21. Add tag to the note
-22. Change Tag Colour
-23. Change Note Colour
-24. Chat with other users
-25. Mention user in chat (use @ symbol)
-26. Reference channel in chat (use # symbol)
-27. Mention user and reference channel in chat
-28. Create a Messaging Channel (like a group chat)
-29. Remove messaging channel
+18. Remove follower from note
+19. Create new tag
+20. Add tag to the note
+21. Change Tag Colour
+22. Change Note Colour
+23. Chat with other users
+24. Mention user in chat (use @ symbol) __#PROBLEM__ - invited user has to accept the invitation to be mentioned in the chat
+25. Reference channel in chat (use # symbol)
+26. Mention user and reference channel in chat
+27. Create a Messaging Channel (like a group chat)
+28. Invite other user(s) to the channel
+29. Remove messaging channel __#PROBLEM__ - page has to be reloaded after deleting the channel
 30. Unfollow from a Channel
-31. Invite user to a channel
 
 Please try to use all the actions listed above in the experiment session as many times as possible. 
 
