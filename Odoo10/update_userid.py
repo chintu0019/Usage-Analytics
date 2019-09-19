@@ -60,6 +60,7 @@ def _cat_next_file(csv_file, ocsv_writer, userid, done_header):
                 header = line
                 continue
             if not done_header:
+                done_header = True
                 ocsv_writer.writerow(header)
             line[ _userId_idx(header) ] = str(userid)
             ocsv_writer.writerow(line)
