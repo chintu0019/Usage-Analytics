@@ -8,7 +8,7 @@ function kill_screenshot {
     kill -15 $ss ||true
 }
 
-
+mkdir -p results
 SCRIPTNAME="`readlink -n -e "$0"`"
 SCRIPTDIR="`dirname "$SCRIPTNAME"`"
 
