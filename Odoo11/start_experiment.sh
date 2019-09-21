@@ -8,7 +8,7 @@ function kill_screenshot {
     kill -15 $ss ||true
 }
 
-
+mkdir -p results
 SCRIPTNAME="`readlink -n -e "$0"`"
 SCRIPTDIR="`dirname "$SCRIPTNAME"`"
 
@@ -99,11 +99,13 @@ if [[ -n ${no_experiment+x} ]] ;then
     exit 0
 fi
 
+
+cd "$SCRIPTDIR"/results
 mkdir -p "$user"
-user="`readlink -n -e "$user"`"
+userdir="`readlink -n -e "$user"`"
 
 if [[ -n ${screenshots+x} ]] ;then
-    cd "$user"
+    cd "$userdir"
     "$SCRIPTDIR"/screenshot.sh &
     ss=$!
     trap kill_screenshot EXIT INT TERM
@@ -113,12 +115,14 @@ fi
 cd "$SCRIPTDIR"
 docker-compose up --build
 
-cd odoo/csvfolder
 
-find  -type f  -iname '*.csv'  -size +63c  -exec cp -v '{}' "$user" ';'
+cd odoo/csvfolder
+find  -type f  -iname '*.csv'  -size +63c  -exec cp -v '{}' "$userdir" ';'
 rm *
 
-if [$user != "unnamed"]
-then
-    python update_userid.py $userdir $user
+
+cd "$SCRIPTDIR"
+if [ "$user" != "unnamed" ] ;then
+    python3 update_userid.py "$user"
 fi
+
