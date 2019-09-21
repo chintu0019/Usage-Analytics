@@ -74,3 +74,11 @@ timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
 2019-09-18 17:56:07.536329,Mention user and reference channel in chat,1,136.206.48.137,3,,[13],"<a href=""http://136.206.48.185:8010/web#model=res.partner&amp;id=13"" class=""o_mail_redirect"" data-oe-id=""13"" data-oe-model=""res.partner"" target=""_blank"">@odoo10bluea</a>  check out <a href=""http://136.206.48.185:8010/web#model=mail.channel&amp;id=1"" class=""o_channel_redirect"" data-oe-id=""1"" data-oe-model=""mail.channel"" target=""_blank"">#general</a> "
 2019-09-18 17:56:21.086794,Unfollow from a Channel,1,136.206.48.137,2,,,
 2019-09-18 17:56:45.318414,Create Channel,1,136.206.48.137,,,,hey channel
+2019-09-21 19:28:10.421210,Delete Note,1,172.19.0.1,28,,,
+2019-09-21 19:28:13.540461,Delete Note,1,172.19.0.1,24,,,
+2019-09-21 19:28:16.079525,Delete Note,1,172.19.0.1,23,,,
+2019-09-21 19:28:18.836065,Delete Note,1,172.19.0.1,25,,,
+2019-09-21 19:28:21.341607,Delete Note,1,172.19.0.1,26,,,
+2019-09-21 19:28:24.160186,Change Note Colour,1,172.19.0.1,29,,,
+2019-09-21 19:28:26.900426,Change Note Colour,1,172.19.0.1,30,,,
+2019-09-21 19:28:29.017940,Change Note Colour,1,172.19.0.1,31,,,
