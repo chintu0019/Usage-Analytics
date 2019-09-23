@@ -106,6 +106,8 @@ userdir="`readlink -n -e "$user"`"
 
 if [[ -n ${screenshots+x} ]] ;then
     cd "$userdir"
+    mkdir -p screenshots
+    cd screenshots
     "$SCRIPTDIR"/screenshot.sh &
     ss=$!
     trap kill_screenshot EXIT INT TERM

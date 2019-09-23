@@ -5,7 +5,7 @@ import os
 import csv
 import glob
 
-participant_list_file = "results/Participants.csv"
+participant_list_file = "../Scenario/Participants.csv"
 
 def _look_it_up(username):
     with open(participant_list_file, 'r') as pf:
