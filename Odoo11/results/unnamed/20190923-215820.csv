@@ -1,0 +1,39 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-09-23 22:00:08.185250,Delete Note,1,172.18.0.1,14,,,
+2019-09-23 22:00:13.550468,Delete Note,1,172.18.0.1,13,,,
+2019-09-23 22:00:20.390870,Delete Note,1,172.18.0.1,15,,,
+2019-09-23 22:01:25.288760,Create Note,1,172.18.0.1,,,,test note 1
+2019-09-23 22:01:25.530756,Open Note,1,172.18.0.1,17,,,
+2019-09-23 22:02:01.617097,Create Note,1,172.18.0.1,,,,test note 2
+2019-09-23 22:02:01.794203,Open Note,1,172.18.0.1,18,,,
+2019-09-23 22:02:21.644031,Create Note,1,172.18.0.1,,,,delete me
+2019-09-23 22:02:21.734260,Open Note,1,172.18.0.1,19,,,
+2019-09-23 22:04:09.856886,Create Note,1,172.18.0.1,,,,test note 3
+2019-09-23 22:04:10.025055,Open Note,1,172.18.0.1,20,,,
+2019-09-23 22:04:45.964120,Create Note,1,172.18.0.1,,,,something
+2019-09-23 22:04:46.181659,Open Note,1,172.18.0.1,21,,,
+2019-09-23 22:05:20.453607,Open Note,1,172.18.0.1,21,,,
+2019-09-23 22:05:22.866172,Open commenting in note,1,172.18.0.1,21,,,
+2019-09-23 22:05:35.239250,Comment in Note,1,172.18.0.1,,,,some comment
+2019-09-23 22:06:27.777029,Open Note,1,172.18.0.1,21,,,
+2019-09-23 22:06:55.779524,Change Note Colour,1,172.18.0.1,21,,,
+2019-09-23 22:07:20.428138,Change Note Colour,1,172.18.0.1,17,,,
+2019-09-23 22:07:26.110240,Open Note,1,172.18.0.1,18,,,
+2019-09-23 22:07:53.559859,Create new tag,1,172.18.0.1,,,,some tag
+2019-09-23 22:07:56.550956,Change Tag Colour,1,172.18.0.1,10,,,
+2019-09-23 22:08:01.461891,Add tag,1,172.18.0.1,18,,,
+2019-09-23 22:08:55.671273,Search with Tag,1,172.18.0.1,,,,tag
+2019-09-23 22:09:28.743935,Drag and Drop note,1,172.18.0.1,20,3,,
+2019-09-23 22:09:55.538038,Open Note,1,172.18.0.1,21,,,
+2019-09-23 22:10:01.243133,Edit Note,1,172.18.0.1,21,,,<p>some note</p>
+2019-09-23 22:10:59.918802,Delete Note,1,172.18.0.1,20,,,
+2019-09-23 22:11:43.314969,Chat with other users,1,172.18.0.1,5,,,hi
+2019-09-23 22:12:23.635226,Unfollow from a Channel,1,172.18.0.1,3,,,
+2019-09-23 22:13:30.440580,Create Channel,1,172.18.0.1,,,,# general
+2019-09-23 22:14:01.700710,Unfollow from a Channel,1,172.18.0.1,6,,,
+2019-09-23 22:14:32.583093,Remove messaging channel,1,172.18.0.1,,,,
+2019-09-23 22:14:34.024861,Remove messaging channel,1,172.18.0.1,,,,
+2019-09-23 22:14:35.201246,Remove messaging channel,1,172.18.0.1,,,,
+2019-09-23 22:16:39.781010,Create Channel,1,172.18.0.1,,,,some channel
+2019-09-23 22:16:51.985798,Mention user and reference channel in chat,1,172.18.0.1,7,,[3],"<a href=""http://localhost:8011/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> <a href=""http://localhost:8011/web#model=mail.channel&amp;id=7"" class=""o_channel_redirect"" data-oe-id=""7"" data-oe-model=""mail.channel"" target=""_blank"">#some channel</a> "
+2019-09-23 22:17:22.633245,Invite user to channel,1,172.18.0.1,,,[9],

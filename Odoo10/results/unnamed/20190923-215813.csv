@@ -1,0 +1,33 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-09-23 21:59:36.076117,Delete Note,1,172.19.0.1,30,,,
+2019-09-23 21:59:42.039526,Delete Note,1,172.19.0.1,31,,,
+2019-09-23 22:01:35.112708,Create Note,1,172.19.0.1,,,,test note 1
+2019-09-23 22:01:49.923943,Create Note,1,172.19.0.1,,,,test note 2
+2019-09-23 22:02:13.293621,Create Note,1,172.19.0.1,,,,delete me
+2019-09-23 22:04:18.444547,Create Note,1,172.19.0.1,,,,test note 3
+2019-09-23 22:04:37.803308,Create Note,1,172.19.0.1,,,,something
+2019-09-23 22:04:52.047074,Open Note,1,172.19.0.1,36,,,
+2019-09-23 22:05:02.588558,Open commenting in note,1,172.19.0.1,36,,,
+2019-09-23 22:05:17.017341,Comment in Note,1,172.19.0.1,,,,some comment
+2019-09-23 22:05:52.096431,Open commenting in note,1,172.19.0.1,36,,,
+2019-09-23 22:06:01.104191,Open Note,1,172.19.0.1,36,,,
+2019-09-23 22:06:50.543774,Change Note Colour,1,172.19.0.1,36,,,
+2019-09-23 22:07:14.777126,Change Note Colour,1,172.19.0.1,32,,,
+2019-09-23 22:08:05.721861,Open Note,1,172.19.0.1,33,,,
+2019-09-23 22:08:11.366022,Create new tag,1,172.19.0.1,,,,some tag
+2019-09-23 22:08:14.088582,Change Tag Colour,1,172.19.0.1,4,,,
+2019-09-23 22:08:19.762274,Add tag,1,172.19.0.1,[13],,,
+2019-09-23 22:08:49.697738,Search with Tag,1,172.19.0.1,,,,tag
+2019-09-23 22:09:25.715633,Move Note,1,172.19.0.1,35,3,,
+2019-09-23 22:09:40.871870,Open Note,1,172.19.0.1,36,,,
+2019-09-23 22:09:51.579878,Edit Note,1,172.19.0.1,36,,,<p>some note</p>
+2019-09-23 22:10:54.912851,Delete Note,1,172.19.0.1,35,,,
+2019-09-23 22:11:58.879015,Chat with other users,1,172.19.0.1,7,,,hi
+2019-09-23 22:12:16.952291,Unfollow from a Channel,1,172.19.0.1,5,,,
+2019-09-23 22:12:36.502567,Create Channel,1,172.19.0.1,,,, general
+2019-09-23 22:14:25.952139,Remove messaging channel,1,172.19.0.1,,,,
+2019-09-23 22:14:27.479880,Remove messaging channel,1,172.19.0.1,,,,
+2019-09-23 22:14:28.608279,Remove messaging channel,1,172.19.0.1,,,,
+2019-09-23 22:16:13.207025,Create Channel,1,172.19.0.1,,,,some channel
+2019-09-23 22:16:30.983125,Mention user and reference channel in chat,1,172.19.0.1,9,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> <a href=""http://localhost:8010/web#model=mail.channel&amp;id=3"" class=""o_channel_redirect"" data-oe-id=""3"" data-oe-model=""mail.channel"" target=""_blank"">#some channel</a> "
+2019-09-23 22:17:35.688162,Invite user to channel,1,172.19.0.1,,,[9],
