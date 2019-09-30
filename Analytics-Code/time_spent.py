@@ -125,7 +125,7 @@ def main(argv=None):
             for g in [x.strip() for x in argv[3].split('-')]:
                 opt.groups.append( tuple(x.strip() for x in g.split(',')) )
     except:
-        eprint('Adds up how much time the user spent on certain actions')
+        eprint('Adds up how much time the user spent on each action')
         eprint('')
         eprint('Usage:', prgname, 'csvlog jsonnumber users_groups')
         eprint('"user_groups" is a dash-separated list of groups')
