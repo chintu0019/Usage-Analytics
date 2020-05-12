@@ -6,7 +6,7 @@ RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://ar
 # Install some deps, lessc and less-plugin-clean-css, and wkhtmltopdf
 RUN set -x; \
         apt-get update \
-        && apt-get install -y --no-install-recommends \
+        && apt-get install -y --force-yes --no-install-recommends \
             rsync \
             psmisc \
             patch \
@@ -25,7 +25,7 @@ RUN set -x; \
         && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.jessie_amd64.deb \
         && echo '4d104ff338dc2d2083457b3b1e9baab8ddf14202 wkhtmltox.deb' | sha1sum -c - \
         && dpkg --force-depends -i wkhtmltox.deb \
-        && apt-get -y install -f --no-install-recommends \
+        && apt-get -y install -f --force-yes --no-install-recommends \
         && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm \
         && rm -rf /var/lib/apt/lists/* wkhtmltox.deb \
         && pip install psycogreen==1.0
@@ -39,7 +39,7 @@ RUN set -x; \
         && gpg --armor --export "${repokey}" | apt-key add - \
         && rm -rf "$GNUPGHOME" \
         && apt-get update  \
-        && apt-get install -y postgresql-client \
+        && apt-get install -y --force-yes postgresql-client \
         && rm -rf /var/lib/apt/lists/*
 
 # Install Odoo
@@ -51,7 +51,7 @@ RUN set -x; \
         && echo "${ODOO_SHA} odoo.deb" | sha1sum -c - \
         && dpkg --force-depends -i odoo.deb \
         && apt-get update \
-        && apt-get -y install -f --no-install-recommends \
+        && apt-get -y install --force-yes -f --no-install-recommends \
         && rm -rf /var/lib/apt/lists/* odoo.deb \
         && mkdir "/usr/lib/python2.7/dist-packages/odoo/csvfolder" \
         && mv "/usr/lib/python2.7/dist-packages/odoo" "/usr/lib/python2.7/dist-packages/odoo.untouched" \
