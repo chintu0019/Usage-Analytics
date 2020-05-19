@@ -1,0 +1,152 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2020-05-19 14:05:38.250404,Delete Stage,1,192.168.1.8,6,,,
+2020-05-19 14:05:54.243721,Create Stage,1,192.168.1.8,TASKS,,,
+2020-05-19 14:06:30.619857,Create Note,1,192.168.1.8,,,,"Create a new Column and name it ""Temporary"""
+2020-05-19 14:06:36.770564,Change Note Colour,1,192.168.1.8,23,,,
+2020-05-19 14:06:38.727481,Open Note,1,192.168.1.8,23,,,
+2020-05-19 14:07:18.514068,Create new tag,1,192.168.1.8,,,,experiment tasks
+2020-05-19 14:07:23.648656,Change Tag Colour,1,192.168.1.8,0,,,
+2020-05-19 14:07:28.623450,Edit Note,1,192.168.1.8,23,,,"<p>Create a new column and name it ""Temporary""</p>"
+2020-05-19 14:07:36.910479,Delete Note,1,192.168.1.8,3,,,
+2020-05-19 14:07:39.629553,Delete Note,1,192.168.1.8,1,,,
+2020-05-19 14:07:43.229662,Delete Note,1,192.168.1.8,2,,,
+2020-05-19 14:07:49.527678,Delete Note,1,192.168.1.8,12,,,
+2020-05-19 14:07:53.260770,Delete Note,1,192.168.1.8,6,,,
+2020-05-19 14:08:13.990270,Delete Note,1,192.168.1.8,5,,,
+2020-05-19 14:08:22.923964,Change Note Colour,1,192.168.1.8,23,,,
+2020-05-19 14:16:25.855339,Create Stage,1,192.168.1.8,TASKS (COMPLETED),,,
+2020-05-19 14:16:34.614829,Open Note,1,192.168.1.8,23,,,
+2020-05-19 14:17:13.848223,Edit Note,1,192.168.1.8,23,,,"<p>Create a new column and name it ""Temporary"", you can use this column to place any temporary notes you may create</p>"
+2020-05-19 14:21:33.184415,Create Note,1,192.168.1.8,,,,create a minimum of 5 notes (one for each new task)
+2020-05-19 14:21:37.955065,Change Note Colour,1,192.168.1.8,24,,,
+2020-05-19 14:21:38.885652,Open Note,1,192.168.1.8,24,,,
+2020-05-19 14:21:44.094151,Add tag,1,192.168.1.8,[7],,,
+2020-05-19 14:22:38.047315,Create Note,1,192.168.1.8,,,,Move the newly created notes to the correct column (if not done before)
+2020-05-19 14:22:39.394783,Open Note,1,192.168.1.8,25,,,
+2020-05-19 14:22:43.668924,Add tag,1,192.168.1.8,[7],,,
+2020-05-19 14:22:48.655710,Change Note Colour,1,192.168.1.8,25,,,
+2020-05-19 15:01:01.097075,Create Note,1,192.168.1.8,,,,Assign a different color to the note to specify the type of task
+2020-05-19 15:01:04.529584,Change Note Colour,1,192.168.1.8,26,,,
+2020-05-19 15:01:05.221643,Open Note,1,192.168.1.8,26,,,
+2020-05-19 15:03:09.359431,Edit Note,1,192.168.1.8,26,,,"<p>Assign a different colour to the note to specify the type of task</p><p>- <font class=""bg-gamma"" style="""">RED</font> for personal task</p><p>- <font style=""background-color: rgb(99, 74, 165);"" class=""text-white"">PURPLE</font> for a work-related task</p><p>- <font style=""background-color: rgb(57, 132, 198);"" class=""text-white"">BLUE</font> for others</p>"
+2020-05-19 15:03:17.179964,Open Note,1,192.168.1.8,26,,,
+2020-05-19 15:03:38.237996,Open Note,1,192.168.1.8,26,,,
+2020-05-19 15:05:45.151439,Create Note,1,192.168.1.8,,,,Assign a corresponding tag (create a new tag if necessary) to the note
+2020-05-19 15:05:48.131561,Change Note Colour,1,192.168.1.8,27,,,
+2020-05-19 15:05:48.720849,Open Note,1,192.168.1.8,27,,,
+2020-05-19 15:07:17.076177,Edit Note,1,192.168.1.8,27,,,"<p>Assign a corresponding tag (create a new tag if necessary) to the note</p><p>- ""personal"" for personal task</p><p>- ""work"" for work-related task</p><p>- ""other"" for other tasks&nbsp;</p>"
+2020-05-19 15:08:14.453376,Create Note,1,192.168.1.8,,,,fix typos in all the notes
+2020-05-19 15:08:21.686662,Change Note Colour,1,192.168.1.8,28,,,
+2020-05-19 15:08:22.581848,Open Note,1,192.168.1.8,28,,,
+2020-05-19 15:08:26.531125,Add tag,1,192.168.1.8,[7],,,
+2020-05-19 18:38:19.367731,Create Note,1,192.168.1.8,,,,test
+2020-05-19 18:38:21.276535,Open Note,1,192.168.1.8,29,,,
+2020-05-19 18:38:35.310081,Invite and Add follower,1,192.168.1.8,29,,"[6, False, [13]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: test</p></div>"
+2020-05-19 18:39:18.229317,Open Note,1,192.168.1.8,29,,,
+2020-05-19 18:39:24.969104,Remove follower from note,1,192.168.1.8,29,,,
+2020-05-19 18:39:55.968098,Chat with other users,1,192.168.1.8,2,,,something
+2020-05-19 18:40:07.052755,Mention user in chat,1,192.168.1.8,2,,[13],"<a href=""http://192.168.1.8:8010/web#model=res.partner&amp;id=13"" class=""o_mail_redirect"" data-oe-id=""13"" data-oe-model=""res.partner"" target=""_blank"">@odoo10bluea</a> "
+2020-05-19 18:40:15.083240,Reference channel in chat,1,192.168.1.8,2,,,"<a href=""http://192.168.1.8:8010/web#model=mail.channel&amp;id=1"" class=""o_channel_redirect"" data-oe-id=""1"" data-oe-model=""mail.channel"" target=""_blank"">#general</a> "
+2020-05-19 18:41:07.320713,Create Channel,1,192.168.1.8,,,,some channel
+2020-05-19 18:41:59.761977,Delete Note,1,192.168.1.8,29,,,
+2020-05-19 18:42:40.256808,Create Stage,1,192.168.1.8,test,,,
+2020-05-19 18:42:45.565665,Delete Stage,1,192.168.1.8,36,,,
+2020-05-19 18:44:08.684866,Open Note,1,192.168.1.8,25,,,
+2020-05-19 18:45:43.860007,Edit Note,1,192.168.1.8,25,,,<p>Move the newly created notes to the correct column (if not done before)</p><p><br></p><p>two ways of doing it:</p><p>- Drag and drop</p><p>- Click on the column name on top right position after opening the note&nbsp;</p>
+2020-05-19 18:47:44.296415,Create Note,1,192.168.1.8,,,,<p>Comment the name of the day you want to assign the task&nbsp;&nbsp;</p>
+2020-05-19 18:47:53.928018,Change Note Colour,1,192.168.1.8,30,,,
+2020-05-19 18:48:12.050686,Open Note,1,192.168.1.8,24,,,
+2020-05-19 18:49:10.523051,Edit Note,1,192.168.1.8,24,,,<p>create a minimum of 7 notes (one for each new task)</p>
+2020-05-19 18:51:45.383109,Create Note,1,192.168.1.8,,,,"<p>Invite and add the follower&nbsp;<span style=""font-family: inherit; font-style: initial; font-variant-ligatures: initial; font-variant-caps: initial; font-weight: initial;"">you want to work with&nbsp;</span><span style=""font-style: initial; font-variant-ligatures: initial; font-variant-caps: initial; font-weight: initial;"">to the task at hand&nbsp;</span></p>"
+2020-05-19 18:53:06.171667,Change Note Colour,1,192.168.1.8,31,,,
+2020-05-19 19:01:00.309660,Open Note,1,192.168.1.8,23,,,
+2020-05-19 19:01:18.538295,Open Note,1,192.168.1.8,24,,,
+2020-05-19 19:01:28.616238,Open Note,1,192.168.1.8,25,,,
+2020-05-19 19:05:40.945696,Create Note,1,192.168.1.8,,,,<p>cook dinner</p><p><br></p><p>Hello</p>
+2020-05-19 19:07:10.859359,Create Note,1,192.168.1.8,,,,<p>participate in Manoj's experiment</p><p><br></p><p>Hello</p>
+2020-05-19 19:16:55.468591,Create new tag,1,192.168.1.8,,,,urgent
+2020-05-19 19:17:02.120031,Change Tag Colour,1,192.168.1.8,4,,,
+2020-05-19 19:17:07.615497,Add tag,1,192.168.1.8,[8],,,
+2020-05-19 19:17:42.618422,Create new tag,1,192.168.1.8,,,,deprecated
+2020-05-19 19:19:14.826539,Create Note,1,192.168.1.8,,,,<p>refactor the old code</p>
+2020-05-19 19:19:26.085268,Move Note,1,192.168.1.8,34,3,,
+2020-05-19 19:19:39.765796,Create new tag,1,192.168.1.8,,,,deprecated
+2020-05-19 19:19:41.828839,Create new tag,1,192.168.1.8,,,,deprecated
+2020-05-19 19:20:17.920867,Create Note,1,192.168.1.8,,,,<p>this is an old note</p>
+2020-05-19 19:20:20.377331,Move Note,1,192.168.1.8,35,2,,
+2020-05-19 19:32:36.067619,Create Note,1,192.168.1.8,,,,<p>say hello to your supervisor</p>
+2020-05-19 19:35:12.773043,Add tag,1,192.168.1.8,[8],,,
+2020-05-19 19:35:18.192655,Open Note,1,192.168.1.8,36,,,
+2020-05-19 19:35:25.072922,Change Tag Colour,1,192.168.1.8,5,,,
+2020-05-19 19:35:43.707039,Change Note Colour,1,192.168.1.8,32,,,
+2020-05-19 19:35:51.107943,Change Note Colour,1,192.168.1.8,33,,,
+2020-05-19 19:35:54.415781,Change Note Colour,1,192.168.1.8,33,,,
+2020-05-19 19:36:01.925342,Change Note Colour,1,192.168.1.8,35,,,
+2020-05-19 19:36:06.899953,Change Note Colour,1,192.168.1.8,36,,,
+2020-05-19 19:36:11.600699,Change Note Colour,1,192.168.1.8,34,,,
+2020-05-19 19:36:15.175984,Change Note Colour,1,192.168.1.8,35,,,
+2020-05-19 19:37:09.375573,Search with Note,1,192.168.1.8,,,,hello
+2020-05-19 19:37:32.188050,Open Note,1,192.168.1.8,27,,,
+2020-05-19 19:37:40.540033,Edit Note,1,192.168.1.8,27,,,"<p>Assign a corresponding tag (create a new tag if necessary) to the note</p><p>- ""personal"" for personal task</p><p>- ""work"" for work-related task</p><p>- ""other"" for other tasks&nbsp;</p>"
+2020-05-19 19:38:11.566321,Search with Note,1,192.168.1.8,,,,old
+2020-05-19 19:38:16.462110,Search with both Tag and Note,1,192.168.1.8,,,,"old, depre"
+2020-05-19 19:38:17.684285,Search with Note,1,192.168.1.8,,,,old
+2020-05-19 19:38:23.086034,Search with both Tag and Note,1,192.168.1.8,,,,"old, deprecated"
+2020-05-19 19:38:25.842656,Search with Tag,1,192.168.1.8,,,,deprecated
+2020-05-19 19:38:30.782113,Search with both Tag and Note,1,192.168.1.8,,,,"deprecated, old"
+2020-05-19 19:38:36.360772,Search with Tag,1,192.168.1.8,,,,deprecated
+2020-05-19 19:39:37.956927,Create Note,1,192.168.1.8,,,,review the paper
+2020-05-19 19:39:45.960012,Change Note Colour,1,192.168.1.8,37,,,
+2020-05-19 19:39:47.206214,Open Note,1,192.168.1.8,37,,,
+2020-05-19 19:40:09.496180,Change Tag Colour,1,192.168.1.8,1,,,
+2020-05-19 19:40:12.185103,Add tag,1,192.168.1.8,[6],,,
+2020-05-19 19:46:19.573717,Create Note,1,192.168.1.8,,,,"<p>Find all the notes that contain the word ""hello"" (search with note)</p>"
+2020-05-19 19:47:37.858419,Create Note,1,192.168.1.8,,,,"<p>count the number of personal and work-related notes (use search), use a temporary note to mention the count&nbsp;</p>"
+2020-05-19 19:48:15.131596,Create Note,1,192.168.1.8,,,,<p>attach the file</p>
+2020-05-19 19:48:19.037400,Open commenting in note,1,192.168.1.8,40,,,
+2020-05-19 19:49:39.754010,Edit Note,1,192.168.1.8,40,,,"<p>attach the file named ""dummy file"" to all the work-related notes</p>"
+2020-05-19 19:49:47.004988,Change Note Colour,1,192.168.1.8,38,,,
+2020-05-19 19:49:49.112451,Change Note Colour,1,192.168.1.8,39,,,
+2020-05-19 19:49:53.618607,Change Note Colour,1,192.168.1.8,40,,,
+2020-05-19 19:50:13.343351,Open Note,1,192.168.1.8,39,,,
+2020-05-19 19:51:52.203434,Open Note,1,192.168.1.8,28,,,
+2020-05-19 19:52:39.103916,Edit Note,1,192.168.1.8,28,,,<p>check for typos in all the notes and fix them</p>
+2020-05-19 19:53:58.782942,Create Note,1,192.168.1.8,,,,move me to finished
+2020-05-19 19:54:01.165105,Open Note,1,192.168.1.8,41,,,
+2020-05-19 19:54:23.584193,Edit Note,1,192.168.1.8,41,,,"<p>move me to finished, I am an old note</p>"
+2020-05-19 19:54:29.486354,Change Note Colour,1,192.168.1.8,41,,,
+2020-05-19 19:55:02.540790,Create Note,1,192.168.1.8,,,,I am not finished yet
+2020-05-19 19:55:05.774554,Change Note Colour,1,192.168.1.8,42,,,
+2020-05-19 19:55:55.442648,Create Note,1,192.168.1.8,,,,you haven't started to work on this yet
+2020-05-19 19:55:59.899288,Change Note Colour,1,192.168.1.8,43,,,
+2020-05-19 19:56:29.358103,Open Note,1,192.168.1.8,35,,,
+2020-05-19 19:56:48.978921,Edit Note,1,192.168.1.8,35,,,<p>this is an old nore</p>
+2020-05-19 19:57:10.210420,Open Note,1,192.168.1.8,32,,,
+2020-05-19 19:57:21.706294,Edit Note,1,192.168.1.8,32,,,<p>cooook dinner</p><p><br></p><p>Hello</p>
+2020-05-19 19:57:27.735609,Open Note,1,192.168.1.8,37,,,
+2020-05-19 19:57:33.099260,Edit Note,1,192.168.1.8,37,,,<p>review the paaaaaaper</p>
+2020-05-19 19:57:47.077019,Open Note,1,192.168.1.8,35,,,
+2020-05-19 19:57:54.326625,Edit Note,1,192.168.1.8,35,,,<p>this is an old nooooooote</p>
+2020-05-19 19:58:37.615084,Open Note,1,192.168.1.8,32,,,
+2020-05-19 19:58:54.495580,Invite and Add follower,1,192.168.1.8,32,,"[6, False, [20]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: cooook dinner</p></div>"
+2020-05-19 19:59:05.004187,Invite and Add follower,1,192.168.1.8,32,,"[6, False, [16]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: cooook dinner</p></div>"
+2020-05-19 19:59:21.448607,Open Note,1,192.168.1.8,37,,,
+2020-05-19 19:59:39.826971,Invite and Add follower,1,192.168.1.8,37,,"[6, False, [17, 19]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: review the paaaaaaper</p></div>"
+2020-05-19 19:59:59.115549,Open Note,1,192.168.1.8,36,,,
+2020-05-19 20:00:01.373998,Open commenting in note,1,192.168.1.8,36,,,
+2020-05-19 20:00:06.569297,Comment in Note,1,192.168.1.8,,,,Monday
+2020-05-19 20:00:12.495146,Open Note,1,192.168.1.8,33,,,
+2020-05-19 20:00:23.580020,Open commenting in note,1,192.168.1.8,32,,,
+2020-05-19 20:00:31.169793,Comment in Note,1,192.168.1.8,,,,everyday
+2020-05-19 20:00:37.374472,Open Note,1,192.168.1.8,37,,,
+2020-05-19 20:00:39.983024,Open commenting in note,1,192.168.1.8,37,,,
+2020-05-19 20:00:45.733380,Comment in Note,1,192.168.1.8,,,,tuesday
+2020-05-19 20:00:48.095238,Open commenting in note,1,192.168.1.8,37,,,
+2020-05-19 20:00:52.380561,Comment in Note,1,192.168.1.8,,,,monday
+2020-05-19 20:01:01.032350,Open Note,1,192.168.1.8,34,,,
+2020-05-19 20:01:05.347860,Open commenting in note,1,192.168.1.8,34,,,
+2020-05-19 20:01:10.420978,Comment in Note,1,192.168.1.8,,,,sunday
+2020-05-19 20:06:08.161397,Open Note,1,192.168.1.8,33,,,
+2020-05-19 20:06:23.155503,Invite and Add follower,1,192.168.1.8,33,,"[6, False, [18, 3]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: participate in Manoj's experiment</p></div>"
+2020-05-19 20:06:37.347591,Open Note,1,192.168.1.8,36,,,
+2020-05-19 20:06:48.391635,Invite and Add follower,1,192.168.1.8,36,,"[6, False, [19]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: say hello to your supervisor</p></div>"
