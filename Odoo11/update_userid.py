@@ -67,7 +67,7 @@ def _cat_next_file(csv_file, ocsv_writer, userid, done_header):
 
 
 def cat_csv_files(username, userid):
-    ocsv_filename = 'results/' + username + '/' + username + '_usage_data.csv'
+    ocsv_filename = 'results/dataset/' + username + '_usage_data.csv'
     csv_files = glob.glob('results/' + username + '/*.csv')
     csv_files.sort()
 
