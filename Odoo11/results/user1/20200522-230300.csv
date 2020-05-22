@@ -1,0 +1,109 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2020-05-22 23:03:50.340574,Create Stage,1,172.19.0.1,Temporary,,,
+2020-05-22 23:04:01.174503,Drag and Drop note,1,172.19.0.1,13,43,,
+2020-05-22 23:04:33.318528,Create Note,1,172.19.0.1,,,,set a meeting with the company
+2020-05-22 23:04:49.863658,Create Note,1,172.19.0.1,,,,plan the trip
+2020-05-22 23:04:49.959943,Open Note,1,172.19.0.1,34,,,
+2020-05-22 23:04:58.268900,Create Note,1,172.19.0.1,,,,shop groceries
+2020-05-22 23:04:58.486550,Open Note,1,172.19.0.1,35,,,
+2020-05-22 23:05:32.621952,Create Note,1,172.19.0.1,,,,fix the bug in function X
+2020-05-22 23:05:32.729119,Open Note,1,172.19.0.1,36,,,
+2020-05-22 23:06:02.808915,Create Note,1,172.19.0.1,,,,push the code changes to repo
+2020-05-22 23:06:02.936253,Open Note,1,172.19.0.1,37,,,
+2020-05-22 23:06:30.796475,Create Note,1,172.19.0.1,,,,but supplies for trip
+2020-05-22 23:06:30.891793,Open Note,1,172.19.0.1,38,,,
+2020-05-22 23:06:40.580288,Create Note,1,172.19.0.1,,,,mow the lawn
+2020-05-22 23:06:40.721659,Open Note,1,172.19.0.1,39,,,
+2020-05-22 23:07:25.956383,Create Note,1,172.19.0.1,,,,clean the house
+2020-05-22 23:07:26.073217,Open Note,1,172.19.0.1,40,,,
+2020-05-22 23:07:31.564541,Drag and Drop note,1,172.19.0.1,14,43,,
+2020-05-22 23:08:03.812302,Drag and Drop note,1,172.19.0.1,31,2,,
+2020-05-22 23:08:05.771987,Drag and Drop note,1,172.19.0.1,25,3,,
+2020-05-22 23:08:12.158712,Drag and Drop note,1,172.19.0.1,27,3,,
+2020-05-22 23:08:27.273996,Drag and Drop note,1,172.19.0.1,15,43,,
+2020-05-22 23:08:44.410487,Open Note,1,172.19.0.1,16,,,
+2020-05-22 23:09:17.639969,Open Note,1,172.19.0.1,36,,,
+2020-05-22 23:09:32.521248,Change Note Colour,1,172.19.0.1,36,,,
+2020-05-22 23:09:34.938919,Change Note Colour,1,172.19.0.1,33,,,
+2020-05-22 23:09:37.669150,Change Note Colour,1,172.19.0.1,38,,,
+2020-05-22 23:09:39.981259,Change Note Colour,1,172.19.0.1,37,,,
+2020-05-22 23:09:43.156875,Change Note Colour,1,172.19.0.1,34,,,
+2020-05-22 23:09:47.522400,Change Note Colour,1,172.19.0.1,40,,,
+2020-05-22 23:09:49.741864,Change Note Colour,1,172.19.0.1,39,,,
+2020-05-22 23:09:51.734704,Change Note Colour,1,172.19.0.1,35,,,
+2020-05-22 23:09:55.342749,Open Note,1,172.19.0.1,36,,,
+2020-05-22 23:10:09.499083,Create new tag,1,172.19.0.1,,,,work
+2020-05-22 23:10:15.282778,Open commenting in note,1,172.19.0.1,36,,,
+2020-05-22 23:10:20.019655,Comment in Note,1,172.19.0.1,,,,monday
+2020-05-22 23:10:29.350797,Attach file,1,172.19.0.1,,,,file
+2020-05-22 23:10:30.827812,Add tag,1,172.19.0.1,36,,,
+2020-05-22 23:10:48.670716,Drag and Drop note,1,172.19.0.1,16,43,,
+2020-05-22 23:10:51.773425,Open Note,1,172.19.0.1,36,,,
+2020-05-22 23:10:57.666570,Open Note,1,172.19.0.1,33,,,
+2020-05-22 23:11:03.057080,Add tag,1,172.19.0.1,33,,,
+2020-05-22 23:11:08.277932,Open Note,1,172.19.0.1,38,,,
+2020-05-22 23:11:17.319024,Create new tag,1,172.19.0.1,,,,perwsonal
+2020-05-22 23:11:23.745581,Create new tag,1,172.19.0.1,,,,personal
+2020-05-22 23:11:30.683589,Change Tag Colour,1,172.19.0.1,13,,,
+2020-05-22 23:11:33.957284,Add tag,1,172.19.0.1,38,,,
+2020-05-22 23:11:38.350748,Open Note,1,172.19.0.1,37,,,
+2020-05-22 23:11:50.344635,Change Tag Colour,1,172.19.0.1,11,,,
+2020-05-22 23:11:55.909748,Change Tag Colour,1,172.19.0.1,11,,,
+2020-05-22 23:11:57.073715,Add tag,1,172.19.0.1,37,,,
+2020-05-22 23:12:03.212296,Open Note,1,172.19.0.1,34,,,
+2020-05-22 23:12:11.833718,Add tag,1,172.19.0.1,34,,,
+2020-05-22 23:12:19.533114,Open Note,1,172.19.0.1,36,,,
+2020-05-22 23:12:22.838259,Open Note,1,172.19.0.1,33,,,
+2020-05-22 23:12:24.398533,Open commenting in note,1,172.19.0.1,33,,,
+2020-05-22 23:12:29.197222,Comment in Note,1,172.19.0.1,,,,tuesday
+2020-05-22 23:12:44.982952,Open Note,1,172.19.0.1,38,,,
+2020-05-22 23:12:48.317177,Open Note,1,172.19.0.1,37,,,
+2020-05-22 23:12:49.510381,Open commenting in note,1,172.19.0.1,37,,,
+2020-05-22 23:12:57.256561,Attach file,1,172.19.0.1,,,,file
+2020-05-22 23:13:21.949640,Open Note,1,172.19.0.1,40,,,
+2020-05-22 23:13:28.036004,Add tag,1,172.19.0.1,40,,,
+2020-05-22 23:13:31.324750,Open Note,1,172.19.0.1,39,,,
+2020-05-22 23:13:36.393045,Add tag,1,172.19.0.1,39,,,
+2020-05-22 23:13:37.686057,Open Note,1,172.19.0.1,35,,,
+2020-05-22 23:13:46.721817,Add tag,1,172.19.0.1,35,,,
+2020-05-22 23:14:16.893899,Drag and Drop note,1,172.19.0.1,17,43,,
+2020-05-22 23:14:36.628307,Search with Tag,1,172.19.0.1,,,,personal
+2020-05-22 23:14:47.774207,Create Note,1,172.19.0.1,,,,personal 5
+2020-05-22 23:14:47.866223,Open Note,1,172.19.0.1,41,,,
+2020-05-22 23:14:55.029201,Search with Tag,1,172.19.0.1,,,,work
+2020-05-22 23:15:04.205319,Create Note,1,172.19.0.1,,,,work 3
+2020-05-22 23:15:04.305860,Open Note,1,172.19.0.1,42,,,
+2020-05-22 23:15:13.129782,Drag and Drop note,1,172.19.0.1,18,43,,
+2020-05-22 23:15:16.266084,Open Note,1,172.19.0.1,24,,,
+2020-05-22 23:15:21.770268,Edit Note,1,172.19.0.1,24,,,<p>review the paper</p>
+2020-05-22 23:15:26.011937,Open Note,1,172.19.0.1,26,,,
+2020-05-22 23:15:31.106533,Edit Note,1,172.19.0.1,26,,,<p>cook dinner</p><p><br></p><p>Hello</p>
+2020-05-22 23:15:51.553217,Open Note,1,172.19.0.1,38,,,
+2020-05-22 23:15:56.677481,Edit Note,1,172.19.0.1,38,,,<p>buy supplies for trip</p>
+2020-05-22 23:16:00.889298,Open Note,1,172.19.0.1,27,,,
+2020-05-22 23:16:06.015394,Edit Note,1,172.19.0.1,27,,,<p>this is an old note</p>
+2020-05-22 23:16:16.449978,Drag and Drop note,1,172.19.0.1,29,1,,
+2020-05-22 23:16:25.638226,Drag and Drop note,1,172.19.0.1,19,43,,
+2020-05-22 23:16:43.612898,Drag and Drop note,1,172.19.0.1,21,43,,
+2020-05-22 23:16:53.696129,Open Note,1,172.19.0.1,36,,,
+2020-05-22 23:17:08.300652,Invite and Add follower,1,172.19.0.1,36,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: fix the bug in function X</p></div>"
+2020-05-22 23:17:21.560650,Open Note,1,172.19.0.1,38,,,
+2020-05-22 23:17:43.388581,Invite and Add follower,1,172.19.0.1,38,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: buy supplies for trip</p></div>"
+2020-05-22 23:17:59.936214,Open Note,1,172.19.0.1,35,,,
+2020-05-22 23:18:16.114934,Invite and Add follower,1,172.19.0.1,35,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: shop groceries</p></div>"
+2020-05-22 23:18:20.549239,Drag and Drop note,1,172.19.0.1,20,43,,
+2020-05-22 23:19:10.681190,Drag and Drop note,1,172.19.0.1,22,43,,
+2020-05-22 23:19:22.082908,Search with Note,1,172.19.0.1,,,,hello
+2020-05-22 23:19:41.543344,Create Note,1,172.19.0.1,,,,hello 3
+2020-05-22 23:19:41.635497,Open Note,1,172.19.0.1,43,,,
+2020-05-22 23:19:49.761010,Search with Tag,1,172.19.0.1,,,,depre
+2020-05-22 23:20:24.505391,Delete Note,1,172.19.0.1,32,,,
+2020-05-22 23:20:24.602884,Search with Tag,1,172.19.0.1,,,,depre
+2020-05-22 23:20:27.752465,Delete Note,1,172.19.0.1,30,,,
+2020-05-22 23:20:27.892995,Search with Tag,1,172.19.0.1,,,,depre
+2020-05-22 23:20:30.306951,Delete Note,1,172.19.0.1,6,,,
+2020-05-22 23:20:30.463095,Search with Tag,1,172.19.0.1,,,,depre
+2020-05-22 23:20:33.172483,Delete Note,1,172.19.0.1,26,,,
+2020-05-22 23:20:33.322017,Search with Tag,1,172.19.0.1,,,,depre
+2020-05-22 23:20:42.463915,Search with Note,1,172.19.0.1,,,,old
+2020-05-22 23:21:15.141349,Drag and Drop note,1,172.19.0.1,23,43,,
