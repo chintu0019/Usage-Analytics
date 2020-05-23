@@ -1,0 +1,25 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2020-05-23 16:56:27.471029,Create Note,1,172.20.0.1,,,,"Delete all the notes with the text ""old"" and with the tag ""deprecated"""
+2020-05-23 16:56:30.886478,Open Note,1,172.20.0.1,44,,,
+2020-05-23 16:56:38.722211,Add tag,1,172.20.0.1,[7],,,
+2020-05-23 16:57:21.006893,Change Note Colour,1,172.20.0.1,44,,,
+2020-05-23 16:59:37.382950,Search with Note,1,172.20.0.1,,,,monday
+2020-05-23 16:59:44.327235,Search with Note,1,172.20.0.1,,,,old
+2020-05-23 17:01:10.822198,Open Note,1,172.20.0.1,41,,,
+2020-05-23 17:02:05.121271,Open Note,1,172.20.0.1,41,,,
+2020-05-23 17:02:09.341533,Create new tag,1,172.20.0.1,,,,other
+2020-05-23 17:02:12.156037,Change Tag Colour,1,172.20.0.1,6,,,
+2020-05-23 17:02:14.120632,Add tag,1,172.20.0.1,"[9, 12]",,,
+2020-05-23 17:02:22.775610,Add tag,1,172.20.0.1,[12],,,
+2020-05-23 17:02:26.201988,Open Note,1,172.20.0.1,35,,,
+2020-05-23 17:02:31.508362,Add tag,1,172.20.0.1,"[9, 12]",,,
+2020-05-23 17:02:33.232601,Open Note,1,172.20.0.1,42,,,
+2020-05-23 17:02:38.658451,Add tag,1,172.20.0.1,[12],,,
+2020-05-23 17:05:50.291694,Create Note,1,172.20.0.1,,,,"count the number of notes with the tag ""other"", record the count in a new temporary note and delete all of them "
+2020-05-23 17:05:57.339079,Change Note Colour,1,172.20.0.1,45,,,
+2020-05-23 17:06:19.706205,Open Note,1,172.20.0.1,38,,,
+2020-05-23 17:06:44.649607,Edit Note,1,172.20.0.1,38,,,"<p>Find all the notes that contain the word ""hello"" (search with note), record the count in a new temporary note<br></p>"
+2020-05-23 17:06:50.682772,Open Note,1,172.20.0.1,45,,,
+2020-05-23 17:06:55.696117,Add tag,1,172.20.0.1,[7],,,
+2020-05-23 17:09:46.090748,Open Note,1,172.20.0.1,25,,,
+2020-05-23 17:09:55.213609,Edit Note,1,172.20.0.1,25,,,<p>Move the notes to the correct column (if not done before)</p><p><br></p><p>two ways of doing it:</p><p>- Drag and drop</p><p>- Click on the column name on top right position after opening the note&nbsp;</p>

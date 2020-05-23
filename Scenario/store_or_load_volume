@@ -1,22 +1,22 @@
 
-To get a copy of volume odoo10_odoo-db-data-odoo10 in the file volume.tar.bz2
-
+BACKUP - To get a copy of volume odoo10_odoo-db-data-odoo10 in the file volume.tar.bz2
+--------------------------------------------------------------------------------------
 odoo10:
-$ docker run -it --rm -v odoo10_odoo-db-data-odoo10:/volume -v "`readlink -e .`":/backup alpine tar -vcjf /backup/volume.tar.bz2 -C /volume ./
+docker run -it --rm -v odoo10_odoo-db-data-odoo10:/volume -v "`readlink -e .`":/backup alpine tar -vcjf /backup/odoo10_experiment_initialize.tar.bz2 -C /volume ./
 
 odoo11:
-$ docker run -it --rm -v odoo11_odoo-db-data-odoo11:/volume -v "`readlink -e .`":/backup alpine tar -vcjf /backup/volume.tar.bz2 -C /volume ./
+docker run -it --rm -v odoo11_odoo-db-data-odoo11:/volume -v "`readlink -e .`":/backup alpine tar -vcjf /backup/odoo11_experiment_initialize.tar.bz2 -C /volume ./
 
------------------------------------------------------------------------------------------
 
-To put back the file contents of volume.tar.bz2 in the volume odoo10_odoo-db-data-odoo10
+RESTORE - To put back the file contents of volume.tar.bz2 in the volume odoo10_odoo-db-data-odoo10
+--------------------------------------------------------------------------------------------------
 odoo10: (cd into odoo10 folder first)
-$ docker run -it --rm -v odoo10_odoo-db-data-odoo10:/volume -v "`readlink -e .`":/backup alpine sh -c "find /volume -mindepth 1 -delete ; tar -C /volume/ -xvjf /backup/odoo10_experiment_initialize.tar.bz2"
+docker run -it --rm -v odoo10_odoo-db-data-odoo10:/volume -v "`readlink -e .`":/backup alpine sh -c "find /volume -mindepth 1 -delete ; tar -C /volume/ -xvjf /backup/odoo10_experiment_initialize.tar.bz2"
 
 odoo11: (cd into 0odoo11 folder first)
-$ docker run -it --rm -v odoo11_odoo-db-data-odoo11:/volume -v "`readlink -e .`":/backup alpine sh -c "find /volume -mindepth 1 -delete ; tar -C /volume/ -xvjf /backup/odoo11_experiment_initialize.tar.bz2"
+docker run -it --rm -v odoo11_odoo-db-data-odoo11:/volume -v "`readlink -e .`":/backup alpine sh -c "find /volume -mindepth 1 -delete ; tar -C /volume/ -xvjf /backup/odoo11_experiment_initialize.tar.bz2"
 
------------------------------------------------------------------------------------------
 
 Fix bug - delete the record ir_attachment from the DB 
-$ docker exec -ti POSTGRES_CONTAINER_ID /usr/bin/psql -U postgres -d odoo10 -c 'delete from ir_attachment;'
+-----------------------------------------------------
+docker exec -ti POSTGRES_CONTAINER_ID /usr/bin/psql -U postgres -d odoo10 -c 'delete from ir_attachment;'

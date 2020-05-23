@@ -1,0 +1,27 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2020-05-23 16:56:54.668569,Create Note,1,172.19.0.1,,,,"Delete all the notes with the text ""old"" and with the tag ""deprecated"""
+2020-05-23 16:56:54.966048,Open Note,1,172.19.0.1,33,,,
+2020-05-23 16:56:58.324173,Change Note Colour,1,172.19.0.1,33,,,
+2020-05-23 16:57:00.885687,Open Note,1,172.19.0.1,33,,,
+2020-05-23 16:57:07.622610,Add tag,1,172.19.0.1,33,,,
+2020-05-23 17:02:51.554442,Open Note,1,172.19.0.1,6,,,
+2020-05-23 17:02:56.095517,Create new tag,1,172.19.0.1,,,,other
+2020-05-23 17:02:59.327031,Change Tag Colour,1,172.19.0.1,11,,,
+2020-05-23 17:03:00.914647,Add tag,1,172.19.0.1,6,,,
+2020-05-23 17:03:05.163968,Open Note,1,172.19.0.1,27,,,
+2020-05-23 17:03:10.315953,Add tag,1,172.19.0.1,27,,,
+2020-05-23 17:03:15.415725,Open Note,1,172.19.0.1,25,,,
+2020-05-23 17:03:20.721937,Add tag,1,172.19.0.1,25,,,
+2020-05-23 17:03:22.725316,Open Note,1,172.19.0.1,29,,,
+2020-05-23 17:03:28.898536,Add tag,1,172.19.0.1,29,,,
+2020-05-23 17:03:34.106539,Open Note,1,172.19.0.1,31,,,
+2020-05-23 17:03:40.105489,Add tag,1,172.19.0.1,31,,,
+2020-05-23 17:05:24.533290,Create Note,1,172.19.0.1,,,,"count the number of notes with the tag ""other"", record the count in a new temporary note and delete all of them "
+2020-05-23 17:05:24.632694,Open Note,1,172.19.0.1,34,,,
+2020-05-23 17:05:28.834686,Open Note,1,172.19.0.1,34,,,
+2020-05-23 17:07:09.887046,Add tag,1,172.19.0.1,34,,,
+2020-05-23 17:07:18.134315,Change Note Colour,1,172.19.0.1,34,,,
+2020-05-23 17:07:47.566172,Open Note,1,172.19.0.1,23,,,
+2020-05-23 17:08:02.862259,Edit Note,1,172.19.0.1,23,,,"<p>Find all the notes that contain the word ""hello"" (search with note), record the count in a new temporary note<br></p>"
+2020-05-23 17:09:13.890991,Open Note,1,172.19.0.1,15,,,
+2020-05-23 17:09:38.700860,Edit Note,1,172.19.0.1,15,,,<p>Move the notes to the correct column (if not done before)<br><br><br>two ways of doing it:<br><br>- Drag and drop<br><br>- Click on the column name on top right position after opening the note <br></p>
