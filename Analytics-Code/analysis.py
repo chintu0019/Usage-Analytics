@@ -28,7 +28,6 @@ def getResultFiles(rfolder):
     rfiles = None
     
 
-
 def main(argv=None):
     prgname = os.path.basename(__file__) if '__file__' in globals() else 'prg'
     if argv is None:
