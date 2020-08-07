@@ -1,6 +1,5 @@
 #!/bin/bash
-set -euo pipefail
-IFS=$'\n\t'
+
 
 odoov=10
 
@@ -9,7 +8,7 @@ function kill_screenshot {
 }
 
 mkdir -p results
-SCRIPTNAME="`readlink -n -e "$0"`"
+SCRIPTNAME="`greadlink -n -e "$0"`"
 SCRIPTDIR="`dirname "$SCRIPTNAME"`"
 
 user=unnamed
@@ -79,7 +78,7 @@ if [[ -n ${database+x} ]] ;then
         exit 1
     fi
 
-    dbfpath="`readlink -n -e "$database"`"
+    dbfpath="`greadlink -n -e "$database"`"
     dbdir="`dirname "$dbfpath"`"
     dbfname="`basename "$dbfpath"`"
 
@@ -102,7 +101,7 @@ fi
 
 cd "$SCRIPTDIR"/results
 mkdir -p "$user"
-userdir="`readlink -n -e "$user"`"
+userdir="`greadlink -n "$user"`"
 
 if [[ -n ${screenshots+x} ]] ;then
     cd "$userdir"
@@ -119,7 +118,7 @@ docker-compose up --build
 
 
 cd odoo/csvfolder
-find  -type f  -iname '*.csv'  -size +63c  -exec cp -v '{}' "$userdir" ';'
+find ./ -type f  -iname '*.csv'  -size +63c  -exec cp -v '{}' "$userdir" ';'
 rm *
 
 
