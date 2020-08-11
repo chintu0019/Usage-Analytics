@@ -119,8 +119,8 @@ docker-compose up --build
 
 
 cd odoo/csvfolder
-find  -type f  -iname '*.csv'  -size +63c  -exec cp -v '{}' "$userdir" ';'
-rm *
+find ./ -type f  -iname '*.csv'  -size +63c  -exec cp -v '{}' "$userdir" ';'
+#rm *
 
 
 cd "$SCRIPTDIR"
