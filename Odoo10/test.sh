@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-SCRIPTNAME="`readlink -n -e "$0"`"
+SCRIPTNAME="`greadlink -n -e "$0"`"
 SCRIPTDIR="`dirname "$SCRIPTNAME"`"
 
 #echo "SCRIPTNAME" $SCRIPTNAME
@@ -13,12 +13,12 @@ user=unnamed
 
 cd "$SCRIPTDIR"/results
 mkdir -p "$user"
-userdir="`readlink -n -e "$user"`"
+userdir="`greadlink -n -e "$user"`"
 
 #echo "userdir" $userdir
 
 cd "$userdir"
-participants_file="`readlink -n -e "$SCRIPTDIR/results/Participants.csv"`"
+participants_file="`greadlink -n -e "$SCRIPTDIR/results/Participants.csv"`"
 #echo "participants_file" $participants_file
 
 #unset IFS
