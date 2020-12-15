@@ -1,0 +1,3 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2020-12-15 15:54:18.903724,Drag and Drop note,1,172.19.0.1,30,3,,
+2020-12-15 15:54:20.396376,Drag and Drop note,1,172.19.0.1,30,2,,
