@@ -26,7 +26,18 @@ def getResultsFolder(odoo_version):
 
 def getResultFiles(rfolder):
     rfiles = None
-    
+    for root, dirs, files in os.walk(rfolder):
+        for dirname in dirs:            
+            for filename in files:
+                if filename.startswith(dirname):
+                    print(filename)
+            
+#todo - list files whose filename starts with the directory name
+
+def realMain(odoo_version):
+    results_folder = getResultsFolder(odoo_version)
+    results_files = getResultFiles(results_folder)
+
 
 def main(argv=None):
     prgname = os.path.basename(__file__) if '__file__' in globals() else 'prg'
@@ -35,13 +46,12 @@ def main(argv=None):
 
     try:
         odoo_version = argv[1]
+        realMain(odoo_version)
     except:
-        eprint('\n Program to start the analysis, pass the version of the odoo application as an argument \n')
+        eprint('\nEnter the Version of the Odoo (10 or 11)')
+        eprint('\nProgram to start the analysis, pass the version of the odoo application as an argument \n')
         eprint('Usage: analysis.py odoo_version')
         eprint('Example: python analysis.py 10 \n')
-    
-    results_folder = getResultsFolder(odoo_version)
-    results_files = getResultFiles(results_folder)
 
 
 if __name__ == "__main__":

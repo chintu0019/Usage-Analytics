@@ -5,7 +5,6 @@ import json
 import sys
 from operator import itemgetter
 import os
-
 import patterns
 import levenshtein
 import log_utils

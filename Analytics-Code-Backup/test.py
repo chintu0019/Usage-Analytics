@@ -1,13 +1,22 @@
-def myg ():
-    a = 1
-    while True:
-        a += 1
-        yield a
+#!/usr/bin/python
+
+import os
+import sys
 
 
-q=100
-for i in myg():
-    print (i)
-    q -= 1
-    if q < 0:
-        break
+fd = "abcdef"
+fl = "abcdef_123.csv"
+
+
+def eprint(*args):
+    print(*args)
+
+
+def main(argv=None):
+    #eprint(sys.argv)
+    if fl.startswith(fd):
+        print(fl)
+
+
+if __name__ == "__main__":
+    sys.exit(main())
