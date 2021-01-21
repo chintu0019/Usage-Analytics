@@ -6,12 +6,13 @@ import os
 import sys
 import csv
 import pandas
+from fnmatch import fnmatch
 from pathlib import Path
 
 
-participants_file = Path("../Scenario/Participants.csv")
-results_folder_10_path = Path("../Odoo10/results")
-results_folder_11_path = Path("../Odoo11/results")
+participants_file = Path("../Scenario/Participants.csv'")
+results_folder_10_path = '../Odoo10/results'
+results_folder_11_path = '../Odoo11/results'
 
 
 def eprint(*args, **kwargs):
@@ -25,17 +26,33 @@ def getParticipantsList():
         column_names = ["userID", "username"]
         p_file_data = pandas.read_csv(participants_file, names = column_names)
         return p_file_data.username.to_list()
-            
 
-def getLogFiles(odoo_version):
+
+def getFileList(path, pattern, filesToFind):
+    pattern = "*.csv"
+    filesToFind = []
+    for path, subdirs, files in os.walk(path):
+            for name in files:
+                if fnmatch(name, pattern):
+                    dirpath, dirname = os.path.split(path)
+                    if name.startswith(dirname, 0, len(name)):
+                        filesToFind.append(os.path.join(path, name))
+    return filesToFind
+
+
+def updateCombinedLogFile(odoo_version):
     participants_list = getParticipantsList()
-    #print(participants_list)
-    if odoo_version == 10:
-        
-
+    fileList = []
+    if odoo_version == '10':
+        fileList = getFileList(results_folder_10_path)
+    elif odoo_version == '11':
+        fileList = getFileList(results_folder_11_path)
+    #TODO - code to move the files in the 'fileList' to Combined-log-folder
+    #TODO - code to merge the csv files in Combined-log-folder into a single file
+    
 
 def realMain(odoo_version):
-    getLogFiles(odoo_version)
+    updateCombinedLogFile(odoo_version)
 
 
 def main(argv=None):
@@ -45,11 +62,12 @@ def main(argv=None):
 
     try:
         odoo_version = argv[1]
+        #print(odoo_version)
         realMain(odoo_version)
     except:
         eprint('\nEnter the Version of the Odoo (10 or 11)')
         eprint('\nProgram to start the analysis, pass the version of the odoo application as an argument \n')
-        eprint('Usage: analysis.py odoo_version')
+        eprint('Usage: python analysis.py odoo_version')
         eprint('Example: python analysis.py 10 \n')
 
 
