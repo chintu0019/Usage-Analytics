@@ -60,13 +60,11 @@ def updateCombinedLogFile(odoo_version):
     elif odoo_version == '11':
         fileList = getFileList(results_folder_11_path)
         copyFiles(fileList, log_folder_11)
-
-    #TODO - code to merge the csv files in Combined-log-folder into a single file
     
 
 def realMain(odoo_version):
     updateCombinedLogFile(odoo_version)
-
+    #TODO - call frequency, timespent and consistency metrics
 
 def main(argv=None):
     prgname = os.path.basename(__file__) if '__file__' in globals() else 'prg'
