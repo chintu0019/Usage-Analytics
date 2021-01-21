@@ -6,6 +6,7 @@ import os
 import sys
 import csv
 import pandas
+import shutil
 from fnmatch import fnmatch
 from pathlib import Path
 
@@ -13,6 +14,8 @@ from pathlib import Path
 participants_file = Path("../Scenario/Participants.csv'")
 results_folder_10_path = '../Odoo10/results'
 results_folder_11_path = '../Odoo11/results'
+log_folder_10 = '.Combined-log-folder/Log-folder-10'
+log_folder_11 = '.Combined-log-folder/Log-folder-11'
 
 
 def eprint(*args, **kwargs):
@@ -28,7 +31,13 @@ def getParticipantsList():
         return p_file_data.username.to_list()
 
 
-def getFileList(path, pattern, filesToFind):
+def copyFiles(fileList, destinationFolder):
+    for file in fileList:
+            if file not in destinationFolder:
+                shutil.copy(file, destinationFolder)
+
+
+def getFileList(path):
     pattern = "*.csv"
     filesToFind = []
     for path, subdirs, files in os.walk(path):
@@ -43,11 +52,15 @@ def getFileList(path, pattern, filesToFind):
 def updateCombinedLogFile(odoo_version):
     participants_list = getParticipantsList()
     fileList = []
+
     if odoo_version == '10':
         fileList = getFileList(results_folder_10_path)
+        copyFiles(fileList, log_folder_10)
+
     elif odoo_version == '11':
         fileList = getFileList(results_folder_11_path)
-    #TODO - code to move the files in the 'fileList' to Combined-log-folder
+        copyFiles(fileList, log_folder_11)
+
     #TODO - code to merge the csv files in Combined-log-folder into a single file
     
 
@@ -67,8 +80,8 @@ def main(argv=None):
     except:
         eprint('\nEnter the Version of the Odoo (10 or 11)')
         eprint('\nProgram to start the analysis, pass the version of the odoo application as an argument \n')
-        eprint('Usage: python analysis.py odoo_version')
-        eprint('Example: python analysis.py 10 \n')
+        eprint('Usage: python start_analysis.py odoo_version')
+        eprint('Example: python start_analysis.py 10 \n')
 
 
 if __name__ == "__main__":
