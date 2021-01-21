@@ -29,13 +29,13 @@ def listLogs2(src):
 def copyFiles():
     src10  = '../Odoo10/results/'
     src11  = os.listdir("../Odoo11/results/")
-    dest10 = os.listdir("../Odoo10/Log-folder/")
-    dest11 = os.listdir("../Odoo11/Log-folder/")
+    #dest10 = os.listdir("../Odoo10/Log-folder/")
+    #dest11 = os.listdir("../Odoo11/Log-folder/")
 
     gsrc10  = glob("../Odoo10/results/")
     gsrc11  = glob("../Odoo11/results/")
-    gdest10 = glob("../Odoo10/Log-folder/")
-    gdest11 = glob("../Odoo11/Log-folder/")
+    #gdest10 = glob("../Odoo10/Log-folder/")
+    #gdest11 = glob("../Odoo11/Log-folder/")
 
     listLogs2(src10)
 
