@@ -1,0 +1,660 @@
+﻿timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2019-09-21 20:04:00.351600,Open Note,3,172.19.0.1,29.0,,,
+2019-09-21 20:04:25.705395,Create new tag,3,172.19.0.1,,,,competition
+2019-09-21 20:04:38.593585,Change Tag Colour,3,172.19.0.1,1.0,,,
+2019-09-21 20:04:45.610882,Edit Note,3,172.19.0.1,29.0,,,<p>Look for competing products in the market</p>
+2019-09-21 20:04:53.357031,Change Note Colour,3,172.19.0.1,29.0,,,
+2019-09-21 20:04:57.083195,Change Note Colour,3,172.19.0.1,29.0,,,
+2019-09-21 20:04:59.886629,Open Note,3,172.19.0.1,29.0,,,
+2019-09-21 20:05:22.279496,Comment in Note,3,172.19.0.1,,,,Look for start-ups in particular.
+2019-09-21 20:05:31.476870,Open Note,3,172.19.0.1,31.0,,,
+2019-09-21 20:06:00.228964,Create new tag,3,172.19.0.1,,,,form
+2019-09-21 20:06:02.196847,Change Tag Colour,3,172.19.0.1,6.0,,,
+2019-09-21 20:07:31.000164,Invite and Add follower,3,172.19.0.1,31.0,,"[6, False, [13, 14]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><a href=""https://www.patentsoffice.ie/en/ip-search-tools/"" style=""text-decoration:none;color:rgb(124, 123, 173);background-color:transparent;"">https://www.patentsoffice.ie/en/ip-search-tools/</a>&nbsp;</p></div>"
+2019-09-21 20:07:36.329255,Edit Note,3,172.19.0.1,31.0,,,<p>Filling disclosure form.</p>
+2019-09-21 20:07:41.452884,Open Note,3,172.19.0.1,30.0,,,
+2019-09-21 20:07:51.229144,Open Note,3,172.19.0.1,30.0,,,
+2019-09-21 20:08:13.623842,Create new tag,3,172.19.0.1,,,,ideas
+2019-09-21 20:08:33.689273,Edit Note,3,172.19.0.1,30.0,,,<p>Look for more patent-able ideas.</p>
+2019-09-21 20:08:55.058293,Chat with other users,3,172.19.0.1,2.0,,,Hi Blue
+2019-09-21 20:09:26.401795,Chat with other users,3,172.19.0.1,2.0,,,Check out #form from my Finished task list
+2019-09-21 20:10:00.396048,Create Channel,3,172.19.0.1,,,,patents
+2019-09-21 20:10:22.568330,Invite user to channel,3,172.19.0.1,,,"[13, 14, 15]",
+2019-09-21 20:10:28.665073,Chat with other users,3,172.19.0.1,5.0,,,Hello everyone
+2019-09-21 20:10:45.724490,Chat with other users,3,172.19.0.1,5.0,,,Please use this channel to discuss patent-able ideas
+2019-09-21 20:11:00.530182,Chat with other users,3,172.19.0.1,5.0,,,Let's try and make some coins while we're at it
+2019-09-21 20:12:06.275432,Reference channel in chat,3,172.19.0.1,2.0,,,"I also invited you to join <a href=""http://localhost:8010/web#model=mail.channel&amp;id=5"" class=""o_channel_redirect"" data-oe-id=""5"" data-oe-model=""mail.channel"" target=""_blank"">#patents</a> "
+2019-09-21 20:12:34.987627,Mention user and reference channel in chat,3,172.19.0.1,2.0,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> is not a part of <a href=""http://localhost:8010/web#model=mail.channel&amp;id=5"" class=""o_channel_redirect"" data-oe-id=""5"" data-oe-model=""mail.channel"" target=""_blank"">#patents</a> "
+2019-09-21 20:12:59.821710,Open Note,3,172.19.0.1,30.0,,,
+2019-09-21 20:13:07.440269,Open commenting in note,3,172.19.0.1,30.0,,,
+2019-09-21 20:13:29.030735,Comment in Note,3,172.19.0.1,,,,"<a href=""http://localhost:8010/web#model=res.partner&amp;id=14"" class=""o_mail_redirect"" data-oe-id=""14"" data-oe-model=""res.partner"" target=""_blank"">@odoo10blueb</a> this task will be high priority for you today!"
+2019-09-21 20:13:29.385882,Open Note,3,172.19.0.1,30.0,,,
+2019-09-21 20:13:43.836510,Invite and Add follower,3,172.19.0.1,30.0,,"[6, False, [15, 14]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: Look for more patent-able ideas.</p></div>"
+2019-09-21 20:14:02.281493,Open Note,3,172.19.0.1,30.0,,,
+2019-09-21 20:14:12.688707,Open Note,3,172.19.0.1,30.0,,,
+2019-09-21 20:14:20.114921,Edit Note,3,172.19.0.1,30.0,,,<p>Looking for more patent-able ideas.</p>
+2019-09-21 20:14:26.231663,Open Note,3,172.19.0.1,29.0,,,
+2019-09-21 20:14:29.538538,Move Note,3,172.19.0.1,29.0,2.0,,
+2019-09-21 20:14:31.001850,Move Note,3,172.19.0.1,29.0,1.0,,
+2019-09-21 20:14:32.562242,Move Note,3,172.19.0.1,29.0,2.0,,
+2019-09-21 20:14:33.439086,Move Note,3,172.19.0.1,29.0,1.0,,
+2019-09-21 20:14:52.947548,Edit Note,3,172.19.0.1,31.0,,,"<p><img src=""/web/image/336/UA%20logo.png"" class=""pull-left"" style=""width: 100%;"">Filling disclosure form.</p>"
+2019-09-21 20:15:04.527297,Move Note,3,172.19.0.1,29.0,2.0,,
+2019-09-21 20:15:24.824898,Chat with other users,3,172.19.0.1,6.0,,,Hi
+2019-09-21 20:15:28.560199,Chat with other users,3,172.19.0.1,6.0,,,How are you today?
+2019-09-21 20:15:41.236831,Chat with other users,3,172.19.0.1,6.0,,,Will you be able to work on patent-able ideas today?
+2019-09-21 20:15:53.857698,Chat with other users,3,172.19.0.1,6.0,,,I've assigned the card to you
+2019-09-21 20:16:31.097969,Chat with other users,3,172.19.0.1,6.0,,,Let me know if you want me to delegate it to @odoo10bluea or @odoo10bluea
+2019-09-21 20:16:39.967542,Unfollow from a Channel,3,172.19.0.1,1.0,,,
+2019-09-21 20:16:51.335377,Open Note,3,172.19.0.1,30.0,,,
+2019-09-21 20:17:01.711223,Open Note,3,172.19.0.1,29.0,,,
+2019-09-21 20:17:10.530328,Delete Note,3,172.19.0.1,29.0,,,
+2020-08-24 06:48:27.912394,Create Stage,7,172.18.0.1,Temporary,,,
+2020-08-24 06:48:35.797868,Move Note,7,172.18.0.1,23,35.0,,
+2020-08-24 06:48:58.177494,Create Note,7,172.18.0.1,,,,clean house
+2020-08-24 06:49:06.003860,Create Note,7,172.18.0.1,,,,bring milk
+2020-08-24 06:49:17.347931,Create Note,7,172.18.0.1,,,,clear garbage
+2020-08-24 06:49:46.177150,Create Note,7,172.18.0.1,,,,run manoj's experiment
+2020-08-24 06:50:04.014947,Create Note,7,172.18.0.1,,,,write mail to bank
+2020-08-24 06:53:23.812443,Create Note,7,172.18.0.1,,,,clean the code for project X
+2020-08-24 06:54:55.863811,Create Note,7,172.18.0.1,,,,change the theme for website Y
+2020-08-24 06:55:21.221416,Create Note,7,172.18.0.1,,,,Diagnose the login issue for website Y
+2020-08-24 06:55:23.649867,Open Note,7,172.18.0.1,53,,,
+2020-08-24 06:55:30.257025,Edit Note,7,172.18.0.1,53,,,<p>Diagnose the login issue with website Y</p>
+2020-08-24 06:55:42.159568,Move Note,7,172.18.0.1,24,35.0,,
+2020-08-24 06:55:46.030984,Move Note,7,172.18.0.1,46,3.0,,
+2020-08-24 06:55:48.057701,Move Note,7,172.18.0.1,47,3.0,,
+2020-08-24 06:55:50.997249,Move Note,7,172.18.0.1,48,3.0,,
+2020-08-24 06:55:53.088516,Move Note,7,172.18.0.1,49,2.0,,
+2020-08-24 06:55:59.940476,Move Note,7,172.18.0.1,25,35.0,,
+2020-08-24 06:56:02.873496,Open Note,7,172.18.0.1,26,,,
+2020-08-24 06:56:27.600441,Change Note Colour,7,172.18.0.1,46,,,
+2020-08-24 06:56:31.197473,Change Note Colour,7,172.18.0.1,47,,,
+2020-08-24 06:56:32.915262,Change Note Colour,7,172.18.0.1,48,,,
+2020-08-24 06:56:36.912051,Change Note Colour,7,172.18.0.1,49,,,
+2020-08-24 06:56:43.540340,Change Note Colour,7,172.18.0.1,53,,,
+2020-08-24 06:56:47.112694,Change Note Colour,7,172.18.0.1,52,,,
+2020-08-24 06:56:49.119401,Change Note Colour,7,172.18.0.1,51,,,
+2020-08-24 06:56:53.526220,Change Note Colour,7,172.18.0.1,50,,,
+2020-08-24 06:56:57.084820,Move Note,7,172.18.0.1,26,35.0,,
+2020-08-24 06:57:04.944670,Open Note,7,172.18.0.1,27,,,
+2020-08-24 06:57:11.164634,Edit Note,7,172.18.0.1,27,,,"<p>Assign a corresponding tag (create a new tag if necessary) to the note</p><p>- ""personal"" for personal task</p><p>- ""work"" for work-related task</p><p>- ""other"" for other tasks&nbsp;</p>"
+2020-08-24 06:57:14.995654,Open Note,7,172.18.0.1,46,,,
+2020-08-24 06:57:31.498153,Create new tag,7,172.18.0.1,,,,personal
+2020-08-24 06:57:34.571533,Add tag,7,172.18.0.1,[13],,,
+2020-08-24 06:57:48.184102,Add tag,7,172.18.0.1,[13],,,
+2020-08-24 06:58:21.624603,Open Note,7,172.18.0.1,48,,,
+2020-08-24 06:58:27.763423,Add tag,7,172.18.0.1,[13],,,
+2020-08-24 07:41:02.015240,Create Stage,7,172.18.0.1,Temporary,,,
+2020-08-24 07:41:20.100195,Create Note,7,172.18.0.1,,,,clean the garage
+2020-08-24 07:41:29.814186,Create Note,7,172.18.0.1,,,,get the car serviced
+2020-08-24 07:42:03.552964,Create Note,7,172.18.0.1,,,,book an appointment with the doctor 
+2020-08-24 07:47:04.058080,Create Note,7,172.18.0.1,,,,work on the login issue with website X
+2020-08-24 07:49:10.552632,Create Note,7,172.18.0.1,,,,write an email to enquire about the support ticket status
+2020-08-24 07:49:29.375288,Create Note,7,172.18.0.1,,,,design the logo for website Y
+2020-08-24 07:50:21.459159,Create Note,7,172.18.0.1,,,,run manoj's experiment
+2020-08-24 07:50:48.248172,Create Note,7,172.18.0.1,,,,buy gift for brother
+2020-08-24 07:50:51.498017,Move Note,7,172.18.0.1,23,35.0,,
+2020-08-24 07:50:54.237438,Move Note,7,172.18.0.1,24,35.0,,
+2020-08-24 07:50:59.829780,Move Note,7,172.18.0.1,52,2.0,,
+2020-08-24 07:51:04.003142,Move Note,7,172.18.0.1,51,3.0,,
+2020-08-24 07:51:12.338683,Move Note,7,172.18.0.1,53,3.0,,
+2020-08-24 07:51:15.883340,Move Note,7,172.18.0.1,48,3.0,,
+2020-08-24 07:51:20.364481,Move Note,7,172.18.0.1,47,3.0,,
+2020-08-24 07:51:30.889980,Move Note,7,172.18.0.1,50,2.0,,
+2020-08-24 07:51:34.182710,Move Note,7,172.18.0.1,25,35.0,,
+2020-08-24 07:51:37.624498,Open Note,7,172.18.0.1,49,,,
+2020-08-24 07:52:02.091187,Open Note,7,172.18.0.1,46,,,
+2020-08-24 07:52:12.755475,Change Note Colour,7,172.18.0.1,46,,,
+2020-08-24 07:52:16.774703,Change Note Colour,7,172.18.0.1,49,,,
+2020-08-24 07:52:19.615470,Change Note Colour,7,172.18.0.1,52,,,
+2020-08-24 07:52:43.026183,Change Note Colour,7,172.18.0.1,50,,,
+2020-08-24 07:52:48.834617,Change Note Colour,7,172.18.0.1,53,,,
+2020-08-24 07:52:52.037729,Change Note Colour,7,172.18.0.1,48,,,
+2020-08-24 07:52:55.039743,Change Note Colour,7,172.18.0.1,47,,,
+2020-08-24 07:52:58.826705,Change Note Colour,7,172.18.0.1,51,,,
+2020-08-24 07:53:07.247866,Move Note,7,172.18.0.1,26,35.0,,
+2020-08-24 07:54:03.280561,Open Note,7,172.18.0.1,46,,,
+2020-08-24 07:54:08.536208,Create new tag,7,172.18.0.1,,,,personal
+2020-08-24 07:54:10.873723,Add tag,7,172.18.0.1,[13],,,
+2020-08-24 07:54:12.737379,Open Note,7,172.18.0.1,25,,,
+2020-08-24 07:54:25.944933,Open Note,7,172.18.0.1,46,,,
+2020-08-24 07:54:32.166306,Change Tag Colour,7,172.18.0.1,1,,,
+2020-08-24 07:54:40.417739,Change Tag Colour,7,172.18.0.1,4,,,
+2020-08-24 07:54:59.318376,Open Note,7,172.18.0.1,46,,,
+2020-08-24 07:55:04.579918,Change Tag Colour,7,172.18.0.1,2,,,
+2020-08-24 07:55:15.608075,Change Tag Colour,7,172.18.0.1,9,,,
+2020-08-24 07:55:31.112770,Create new tag,7,172.18.0.1,,,,work
+2020-08-24 07:55:39.741260,Change Tag Colour,7,172.18.0.1,7,,,
+2020-08-24 07:55:41.885795,Add tag,7,172.18.0.1,[14],,,
+2020-08-24 07:55:56.071164,Add tag,7,172.18.0.1,[12],,,
+2020-08-24 07:56:04.771483,Open Note,7,172.18.0.1,50,,,
+2020-08-24 07:56:10.746045,Add tag,7,172.18.0.1,[14],,,
+2020-08-24 07:56:17.224219,Open Note,7,172.18.0.1,51,,,
+2020-08-24 07:56:22.549048,Add tag,7,172.18.0.1,[14],,,
+2020-08-24 07:56:26.492989,Open Note,7,172.18.0.1,53,,,
+2020-08-24 07:56:33.014657,Add tag,7,172.18.0.1,[13],,,
+2020-08-24 07:56:36.627986,Open Note,7,172.18.0.1,48,,,
+2020-08-24 07:56:42.182905,Add tag,7,172.18.0.1,[13],,,
+2020-08-24 07:56:45.315410,Open Note,7,172.18.0.1,47,,,
+2020-08-24 07:56:50.957852,Add tag,7,172.18.0.1,[13],,,
+2020-08-24 07:56:55.154237,Move Note,7,172.18.0.1,27,35.0,,
+2020-08-24 07:57:08.126859,Search with Tag,7,172.18.0.1,,,,personal
+2020-08-24 07:57:25.874180,Create Note,7,172.18.0.1,,,,personal 4
+2020-08-24 07:57:37.041640,Search with Tag,7,172.18.0.1,,,,work
+2020-08-24 07:57:44.256731,Create Note,7,172.18.0.1,,,,work 3
+2020-08-24 07:57:52.638477,Move Note,7,172.18.0.1,39,35.0,,
+2020-08-24 07:57:57.832829,Open Note,7,172.18.0.1,32,,,
+2020-08-24 07:58:03.417841,Edit Note,7,172.18.0.1,32,,,<p>cook dinner</p><p><br></p><p>Hello</p>
+2020-08-24 07:58:08.191595,Open Note,7,172.18.0.1,37,,,
+2020-08-24 07:58:14.669971,Edit Note,7,172.18.0.1,37,,,<p>review the paper</p>
+2020-08-24 07:58:31.440369,Move Note,7,172.18.0.1,41,3.0,,
+2020-08-24 07:58:35.766908,Move Note,7,172.18.0.1,42,2.0,,
+2020-08-24 07:58:44.951932,Open Note,7,172.18.0.1,35,,,
+2020-08-24 07:58:50.792446,Edit Note,7,172.18.0.1,35,,,<p>this is an old note</p>
+2020-08-24 07:59:34.988956,Move Note,7,172.18.0.1,28,35.0,,
+2020-08-24 08:00:00.709703,Open Note,7,172.18.0.1,46,,,
+2020-08-24 08:00:24.709940,Invite and Add follower,7,172.18.0.1,46,,"[6, False, [21]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: clean the garage</p></div>"
+2020-08-24 08:00:30.972810,Open Note,7,172.18.0.1,49,,,
+2020-08-24 08:00:45.660081,Invite and Add follower,7,172.18.0.1,49,,"[6, False, [17]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: work on the login issue with website X</p></div>"
+2020-08-24 08:00:53.221385,Move Note,7,172.18.0.1,43,1.0,,
+2020-08-24 08:01:14.744893,Open Note,7,172.18.0.1,52,,,
+2020-08-24 08:01:23.388691,Invite and Add follower,7,172.18.0.1,52,,"[6, False, [20]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: run manoj's experiment</p></div>"
+2020-08-24 08:01:28.039901,Open Note,7,172.18.0.1,50,,,
+2020-08-24 08:01:42.849036,Invite and Add follower,7,172.18.0.1,50,,"[6, False, [1, 3]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: write an email to enquire about the support ticket status</p></div>"
+2020-08-24 08:01:56.955252,Open Note,7,172.18.0.1,51,,,
+2020-08-24 08:02:08.606541,Invite and Add follower,7,172.18.0.1,51,,"[6, False, [18]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: design the logo for website Y</p></div>"
+2020-08-24 08:02:14.540073,Open Note,7,172.18.0.1,47,,,
+2020-08-24 08:02:23.414063,Invite and Add follower,7,172.18.0.1,47,,"[6, False, [16]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: get the car serviced</p></div>"
+2020-08-24 08:02:29.556082,Open Note,7,172.18.0.1,48,,,
+2020-08-24 08:02:38.900533,Invite and Add follower,7,172.18.0.1,48,,"[6, False, [16]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: book an appointment with the doctor</p></div>"
+2020-08-24 08:02:45.282041,Open Note,7,172.18.0.1,53,,,
+2020-08-24 08:02:53.408956,Invite and Add follower,7,172.18.0.1,53,,"[6, False, [20]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: buy gift for brother</p></div>"
+2020-08-24 08:03:07.480099,Move Note,7,172.18.0.1,31,35.0,,
+2020-08-24 08:03:11.863930,Open Note,7,172.18.0.1,32,,,
+2020-08-24 08:03:15.556314,Open commenting in note,7,172.18.0.1,32,,,
+2020-08-24 08:03:29.254492,Comment in Note,7,172.18.0.1,,,,damn right! every single day
+2020-08-24 08:03:36.007517,Open Note,7,172.18.0.1,37,,,
+2020-08-24 08:03:41.703869,Open commenting in note,7,172.18.0.1,37,,,
+2020-08-24 08:03:45.910707,Comment in Note,7,172.18.0.1,,,,monday
+2020-08-24 08:03:55.004587,Open Note,7,172.18.0.1,46,,,
+2020-08-24 08:03:57.918349,Open commenting in note,7,172.18.0.1,46,,,
+2020-08-24 08:04:03.392210,Comment in Note,7,172.18.0.1,,,,Wednesday
+2020-08-24 08:04:08.482142,Open Note,7,172.18.0.1,49,,,
+2020-08-24 08:04:09.639168,Open commenting in note,7,172.18.0.1,49,,,
+2020-08-24 08:04:13.879030,Comment in Note,7,172.18.0.1,,,,friday
+2020-08-24 08:04:19.358055,Open Note,7,172.18.0.1,50,,,
+2020-08-24 08:04:21.301093,Open commenting in note,7,172.18.0.1,50,,,
+2020-08-24 08:04:26.071318,Comment in Note,7,172.18.0.1,,,,Tuesday
+2020-08-24 08:04:36.815155,Open Note,7,172.18.0.1,47,,,
+2020-08-24 08:04:38.425983,Open commenting in note,7,172.18.0.1,47,,,
+2020-08-24 08:04:42.879574,Comment in Note,7,172.18.0.1,,,,monday
+2020-08-24 08:04:47.287976,Open Note,7,172.18.0.1,48,,,
+2020-08-24 08:04:48.734514,Open commenting in note,7,172.18.0.1,48,,,
+2020-08-24 08:04:54.662436,Comment in Note,7,172.18.0.1,,,,Wednesday
+2020-08-24 08:04:59.366738,Open Note,7,172.18.0.1,53,,,
+2020-08-24 08:05:00.980931,Open commenting in note,7,172.18.0.1,53,,,
+2020-08-24 08:05:08.678862,Comment in Note,7,172.18.0.1,,,,Thursday 
+2020-08-24 08:05:22.745670,Open Note,7,172.18.0.1,51,,,
+2020-08-24 08:05:25.399380,Open commenting in note,7,172.18.0.1,51,,,
+2020-08-24 08:05:32.154221,Comment in Note,7,172.18.0.1,,,,Saturday 
+2020-08-24 08:05:41.088106,Move Note,7,172.18.0.1,30,35.0,,
+2020-08-24 08:05:50.703862,Open Note,7,172.18.0.1,50,,,
+2020-08-24 08:05:53.843045,Open commenting in note,7,172.18.0.1,50,,,
+2020-08-24 08:06:46.855381,Attach file,7,172.18.0.1,,,,admin doc attached
+2020-08-24 08:07:00.893771,Search with Tag,7,172.18.0.1,,,,work
+2020-08-24 08:07:03.324808,Open Note,7,172.18.0.1,49,,,
+2020-08-24 08:07:05.583136,Open commenting in note,7,172.18.0.1,49,,,
+2020-08-24 08:07:14.425342,Attach file,7,172.18.0.1,,,,a
+2020-08-24 08:07:22.637658,Open commenting in note,7,172.18.0.1,51,,,
+2020-08-24 08:07:31.305152,Attach file,7,172.18.0.1,,,,a
+2020-08-24 08:07:34.019428,Search with Tag,7,172.18.0.1,,,,work
+2020-08-24 08:07:42.318178,Move Note,7,172.18.0.1,40,35.0,,
+2020-08-24 08:08:06.266573,Search with Tag,7,172.18.0.1,,,,other
+2020-08-24 08:08:20.345572,Create Note,7,172.18.0.1,,,,other 5
+2020-08-24 08:08:24.410236,Delete Note,7,172.18.0.1,43,,,
+2020-08-24 08:08:28.085606,Delete Note,7,172.18.0.1,35,,,
+2020-08-24 08:08:31.729005,Delete Note,7,172.18.0.1,52,,,
+2020-08-24 08:08:35.466795,Delete Note,7,172.18.0.1,42,,,
+2020-08-24 08:08:39.625754,Delete Note,7,172.18.0.1,41,,,
+2020-08-24 08:08:51.819861,Create Note,7,172.18.0.1,,,,other 5
+2020-08-24 08:08:57.271282,Delete Note,7,172.18.0.1,56,,,
+2020-08-24 08:09:00.455779,Move Note,7,172.18.0.1,45,35.0,,
+2020-08-24 08:09:13.903530,Search with Note,7,172.18.0.1,,,,hello
+2020-08-24 08:09:22.359657,Create Note,7,172.18.0.1,,,,hello 3
+2020-08-24 08:09:29.835603,Move Note,7,172.18.0.1,38,35.0,,
+2020-08-24 08:09:34.234671,Search with Note,7,172.18.0.1,,,,old
+2020-08-24 08:09:40.961787,Search with both Tag and Note,7,172.18.0.1,,,,"old, depre"
+2020-08-24 08:09:43.102279,Open Note,7,172.18.0.1,34,,,
+2020-08-24 08:09:51.752534,Delete Note,7,172.18.0.1,34,,,
+2020-08-24 08:09:51.793678,Search with both Tag and Note,7,172.18.0.1,,,,"old, depre"
+2020-08-24 08:09:54.486170,Search with Tag,7,172.18.0.1,,,,depre
+2020-08-24 08:09:59.568285,Delete Note,7,172.18.0.1,36,,,
+2020-08-24 08:10:06.501933,Move Note,7,172.18.0.1,44,35.0,,
+2020-05-11 22:59:06.617589,Delete Note,5,192.168.1.10,22,,,
+2019-09-20 17:14:21.380753,Delete Note,2,172.19.0.1,12,,,
+2019-09-20 17:14:24.490018,Delete Note,2,172.19.0.1,22,,,
+2019-09-20 17:14:37.952190,Delete Note,2,172.19.0.1,6,,,
+2019-09-20 17:14:40.993434,Delete Note,2,172.19.0.1,5,,,
+2019-09-20 17:14:44.131157,Delete Note,2,172.19.0.1,4,,,
+2019-09-20 17:14:46.799496,Delete Note,2,172.19.0.1,10,,,
+2019-09-20 17:14:50.056054,Delete Note,2,172.19.0.1,11,,,
+2019-09-20 17:14:53.043253,Delete Note,2,172.19.0.1,8,,,
+2019-09-20 17:14:56.004146,Delete Note,2,172.19.0.1,7,,,
+2019-09-20 17:14:59.809845,Delete Note,2,172.19.0.1,9,,,
+2019-09-20 17:15:04.402328,Delete Note,2,172.19.0.1,2,,,
+2019-09-20 17:15:10.534792,Delete Note,2,172.19.0.1,3,,,
+2019-09-20 17:15:14.134532,Delete Note,2,172.19.0.1,1,,,
+2019-09-20 17:15:17.914091,Delete Stage,2,172.19.0.1,6,,,
+2019-09-20 17:15:42.661224,Create Note,2,172.19.0.1,,,,new note
+2019-09-20 17:15:58.157602,Change Note Colour,2,172.19.0.1,23,,,
+2019-09-20 17:16:00.729200,Open Note,2,172.19.0.1,23,,,
+2019-09-20 17:16:19.003877,Create new tag,2,172.19.0.1,,,,paper
+2019-09-20 17:16:58.325697,Edit Note,2,172.19.0.1,23,,,<p>finish writing the journal paper<br></p>
+2019-09-20 17:17:41.633638,Create Note,2,172.19.0.1,,,,finish the odoo experiment
+2019-09-20 17:17:43.281503,Open Note,2,172.19.0.1,24,,,
+2019-09-20 17:17:55.808171,Create new tag,2,172.19.0.1,,,,work
+2019-09-20 17:18:03.355822,Change Tag Colour,2,172.19.0.1,4,,,
+2019-09-20 17:18:08.304570,Add tag,2,172.19.0.1,[8],,,
+2019-09-20 17:18:20.220559,Add tag,2,172.19.0.1,"[7, 8]",,,
+2019-09-20 17:18:32.799355,Change Note Colour,2,172.19.0.1,24,,,
+2019-09-20 17:18:36.969035,Change Note Colour,2,172.19.0.1,24,,,
+2019-09-20 17:19:10.081516,Create Note,2,172.19.0.1,,,,ICACON conference paper
+2019-09-20 17:19:11.522260,Open Note,2,172.19.0.1,25,,,
+2019-09-20 17:19:28.516514,Add tag,2,172.19.0.1,"[8, 7]",,,
+2019-09-20 17:19:39.995391,Move Note,2,172.19.0.1,23,2.0,,
+2019-09-20 17:19:51.183997,Open Note,2,172.19.0.1,24,,,
+2019-09-20 17:19:55.877314,Move Note,2,172.19.0.1,24,1.0,,
+2019-09-20 17:20:09.970333,Change Note Colour,2,172.19.0.1,25,,,
+2019-09-20 17:20:57.041664,Open Note,2,172.19.0.1,24,,,
+2019-09-20 17:21:36.020333,Create Note,2,172.19.0.1,,,,poster for lero summit
+2019-09-20 17:21:37.885901,Open Note,2,172.19.0.1,26,,,
+2019-09-20 17:21:57.962149,Open commenting in note,2,172.19.0.1,26,,,
+2019-09-20 17:22:11.227653,Attach file,2,172.19.0.1,,,,
+2019-09-20 17:22:13.295654,Open commenting in note,2,172.19.0.1,26,,,
+2019-09-20 17:22:37.418938,Comment in Note,2,172.19.0.1,,,,logo file attached in the comment
+2019-09-20 17:22:51.734477,Add tag,2,172.19.0.1,[8],,,
+2019-09-20 17:23:08.574778,Change Note Colour,2,172.19.0.1,26,,,
+2019-09-20 17:23:09.675181,Open Note,2,172.19.0.1,26,,,
+2019-09-20 17:23:31.842861,Edit Note,2,172.19.0.1,26,,,"<p><img src=""/web/image/336/UA%20logo.png"" style=""width: 25%;"" class=""pull-left"">poster for lero summit</p>"
+2019-09-20 17:24:55.280491,Open Note,2,172.19.0.1,24,,,
+2019-09-20 17:25:11.023738,Invite and Add follower,2,172.19.0.1,24,,"[6, False, [13]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: finish the odoo experiment</p></div>"
+2019-09-20 17:25:30.080439,Create Note,2,172.19.0.1,,,,test note
+2019-09-20 17:25:41.070345,Delete Note,2,172.19.0.1,27,,,
+2019-09-20 17:25:48.043384,Open Note,2,172.19.0.1,24,,,
+2019-09-20 17:26:03.395566,Remove follower from note,2,172.19.0.1,24,,,
+2019-09-20 17:26:12.319129,Move Note,2,172.19.0.1,26,2.0,,
+2019-09-20 17:26:23.361651,Move Note,2,172.19.0.1,24,2.0,,
+2019-09-20 17:26:34.532115,Move Note,2,172.19.0.1,26,3.0,,
+2019-09-20 17:27:05.389635,Chat with other users,2,172.19.0.1,2,,,hi blue
+2019-09-20 17:27:35.314734,Create Channel,2,172.19.0.1,,,,some channel
+2019-09-20 17:28:24.049861,Invite user to channel,2,172.19.0.1,,,"[13, 7, 10, 14, 8, 11, 15, 9, 12]",
+2019-09-20 17:29:09.456632,Reference channel in chat,2,172.19.0.1,3,,,"hi guys, check out <a href=""http://localhost:8010/web#model=mail.channel&amp;id=1"" class=""o_channel_redirect"" data-oe-id=""1"" data-oe-model=""mail.channel"" target=""_blank"">#general</a> channel"
+2019-09-20 17:29:35.818727,Chat with other users,2,172.19.0.1,3,,,"hi @Administrator, add many people to the channel"
+2019-09-20 17:30:02.895556,Mention user and reference channel in chat,2,172.19.0.1,3,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> check out <a href=""http://localhost:8010/web#model=mail.channel&amp;id=1"" class=""o_channel_redirect"" data-oe-id=""1"" data-oe-model=""mail.channel"" target=""_blank"">#general</a> channel"
+2019-09-20 17:31:29.717827,Unfollow from a Channel,2,172.19.0.1,3,,,
+2019-09-20 17:31:48.643584,Create Channel,2,172.19.0.1,,,,test channel
+2019-09-20 17:32:58.314999,Mention user in chat,2,172.19.0.1,2,,[13],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=13"" class=""o_mail_redirect"" data-oe-id=""13"" data-oe-model=""res.partner"" target=""_blank"">@odoo10bluea</a> I am mentioning the user ""blue"" in this chat"
+2019-09-20 17:33:13.467463,Mention user and reference channel in chat,2,172.19.0.1,2,,[13],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=13"" class=""o_mail_redirect"" data-oe-id=""13"" data-oe-model=""res.partner"" target=""_blank"">@odoo10bluea</a> check out <a href=""http://localhost:8010/web#model=mail.channel&amp;id=1"" class=""o_channel_redirect"" data-oe-id=""1"" data-oe-model=""mail.channel"" target=""_blank"">#general</a> "
+2019-09-20 17:33:25.145039,Move Note,2,172.19.0.1,24,1.0,,
+2019-09-20 17:33:40.575290,Create Note,2,172.19.0.1,,,,Buy Milk
+2019-09-20 17:33:41.979737,Open Note,2,172.19.0.1,28,,,
+2019-09-20 17:33:48.850317,Create new tag,2,172.19.0.1,,,,home
+2019-09-20 17:33:51.292049,Change Tag Colour,2,172.19.0.1,1,,,
+2019-09-20 17:33:54.285014,Add tag,2,172.19.0.1,[9],,,
+2019-09-20 17:34:04.420607,Change Note Colour,2,172.19.0.1,28,,,
+2019-09-20 17:34:22.028634,Open Note,2,172.19.0.1,28,,,
+2019-09-20 17:34:39.883829,Edit Note,2,172.19.0.1,28,,,<p>Buy Milk and eggs<br></p>
+2019-09-20 17:34:43.023562,Open Note,2,172.19.0.1,28,,,
+2019-09-20 17:34:48.094132,Edit Note,2,172.19.0.1,28,,,<p>Buy milk and eggs<br></p>
+2019-09-20 17:35:18.410333,Create Note,2,172.19.0.1,,,,test Note 1
+2019-09-20 17:35:59.958514,Create Note,2,172.19.0.1,,,,test Note 2
+2019-09-20 17:36:12.358246,Create Note,2,172.19.0.1,,,,test Note 3
+2019-09-20 17:36:38.782768,Search with Tag,2,172.19.0.1,,,,work
+2019-09-20 17:36:46.499850,Search with Tag,2,172.19.0.1,,,,home
+2019-09-20 17:36:57.445287,Search with Tag,2,172.19.0.1,,,,paper
+2019-09-20 17:37:06.755081,Search with Note,2,172.19.0.1,,,,poster
+2019-09-20 17:37:16.390421,Search with Note,2,172.19.0.1,,,,conference
+2019-09-20 17:37:30.885006,Search with Note,2,172.19.0.1,,,,experiment
+2019-09-28 16:36:56.345893,Create Stage,4,172.19.0.1,new1,,,
+2019-09-28 16:37:02.087894,Create Note,4,172.19.0.1,,,,njjj
+2019-09-28 16:37:06.239047,Open Note,4,172.19.0.1,37,,,
+2019-09-28 16:37:37.733076,Invite and Add follower,4,172.19.0.1,37,,"[6, False, [14, 7]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: njjj</p></div>"
+2019-09-28 16:37:49.168257,Open commenting in note,4,172.19.0.1,37,,,
+2019-09-28 16:38:01.540601,Attach file,4,172.19.0.1,,,,
+2019-09-28 16:38:09.280477,Add tag,4,172.19.0.1,[2],,,
+2019-09-28 16:38:28.117305,Change Note Colour,4,172.19.0.1,37,,,
+2019-09-28 16:38:38.883890,Change Note Colour,4,172.19.0.1,37,,,
+2019-09-28 16:38:42.359802,Move Note,4,172.19.0.1,37,2.0,,
+2019-09-28 16:38:44.384750,Move Note,4,172.19.0.1,33,3.0,,
+2019-09-28 16:38:46.463377,Move Note,4,172.19.0.1,36,34.0,,
+2019-09-28 16:38:53.086503,Change Note Colour,4,172.19.0.1,36,,,
+2019-09-28 16:38:57.741716,Change Note Colour,4,172.19.0.1,32,,,
+2019-09-28 16:39:00.149278,Move Note,4,172.19.0.1,32,3.0,,
+2019-09-28 16:39:02.357502,Move Note,4,172.19.0.1,33,1.0,,
+2019-09-28 16:39:03.839027,Open Note,4,172.19.0.1,33,,,
+2019-09-28 16:39:12.364683,Open commenting in note,4,172.19.0.1,33,,,
+2019-09-28 16:39:14.899665,Add tag,4,172.19.0.1,"[13, 6]",,,
+2019-09-28 16:39:25.229362,Open Note,4,172.19.0.1,37,,,
+2019-09-28 16:39:36.431554,Edit Note,4,172.19.0.1,37,,,<p>grocery shopping&nbsp;</p>
+2019-09-28 16:39:50.015184,Create Note,4,172.19.0.1,,,,car repair 
+2019-09-28 16:39:54.916043,Change Note Colour,4,172.19.0.1,38,,,
+2019-09-28 16:40:02.380377,Move Note,4,172.19.0.1,38,1.0,,
+2019-09-28 16:40:05.824700,Move Note,4,172.19.0.1,37,1.0,,
+2019-09-28 16:40:30.892252,Create Channel,4,172.19.0.1,,,,new123
+2019-09-28 16:40:52.249226,Invite user to channel,4,172.19.0.1,,,"[10, 12, 7]",
+2019-09-28 16:41:22.212910,Mention user in chat,4,172.19.0.1,11,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> ?? "
+2019-09-28 16:41:40.628482,Reference channel in chat,4,172.19.0.1,11,,,"<a href=""http://localhost:8010/web#model=mail.channel&amp;id=10"" class=""o_channel_redirect"" data-oe-id=""10"" data-oe-model=""mail.channel"" target=""_blank"">#new</a>  12345"
+2019-09-28 16:42:08.433767,Unfollow from a Channel,4,172.19.0.1,10,,,
+2019-09-28 16:43:03.437172,Move Note,4,172.19.0.1,36,2.0,,
+2019-09-28 16:43:30.971988,Delete Stage,4,172.19.0.1,34,,,
+2019-09-28 16:43:45.991101,Create Stage,4,172.19.0.1,rename,,,
+2019-09-28 16:44:00.472339,Rename Stage,4,172.19.0.1,35,,,Finished
+2019-09-28 16:44:34.668424,Create Note,4,172.19.0.1,,,,False
+2019-09-28 16:44:43.386541,Open Note,4,172.19.0.1,39,,,
+2019-09-28 16:44:51.471106,Edit Note,4,172.19.0.1,39,,,<p>testing</p>
+2019-09-28 16:44:57.560987,Move Note,4,172.19.0.1,39,35.0,,
+2019-09-28 16:45:07.653388,Search with Note,4,172.19.0.1,,,,finished
+2019-09-28 16:45:18.952675,Search with Tag,4,172.19.0.1,,,,develop
+2019-09-28 16:45:30.830561,Search with Tag,4,172.19.0.1,,,,"develop, paper"
+2019-09-28 16:45:39.206551,Open Note,4,172.19.0.1,38,,,
+2019-09-28 16:45:46.017755,Add tag,4,172.19.0.1,[3],,,
+2019-09-28 16:45:54.342305,Search with Note,4,172.19.0.1,,,,enhancement
+2019-09-28 16:45:58.741538,Open Note,4,172.19.0.1,38,,,
+2019-09-28 16:46:02.708196,Add tag,4,172.19.0.1,"[3, 2]",,,
+2019-09-28 16:46:15.095461,Search with Note,4,172.19.0.1,,,,bug
+2019-09-28 16:46:19.132706,Search with Tag,4,172.19.0.1,,,,bug
+2019-09-28 16:46:50.277013,Open Note,4,172.19.0.1,37,,,
+2019-09-28 16:46:56.772309,Open Note,4,172.19.0.1,36,,,
+2019-09-28 16:46:59.966005,Open Note,4,172.19.0.1,36,,,
+2019-09-28 16:47:05.254887,Add tag,4,172.19.0.1,[6],,,
+2019-09-28 16:47:09.129943,Open Note,4,172.19.0.1,39,,,
+2019-09-28 16:47:24.116220,Create new tag,4,172.19.0.1,,,,testing_123
+2019-09-28 16:47:26.766713,Add tag,4,172.19.0.1,"[5, 7, 15]",,,
+2019-09-28 16:47:40.633305,Add tag,4,172.19.0.1,"[6, 15]",,,
+2019-09-28 16:47:45.389735,Open Note,4,172.19.0.1,33,,,
+2019-09-28 16:47:53.433309,Add tag,4,172.19.0.1,"[6, 13, 15]",,,
+2019-09-28 16:47:56.473777,Open Note,4,172.19.0.1,37,,,
+2019-09-28 16:48:05.663690,Edit Note,4,172.19.0.1,37,,,<p>grocery shopping&nbsp;</p>
+2019-09-28 16:48:12.484792,Search with Note,4,172.19.0.1,,,,testing
+2019-09-28 16:48:21.337213,Search with Note,4,172.19.0.1,,,,testing_123
+2019-09-28 16:48:27.464224,Search with Tag,4,172.19.0.1,,,,testing
+2019-09-28 16:48:39.231844,Search with Tag,4,172.19.0.1,,,,testing_123
+2019-09-28 16:48:43.196326,Open Note,4,172.19.0.1,36,,,
+2019-09-28 16:48:46.691100,Search with Tag,4,172.19.0.1,,,,testing_123
+2019-09-28 16:48:50.437847,Open Note,4,172.19.0.1,33,,,
+2019-09-28 16:48:57.095964,Search with Tag,4,172.19.0.1,,,,testing_123
+2019-09-28 16:49:09.587664,Delete Stage,4,172.19.0.1,3,,,
+2019-09-28 16:49:27.872591,Rename Stage,4,172.19.0.1,35,,,Finishish
+2019-09-28 16:49:27.945331,Search with Tag,4,172.19.0.1,,,,testing_123
+2019-09-28 16:49:36.953020,Open Note,4,172.19.0.1,36,,,
+2019-09-28 16:49:39.964266,Search with Tag,4,172.19.0.1,,,,testing_123
+2019-09-28 16:49:45.949610,Search with Note,4,172.19.0.1,,,,note
+2019-09-28 16:49:55.369377,Move Note,4,172.19.0.1,32,2.0,,
+2019-09-28 16:49:59.901378,Search with Note,4,172.19.0.1,,,,shopping
+2019-09-28 16:50:08.352403,Open Note,4,172.19.0.1,37,,,
+2019-09-28 16:50:13.495282,Search with Note,4,172.19.0.1,,,,shopping
+2019-09-28 16:50:19.506625,Search with both Tag and Note,4,172.19.0.1,,,,"shopping, testing"
+2019-09-28 16:50:24.722144,Search with Note,4,172.19.0.1,,,,shopping
+2019-09-28 16:50:30.445829,Open Note,4,172.19.0.1,38,,,
+2019-09-28 16:50:42.711044,Add tag,4,172.19.0.1,"[2, 3, 15]",,,
+2019-09-28 16:50:46.206257,Open Note,4,172.19.0.1,37,,,
+2019-09-28 16:50:50.506020,Open Note,4,172.19.0.1,38,,,
+2019-09-28 16:50:55.086663,Open Note,4,172.19.0.1,38,,,
+2019-09-28 16:51:04.819989,Edit Note,4,172.19.0.1,38,,,<p>car shopping</p>
+2019-09-28 16:51:11.270341,Search with Note,4,172.19.0.1,,,,shopping
+2019-09-28 16:51:19.393278,Search with both Tag and Note,4,172.19.0.1,,,,"shopping, enhancement"
+2019-09-28 16:51:23.067831,Search with Note,4,172.19.0.1,,,,shopping
+2019-09-28 16:51:27.439838,Open Note,4,172.19.0.1,36,,,
+2019-09-28 16:51:45.348704,Edit Note,4,172.19.0.1,36,,,<p>some shopping</p>
+2019-09-28 16:51:52.331405,Search with Note,4,172.19.0.1,,,,shopping
+2019-09-28 16:52:00.572658,Search with both Tag and Note,4,172.19.0.1,,,,"shopping, enhancement"
+2019-09-28 16:52:12.311895,Open Note,4,172.19.0.1,38,,,
+2019-09-28 16:52:23.345452,Open commenting in note,4,172.19.0.1,38,,,
+2019-09-28 16:52:34.860127,Comment in Note,4,172.19.0.1,,,,delayed by a month<br>
+2019-09-28 16:52:57.463153,Search with both Tag and Note,4,172.19.0.1,,,,"shopping, enhancement"
+2019-09-28 16:53:17.583062,Mention user in chat,4,172.19.0.1,9,,[9],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=9"" class=""o_mail_redirect"" data-oe-id=""9"" data-oe-model=""res.partner"" target=""_blank"">@odoo10purplec</a> ? "
+2019-09-28 16:53:30.957793,Reference channel in chat,4,172.19.0.1,9,,,"<a href=""http://localhost:8010/web#model=mail.channel&amp;id=5"" class=""o_channel_redirect"" data-oe-id=""5"" data-oe-model=""mail.channel"" target=""_blank"">#patents</a>  1234"
+2019-09-28 16:53:41.582329,Mention user in chat,4,172.19.0.1,9,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> mee"
+2019-09-28 16:54:03.093181,Create Channel,4,172.19.0.1,,,,test_phase
+2019-09-28 16:54:17.268342,Invite user to channel,4,172.19.0.1,,,"[15, 9, 12]",
+2019-09-28 16:55:24.565124,Reference channel in chat,4,172.19.0.1,12,,,"<a href=""http://localhost:8010/web#model=mail.channel&amp;id=11"" class=""o_channel_redirect"" data-oe-id=""11"" data-oe-model=""mail.channel"" target=""_blank"">#new123</a>  delete it "
+2019-09-28 16:55:29.823593,Mention user in chat,4,172.19.0.1,12,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a>  kkkk"
+2019-09-28 16:56:00.217195,Unfollow from a Channel,4,172.19.0.1,11,,,
+2019-09-28 16:57:17.776524,Open Note,4,172.19.0.1,32,,,
+2019-09-28 16:57:31.526892,Invite and Add follower,4,172.19.0.1,32,,"[6, False, [1]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: test note 1</p></div>"
+2019-09-28 16:57:41.590879,Open Note,4,172.19.0.1,32,,,
+2019-09-28 16:57:45.724655,Open Note,4,172.19.0.1,32,,,
+2019-09-28 16:58:01.398076,Open Note,4,172.19.0.1,32,,,
+2019-09-28 16:58:08.117046,Remove follower from note,4,172.19.0.1,32,,,
+2019-09-28 16:58:33.450041,Open Note,4,172.19.0.1,34,,,
+2019-09-28 16:58:40.328153,Change Tag Colour,4,172.19.0.1,7,,,
+2019-09-28 16:58:43.913418,Add tag,4,172.19.0.1,[6],,,
+2019-08-28 22:05:17.811323,Create Stage,2,<property object at 0x7fcc47683c00>,test,,,
+2019-08-28 21:36:27.071457,Delete Stage,2,,35,,,
+2019-08-28 09:58:57.896627,Move Note,2,,9,6.0,,
+2019-08-28 09:58:59.691107,Move Note,2,,9,3.0,,
+2019-08-28 09:59:01.014947,Open Note,2,,9,,,
+2019-08-28 10:19:15.777285,Move Note,2,,9,1.0,,
+2019-08-28 10:19:23.225240,Move Note,2,,9,3.0,,
+2019-08-28 10:26:18.369181,Open Note,2,,22,,,
+2019-08-28 10:26:30.002860,Delete Note,2,,22,,,
+2019-08-28 10:26:38.587123,Open Note,2,,12,,,
+2019-08-28 10:26:43.740320,Open Note,2,,12,,,
+2019-08-28 10:26:52.124814,Edit Note,2,,12,,,<p>Test note</p><p><br></p><p>something</p>
+2019-08-28 10:27:16.045051,Open Note,2,,12,,,
+2019-08-28 10:27:27.760664,Delete Note,2,,12,,,
+2019-08-28 14:45:09.920934,Create Stage,2,172.18.0.3,test stage,,,
+2019-08-28 14:48:08.474586,Delete Stage,2,,34,,,
+2019-08-28 14:48:20.769836,Create Stage,2,172.18.0.3,Some stage,,,
+2019-08-28 22:05:17.811323,Create Stage,2,<property object at 0x7fcc47683c00>,test,,,
+2019-08-28 21:36:27.071457,Delete Stage,2,,35,,,
+2019-08-28 09:58:57.896627,Move Note,2,,9,6.0,,
+2019-08-28 09:58:59.691107,Move Note,2,,9,3.0,,
+2019-08-28 09:59:01.014947,Open Note,2,,9,,,
+2019-08-28 10:19:15.777285,Move Note,2,,9,1.0,,
+2019-08-28 10:19:23.225240,Move Note,2,,9,3.0,,
+2019-08-28 10:26:18.369181,Open Note,2,,22,,,
+2019-08-28 10:26:30.002860,Delete Note,2,,22,,,
+2019-08-28 10:26:38.587123,Open Note,2,,12,,,
+2019-08-28 10:26:43.740320,Open Note,2,,12,,,
+2019-08-28 10:26:52.124814,Edit Note,2,,12,,,<p>Test note</p><p><br></p><p>something</p>
+2019-08-28 10:27:16.045051,Open Note,2,,12,,,
+2019-08-28 10:27:27.760664,Delete Note,2,,12,,,
+2019-08-28 14:45:09.920934,Create Stage,2,172.18.0.3,test stage,,,
+2019-08-28 14:48:08.474586,Delete Stage,2,,34,,,
+2019-08-28 14:48:20.769836,Create Stage,2,172.18.0.3,Some stage,,,
+2020-05-22 17:57:21.061229,Create Stage,6,172.20.0.1,Temporary,,,
+2020-05-22 17:57:28.984051,Move Note,6,172.20.0.1,23,35.0,,
+2020-05-22 17:58:20.902038,Create Note,6,172.20.0.1,,,,<p>write academic paper for some conference<br></p>
+2020-05-22 17:58:32.336196,Move Note,6,172.20.0.1,44,1.0,,
+2020-05-22 17:59:05.986032,Create Note,6,172.20.0.1,,,,review paper 2
+2020-05-22 18:00:03.102048,Create Note,6,172.20.0.1,,,,call car company for booking service
+2020-05-22 18:02:38.267819,Create Note,6,172.20.0.1,,,,make an appointment with supervisor
+2020-05-22 18:02:44.044461,Move Note,6,172.20.0.1,47,1.0,,
+2020-05-22 18:02:57.870234,Create Note,6,172.20.0.1,,,,meeting with colleague
+2020-05-22 18:04:01.248634,Create Note,6,172.20.0.1,,,,cancel subscription for spotify
+2020-05-22 18:04:38.501784,Create Note,6,172.20.0.1,,,,send mail to supervisor
+2020-05-22 18:04:45.346974,Move Note,6,172.20.0.1,24,35.0,,
+2020-05-22 18:05:13.659516,Move Note,6,172.20.0.1,50,2.0,,
+2020-05-22 18:05:23.078815,Move Note,6,172.20.0.1,25,35.0,,
+2020-05-22 18:05:36.380124,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:05:49.957501,Change Note Colour,6,172.20.0.1,44,,,
+2020-05-22 18:05:53.312419,Change Note Colour,6,172.20.0.1,44,,,
+2020-05-22 18:05:57.123078,Change Note Colour,6,172.20.0.1,47,,,
+2020-05-22 18:06:10.394372,Open Note,6,172.20.0.1,26,,,
+2020-05-22 18:06:35.017668,Change Note Colour,6,172.20.0.1,46,,,
+2020-05-22 18:06:44.285541,Change Note Colour,6,172.20.0.1,45,,,
+2020-05-22 18:06:47.922527,Change Note Colour,6,172.20.0.1,50,,,
+2020-05-22 18:06:52.726335,Change Note Colour,6,172.20.0.1,49,,,
+2020-05-22 18:06:57.457969,Change Note Colour,6,172.20.0.1,48,,,
+2020-05-22 18:07:03.491921,Move Note,6,172.20.0.1,26,35.0,,
+2020-05-22 18:07:17.404011,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:07:31.184103,Create new tag,6,172.20.0.1,,,,work
+2020-05-22 18:07:54.589549,Open Note,6,172.20.0.1,27,,,
+2020-05-22 18:08:04.232852,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:08:21.673599,Change Tag Colour,6,172.20.0.1,5,,,
+2020-05-22 18:08:23.672819,Add tag,6,172.20.0.1,[12],,,
+2020-05-22 18:08:40.497476,Add tag,6,172.20.0.1,[12],,,
+2020-05-22 18:08:43.965760,Open Note,6,172.20.0.1,46,,,
+2020-05-22 18:08:51.045929,Create new tag,6,172.20.0.1,,,,personal
+2020-05-22 18:08:54.056127,Change Tag Colour,6,172.20.0.1,4,,,
+2020-05-22 18:08:56.519633,Add tag,6,172.20.0.1,[13],,,
+2020-05-22 18:09:20.467296,Add tag,6,172.20.0.1,[12],,,
+2020-05-22 18:09:24.892204,Open Note,6,172.20.0.1,50,,,
+2020-05-22 18:09:31.666790,Add tag,6,172.20.0.1,[12],,,
+2020-05-22 18:09:38.826282,Open Note,6,172.20.0.1,48,,,
+2020-05-22 18:09:49.260521,Add tag,6,172.20.0.1,[12],,,
+2020-05-22 18:09:56.135451,Open Note,6,172.20.0.1,49,,,
+2020-05-22 18:10:03.282863,Add tag,6,172.20.0.1,[13],,,
+2020-05-22 18:10:21.335355,Move Note,6,172.20.0.1,27,35.0,,
+2020-05-22 18:10:33.952930,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:10:53.820431,Create Note,6,172.20.0.1,,,,personal 5
+2020-05-22 18:11:10.905176,Search with Tag,6,172.20.0.1,,,,personal
+2020-05-22 18:11:33.181794,Create Note,6,172.20.0.1,,,,personal 2
+2020-05-22 18:11:41.746750,Open Note,6,172.20.0.1,51,,,
+2020-05-22 18:11:47.500302,Edit Note,6,172.20.0.1,51,,,<p>work 5</p>
+2020-05-22 18:12:05.664023,Move Note,6,172.20.0.1,39,35.0,,
+2020-05-22 18:12:22.503764,Open Note,6,172.20.0.1,37,,,
+2020-05-22 18:12:28.386156,Edit Note,6,172.20.0.1,37,,,<p>review the paper</p>
+2020-05-22 18:12:33.062431,Open Note,6,172.20.0.1,32,,,
+2020-05-22 18:12:39.475461,Edit Note,6,172.20.0.1,32,,,<p>cook dinner</p><p><br></p><p>Hello</p>
+2020-05-22 18:12:47.679049,Open Note,6,172.20.0.1,35,,,
+2020-05-22 18:12:53.827166,Edit Note,6,172.20.0.1,35,,,<p>this is an old note</p>
+2020-05-22 18:13:09.633837,Move Note,6,172.20.0.1,28,35.0,,
+2020-05-22 18:13:19.184755,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:13:32.244034,Invite and Add follower,6,172.20.0.1,44,,"[6, False, [17]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: write academic paper for some conference</p></div>"
+2020-05-22 18:13:45.122683,Open Note,6,172.20.0.1,47,,,
+2020-05-22 18:13:57.377475,Invite and Add follower,6,172.20.0.1,47,,"[6, False, [19]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: make an appointment with supervisor</p></div>"
+2020-05-22 18:14:06.627279,Open Note,6,172.20.0.1,50,,,
+2020-05-22 18:14:21.512993,Invite and Add follower,6,172.20.0.1,50,,"[6, False, [19]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: send mail to supervisor</p></div>"
+2020-05-22 18:14:47.862664,Move Note,6,172.20.0.1,31,35.0,,
+2020-05-22 18:14:58.135991,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:15:00.816851,Open commenting in note,6,172.20.0.1,44,,,
+2020-05-22 18:15:05.946962,Comment in Note,6,172.20.0.1,,,,monday
+2020-05-22 18:15:13.430606,Open Note,6,172.20.0.1,47,,,
+2020-05-22 18:15:15.407419,Open commenting in note,6,172.20.0.1,47,,,
+2020-05-22 18:15:20.876308,Comment in Note,6,172.20.0.1,,,,tuesday
+2020-05-22 18:15:28.851487,Open Note,6,172.20.0.1,45,,,
+2020-05-22 18:15:31.071229,Open commenting in note,6,172.20.0.1,45,,,
+2020-05-22 18:15:37.115666,Comment in Note,6,172.20.0.1,,,,wednesday
+2020-05-22 18:15:43.868064,Open Note,6,172.20.0.1,50,,,
+2020-05-22 18:15:45.933763,Open commenting in note,6,172.20.0.1,50,,,
+2020-05-22 18:15:51.415021,Comment in Note,6,172.20.0.1,,,,thursday
+2020-05-22 18:16:12.189516,Open Note,6,172.20.0.1,48,,,
+2020-05-22 18:16:14.409169,Open commenting in note,6,172.20.0.1,48,,,
+2020-05-22 18:16:19.360680,Comment in Note,6,172.20.0.1,,,,friday
+2020-05-22 18:16:27.130620,Open Note,6,172.20.0.1,49,,,
+2020-05-22 18:16:29.320413,Open commenting in note,6,172.20.0.1,49,,,
+2020-05-22 18:16:34.473509,Comment in Note,6,172.20.0.1,,,,saturday
+2020-05-22 18:16:41.112309,Move Note,6,172.20.0.1,30,35.0,,
+2020-05-22 18:17:26.286538,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:17:29.409001,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:17:32.835949,Open commenting in note,6,172.20.0.1,44,,,
+2020-05-22 18:17:47.971546,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:17:50.481020,Open Note,6,172.20.0.1,47,,,
+2020-05-22 18:17:52.305660,Open commenting in note,6,172.20.0.1,47,,,
+2020-05-22 18:18:02.553267,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:18:04.560720,Open Note,6,172.20.0.1,45,,,
+2020-05-22 18:18:06.430830,Open commenting in note,6,172.20.0.1,45,,,
+2020-05-22 18:18:18.354538,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:18:19.997572,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:18:21.848374,Open commenting in note,6,172.20.0.1,44,,,
+2020-05-22 18:18:33.632246,Attach file,6,172.20.0.1,,,,file
+2020-05-22 18:18:42.510621,Open commenting in note,6,172.20.0.1,47,,,
+2020-05-22 18:18:51.832509,Attach file,6,172.20.0.1,,,,dummy
+2020-05-22 18:18:59.354599,Open commenting in note,6,172.20.0.1,45,,,
+2020-05-22 18:19:11.210104,Attach file,6,172.20.0.1,,,,dummy
+2020-05-22 18:19:19.157944,Open commenting in note,6,172.20.0.1,50,,,
+2020-05-22 18:19:37.569957,Attach file,6,172.20.0.1,,,,dummy
+2020-05-22 18:19:43.382166,Open commenting in note,6,172.20.0.1,48,,,
+2020-05-22 18:19:53.280976,Attach file,6,172.20.0.1,,,,file
+2020-05-22 18:19:56.867837,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:20:02.555377,Move Note,6,172.20.0.1,40,35.0,,
+2020-05-22 18:20:24.032477,Search with Note,6,172.20.0.1,,,,hello
+2020-05-22 18:20:36.506357,Search with both Tag and Note,6,172.20.0.1,,,,"hello, deprecated"
+2020-05-22 18:20:51.493230,Delete Note,6,172.20.0.1,36,,,
+2020-05-22 18:21:00.815203,Move Note,6,172.20.0.1,38,35.0,,
+2019-09-18 17:39:10.613787,Delete Note,1,136.206.48.137,5,,,
+2019-09-18 17:39:13.279644,Delete Note,1,136.206.48.137,6,,,
+2019-09-18 17:39:16.123465,Delete Note,1,136.206.48.137,12,,,
+2019-09-18 17:39:19.591404,Delete Note,1,136.206.48.137,22,,,
+2019-09-18 17:39:22.652808,Delete Note,1,136.206.48.137,4,,,
+2019-09-18 17:39:25.518389,Delete Note,1,136.206.48.137,10,,,
+2019-09-18 17:39:27.804031,Delete Note,1,136.206.48.137,11,,,
+2019-09-18 17:39:30.053718,Delete Note,1,136.206.48.137,8,,,
+2019-09-18 17:39:32.808101,Delete Note,1,136.206.48.137,9,,,
+2019-09-18 17:39:35.348506,Delete Note,1,136.206.48.137,7,,,
+2019-09-18 17:39:39.712529,Delete Stage,1,136.206.48.137,6,,,
+2019-09-18 17:39:43.128700,Delete Note,1,136.206.48.137,2,,,
+2019-09-18 17:39:45.583036,Delete Note,1,136.206.48.137,1,,,
+2019-09-18 17:39:48.299656,Delete Note,1,136.206.48.137,3,,,
+2019-09-18 17:40:18.688152,Create Note,1,136.206.48.137,,,,write paper
+2019-09-18 17:40:30.341522,Create Note,1,136.206.48.137,,,,finish experiment
+2019-09-18 17:40:51.768916,Create Note,1,136.206.48.137,,,,write conference paper
+2019-09-18 17:40:54.473386,Open Note,1,136.206.48.137,23,,,
+2019-09-18 17:41:01.079428,Edit Note,1,136.206.48.137,23,,,<p>write journa paper</p>
+2019-09-18 17:41:06.980644,Edit Note,1,136.206.48.137,23,,,<p>write journal paper</p>
+2019-09-18 17:41:09.505576,Open Note,1,136.206.48.137,24,,,
+2019-09-18 17:41:12.080637,Open commenting in note,1,136.206.48.137,24,,,
+2019-09-18 17:41:22.338923,Comment in Note,1,136.206.48.137,,,,odoo experiment
+2019-09-18 17:41:25.986722,Open commenting in note,1,136.206.48.137,24,,,
+2019-09-18 17:41:57.736791,Attach file,1,136.206.48.137,,,,upload UA logo file
+2019-09-18 17:42:13.828039,Change Note Colour,1,136.206.48.137,23,,,
+2019-09-18 17:42:18.696072,Change Note Colour,1,136.206.48.137,24,,,
+2019-09-18 17:42:25.513522,Change Note Colour,1,136.206.48.137,25,,,
+2019-09-18 17:42:28.044179,Open Note,1,136.206.48.137,23,,,
+2019-09-18 17:42:32.982140,Create new tag,1,136.206.48.137,,,,paper
+2019-09-18 17:42:50.210829,Add tag,1,136.206.48.137,[4],,,
+2019-09-18 17:42:59.681894,Change Tag Colour,1,136.206.48.137,1,,,
+2019-09-18 17:43:09.824541,Add tag,1,136.206.48.137,[4],,,
+2019-09-18 17:43:16.366005,Open Note,1,136.206.48.137,24,,,
+2019-09-18 17:43:31.456612,Create new tag,1,136.206.48.137,,,,private
+2019-09-18 17:43:43.107027,Change Tag Colour,1,136.206.48.137,0,,,
+2019-09-18 17:43:44.973329,Add tag,1,136.206.48.137,[5],,,
+2019-09-18 17:43:59.427319,Create new tag,1,136.206.48.137,,,,public
+2019-09-18 17:44:01.154792,Change Tag Colour,1,136.206.48.137,6,,,
+2019-09-18 17:44:03.196128,Add tag,1,136.206.48.137,"[4, 6]",,,
+2019-09-18 17:44:11.902008,Add tag,1,136.206.48.137,"[4, 6]",,,
+2019-09-18 17:44:13.876590,Open Note,1,136.206.48.137,24,,,
+2019-09-18 17:44:40.013751,Create Stage,1,136.206.48.137,shared,,,
+2019-09-18 17:44:58.872512,Create Note,1,136.206.48.137,,,,review conference paper
+2019-09-18 17:45:00.887620,Open Note,1,136.206.48.137,26,,,
+2019-09-18 17:45:08.688987,Invite and Add follower,1,136.206.48.137,26,,"[6, False, [13]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: review conference paper</p></div>"
+2019-09-18 17:45:14.886068,Add tag,1,136.206.48.137,"[4, 6]",,,
+2019-09-18 17:45:40.697704,Change Note Colour,1,136.206.48.137,26,,,
+2019-09-18 17:45:43.644713,Change Note Colour,1,136.206.48.137,23,,,
+2019-09-18 17:45:48.744048,Change Note Colour,1,136.206.48.137,24,,,
+2019-09-18 17:45:51.647024,Change Note Colour,1,136.206.48.137,24,,,
+2019-09-18 17:46:16.909041,Search with Tag,1,136.206.48.137,,,,private
+2019-09-18 17:46:20.026455,Open Note,1,136.206.48.137,24,,,
+2019-09-18 17:46:26.624549,Search with Tag,1,136.206.48.137,,,,private
+2019-09-18 17:46:32.363117,Search with Note,1,136.206.48.137,,,,paper
+2019-09-18 17:46:50.778781,Move Note,1,136.206.48.137,23,2.0,,
+2019-09-18 17:46:57.132632,Open Note,1,136.206.48.137,23,,,
+2019-09-18 17:47:04.030796,Invite and Add follower,1,136.206.48.137,23,,"[6, False, [15]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: write journal paper</p></div>"
+2019-09-18 17:48:15.190547,Create Note,1,136.206.48.137,,,,test note
+2019-09-18 17:48:19.968168,Delete Note,1,136.206.48.137,27,,,
+2019-09-18 17:48:29.697419,Open Note,1,136.206.48.137,24,,,
+2019-09-18 17:48:31.622678,Move Note,1,136.206.48.137,24,3.0,,
+2019-09-18 17:49:14.089162,Edit Note,1,136.206.48.137,23,,,"<p><img src=""/web/image/314/UA%20logo.png"" style=""width: 25%;"" class=""pull-left"">write journal paper</p>"
+2019-09-18 17:50:01.622095,Create Channel,1,136.206.48.137,,,,test channel
+2019-09-18 17:50:49.536461,Mention user in chat,1,136.206.48.137,2,,[3],"<a href=""http://136.206.48.185:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> "
+2019-09-18 17:51:09.106782,Chat with other users,1,136.206.48.137,2,,,@odoo10bluec
+2019-09-18 17:51:15.754526,Reference channel in chat,1,136.206.48.137,2,,,"<a href=""http://136.206.48.185:8010/web#model=mail.channel&amp;id=1"" class=""o_channel_redirect"" data-oe-id=""1"" data-oe-model=""mail.channel"" target=""_blank"">#general</a> "
+2019-09-18 17:54:46.061100,Open Note,1,136.206.48.137,25,,,
+2019-09-18 17:54:51.408863,Open Note,1,136.206.48.137,23,,,
+2019-09-18 17:54:58.456045,Remove follower from note,1,136.206.48.137,23,,,
+2019-09-18 17:55:36.051798,Chat with other users,1,136.206.48.137,3,,,Hi BlueA
+2019-09-18 17:55:41.485256,Chat with other users,1,136.206.48.137,3,,,how are you?
+2019-09-18 17:56:07.536329,Mention user and reference channel in chat,1,136.206.48.137,3,,[13],"<a href=""http://136.206.48.185:8010/web#model=res.partner&amp;id=13"" class=""o_mail_redirect"" data-oe-id=""13"" data-oe-model=""res.partner"" target=""_blank"">@odoo10bluea</a>  check out <a href=""http://136.206.48.185:8010/web#model=mail.channel&amp;id=1"" class=""o_channel_redirect"" data-oe-id=""1"" data-oe-model=""mail.channel"" target=""_blank"">#general</a> "
+2019-09-18 17:56:21.086794,Unfollow from a Channel,1,136.206.48.137,2,,,
+2019-09-18 17:56:45.318414,Create Channel,1,136.206.48.137,,,,hey channel
+2019-09-21 19:28:10.421210,Delete Note,1,172.19.0.1,28,,,
+2019-09-21 19:28:13.540461,Delete Note,1,172.19.0.1,24,,,
+2019-09-21 19:28:16.079525,Delete Note,1,172.19.0.1,23,,,
+2019-09-21 19:28:18.836065,Delete Note,1,172.19.0.1,25,,,
+2019-09-21 19:28:21.341607,Delete Note,1,172.19.0.1,26,,,
+2019-09-21 19:28:24.160186,Change Note Colour,1,172.19.0.1,29,,,
+2019-09-21 19:28:26.900426,Change Note Colour,1,172.19.0.1,30,,,
+2019-09-21 19:28:29.017940,Change Note Colour,1,172.19.0.1,31,,,
