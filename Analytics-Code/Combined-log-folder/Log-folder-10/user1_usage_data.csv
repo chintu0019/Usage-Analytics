@@ -1,0 +1,112 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2020-05-22 17:57:21.061229,Create Stage,6,172.20.0.1,Temporary,,,
+2020-05-22 17:57:28.984051,Move Note,6,172.20.0.1,23,35,,
+2020-05-22 17:58:20.902038,Create Note,6,172.20.0.1,,,,<p>write academic paper for some conference<br></p>
+2020-05-22 17:58:32.336196,Move Note,6,172.20.0.1,44,1,,
+2020-05-22 17:59:05.986032,Create Note,6,172.20.0.1,,,,review paper 2
+2020-05-22 18:00:03.102048,Create Note,6,172.20.0.1,,,,call car company for booking service
+2020-05-22 18:02:38.267819,Create Note,6,172.20.0.1,,,,make an appointment with supervisor
+2020-05-22 18:02:44.044461,Move Note,6,172.20.0.1,47,1,,
+2020-05-22 18:02:57.870234,Create Note,6,172.20.0.1,,,,meeting with colleague
+2020-05-22 18:04:01.248634,Create Note,6,172.20.0.1,,,,cancel subscription for spotify
+2020-05-22 18:04:38.501784,Create Note,6,172.20.0.1,,,,send mail to supervisor
+2020-05-22 18:04:45.346974,Move Note,6,172.20.0.1,24,35,,
+2020-05-22 18:05:13.659516,Move Note,6,172.20.0.1,50,2,,
+2020-05-22 18:05:23.078815,Move Note,6,172.20.0.1,25,35,,
+2020-05-22 18:05:36.380124,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:05:49.957501,Change Note Colour,6,172.20.0.1,44,,,
+2020-05-22 18:05:53.312419,Change Note Colour,6,172.20.0.1,44,,,
+2020-05-22 18:05:57.123078,Change Note Colour,6,172.20.0.1,47,,,
+2020-05-22 18:06:10.394372,Open Note,6,172.20.0.1,26,,,
+2020-05-22 18:06:35.017668,Change Note Colour,6,172.20.0.1,46,,,
+2020-05-22 18:06:44.285541,Change Note Colour,6,172.20.0.1,45,,,
+2020-05-22 18:06:47.922527,Change Note Colour,6,172.20.0.1,50,,,
+2020-05-22 18:06:52.726335,Change Note Colour,6,172.20.0.1,49,,,
+2020-05-22 18:06:57.457969,Change Note Colour,6,172.20.0.1,48,,,
+2020-05-22 18:07:03.491921,Move Note,6,172.20.0.1,26,35,,
+2020-05-22 18:07:17.404011,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:07:31.184103,Create new tag,6,172.20.0.1,,,,work
+2020-05-22 18:07:54.589549,Open Note,6,172.20.0.1,27,,,
+2020-05-22 18:08:04.232852,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:08:21.673599,Change Tag Colour,6,172.20.0.1,5,,,
+2020-05-22 18:08:23.672819,Add tag,6,172.20.0.1,[12],,,
+2020-05-22 18:08:40.497476,Add tag,6,172.20.0.1,[12],,,
+2020-05-22 18:08:43.965760,Open Note,6,172.20.0.1,46,,,
+2020-05-22 18:08:51.045929,Create new tag,6,172.20.0.1,,,,personal
+2020-05-22 18:08:54.056127,Change Tag Colour,6,172.20.0.1,4,,,
+2020-05-22 18:08:56.519633,Add tag,6,172.20.0.1,[13],,,
+2020-05-22 18:09:20.467296,Add tag,6,172.20.0.1,[12],,,
+2020-05-22 18:09:24.892204,Open Note,6,172.20.0.1,50,,,
+2020-05-22 18:09:31.666790,Add tag,6,172.20.0.1,[12],,,
+2020-05-22 18:09:38.826282,Open Note,6,172.20.0.1,48,,,
+2020-05-22 18:09:49.260521,Add tag,6,172.20.0.1,[12],,,
+2020-05-22 18:09:56.135451,Open Note,6,172.20.0.1,49,,,
+2020-05-22 18:10:03.282863,Add tag,6,172.20.0.1,[13],,,
+2020-05-22 18:10:21.335355,Move Note,6,172.20.0.1,27,35,,
+2020-05-22 18:10:33.952930,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:10:53.820431,Create Note,6,172.20.0.1,,,,personal 5
+2020-05-22 18:11:10.905176,Search with Tag,6,172.20.0.1,,,,personal
+2020-05-22 18:11:33.181794,Create Note,6,172.20.0.1,,,,personal 2
+2020-05-22 18:11:41.746750,Open Note,6,172.20.0.1,51,,,
+2020-05-22 18:11:47.500302,Edit Note,6,172.20.0.1,51,,,<p>work 5</p>
+2020-05-22 18:12:05.664023,Move Note,6,172.20.0.1,39,35,,
+2020-05-22 18:12:22.503764,Open Note,6,172.20.0.1,37,,,
+2020-05-22 18:12:28.386156,Edit Note,6,172.20.0.1,37,,,<p>review the paper</p>
+2020-05-22 18:12:33.062431,Open Note,6,172.20.0.1,32,,,
+2020-05-22 18:12:39.475461,Edit Note,6,172.20.0.1,32,,,<p>cook dinner</p><p><br></p><p>Hello</p>
+2020-05-22 18:12:47.679049,Open Note,6,172.20.0.1,35,,,
+2020-05-22 18:12:53.827166,Edit Note,6,172.20.0.1,35,,,<p>this is an old note</p>
+2020-05-22 18:13:09.633837,Move Note,6,172.20.0.1,28,35,,
+2020-05-22 18:13:19.184755,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:13:32.244034,Invite and Add follower,6,172.20.0.1,44,,"[6, False, [17]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: write academic paper for some conference</p></div>"
+2020-05-22 18:13:45.122683,Open Note,6,172.20.0.1,47,,,
+2020-05-22 18:13:57.377475,Invite and Add follower,6,172.20.0.1,47,,"[6, False, [19]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: make an appointment with supervisor</p></div>"
+2020-05-22 18:14:06.627279,Open Note,6,172.20.0.1,50,,,
+2020-05-22 18:14:21.512993,Invite and Add follower,6,172.20.0.1,50,,"[6, False, [19]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: send mail to supervisor</p></div>"
+2020-05-22 18:14:47.862664,Move Note,6,172.20.0.1,31,35,,
+2020-05-22 18:14:58.135991,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:15:00.816851,Open commenting in note,6,172.20.0.1,44,,,
+2020-05-22 18:15:05.946962,Comment in Note,6,172.20.0.1,,,,monday
+2020-05-22 18:15:13.430606,Open Note,6,172.20.0.1,47,,,
+2020-05-22 18:15:15.407419,Open commenting in note,6,172.20.0.1,47,,,
+2020-05-22 18:15:20.876308,Comment in Note,6,172.20.0.1,,,,tuesday
+2020-05-22 18:15:28.851487,Open Note,6,172.20.0.1,45,,,
+2020-05-22 18:15:31.071229,Open commenting in note,6,172.20.0.1,45,,,
+2020-05-22 18:15:37.115666,Comment in Note,6,172.20.0.1,,,,wednesday
+2020-05-22 18:15:43.868064,Open Note,6,172.20.0.1,50,,,
+2020-05-22 18:15:45.933763,Open commenting in note,6,172.20.0.1,50,,,
+2020-05-22 18:15:51.415021,Comment in Note,6,172.20.0.1,,,,thursday
+2020-05-22 18:16:12.189516,Open Note,6,172.20.0.1,48,,,
+2020-05-22 18:16:14.409169,Open commenting in note,6,172.20.0.1,48,,,
+2020-05-22 18:16:19.360680,Comment in Note,6,172.20.0.1,,,,friday
+2020-05-22 18:16:27.130620,Open Note,6,172.20.0.1,49,,,
+2020-05-22 18:16:29.320413,Open commenting in note,6,172.20.0.1,49,,,
+2020-05-22 18:16:34.473509,Comment in Note,6,172.20.0.1,,,,saturday
+2020-05-22 18:16:41.112309,Move Note,6,172.20.0.1,30,35,,
+2020-05-22 18:17:26.286538,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:17:29.409001,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:17:32.835949,Open commenting in note,6,172.20.0.1,44,,,
+2020-05-22 18:17:47.971546,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:17:50.481020,Open Note,6,172.20.0.1,47,,,
+2020-05-22 18:17:52.305660,Open commenting in note,6,172.20.0.1,47,,,
+2020-05-22 18:18:02.553267,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:18:04.560720,Open Note,6,172.20.0.1,45,,,
+2020-05-22 18:18:06.430830,Open commenting in note,6,172.20.0.1,45,,,
+2020-05-22 18:18:18.354538,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:18:19.997572,Open Note,6,172.20.0.1,44,,,
+2020-05-22 18:18:21.848374,Open commenting in note,6,172.20.0.1,44,,,
+2020-05-22 18:18:33.632246,Attach file,6,172.20.0.1,,,,file
+2020-05-22 18:18:42.510621,Open commenting in note,6,172.20.0.1,47,,,
+2020-05-22 18:18:51.832509,Attach file,6,172.20.0.1,,,,dummy
+2020-05-22 18:18:59.354599,Open commenting in note,6,172.20.0.1,45,,,
+2020-05-22 18:19:11.210104,Attach file,6,172.20.0.1,,,,dummy
+2020-05-22 18:19:19.157944,Open commenting in note,6,172.20.0.1,50,,,
+2020-05-22 18:19:37.569957,Attach file,6,172.20.0.1,,,,dummy
+2020-05-22 18:19:43.382166,Open commenting in note,6,172.20.0.1,48,,,
+2020-05-22 18:19:53.280976,Attach file,6,172.20.0.1,,,,file
+2020-05-22 18:19:56.867837,Search with Tag,6,172.20.0.1,,,,work
+2020-05-22 18:20:02.555377,Move Note,6,172.20.0.1,40,35,,
+2020-05-22 18:20:24.032477,Search with Note,6,172.20.0.1,,,,hello
+2020-05-22 18:20:36.506357,Search with both Tag and Note,6,172.20.0.1,,,,"hello, deprecated"
+2020-05-22 18:20:51.493230,Delete Note,6,172.20.0.1,36,,,
+2020-05-22 18:21:00.815203,Move Note,6,172.20.0.1,38,35,,
