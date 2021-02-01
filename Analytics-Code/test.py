@@ -21,9 +21,7 @@ def getTimestamp(date_time):
     date_time_obj = datetime.strptime(date_time, '%Y-%m-%d %H:%M:%S.%f')
     return datetime.timestamp(date_time_obj)
 
-uFile = pandas.read_csv(usage_data_file_10)
-index = 1
-a = "actionName"
-print(uFile.at[index, "actionName"], uFile.at[index, "userId"], getTimestamp(uFile.at[index, "timestamp"]))
-print(uFile.at[index+1, "actionName"], uFile.at[index+1, "userId"], getTimestamp(uFile.at[index+1, "timestamp"]))
-print(getTimestamp(uFile.at[index+1, "timestamp"])-getTimestamp(uFile.at[index, "timestamp"]))
+uDF = pandas.read_csv(usage_data_file_10)
+
+for index, row in uDF.iterrows():
+    print(index, len(uDF))
