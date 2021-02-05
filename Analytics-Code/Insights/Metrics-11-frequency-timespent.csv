@@ -1,0 +1,155 @@
+userId,actionName,occurrences,frequency,timespent
+1,Create Stage,0.0,0.0,0.0
+1,Delete Stage,0.0,0.0,0.0
+1,Rename Stage,0.0,0.0,0.0
+1,Search with Note,0.0,0.0,0.0
+1,Search with Tag,0.0,0.0,0.0
+1,Search with both Tag and Note,0.0,0.0,0.0
+1,Create Note,0.0,0.0,0.0
+1,Delete Note,12.0,0.6366744245293811,38.27809810638428
+1,Open Note,0.0,0.0,0.0
+1,Edit Note,0.0,0.0,0.0
+1,Move Note,0.0,0.0,0.0
+1,Drag and Drop note,0.0,0.0,0.0
+1,Open commenting in note,0.0,0.0,0.0
+1,Attach File,0.0,0.0,0.0
+1,Comment in Note,0.0,0.0,0.0
+1,Invite and Add follower,0.0,0.0,0.0
+1,Invite User,0.0,0.0,0.0
+1,Remove follower from note,0.0,0.0,0.0
+1,Create new tag,0.0,0.0,0.0
+1,Add tag,0.0,0.0,0.0
+1,Change Tag Colour,0.0,0.0,0.0
+1,Change Note Colour,0.0,0.0,0.0
+2,Create Stage,0.0,0.0,0.0
+2,Delete Stage,0.0,0.0,0.0
+2,Rename Stage,0.0,0.0,0.0
+2,Search with Note,0.0,0.0,0.0
+2,Search with Tag,0.0,0.0,0.0
+2,Search with both Tag and Note,0.0,0.0,0.0
+2,Create Note,0.0,0.0,0.0
+2,Delete Note,0.0,0.0,0.0
+2,Open Note,0.0,0.0,0.0
+2,Edit Note,0.0,0.0,0.0
+2,Move Note,0.0,0.0,0.0
+2,Drag and Drop note,0.0,0.0,0.0
+2,Open commenting in note,0.0,0.0,0.0
+2,Attach File,0.0,0.0,0.0
+2,Comment in Note,0.0,0.0,0.0
+2,Invite and Add follower,0.0,0.0,0.0
+2,Invite User,0.0,0.0,0.0
+2,Remove follower from note,0.0,0.0,0.0
+2,Create new tag,0.0,0.0,0.0
+2,Add tag,0.0,0.0,0.0
+2,Change Tag Colour,0.0,0.0,0.0
+2,Change Note Colour,0.0,0.0,0.0
+3,Create Stage,0.0,0.0,0.0
+3,Delete Stage,0.0,0.0,0.0
+3,Rename Stage,0.0,0.0,0.0
+3,Search with Note,0.0,0.0,0.0
+3,Search with Tag,0.0,0.0,0.0
+3,Search with both Tag and Note,0.0,0.0,0.0
+3,Create Note,4.0,0.21222480817646036,0.7291219234466553
+3,Delete Note,1.0,0.05305620204411509,0.1371440887451172
+3,Open Note,9.0,0.4775058183970359,71.078373670578
+3,Edit Note,1.0,0.05305620204411509,3.935479879379273
+3,Move Note,0.0,0.0,0.0
+3,Drag and Drop note,3.0,0.15916860613234526,16.39874505996704
+3,Open commenting in note,1.0,0.05305620204411509,13.659523010253906
+3,Attach File,0.0,0.0,0.0
+3,Comment in Note,2.0,0.10611240408823018,17.349236011505127
+3,Invite and Add follower,2.0,0.10611240408823018,32.599592208862305
+3,Invite User,0.0,0.0,0.0
+3,Remove follower from note,0.0,0.0,0.0
+3,Create new tag,2.0,0.10611240408823018,24.02459406852722
+3,Add tag,1.0,0.05305620204411509,18.90453815460205
+3,Change Tag Colour,1.0,0.05305620204411509,5.454051017761231
+3,Change Note Colour,4.0,0.21222480817646036,44.38844013214111
+4,Create Stage,1.0,0.05305620204411509,18.801242113113403
+4,Delete Stage,1.0,0.05305620204411509,6.8631591796875
+4,Rename Stage,1.0,0.05305620204411509,19.19365382194519
+4,Search with Note,2.0,0.10611240408823018,18.559991121292114
+4,Search with Tag,4.0,0.21222480817646036,39.67023086547852
+4,Search with both Tag and Note,0.0,0.0,0.0
+4,Create Note,4.0,0.21222480817646036,26.67078804969788
+4,Delete Note,2.0,0.10611240408823018,7.428654909133911
+4,Open Note,8.0,0.4244496163529207,150.85278797149658
+4,Edit Note,3.0,0.15916860613234526,42.0685510635376
+4,Move Note,0.0,0.0,0.0
+4,Drag and Drop note,2.0,0.10611240408823018,30.297852993011475
+4,Open commenting in note,1.0,0.05305620204411509,13.264426946640016
+4,Attach File,0.0,0.0,0.0
+4,Comment in Note,1.0,0.05305620204411509,23.63905906677246
+4,Invite and Add follower,1.0,0.05305620204411509,8.588480949401855
+4,Invite User,0.0,0.0,0.0
+4,Remove follower from note,0.0,0.0,0.0
+4,Create new tag,3.0,0.15916860613234526,32.67348599433899
+4,Add tag,2.0,0.10611240408823018,15.390009880065918
+4,Change Tag Colour,2.0,0.10611240408823018,35.00678610801697
+4,Change Note Colour,7.0,0.3713934143088056,90.25700807571413
+5,Create Stage,0.0,0.0,0.0
+5,Delete Stage,0.0,0.0,0.0
+5,Rename Stage,0.0,0.0,0.0
+5,Search with Note,0.0,0.0,0.0
+5,Search with Tag,0.0,0.0,0.0
+5,Search with both Tag and Note,0.0,0.0,0.0
+5,Create Note,0.0,0.0,0.0
+5,Delete Note,1.0,0.05305620204411509,0.0
+5,Open Note,0.0,0.0,0.0
+5,Edit Note,0.0,0.0,0.0
+5,Move Note,0.0,0.0,0.0
+5,Drag and Drop note,0.0,0.0,0.0
+5,Open commenting in note,0.0,0.0,0.0
+5,Attach File,0.0,0.0,0.0
+5,Comment in Note,0.0,0.0,0.0
+5,Invite and Add follower,0.0,0.0,0.0
+5,Invite User,0.0,0.0,0.0
+5,Remove follower from note,0.0,0.0,0.0
+5,Create new tag,0.0,0.0,0.0
+5,Add tag,0.0,0.0,0.0
+5,Change Tag Colour,0.0,0.0,0.0
+5,Change Note Colour,0.0,0.0,0.0
+6,Create Stage,1.0,0.05305620204411509,10.833929061889648
+6,Delete Stage,0.0,0.0,0.0
+6,Rename Stage,0.0,0.0,0.0
+6,Search with Note,2.0,0.10611240408823018,52.13787007331848
+6,Search with Tag,7.0,0.3713934143088056,72.48122191429138
+6,Search with both Tag and Note,0.0,0.0,0.0
+6,Create Note,11.0,0.583618222485266,17.73180365562439
+6,Delete Note,4.0,0.21222480817646036,0.543701171875
+6,Open Note,32.0,1.6977984654116829,391.16206455230713
+6,Edit Note,4.0,0.21222480817646036,39.33475399017334
+6,Move Note,0.0,0.0,0.0
+6,Drag and Drop note,15.0,0.7958430306617263,229.7432098388672
+6,Open commenting in note,3.0,0.15916860613234526,17.28174591064453
+6,Attach File,0.0,0.0,0.0
+6,Comment in Note,2.0,0.10611240408823018,25.11687207221985
+6,Invite and Add follower,3.0,0.15916860613234526,34.24193596839905
+6,Invite User,0.0,0.0,0.0
+6,Remove follower from note,0.0,0.0,0.0
+6,Create new tag,3.0,0.15916860613234526,19.14825987815857
+6,Add tag,8.0,0.4244496163529207,76.0490369796753
+6,Change Tag Colour,3.0,0.15916860613234526,10.002774953842165
+6,Change Note Colour,8.0,0.4244496163529207,22.82150101661682
+7,Create Stage,0.0,0.0,0.0
+7,Delete Stage,0.0,0.0,0.0
+7,Rename Stage,0.0,0.0,0.0
+7,Search with Note,0.0,0.0,0.0
+7,Search with Tag,0.0,0.0,0.0
+7,Search with both Tag and Note,0.0,0.0,0.0
+7,Create Note,0.0,0.0,0.0
+7,Delete Note,1.0,0.05305620204411509,0.0
+7,Open Note,0.0,0.0,0.0
+7,Edit Note,0.0,0.0,0.0
+7,Move Note,0.0,0.0,0.0
+7,Drag and Drop note,0.0,0.0,0.0
+7,Open commenting in note,0.0,0.0,0.0
+7,Attach File,0.0,0.0,0.0
+7,Comment in Note,0.0,0.0,0.0
+7,Invite and Add follower,0.0,0.0,0.0
+7,Invite User,0.0,0.0,0.0
+7,Remove follower from note,0.0,0.0,0.0
+7,Create new tag,0.0,0.0,0.0
+7,Add tag,0.0,0.0,0.0
+7,Change Tag Colour,0.0,0.0,0.0
+7,Change Note Colour,0.0,0.0,0.0
