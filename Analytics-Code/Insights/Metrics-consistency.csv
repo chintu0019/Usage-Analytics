@@ -1,4 +1,4 @@
-userId,actionName,consistency (frequency),consistency (timespent)
+userId,actionName,consistency_frequency,consistency_timespent
 1,Create Stage,0.0107102954505121,18.858761072158813
 1,Delete Stage,0.0107102954505121,3.416171073913574
 1,Rename Stage,0.0,0.0

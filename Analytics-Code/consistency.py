@@ -24,8 +24,8 @@ def measureConsistency(ud_userId, ud_actionName):
     
     for index, row in metric_consistency_df.iterrows():
         if row["userId"] == ud_userId and row["actionName"] == ud_actionName:
-            metric_consistency_df.at[index, "consistency (frequency)"] = getFrequency(ud_userId, ud_actionName, ft_10_df) - getFrequency(ud_userId, ud_actionName, ft_11_df)
-            metric_consistency_df.at[index, "consistency (timespent)"] = getTimespent(ud_userId, ud_actionName, ft_10_df) - getTimespent(ud_userId, ud_actionName, ft_11_df)
+            metric_consistency_df.at[index, "consistency_frequency"] = getFrequency(ud_userId, ud_actionName, ft_10_df) - getFrequency(ud_userId, ud_actionName, ft_11_df)
+            metric_consistency_df.at[index, "consistency_timespent"] = getTimespent(ud_userId, ud_actionName, ft_10_df) - getTimespent(ud_userId, ud_actionName, ft_11_df)
     
     metric_consistency_df.to_csv("Insights/Metrics-consistency.csv", index=False)
 

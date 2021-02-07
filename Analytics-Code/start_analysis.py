@@ -101,7 +101,7 @@ def initialiseMetricsFile(odoo_version):
     
     with open(metrics_consistency_file, mode='w') as mFile:
         print("Odoo "+odoo_version+": Initialise", metrics_consistency_file)
-        csv_header = ['userId', 'actionName', 'consistency (frequency)', 'consistency (timespent)']
+        csv_header = ['userId', 'actionName', 'consistency_frequency', 'consistency_timespent']
         csv_writer = csv.writer(mFile)
         csv_writer.writerow(csv_header)
         for userId in userIdList:
