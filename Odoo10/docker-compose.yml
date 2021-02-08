@@ -7,8 +7,8 @@ services:
         build: ./Odoo10
         environment:
             # put your user id (the output of id -u)
-            - HOST_USER=1000
-            - HOST_GROUP=985
+            - HOST_USER=501
+            - HOST_GROUP=20
         volumes:
             - "./odoo:/usr/lib/python2.7/dist-packages/odoo"
             - "./odoo.orig:/usr/lib/python2.7/dist-packages/odoo.orig"
