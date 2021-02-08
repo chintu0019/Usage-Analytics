@@ -1,0 +1,155 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2021-02-08 14:04:02.064253,Create Stage,3,172.19.0.1,Temporary,,,
+2021-02-08 14:04:24.862494,Drag and Drop note,3,172.19.0.1,13,43,,
+2021-02-08 14:05:10.338124,Create Note,3,172.19.0.1,,,,clean the fridge
+2021-02-08 14:05:23.164698,Create Note,3,172.19.0.1,,,,buy groceries
+2021-02-08 14:05:23.221038,Open Note,3,172.19.0.1,36,,,
+2021-02-08 14:06:22.971767,Create Note,3,172.19.0.1,,,,update the analysis code
+2021-02-08 14:06:23.027577,Open Note,3,172.19.0.1,37,,,
+2021-02-08 14:06:33.296286,Create Note,3,172.19.0.1,,,,refuealthe car
+2021-02-08 14:06:33.348286,Open Note,3,172.19.0.1,38,,,
+2021-02-08 14:06:36.137209,Open Note,3,172.19.0.1,38,,,
+2021-02-08 14:06:42.296005,Edit Note,3,172.19.0.1,38,,,<p>refueal the car</p>
+2021-02-08 14:07:07.015260,Create Note,3,172.19.0.1,,,,schedule work task for the next week
+2021-02-08 14:07:07.065717,Open Note,3,172.19.0.1,39,,,
+2021-02-08 14:07:10.639071,Open Note,3,172.19.0.1,39,,,
+2021-02-08 14:07:14.199526,Edit Note,3,172.19.0.1,39,,,<p>schedule work tasks for the next week</p>
+2021-02-08 14:07:56.453725,Drag and Drop note,3,172.19.0.1,14,43,,
+2021-02-08 14:08:00.478887,Drag and Drop note,3,172.19.0.1,25,3,,
+2021-02-08 14:08:04.403734,Drag and Drop note,3,172.19.0.1,6,68,,
+2021-02-08 14:08:09.605754,Drag and Drop note,3,172.19.0.1,27,68,,
+2021-02-08 14:08:13.328973,Drag and Drop note,3,172.19.0.1,29,1,,
+2021-02-08 14:08:16.625725,Drag and Drop note,3,172.19.0.1,31,2,,
+2021-02-08 14:08:23.324292,Drag and Drop note,3,172.19.0.1,15,43,,
+2021-02-08 14:08:24.163778,Open Note,3,172.19.0.1,16,,,
+2021-02-08 14:08:59.074184,Open Note,3,172.19.0.1,35,,,
+2021-02-08 14:09:04.394806,Change Note Colour,3,172.19.0.1,35,,,
+2021-02-08 14:09:06.881905,Change Note Colour,3,172.19.0.1,36,,,
+2021-02-08 14:09:11.611244,Change Note Colour,3,172.19.0.1,37,,,
+2021-02-08 14:09:12.240290,Open Note,3,172.19.0.1,38,,,
+2021-02-08 14:09:17.677830,Edit Note,3,172.19.0.1,38,,,<p>refuel the car</p>
+2021-02-08 14:09:24.175003,Change Note Colour,3,172.19.0.1,37,,,
+2021-02-08 14:09:31.349942,Change Note Colour,3,172.19.0.1,38,,,
+2021-02-08 14:09:36.129958,Change Note Colour,3,172.19.0.1,39,,,
+2021-02-08 14:09:42.546607,Drag and Drop note,3,172.19.0.1,16,43,,
+2021-02-08 14:10:05.227979,Open Note,3,172.19.0.1,17,,,
+2021-02-08 14:10:58.551504,Open Note,3,172.19.0.1,35,,,
+2021-02-08 14:11:04.102938,Create new tag,3,172.19.0.1,,,,personal
+2021-02-08 14:11:06.304915,Change Tag Colour,3,172.19.0.1,12,,,
+2021-02-08 14:11:07.616106,Add tag,3,172.19.0.1,35,,,
+2021-02-08 14:11:11.055795,Open Note,3,172.19.0.1,36,,,
+2021-02-08 14:11:17.023561,Add tag,3,172.19.0.1,36,,,
+2021-02-08 14:11:19.740946,Open Note,3,172.19.0.1,37,,,
+2021-02-08 14:11:23.623050,Create new tag,3,172.19.0.1,,,,work
+2021-02-08 14:11:26.188133,Change Tag Colour,3,172.19.0.1,13,,,
+2021-02-08 14:11:27.409897,Add tag,3,172.19.0.1,37,,,
+2021-02-08 14:11:31.454476,Open Note,3,172.19.0.1,38,,,
+2021-02-08 14:11:37.763455,Add tag,3,172.19.0.1,38,,,
+2021-02-08 14:11:45.400383,Open Note,3,172.19.0.1,39,,,
+2021-02-08 14:11:51.609345,Add tag,3,172.19.0.1,39,,,
+2021-02-08 14:12:09.639627,Drag and Drop note,3,172.19.0.1,17,43,,
+2021-02-08 14:12:24.145141,Search with Tag,3,172.19.0.1,,,,personal
+2021-02-08 14:12:32.281416,Create Note,3,172.19.0.1,,,,personal 3
+2021-02-08 14:12:32.334387,Open Note,3,172.19.0.1,40,,,
+2021-02-08 14:12:39.600197,Change Note Colour,3,172.19.0.1,40,,,
+2021-02-08 14:12:41.055937,Open Note,3,172.19.0.1,40,,,
+2021-02-08 14:12:45.439769,Create new tag,3,172.19.0.1,,,,temp
+2021-02-08 14:12:47.007933,Change Tag Colour,3,172.19.0.1,14,,,
+2021-02-08 14:12:48.182812,Add tag,3,172.19.0.1,40,,,
+2021-02-08 14:12:48.738058,Search with Tag,3,172.19.0.1,,,,personal
+2021-02-08 14:12:56.249429,Search with Tag,3,172.19.0.1,,,,work
+2021-02-08 14:13:03.443075,Create Note,3,172.19.0.1,,,,work 2
+2021-02-08 14:13:03.497378,Open Note,3,172.19.0.1,41,,,
+2021-02-08 14:13:04.825458,Open Note,3,172.19.0.1,41,,,
+2021-02-08 14:13:09.963848,Add tag,3,172.19.0.1,41,,,
+2021-02-08 14:13:10.408974,Search with Tag,3,172.19.0.1,,,,work
+2021-02-08 14:13:17.994711,Change Note Colour,3,172.19.0.1,41,,,
+2021-02-08 14:14:05.233138,Create Note,3,172.19.0.1,,,,call customer support to fix issue with broadband
+2021-02-08 14:14:05.310898,Open Note,3,172.19.0.1,42,,,
+2021-02-08 14:14:07.083749,Drag and Drop note,3,172.19.0.1,42,2,,
+2021-02-08 14:14:11.204849,Change Note Colour,3,172.19.0.1,42,,,
+2021-02-08 14:14:11.929314,Open Note,3,172.19.0.1,42,,,
+2021-02-08 14:14:18.690970,Add tag,3,172.19.0.1,42,,,
+2021-02-08 14:14:27.339860,Drag and Drop note,3,172.19.0.1,18,43,,
+2021-02-08 14:14:30.772919,Open Note,3,172.19.0.1,24,,,
+2021-02-08 14:14:35.290021,Edit Note,3,172.19.0.1,24,,,<p>review the paper</p>
+2021-02-08 14:14:37.587225,Open Note,3,172.19.0.1,26,,,
+2021-02-08 14:14:42.540312,Edit Note,3,172.19.0.1,26,,,<p>cook dinner</p><p><br></p><p>Hello</p>
+2021-02-08 14:14:52.672634,Open Note,3,172.19.0.1,27,,,
+2021-02-08 14:14:57.780640,Edit Note,3,172.19.0.1,27,,,<p>this is an old note</p>
+2021-02-08 14:15:03.124775,Drag and Drop note,3,172.19.0.1,19,43,,
+2021-02-08 14:15:15.819652,Open Note,3,172.19.0.1,35,,,
+2021-02-08 14:15:32.643068,Invite and Add follower,3,172.19.0.1,35,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: clean the fridge</p></div>"
+2021-02-08 14:15:36.317726,Open Note,3,172.19.0.1,36,,,
+2021-02-08 14:15:46.412895,Invite and Add follower,3,172.19.0.1,36,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: buy groceries</p></div>"
+2021-02-08 14:15:53.808270,Invite and Add follower,3,172.19.0.1,36,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: buy groceries</p></div>"
+2021-02-08 14:16:01.983059,Open Note,3,172.19.0.1,37,,,
+2021-02-08 14:16:08.947131,Invite and Add follower,3,172.19.0.1,37,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: update the analysis code</p></div>"
+2021-02-08 14:16:13.046448,Open Note,3,172.19.0.1,38,,,
+2021-02-08 14:16:44.047182,Open Note,3,172.19.0.1,39,,,
+2021-02-08 14:16:55.146358,Invite and Add follower,3,172.19.0.1,39,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: schedule work tasks for the next week</p></div>"
+2021-02-08 14:17:05.223479,Drag and Drop note,3,172.19.0.1,20,43,,
+2021-02-08 14:17:09.007991,Open Note,3,172.19.0.1,24,,,
+2021-02-08 14:17:10.807387,Open commenting in note,3,172.19.0.1,24,,,
+2021-02-08 14:17:15.023725,Comment in Note,3,172.19.0.1,,,,monday
+2021-02-08 14:17:20.224761,Open Note,3,172.19.0.1,36,,,
+2021-02-08 14:17:21.474096,Open commenting in note,3,172.19.0.1,36,,,
+2021-02-08 14:17:26.279387,Comment in Note,3,172.19.0.1,,,,tuesday
+2021-02-08 14:17:29.885245,Open Note,3,172.19.0.1,35,,,
+2021-02-08 14:17:31.291470,Open commenting in note,3,172.19.0.1,35,,,
+2021-02-08 14:17:35.889981,Comment in Note,3,172.19.0.1,,,,thursday
+2021-02-08 14:17:39.107480,Open Note,3,172.19.0.1,30,,,
+2021-02-08 14:17:42.204164,Open commenting in note,3,172.19.0.1,30,,,
+2021-02-08 14:17:50.610047,Comment in Note,3,172.19.0.1,,,,everyday 😜 
+2021-02-08 14:17:55.475921,Open Note,3,172.19.0.1,37,,,
+2021-02-08 14:17:56.793597,Open commenting in note,3,172.19.0.1,37,,,
+2021-02-08 14:18:01.484982,Comment in Note,3,172.19.0.1,,,,wednesday
+2021-02-08 14:18:13.649128,Open Note,3,172.19.0.1,39,,,
+2021-02-08 14:18:15.753080,Open commenting in note,3,172.19.0.1,39,,,
+2021-02-08 14:18:20.964964,Comment in Note,3,172.19.0.1,,,,thursday
+2021-02-08 14:18:24.144682,Drag and Drop note,3,172.19.0.1,21,43,,
+2021-02-08 14:18:28.251184,Open Note,3,172.19.0.1,26,,,
+2021-02-08 14:18:29.612066,Open commenting in note,3,172.19.0.1,26,,,
+2021-02-08 14:18:50.114548,Attach file,3,172.19.0.1,,,,itermcolors
+2021-02-08 14:18:54.730774,Open Note,3,172.19.0.1,35,,,
+2021-02-08 14:18:56.132644,Open commenting in note,3,172.19.0.1,35,,,
+2021-02-08 14:19:08.337161,Attach file,3,172.19.0.1,,,,itermcolors file
+2021-02-08 14:19:31.591999,Open Note,3,172.19.0.1,38,,,
+2021-02-08 14:19:32.767317,Open commenting in note,3,172.19.0.1,38,,,
+2021-02-08 14:19:46.751241,Attach file,3,172.19.0.1,,,,file upload
+2021-02-08 14:19:59.310482,Drag and Drop note,3,172.19.0.1,22,43,,
+2021-02-08 14:20:29.962763,Search with Note,3,172.19.0.1,,,,hello
+2021-02-08 14:20:36.912812,Create Note,3,172.19.0.1,,,,hello 3
+2021-02-08 14:20:36.963570,Open Note,3,172.19.0.1,43,,,
+2021-02-08 14:20:37.668593,Open Note,3,172.19.0.1,43,,,
+2021-02-08 14:20:42.961628,Add tag,3,172.19.0.1,43,,,
+2021-02-08 14:20:44.368205,Search with Note,3,172.19.0.1,,,,hello
+2021-02-08 14:20:47.049572,Change Note Colour,3,172.19.0.1,43,,,
+2021-02-08 14:20:53.303872,Drag and Drop note,3,172.19.0.1,23,43,,
+2021-02-08 14:21:17.872523,Search with Tag,3,172.19.0.1,,,,other
+2021-02-08 14:21:35.896988,Create Note,3,172.19.0.1,,,,other 6
+2021-02-08 14:21:35.947754,Open Note,3,172.19.0.1,44,,,
+2021-02-08 14:21:38.969876,Change Note Colour,3,172.19.0.1,44,,,
+2021-02-08 14:21:39.804587,Open Note,3,172.19.0.1,44,,,
+2021-02-08 14:21:46.069764,Add tag,3,172.19.0.1,44,,,
+2021-02-08 14:21:46.749656,Search with Tag,3,172.19.0.1,,,,other
+2021-02-08 14:21:55.483988,Search with Tag,3,172.19.0.1,,,,other
+2021-02-08 14:22:00.489656,Delete Note,3,172.19.0.1,29,,,
+2021-02-08 14:22:00.527588,Search with Tag,3,172.19.0.1,,,,other
+2021-02-08 14:22:04.618987,Delete Note,3,172.19.0.1,31,,,
+2021-02-08 14:22:04.669343,Search with Tag,3,172.19.0.1,,,,other
+2021-02-08 14:22:07.463405,Delete Note,3,172.19.0.1,42,,,
+2021-02-08 14:22:07.498223,Search with Tag,3,172.19.0.1,,,,other
+2021-02-08 14:22:10.239652,Delete Note,3,172.19.0.1,25,,,
+2021-02-08 14:22:10.279911,Search with Tag,3,172.19.0.1,,,,other
+2021-02-08 14:22:14.174334,Delete Note,3,172.19.0.1,6,,,
+2021-02-08 14:22:14.212232,Search with Tag,3,172.19.0.1,,,,other
+2021-02-08 14:22:17.995266,Delete Note,3,172.19.0.1,27,,,
+2021-02-08 14:22:18.038185,Search with Tag,3,172.19.0.1,,,,other
+2021-02-08 14:22:27.187583,Search with Note,3,172.19.0.1,,,,old
+2021-02-08 14:22:32.499881,Search with both Tag and Note,3,172.19.0.1,,,,"old, depre"
+2021-02-08 14:22:36.767998,Delete Note,3,172.19.0.1,32,,,
+2021-02-08 14:22:36.809239,Search with both Tag and Note,3,172.19.0.1,,,,"old, depre"
+2021-02-08 14:22:39.152095,Search with Tag,3,172.19.0.1,,,,depre
+2021-02-08 14:22:42.032976,Drag and Drop note,3,172.19.0.1,34,43,,
+2021-02-08 14:22:42.969084,Drag and Drop note,3,172.19.0.1,33,43,,
