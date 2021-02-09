@@ -1,115 +1,115 @@
 timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
-2019-09-28 16:36:56.345893,Create Stage,4,172.19.0.1,new1,,,
-2019-09-28 16:37:02.087894,Create Note,4,172.19.0.1,,,,njjj
-2019-09-28 16:37:06.239047,Open Note,4,172.19.0.1,37,,,
-2019-09-28 16:37:37.733076,Invite and Add follower,4,172.19.0.1,37,,"[6, False, [14, 7]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: njjj</p></div>"
-2019-09-28 16:37:49.168257,Open commenting in note,4,172.19.0.1,37,,,
-2019-09-28 16:38:01.540601,Attach file,4,172.19.0.1,,,,
-2019-09-28 16:38:09.280477,Add tag,4,172.19.0.1,[2],,,
-2019-09-28 16:38:28.117305,Change Note Colour,4,172.19.0.1,37,,,
-2019-09-28 16:38:38.883890,Change Note Colour,4,172.19.0.1,37,,,
-2019-09-28 16:38:42.359802,Move Note,4,172.19.0.1,37,2,,
-2019-09-28 16:38:44.384750,Move Note,4,172.19.0.1,33,3,,
-2019-09-28 16:38:46.463377,Move Note,4,172.19.0.1,36,34,,
-2019-09-28 16:38:53.086503,Change Note Colour,4,172.19.0.1,36,,,
-2019-09-28 16:38:57.741716,Change Note Colour,4,172.19.0.1,32,,,
-2019-09-28 16:39:00.149278,Move Note,4,172.19.0.1,32,3,,
-2019-09-28 16:39:02.357502,Move Note,4,172.19.0.1,33,1,,
-2019-09-28 16:39:03.839027,Open Note,4,172.19.0.1,33,,,
-2019-09-28 16:39:12.364683,Open commenting in note,4,172.19.0.1,33,,,
-2019-09-28 16:39:14.899665,Add tag,4,172.19.0.1,"[13, 6]",,,
-2019-09-28 16:39:25.229362,Open Note,4,172.19.0.1,37,,,
-2019-09-28 16:39:36.431554,Edit Note,4,172.19.0.1,37,,,<p>grocery shopping&nbsp;</p>
-2019-09-28 16:39:50.015184,Create Note,4,172.19.0.1,,,,car repair 
-2019-09-28 16:39:54.916043,Change Note Colour,4,172.19.0.1,38,,,
-2019-09-28 16:40:02.380377,Move Note,4,172.19.0.1,38,1,,
-2019-09-28 16:40:05.824700,Move Note,4,172.19.0.1,37,1,,
-2019-09-28 16:40:30.892252,Create Channel,4,172.19.0.1,,,,new123
-2019-09-28 16:40:52.249226,Invite user to channel,4,172.19.0.1,,,"[10, 12, 7]",
-2019-09-28 16:41:22.212910,Mention user in chat,4,172.19.0.1,11,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> ?? "
-2019-09-28 16:41:40.628482,Reference channel in chat,4,172.19.0.1,11,,,"<a href=""http://localhost:8010/web#model=mail.channel&amp;id=10"" class=""o_channel_redirect"" data-oe-id=""10"" data-oe-model=""mail.channel"" target=""_blank"">#new</a>  12345"
-2019-09-28 16:42:08.433767,Unfollow from a Channel,4,172.19.0.1,10,,,
-2019-09-28 16:43:03.437172,Move Note,4,172.19.0.1,36,2,,
-2019-09-28 16:43:30.971988,Delete Stage,4,172.19.0.1,34,,,
-2019-09-28 16:43:45.991101,Create Stage,4,172.19.0.1,rename,,,
-2019-09-28 16:44:00.472339,Rename Stage,4,172.19.0.1,35,,,Finished
-2019-09-28 16:44:34.668424,Create Note,4,172.19.0.1,,,,False
-2019-09-28 16:44:43.386541,Open Note,4,172.19.0.1,39,,,
-2019-09-28 16:44:51.471106,Edit Note,4,172.19.0.1,39,,,<p>testing</p>
-2019-09-28 16:44:57.560987,Move Note,4,172.19.0.1,39,35,,
-2019-09-28 16:45:07.653388,Search with Note,4,172.19.0.1,,,,finished
-2019-09-28 16:45:18.952675,Search with Tag,4,172.19.0.1,,,,develop
-2019-09-28 16:45:30.830561,Search with Tag,4,172.19.0.1,,,,"develop, paper"
-2019-09-28 16:45:39.206551,Open Note,4,172.19.0.1,38,,,
-2019-09-28 16:45:46.017755,Add tag,4,172.19.0.1,[3],,,
-2019-09-28 16:45:54.342305,Search with Note,4,172.19.0.1,,,,enhancement
-2019-09-28 16:45:58.741538,Open Note,4,172.19.0.1,38,,,
-2019-09-28 16:46:02.708196,Add tag,4,172.19.0.1,"[3, 2]",,,
-2019-09-28 16:46:15.095461,Search with Note,4,172.19.0.1,,,,bug
-2019-09-28 16:46:19.132706,Search with Tag,4,172.19.0.1,,,,bug
-2019-09-28 16:46:50.277013,Open Note,4,172.19.0.1,37,,,
-2019-09-28 16:46:56.772309,Open Note,4,172.19.0.1,36,,,
-2019-09-28 16:46:59.966005,Open Note,4,172.19.0.1,36,,,
-2019-09-28 16:47:05.254887,Add tag,4,172.19.0.1,[6],,,
-2019-09-28 16:47:09.129943,Open Note,4,172.19.0.1,39,,,
-2019-09-28 16:47:24.116220,Create new tag,4,172.19.0.1,,,,testing_123
-2019-09-28 16:47:26.766713,Add tag,4,172.19.0.1,"[5, 7, 15]",,,
-2019-09-28 16:47:40.633305,Add tag,4,172.19.0.1,"[6, 15]",,,
-2019-09-28 16:47:45.389735,Open Note,4,172.19.0.1,33,,,
-2019-09-28 16:47:53.433309,Add tag,4,172.19.0.1,"[6, 13, 15]",,,
-2019-09-28 16:47:56.473777,Open Note,4,172.19.0.1,37,,,
-2019-09-28 16:48:05.663690,Edit Note,4,172.19.0.1,37,,,<p>grocery shopping&nbsp;</p>
-2019-09-28 16:48:12.484792,Search with Note,4,172.19.0.1,,,,testing
-2019-09-28 16:48:21.337213,Search with Note,4,172.19.0.1,,,,testing_123
-2019-09-28 16:48:27.464224,Search with Tag,4,172.19.0.1,,,,testing
-2019-09-28 16:48:39.231844,Search with Tag,4,172.19.0.1,,,,testing_123
-2019-09-28 16:48:43.196326,Open Note,4,172.19.0.1,36,,,
-2019-09-28 16:48:46.691100,Search with Tag,4,172.19.0.1,,,,testing_123
-2019-09-28 16:48:50.437847,Open Note,4,172.19.0.1,33,,,
-2019-09-28 16:48:57.095964,Search with Tag,4,172.19.0.1,,,,testing_123
-2019-09-28 16:49:09.587664,Delete Stage,4,172.19.0.1,3,,,
-2019-09-28 16:49:27.872591,Rename Stage,4,172.19.0.1,35,,,Finishish
-2019-09-28 16:49:27.945331,Search with Tag,4,172.19.0.1,,,,testing_123
-2019-09-28 16:49:36.953020,Open Note,4,172.19.0.1,36,,,
-2019-09-28 16:49:39.964266,Search with Tag,4,172.19.0.1,,,,testing_123
-2019-09-28 16:49:45.949610,Search with Note,4,172.19.0.1,,,,note
-2019-09-28 16:49:55.369377,Move Note,4,172.19.0.1,32,2,,
-2019-09-28 16:49:59.901378,Search with Note,4,172.19.0.1,,,,shopping
-2019-09-28 16:50:08.352403,Open Note,4,172.19.0.1,37,,,
-2019-09-28 16:50:13.495282,Search with Note,4,172.19.0.1,,,,shopping
-2019-09-28 16:50:19.506625,Search with both Tag and Note,4,172.19.0.1,,,,"shopping, testing"
-2019-09-28 16:50:24.722144,Search with Note,4,172.19.0.1,,,,shopping
-2019-09-28 16:50:30.445829,Open Note,4,172.19.0.1,38,,,
-2019-09-28 16:50:42.711044,Add tag,4,172.19.0.1,"[2, 3, 15]",,,
-2019-09-28 16:50:46.206257,Open Note,4,172.19.0.1,37,,,
-2019-09-28 16:50:50.506020,Open Note,4,172.19.0.1,38,,,
-2019-09-28 16:50:55.086663,Open Note,4,172.19.0.1,38,,,
-2019-09-28 16:51:04.819989,Edit Note,4,172.19.0.1,38,,,<p>car shopping</p>
-2019-09-28 16:51:11.270341,Search with Note,4,172.19.0.1,,,,shopping
-2019-09-28 16:51:19.393278,Search with both Tag and Note,4,172.19.0.1,,,,"shopping, enhancement"
-2019-09-28 16:51:23.067831,Search with Note,4,172.19.0.1,,,,shopping
-2019-09-28 16:51:27.439838,Open Note,4,172.19.0.1,36,,,
-2019-09-28 16:51:45.348704,Edit Note,4,172.19.0.1,36,,,<p>some shopping</p>
-2019-09-28 16:51:52.331405,Search with Note,4,172.19.0.1,,,,shopping
-2019-09-28 16:52:00.572658,Search with both Tag and Note,4,172.19.0.1,,,,"shopping, enhancement"
-2019-09-28 16:52:12.311895,Open Note,4,172.19.0.1,38,,,
-2019-09-28 16:52:23.345452,Open commenting in note,4,172.19.0.1,38,,,
-2019-09-28 16:52:34.860127,Comment in Note,4,172.19.0.1,,,,delayed by a month<br>
-2019-09-28 16:52:57.463153,Search with both Tag and Note,4,172.19.0.1,,,,"shopping, enhancement"
-2019-09-28 16:53:17.583062,Mention user in chat,4,172.19.0.1,9,,[9],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=9"" class=""o_mail_redirect"" data-oe-id=""9"" data-oe-model=""res.partner"" target=""_blank"">@odoo10purplec</a> ? "
-2019-09-28 16:53:30.957793,Reference channel in chat,4,172.19.0.1,9,,,"<a href=""http://localhost:8010/web#model=mail.channel&amp;id=5"" class=""o_channel_redirect"" data-oe-id=""5"" data-oe-model=""mail.channel"" target=""_blank"">#patents</a>  1234"
-2019-09-28 16:53:41.582329,Mention user in chat,4,172.19.0.1,9,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> mee"
-2019-09-28 16:54:03.093181,Create Channel,4,172.19.0.1,,,,test_phase
-2019-09-28 16:54:17.268342,Invite user to channel,4,172.19.0.1,,,"[15, 9, 12]",
-2019-09-28 16:55:24.565124,Reference channel in chat,4,172.19.0.1,12,,,"<a href=""http://localhost:8010/web#model=mail.channel&amp;id=11"" class=""o_channel_redirect"" data-oe-id=""11"" data-oe-model=""mail.channel"" target=""_blank"">#new123</a>  delete it "
-2019-09-28 16:55:29.823593,Mention user in chat,4,172.19.0.1,12,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a>  kkkk"
-2019-09-28 16:56:00.217195,Unfollow from a Channel,4,172.19.0.1,11,,,
-2019-09-28 16:57:17.776524,Open Note,4,172.19.0.1,32,,,
-2019-09-28 16:57:31.526892,Invite and Add follower,4,172.19.0.1,32,,"[6, False, [1]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: test note 1</p></div>"
-2019-09-28 16:57:41.590879,Open Note,4,172.19.0.1,32,,,
-2019-09-28 16:57:45.724655,Open Note,4,172.19.0.1,32,,,
-2019-09-28 16:58:01.398076,Open Note,4,172.19.0.1,32,,,
-2019-09-28 16:58:08.117046,Remove follower from note,4,172.19.0.1,32,,,
-2019-09-28 16:58:33.450041,Open Note,4,172.19.0.1,34,,,
-2019-09-28 16:58:40.328153,Change Tag Colour,4,172.19.0.1,7,,,
-2019-09-28 16:58:43.913418,Add tag,4,172.19.0.1,[6],,,
+2019-09-28 16:36:56.345893,Create Stage,2,172.19.0.1,new1,,,
+2019-09-28 16:37:02.087894,Create Note,2,172.19.0.1,,,,njjj
+2019-09-28 16:37:06.239047,Open Note,2,172.19.0.1,37,,,
+2019-09-28 16:37:37.733076,Invite and Add follower,2,172.19.0.1,37,,"[6, False, [14, 7]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: njjj</p></div>"
+2019-09-28 16:37:49.168257,Open commenting in note,2,172.19.0.1,37,,,
+2019-09-28 16:38:01.540601,Attach file,2,172.19.0.1,,,,
+2019-09-28 16:38:09.280477,Add tag,2,172.19.0.1,[2],,,
+2019-09-28 16:38:28.117305,Change Note Colour,2,172.19.0.1,37,,,
+2019-09-28 16:38:38.883890,Change Note Colour,2,172.19.0.1,37,,,
+2019-09-28 16:38:42.359802,Move Note,2,172.19.0.1,37,2,,
+2019-09-28 16:38:44.384750,Move Note,2,172.19.0.1,33,3,,
+2019-09-28 16:38:46.463377,Move Note,2,172.19.0.1,36,34,,
+2019-09-28 16:38:53.086503,Change Note Colour,2,172.19.0.1,36,,,
+2019-09-28 16:38:57.741716,Change Note Colour,2,172.19.0.1,32,,,
+2019-09-28 16:39:00.149278,Move Note,2,172.19.0.1,32,3,,
+2019-09-28 16:39:02.357502,Move Note,2,172.19.0.1,33,1,,
+2019-09-28 16:39:03.839027,Open Note,2,172.19.0.1,33,,,
+2019-09-28 16:39:12.364683,Open commenting in note,2,172.19.0.1,33,,,
+2019-09-28 16:39:14.899665,Add tag,2,172.19.0.1,"[13, 6]",,,
+2019-09-28 16:39:25.229362,Open Note,2,172.19.0.1,37,,,
+2019-09-28 16:39:36.431554,Edit Note,2,172.19.0.1,37,,,<p>grocery shopping&nbsp;</p>
+2019-09-28 16:39:50.015184,Create Note,2,172.19.0.1,,,,car repair 
+2019-09-28 16:39:54.916043,Change Note Colour,2,172.19.0.1,38,,,
+2019-09-28 16:40:02.380377,Move Note,2,172.19.0.1,38,1,,
+2019-09-28 16:40:05.824700,Move Note,2,172.19.0.1,37,1,,
+2019-09-28 16:40:30.892252,Create Channel,2,172.19.0.1,,,,new123
+2019-09-28 16:40:52.249226,Invite user to channel,2,172.19.0.1,,,"[10, 12, 7]",
+2019-09-28 16:41:22.212910,Mention user in chat,2,172.19.0.1,11,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> ?? "
+2019-09-28 16:41:40.628482,Reference channel in chat,2,172.19.0.1,11,,,"<a href=""http://localhost:8010/web#model=mail.channel&amp;id=10"" class=""o_channel_redirect"" data-oe-id=""10"" data-oe-model=""mail.channel"" target=""_blank"">#new</a>  12345"
+2019-09-28 16:42:08.433767,Unfollow from a Channel,2,172.19.0.1,10,,,
+2019-09-28 16:43:03.437172,Move Note,2,172.19.0.1,36,2,,
+2019-09-28 16:43:30.971988,Delete Stage,2,172.19.0.1,34,,,
+2019-09-28 16:43:45.991101,Create Stage,2,172.19.0.1,rename,,,
+2019-09-28 16:44:00.472339,Rename Stage,2,172.19.0.1,35,,,Finished
+2019-09-28 16:44:34.668424,Create Note,2,172.19.0.1,,,,False
+2019-09-28 16:44:43.386541,Open Note,2,172.19.0.1,39,,,
+2019-09-28 16:44:51.471106,Edit Note,2,172.19.0.1,39,,,<p>testing</p>
+2019-09-28 16:44:57.560987,Move Note,2,172.19.0.1,39,35,,
+2019-09-28 16:45:07.653388,Search with Note,2,172.19.0.1,,,,finished
+2019-09-28 16:45:18.952675,Search with Tag,2,172.19.0.1,,,,develop
+2019-09-28 16:45:30.830561,Search with Tag,2,172.19.0.1,,,,"develop, paper"
+2019-09-28 16:45:39.206551,Open Note,2,172.19.0.1,38,,,
+2019-09-28 16:45:46.017755,Add tag,2,172.19.0.1,[3],,,
+2019-09-28 16:45:54.342305,Search with Note,2,172.19.0.1,,,,enhancement
+2019-09-28 16:45:58.741538,Open Note,2,172.19.0.1,38,,,
+2019-09-28 16:46:02.708196,Add tag,2,172.19.0.1,"[3, 2]",,,
+2019-09-28 16:46:15.095461,Search with Note,2,172.19.0.1,,,,bug
+2019-09-28 16:46:19.132706,Search with Tag,2,172.19.0.1,,,,bug
+2019-09-28 16:46:50.277013,Open Note,2,172.19.0.1,37,,,
+2019-09-28 16:46:56.772309,Open Note,2,172.19.0.1,36,,,
+2019-09-28 16:46:59.966005,Open Note,2,172.19.0.1,36,,,
+2019-09-28 16:47:05.254887,Add tag,2,172.19.0.1,[6],,,
+2019-09-28 16:47:09.129943,Open Note,2,172.19.0.1,39,,,
+2019-09-28 16:47:24.116220,Create new tag,2,172.19.0.1,,,,testing_123
+2019-09-28 16:47:26.766713,Add tag,2,172.19.0.1,"[5, 7, 15]",,,
+2019-09-28 16:47:40.633305,Add tag,2,172.19.0.1,"[6, 15]",,,
+2019-09-28 16:47:45.389735,Open Note,2,172.19.0.1,33,,,
+2019-09-28 16:47:53.433309,Add tag,2,172.19.0.1,"[6, 13, 15]",,,
+2019-09-28 16:47:56.473777,Open Note,2,172.19.0.1,37,,,
+2019-09-28 16:48:05.663690,Edit Note,2,172.19.0.1,37,,,<p>grocery shopping&nbsp;</p>
+2019-09-28 16:48:12.484792,Search with Note,2,172.19.0.1,,,,testing
+2019-09-28 16:48:21.337213,Search with Note,2,172.19.0.1,,,,testing_123
+2019-09-28 16:48:27.464224,Search with Tag,2,172.19.0.1,,,,testing
+2019-09-28 16:48:39.231844,Search with Tag,2,172.19.0.1,,,,testing_123
+2019-09-28 16:48:43.196326,Open Note,2,172.19.0.1,36,,,
+2019-09-28 16:48:46.691100,Search with Tag,2,172.19.0.1,,,,testing_123
+2019-09-28 16:48:50.437847,Open Note,2,172.19.0.1,33,,,
+2019-09-28 16:48:57.095964,Search with Tag,2,172.19.0.1,,,,testing_123
+2019-09-28 16:49:09.587664,Delete Stage,2,172.19.0.1,3,,,
+2019-09-28 16:49:27.872591,Rename Stage,2,172.19.0.1,35,,,Finishish
+2019-09-28 16:49:27.945331,Search with Tag,2,172.19.0.1,,,,testing_123
+2019-09-28 16:49:36.953020,Open Note,2,172.19.0.1,36,,,
+2019-09-28 16:49:39.964266,Search with Tag,2,172.19.0.1,,,,testing_123
+2019-09-28 16:49:45.949610,Search with Note,2,172.19.0.1,,,,note
+2019-09-28 16:49:55.369377,Move Note,2,172.19.0.1,32,2,,
+2019-09-28 16:49:59.901378,Search with Note,2,172.19.0.1,,,,shopping
+2019-09-28 16:50:08.352403,Open Note,2,172.19.0.1,37,,,
+2019-09-28 16:50:13.495282,Search with Note,2,172.19.0.1,,,,shopping
+2019-09-28 16:50:19.506625,Search with both Tag and Note,2,172.19.0.1,,,,"shopping, testing"
+2019-09-28 16:50:24.722144,Search with Note,2,172.19.0.1,,,,shopping
+2019-09-28 16:50:30.445829,Open Note,2,172.19.0.1,38,,,
+2019-09-28 16:50:42.711044,Add tag,2,172.19.0.1,"[2, 3, 15]",,,
+2019-09-28 16:50:46.206257,Open Note,2,172.19.0.1,37,,,
+2019-09-28 16:50:50.506020,Open Note,2,172.19.0.1,38,,,
+2019-09-28 16:50:55.086663,Open Note,2,172.19.0.1,38,,,
+2019-09-28 16:51:04.819989,Edit Note,2,172.19.0.1,38,,,<p>car shopping</p>
+2019-09-28 16:51:11.270341,Search with Note,2,172.19.0.1,,,,shopping
+2019-09-28 16:51:19.393278,Search with both Tag and Note,2,172.19.0.1,,,,"shopping, enhancement"
+2019-09-28 16:51:23.067831,Search with Note,2,172.19.0.1,,,,shopping
+2019-09-28 16:51:27.439838,Open Note,2,172.19.0.1,36,,,
+2019-09-28 16:51:45.348704,Edit Note,2,172.19.0.1,36,,,<p>some shopping</p>
+2019-09-28 16:51:52.331405,Search with Note,2,172.19.0.1,,,,shopping
+2019-09-28 16:52:00.572658,Search with both Tag and Note,2,172.19.0.1,,,,"shopping, enhancement"
+2019-09-28 16:52:12.311895,Open Note,2,172.19.0.1,38,,,
+2019-09-28 16:52:23.345452,Open commenting in note,2,172.19.0.1,38,,,
+2019-09-28 16:52:34.860127,Comment in Note,2,172.19.0.1,,,,delayed by a month<br>
+2019-09-28 16:52:57.463153,Search with both Tag and Note,2,172.19.0.1,,,,"shopping, enhancement"
+2019-09-28 16:53:17.583062,Mention user in chat,2,172.19.0.1,9,,[9],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=9"" class=""o_mail_redirect"" data-oe-id=""9"" data-oe-model=""res.partner"" target=""_blank"">@odoo10purplec</a> ? "
+2019-09-28 16:53:30.957793,Reference channel in chat,2,172.19.0.1,9,,,"<a href=""http://localhost:8010/web#model=mail.channel&amp;id=5"" class=""o_channel_redirect"" data-oe-id=""5"" data-oe-model=""mail.channel"" target=""_blank"">#patents</a>  1234"
+2019-09-28 16:53:41.582329,Mention user in chat,2,172.19.0.1,9,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> mee"
+2019-09-28 16:54:03.093181,Create Channel,2,172.19.0.1,,,,test_phase
+2019-09-28 16:54:17.268342,Invite user to channel,2,172.19.0.1,,,"[15, 9, 12]",
+2019-09-28 16:55:24.565124,Reference channel in chat,2,172.19.0.1,12,,,"<a href=""http://localhost:8010/web#model=mail.channel&amp;id=11"" class=""o_channel_redirect"" data-oe-id=""11"" data-oe-model=""mail.channel"" target=""_blank"">#new123</a>  delete it "
+2019-09-28 16:55:29.823593,Mention user in chat,2,172.19.0.1,12,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a>  kkkk"
+2019-09-28 16:56:00.217195,Unfollow from a Channel,2,172.19.0.1,11,,,
+2019-09-28 16:57:17.776524,Open Note,2,172.19.0.1,32,,,
+2019-09-28 16:57:31.526892,Invite and Add follower,2,172.19.0.1,32,,"[6, False, [1]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: test note 1</p></div>"
+2019-09-28 16:57:41.590879,Open Note,2,172.19.0.1,32,,,
+2019-09-28 16:57:45.724655,Open Note,2,172.19.0.1,32,,,
+2019-09-28 16:58:01.398076,Open Note,2,172.19.0.1,32,,,
+2019-09-28 16:58:08.117046,Remove follower from note,2,172.19.0.1,32,,,
+2019-09-28 16:58:33.450041,Open Note,2,172.19.0.1,34,,,
+2019-09-28 16:58:40.328153,Change Tag Colour,2,172.19.0.1,7,,,
+2019-09-28 16:58:43.913418,Add tag,2,172.19.0.1,[6],,,

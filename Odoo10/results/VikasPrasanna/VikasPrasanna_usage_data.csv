@@ -1,51 +1,51 @@
 timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
-2019-09-21 20:04:00.351600,Open Note,3,172.19.0.1,29,,,
-2019-09-21 20:04:25.705395,Create new tag,3,172.19.0.1,,,,competition
-2019-09-21 20:04:38.593585,Change Tag Colour,3,172.19.0.1,1,,,
-2019-09-21 20:04:45.610882,Edit Note,3,172.19.0.1,29,,,<p>Look for competing products in the market</p>
-2019-09-21 20:04:53.357031,Change Note Colour,3,172.19.0.1,29,,,
-2019-09-21 20:04:57.083195,Change Note Colour,3,172.19.0.1,29,,,
-2019-09-21 20:04:59.886629,Open Note,3,172.19.0.1,29,,,
-2019-09-21 20:05:22.279496,Comment in Note,3,172.19.0.1,,,,Look for start-ups in particular.
-2019-09-21 20:05:31.476870,Open Note,3,172.19.0.1,31,,,
-2019-09-21 20:06:00.228964,Create new tag,3,172.19.0.1,,,,form
-2019-09-21 20:06:02.196847,Change Tag Colour,3,172.19.0.1,6,,,
-2019-09-21 20:07:31.000164,Invite and Add follower,3,172.19.0.1,31,,"[6, False, [13, 14]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><a href=""https://www.patentsoffice.ie/en/ip-search-tools/"" style=""text-decoration:none;color:rgb(124, 123, 173);background-color:transparent;"">https://www.patentsoffice.ie/en/ip-search-tools/</a>&nbsp;</p></div>"
-2019-09-21 20:07:36.329255,Edit Note,3,172.19.0.1,31,,,<p>Filling disclosure form.</p>
-2019-09-21 20:07:41.452884,Open Note,3,172.19.0.1,30,,,
-2019-09-21 20:07:51.229144,Open Note,3,172.19.0.1,30,,,
-2019-09-21 20:08:13.623842,Create new tag,3,172.19.0.1,,,,ideas
-2019-09-21 20:08:33.689273,Edit Note,3,172.19.0.1,30,,,<p>Look for more patent-able ideas.</p>
-2019-09-21 20:08:55.058293,Chat with other users,3,172.19.0.1,2,,,Hi Blue
-2019-09-21 20:09:26.401795,Chat with other users,3,172.19.0.1,2,,,Check out #form from my Finished task list
-2019-09-21 20:10:00.396048,Create Channel,3,172.19.0.1,,,,patents
-2019-09-21 20:10:22.568330,Invite user to channel,3,172.19.0.1,,,"[13, 14, 15]",
-2019-09-21 20:10:28.665073,Chat with other users,3,172.19.0.1,5,,,Hello everyone
-2019-09-21 20:10:45.724490,Chat with other users,3,172.19.0.1,5,,,Please use this channel to discuss patent-able ideas
-2019-09-21 20:11:00.530182,Chat with other users,3,172.19.0.1,5,,,Let's try and make some coins while we're at it
-2019-09-21 20:12:06.275432,Reference channel in chat,3,172.19.0.1,2,,,"I also invited you to join <a href=""http://localhost:8010/web#model=mail.channel&amp;id=5"" class=""o_channel_redirect"" data-oe-id=""5"" data-oe-model=""mail.channel"" target=""_blank"">#patents</a> "
-2019-09-21 20:12:34.987627,Mention user and reference channel in chat,3,172.19.0.1,2,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> is not a part of <a href=""http://localhost:8010/web#model=mail.channel&amp;id=5"" class=""o_channel_redirect"" data-oe-id=""5"" data-oe-model=""mail.channel"" target=""_blank"">#patents</a> "
-2019-09-21 20:12:59.821710,Open Note,3,172.19.0.1,30,,,
-2019-09-21 20:13:07.440269,Open commenting in note,3,172.19.0.1,30,,,
-2019-09-21 20:13:29.030735,Comment in Note,3,172.19.0.1,,,,"<a href=""http://localhost:8010/web#model=res.partner&amp;id=14"" class=""o_mail_redirect"" data-oe-id=""14"" data-oe-model=""res.partner"" target=""_blank"">@odoo10blueb</a> this task will be high priority for you today!"
-2019-09-21 20:13:29.385882,Open Note,3,172.19.0.1,30,,,
-2019-09-21 20:13:43.836510,Invite and Add follower,3,172.19.0.1,30,,"[6, False, [15, 14]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: Look for more patent-able ideas.</p></div>"
-2019-09-21 20:14:02.281493,Open Note,3,172.19.0.1,30,,,
-2019-09-21 20:14:12.688707,Open Note,3,172.19.0.1,30,,,
-2019-09-21 20:14:20.114921,Edit Note,3,172.19.0.1,30,,,<p>Looking for more patent-able ideas.</p>
-2019-09-21 20:14:26.231663,Open Note,3,172.19.0.1,29,,,
-2019-09-21 20:14:29.538538,Move Note,3,172.19.0.1,29,2,,
-2019-09-21 20:14:31.001850,Move Note,3,172.19.0.1,29,1,,
-2019-09-21 20:14:32.562242,Move Note,3,172.19.0.1,29,2,,
-2019-09-21 20:14:33.439086,Move Note,3,172.19.0.1,29,1,,
-2019-09-21 20:14:52.947548,Edit Note,3,172.19.0.1,31,,,"<p><img src=""/web/image/336/UA%20logo.png"" class=""pull-left"" style=""width: 100%;"">Filling disclosure form.</p>"
-2019-09-21 20:15:04.527297,Move Note,3,172.19.0.1,29,2,,
-2019-09-21 20:15:24.824898,Chat with other users,3,172.19.0.1,6,,,Hi
-2019-09-21 20:15:28.560199,Chat with other users,3,172.19.0.1,6,,,How are you today?
-2019-09-21 20:15:41.236831,Chat with other users,3,172.19.0.1,6,,,Will you be able to work on patent-able ideas today?
-2019-09-21 20:15:53.857698,Chat with other users,3,172.19.0.1,6,,,I've assigned the card to you
-2019-09-21 20:16:31.097969,Chat with other users,3,172.19.0.1,6,,,Let me know if you want me to delegate it to @odoo10bluea or @odoo10bluea
-2019-09-21 20:16:39.967542,Unfollow from a Channel,3,172.19.0.1,1,,,
-2019-09-21 20:16:51.335377,Open Note,3,172.19.0.1,30,,,
-2019-09-21 20:17:01.711223,Open Note,3,172.19.0.1,29,,,
-2019-09-21 20:17:10.530328,Delete Note,3,172.19.0.1,29,,,
+2019-09-21 20:04:00.351600,Open Note,1,172.19.0.1,29,,,
+2019-09-21 20:04:25.705395,Create new tag,1,172.19.0.1,,,,competition
+2019-09-21 20:04:38.593585,Change Tag Colour,1,172.19.0.1,1,,,
+2019-09-21 20:04:45.610882,Edit Note,1,172.19.0.1,29,,,<p>Look for competing products in the market</p>
+2019-09-21 20:04:53.357031,Change Note Colour,1,172.19.0.1,29,,,
+2019-09-21 20:04:57.083195,Change Note Colour,1,172.19.0.1,29,,,
+2019-09-21 20:04:59.886629,Open Note,1,172.19.0.1,29,,,
+2019-09-21 20:05:22.279496,Comment in Note,1,172.19.0.1,,,,Look for start-ups in particular.
+2019-09-21 20:05:31.476870,Open Note,1,172.19.0.1,31,,,
+2019-09-21 20:06:00.228964,Create new tag,1,172.19.0.1,,,,form
+2019-09-21 20:06:02.196847,Change Tag Colour,1,172.19.0.1,6,,,
+2019-09-21 20:07:31.000164,Invite and Add follower,1,172.19.0.1,31,,"[6, False, [13, 14]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><a href=""https://www.patentsoffice.ie/en/ip-search-tools/"" style=""text-decoration:none;color:rgb(124, 123, 173);background-color:transparent;"">https://www.patentsoffice.ie/en/ip-search-tools/</a>&nbsp;</p></div>"
+2019-09-21 20:07:36.329255,Edit Note,1,172.19.0.1,31,,,<p>Filling disclosure form.</p>
+2019-09-21 20:07:41.452884,Open Note,1,172.19.0.1,30,,,
+2019-09-21 20:07:51.229144,Open Note,1,172.19.0.1,30,,,
+2019-09-21 20:08:13.623842,Create new tag,1,172.19.0.1,,,,ideas
+2019-09-21 20:08:33.689273,Edit Note,1,172.19.0.1,30,,,<p>Look for more patent-able ideas.</p>
+2019-09-21 20:08:55.058293,Chat with other users,1,172.19.0.1,2,,,Hi Blue
+2019-09-21 20:09:26.401795,Chat with other users,1,172.19.0.1,2,,,Check out #form from my Finished task list
+2019-09-21 20:10:00.396048,Create Channel,1,172.19.0.1,,,,patents
+2019-09-21 20:10:22.568330,Invite user to channel,1,172.19.0.1,,,"[13, 14, 15]",
+2019-09-21 20:10:28.665073,Chat with other users,1,172.19.0.1,5,,,Hello everyone
+2019-09-21 20:10:45.724490,Chat with other users,1,172.19.0.1,5,,,Please use this channel to discuss patent-able ideas
+2019-09-21 20:11:00.530182,Chat with other users,1,172.19.0.1,5,,,Let's try and make some coins while we're at it
+2019-09-21 20:12:06.275432,Reference channel in chat,1,172.19.0.1,2,,,"I also invited you to join <a href=""http://localhost:8010/web#model=mail.channel&amp;id=5"" class=""o_channel_redirect"" data-oe-id=""5"" data-oe-model=""mail.channel"" target=""_blank"">#patents</a> "
+2019-09-21 20:12:34.987627,Mention user and reference channel in chat,1,172.19.0.1,2,,[3],"<a href=""http://localhost:8010/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> is not a part of <a href=""http://localhost:8010/web#model=mail.channel&amp;id=5"" class=""o_channel_redirect"" data-oe-id=""5"" data-oe-model=""mail.channel"" target=""_blank"">#patents</a> "
+2019-09-21 20:12:59.821710,Open Note,1,172.19.0.1,30,,,
+2019-09-21 20:13:07.440269,Open commenting in note,1,172.19.0.1,30,,,
+2019-09-21 20:13:29.030735,Comment in Note,1,172.19.0.1,,,,"<a href=""http://localhost:8010/web#model=res.partner&amp;id=14"" class=""o_mail_redirect"" data-oe-id=""14"" data-oe-model=""res.partner"" target=""_blank"">@odoo10blueb</a> this task will be high priority for you today!"
+2019-09-21 20:13:29.385882,Open Note,1,172.19.0.1,30,,,
+2019-09-21 20:13:43.836510,Invite and Add follower,1,172.19.0.1,30,,"[6, False, [15, 14]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: Look for more patent-able ideas.</p></div>"
+2019-09-21 20:14:02.281493,Open Note,1,172.19.0.1,30,,,
+2019-09-21 20:14:12.688707,Open Note,1,172.19.0.1,30,,,
+2019-09-21 20:14:20.114921,Edit Note,1,172.19.0.1,30,,,<p>Looking for more patent-able ideas.</p>
+2019-09-21 20:14:26.231663,Open Note,1,172.19.0.1,29,,,
+2019-09-21 20:14:29.538538,Move Note,1,172.19.0.1,29,2,,
+2019-09-21 20:14:31.001850,Move Note,1,172.19.0.1,29,1,,
+2019-09-21 20:14:32.562242,Move Note,1,172.19.0.1,29,2,,
+2019-09-21 20:14:33.439086,Move Note,1,172.19.0.1,29,1,,
+2019-09-21 20:14:52.947548,Edit Note,1,172.19.0.1,31,,,"<p><img src=""/web/image/336/UA%20logo.png"" class=""pull-left"" style=""width: 100%;"">Filling disclosure form.</p>"
+2019-09-21 20:15:04.527297,Move Note,1,172.19.0.1,29,2,,
+2019-09-21 20:15:24.824898,Chat with other users,1,172.19.0.1,6,,,Hi
+2019-09-21 20:15:28.560199,Chat with other users,1,172.19.0.1,6,,,How are you today?
+2019-09-21 20:15:41.236831,Chat with other users,1,172.19.0.1,6,,,Will you be able to work on patent-able ideas today?
+2019-09-21 20:15:53.857698,Chat with other users,1,172.19.0.1,6,,,I've assigned the card to you
+2019-09-21 20:16:31.097969,Chat with other users,1,172.19.0.1,6,,,Let me know if you want me to delegate it to @odoo10bluea or @odoo10bluea
+2019-09-21 20:16:39.967542,Unfollow from a Channel,1,172.19.0.1,1,,,
+2019-09-21 20:16:51.335377,Open Note,1,172.19.0.1,30,,,
+2019-09-21 20:17:01.711223,Open Note,1,172.19.0.1,29,,,
+2019-09-21 20:17:10.530328,Delete Note,1,172.19.0.1,29,,,
