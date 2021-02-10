@@ -3,15 +3,15 @@
 # Author - Manoj Kesavulu
 
 import dash
-from dash_html_components.Div import Div
 import numpy as np
 import pandas as pd
+import plotly.express as px
 import plotly.graph_objects as go
 import dash_core_components as dcc
 import dash_html_components as html
+from dash_html_components.Div import Div
 from plotly.subplots import make_subplots
 from dash.dependencies import Output, Input
-import plotly.express as px
 
 
 data_10_frequency_timespent = pd.read_csv("Insights/Metrics-10-frequency-timespent.csv")
