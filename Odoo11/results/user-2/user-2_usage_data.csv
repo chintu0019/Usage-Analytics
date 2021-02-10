@@ -1,0 +1,156 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2021-02-10 15:23:14.882375,Create Stage,4,172.19.0.1,temporary,,,
+2021-02-10 15:23:21.413952,Drag and Drop note,4,172.19.0.1,13,43,,
+2021-02-10 15:23:30.148346,Create Note,4,172.19.0.1,,,,clean house
+2021-02-10 15:23:43.108105,Create Note,4,172.19.0.1,,,,initialise git repository
+2021-02-10 15:23:43.208510,Open Note,4,172.19.0.1,36,,,
+2021-02-10 15:23:52.811730,Create Note,4,172.19.0.1,,,,learn python
+2021-02-10 15:23:52.854757,Open Note,4,172.19.0.1,37,,,
+2021-02-10 15:24:30.935095,Create Note,4,172.19.0.1,,,,buy milk
+2021-02-10 15:24:31.033024,Open Note,4,172.19.0.1,38,,,
+2021-02-10 15:25:03.801704,Create Note,4,172.19.0.1,,,,word on code
+2021-02-10 15:25:03.898285,Open Note,4,172.19.0.1,39,,,
+2021-02-10 15:26:48.625065,Create Note,4,172.19.0.1,,,,get car from the shop
+2021-02-10 15:26:48.723751,Open Note,4,172.19.0.1,40,,,
+2021-02-10 15:27:12.914248,Create Note,4,172.19.0.1,,,,catch up on emails
+2021-02-10 15:27:12.967867,Open Note,4,172.19.0.1,41,,,
+2021-02-10 15:27:15.853861,Drag and Drop note,4,172.19.0.1,14,43,,
+2021-02-10 15:27:20.273620,Drag and Drop note,4,172.19.0.1,35,3,,
+2021-02-10 15:27:23.443418,Drag and Drop note,4,172.19.0.1,40,1,,
+2021-02-10 15:27:27.007461,Open Note,4,172.19.0.1,39,,,
+2021-02-10 15:27:32.222362,Edit Note,4,172.19.0.1,39,,,<p>work on code</p>
+2021-02-10 15:27:35.634713,Drag and Drop note,4,172.19.0.1,39,2,,
+2021-02-10 15:28:11.796073,Drag and Drop note,4,172.19.0.1,6,68,,
+2021-02-10 15:28:16.566519,Drag and Drop note,4,172.19.0.1,25,3,,
+2021-02-10 15:28:19.662474,Drag and Drop note,4,172.19.0.1,31,2,,
+2021-02-10 15:28:21.760037,Drag and Drop note,4,172.19.0.1,29,1,,
+2021-02-10 15:28:24.502548,Drag and Drop note,4,172.19.0.1,27,68,,
+2021-02-10 15:28:30.824112,Drag and Drop note,4,172.19.0.1,15,43,,
+2021-02-10 15:28:38.241288,Open Note,4,172.19.0.1,36,,,
+2021-02-10 15:28:44.092647,Create new tag,4,172.19.0.1,,,,work
+2021-02-10 15:28:46.507474,Change Tag Colour,4,172.19.0.1,12,,,
+2021-02-10 15:28:48.352656,Add tag,4,172.19.0.1,36,,,
+2021-02-10 15:28:51.463069,Open Note,4,172.19.0.1,40,,,
+2021-02-10 15:28:56.266519,Create new tag,4,172.19.0.1,,,,personal
+2021-02-10 15:28:59.664632,Change Tag Colour,4,172.19.0.1,13,,,
+2021-02-10 15:29:01.549392,Change Tag Colour,4,172.19.0.1,13,,,
+2021-02-10 15:29:03.137397,Add tag,4,172.19.0.1,40,,,
+2021-02-10 15:29:08.013274,Open Note,4,172.19.0.1,39,,,
+2021-02-10 15:29:13.247680,Add tag,4,172.19.0.1,39,,,
+2021-02-10 15:29:17.163910,Open Note,4,172.19.0.1,37,,,
+2021-02-10 15:29:29.589991,Add tag,4,172.19.0.1,37,,,
+2021-02-10 15:29:37.403225,Open Note,4,172.19.0.1,38,,,
+2021-02-10 15:29:42.297985,Add tag,4,172.19.0.1,38,,,
+2021-02-10 15:29:45.469269,Open Note,4,172.19.0.1,41,,,
+2021-02-10 15:29:51.065326,Add tag,4,172.19.0.1,41,,,
+2021-02-10 15:29:53.507738,Open Note,4,172.19.0.1,35,,,
+2021-02-10 15:29:59.981825,Add tag,4,172.19.0.1,35,,,
+2021-02-10 15:30:43.176058,Drag and Drop note,4,172.19.0.1,16,43,,
+2021-02-10 15:30:50.568586,Change Note Colour,4,172.19.0.1,36,,,
+2021-02-10 15:30:52.541108,Open Note,4,172.19.0.1,40,,,
+2021-02-10 15:31:02.710695,Change Note Colour,4,172.19.0.1,40,,,
+2021-02-10 15:31:06.170602,Change Note Colour,4,172.19.0.1,37,,,
+2021-02-10 15:31:08.801493,Change Note Colour,4,172.19.0.1,38,,,
+2021-02-10 15:31:16.772389,Change Note Colour,4,172.19.0.1,39,,,
+2021-02-10 15:31:20.285944,Change Note Colour,4,172.19.0.1,41,,,
+2021-02-10 15:31:26.670153,Change Note Colour,4,172.19.0.1,35,,,
+2021-02-10 15:31:34.430754,Drag and Drop note,4,172.19.0.1,17,43,,
+2021-02-10 15:31:41.816411,Search with Note,4,172.19.0.1,,,,personal
+2021-02-10 15:31:49.380164,Search with Tag,4,172.19.0.1,,,,personal
+2021-02-10 15:31:59.779621,Create Note,4,172.19.0.1,,,,personal 4
+2021-02-10 15:31:59.876452,Open Note,4,172.19.0.1,42,,,
+2021-02-10 15:32:05.586715,Search with Tag,4,172.19.0.1,,,,work
+2021-02-10 15:32:11.670029,Create Note,4,172.19.0.1,,,,work 3
+2021-02-10 15:32:11.714241,Open Note,4,172.19.0.1,43,,,
+2021-02-10 15:32:18.531676,Drag and Drop note,4,172.19.0.1,18,43,,
+2021-02-10 15:32:19.845999,Open Note,4,172.19.0.1,24,,,
+2021-02-10 15:32:25.568889,Edit Note,4,172.19.0.1,24,,,<p>review the paper</p>
+2021-02-10 15:32:28.188583,Open Note,4,172.19.0.1,26,,,
+2021-02-10 15:32:36.575368,Edit Note,4,172.19.0.1,26,,,<p>cook dinner</p><p><br></p><p>Hello</p>
+2021-02-10 15:32:45.841023,Open Note,4,172.19.0.1,27,,,
+2021-02-10 15:32:53.208909,Edit Note,4,172.19.0.1,27,,,<p>this is an old note</p>
+2021-02-10 15:33:06.175261,Drag and Drop note,4,172.19.0.1,19,43,,
+2021-02-10 15:33:35.543844,Open Note,4,172.19.0.1,36,,,
+2021-02-10 15:33:53.782517,Invite and Add follower,4,172.19.0.1,36,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: initialise git repository</p></div>"
+2021-02-10 15:34:02.776267,Open Note,4,172.19.0.1,32,,,
+2021-02-10 15:34:13.856292,Invite and Add follower,4,172.19.0.1,32,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: refactor the old code</p></div>"
+2021-02-10 15:34:18.013871,Open Note,4,172.19.0.1,35,,,
+2021-02-10 15:34:29.884015,Invite and Add follower,4,172.19.0.1,35,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: clean house</p></div>"
+2021-02-10 15:34:37.452180,Open Note,4,172.19.0.1,41,,,
+2021-02-10 15:34:50.639920,Invite and Add follower,4,172.19.0.1,41,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: catch up on emails</p></div>"
+2021-02-10 15:34:56.985258,Open Note,4,172.19.0.1,40,,,
+2021-02-10 15:35:02.488122,Open Note,4,172.19.0.1,40,,,
+2021-02-10 15:35:10.640723,Invite and Add follower,4,172.19.0.1,40,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: get car from the shop</p></div>"
+2021-02-10 15:35:21.812950,Open Note,4,172.19.0.1,38,,,
+2021-02-10 15:35:34.572465,Invite and Add follower,4,172.19.0.1,38,,6,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: buy milk</p></div>"
+2021-02-10 15:35:52.410574,Drag and Drop note,4,172.19.0.1,20,43,,
+2021-02-10 15:36:04.677225,Open Note,4,172.19.0.1,36,,,
+2021-02-10 15:36:06.382398,Open commenting in note,4,172.19.0.1,36,,,
+2021-02-10 15:36:10.568494,Comment in Note,4,172.19.0.1,,,,monday
+2021-02-10 15:36:15.463743,Open Note,4,172.19.0.1,24,,,
+2021-02-10 15:36:16.986312,Open commenting in note,4,172.19.0.1,24,,,
+2021-02-10 15:36:24.677686,Comment in Note,4,172.19.0.1,,,,Tuesday
+2021-02-10 15:36:27.934881,Open Note,4,172.19.0.1,26,,,
+2021-02-10 15:36:29.193537,Open commenting in note,4,172.19.0.1,26,,,
+2021-02-10 15:36:35.275912,Comment in Note,4,172.19.0.1,,,,Wednesday
+2021-02-10 15:36:40.713249,Open Note,4,172.19.0.1,40,,,
+2021-02-10 15:36:42.558614,Open commenting in note,4,172.19.0.1,40,,,
+2021-02-10 15:36:47.922971,Comment in Note,4,172.19.0.1,,,,thursday
+2021-02-10 15:36:57.771075,Open Note,4,172.19.0.1,39,,,
+2021-02-10 15:36:59.926615,Open commenting in note,4,172.19.0.1,39,,,
+2021-02-10 15:37:03.352692,Comment in Note,4,172.19.0.1,,,,friday
+2021-02-10 15:37:08.086904,Open Note,4,172.19.0.1,25,,,
+2021-02-10 15:37:09.781319,Open commenting in note,4,172.19.0.1,25,,,
+2021-02-10 15:37:14.407289,Comment in Note,4,172.19.0.1,,,,Saturday
+2021-02-10 15:37:18.088346,Open Note,4,172.19.0.1,35,,,
+2021-02-10 15:37:19.364300,Open commenting in note,4,172.19.0.1,35,,,
+2021-02-10 15:37:23.473640,Comment in Note,4,172.19.0.1,,,,sunday
+2021-02-10 15:37:30.309515,Drag and Drop note,4,172.19.0.1,21,43,,
+2021-02-10 15:37:33.597100,Open Note,4,172.19.0.1,24,,,
+2021-02-10 15:37:36.110383,Open commenting in note,4,172.19.0.1,24,,,
+2021-02-10 15:37:48.046560,Attach file,4,172.19.0.1,,,,file
+2021-02-10 15:37:54.558538,Open Note,4,172.19.0.1,26,,,
+2021-02-10 15:37:56.196376,Open commenting in note,4,172.19.0.1,26,,,
+2021-02-10 15:38:07.400584,Attach file,4,172.19.0.1,,,,
+2021-02-10 15:38:10.994643,Open Note,4,172.19.0.1,30,,,
+2021-02-10 15:38:12.682660,Open commenting in note,4,172.19.0.1,30,,,
+2021-02-10 15:38:22.270148,Attach file,4,172.19.0.1,,,,
+2021-02-10 15:38:27.621984,Open Note,4,172.19.0.1,25,,,
+2021-02-10 15:38:29.869316,Open commenting in note,4,172.19.0.1,25,,,
+2021-02-10 15:38:41.451690,Attach file,4,172.19.0.1,,,,
+2021-02-10 15:38:49.413228,Open Note,4,172.19.0.1,41,,,
+2021-02-10 15:38:50.715391,Open commenting in note,4,172.19.0.1,41,,,
+2021-02-10 15:38:57.837924,Attach file,4,172.19.0.1,,,,
+2021-02-10 15:39:10.158427,Drag and Drop note,4,172.19.0.1,22,43,,
+2021-02-10 15:39:15.938441,Search with Note,4,172.19.0.1,,,,hello
+2021-02-10 15:39:23.199354,Create Note,4,172.19.0.1,,,,hello 3
+2021-02-10 15:39:23.302075,Open Note,4,172.19.0.1,44,,,
+2021-02-10 15:39:28.203206,Drag and Drop note,4,172.19.0.1,23,43,,
+2021-02-10 15:39:34.346171,Search with Tag,4,172.19.0.1,,,,other
+2021-02-10 15:39:45.845951,Create Note,4,172.19.0.1,,,,other 5
+2021-02-10 15:39:45.893631,Open Note,4,172.19.0.1,45,,,
+2021-02-10 15:39:54.215670,Change Note Colour,4,172.19.0.1,43,,,
+2021-02-10 15:39:57.644726,Change Note Colour,4,172.19.0.1,42,,,
+2021-02-10 15:40:00.320585,Open Note,4,172.19.0.1,6,,,
+2021-02-10 15:40:03.056871,Change Note Colour,4,172.19.0.1,45,,,
+2021-02-10 15:40:06.675498,Change Note Colour,4,172.19.0.1,44,,,
+2021-02-10 15:40:08.237393,Open Note,4,172.19.0.1,43,,,
+2021-02-10 15:40:15.506133,Add tag,4,172.19.0.1,43,,,
+2021-02-10 15:40:23.857181,Open Note,4,172.19.0.1,42,,,
+2021-02-10 15:40:28.941985,Add tag,4,172.19.0.1,42,,,
+2021-02-10 15:40:35.037132,Open Note,4,172.19.0.1,45,,,
+2021-02-10 15:40:44.241760,Edit Note,4,172.19.0.1,45,,,<p>other 7</p>
+2021-02-10 15:40:52.699169,Search with Tag,4,172.19.0.1,,,,other
+2021-02-10 15:40:57.063922,Delete Note,4,172.19.0.1,29,,,
+2021-02-10 15:40:57.156461,Search with Tag,4,172.19.0.1,,,,other
+2021-02-10 15:41:00.229936,Delete Note,4,172.19.0.1,31,,,
+2021-02-10 15:41:00.318993,Search with Tag,4,172.19.0.1,,,,other
+2021-02-10 15:41:04.161331,Delete Note,4,172.19.0.1,25,,,
+2021-02-10 15:41:04.265587,Search with Tag,4,172.19.0.1,,,,other
+2021-02-10 15:41:13.081556,Drag and Drop note,4,172.19.0.1,34,43,,
+2021-02-10 15:41:18.103523,Search with Note,4,172.19.0.1,,,,old
+2021-02-10 15:41:27.421664,Search with both Tag and Note,4,172.19.0.1,,,,"old, deprecated"
+2021-02-10 15:41:33.976478,Delete Note,4,172.19.0.1,32,,,
+2021-02-10 15:41:34.066424,Search with both Tag and Note,4,172.19.0.1,,,,"old, deprecated"
+2021-02-10 15:41:36.174317,Search with Tag,4,172.19.0.1,,,,deprecated
+2021-02-10 15:41:39.740056,Drag and Drop note,4,172.19.0.1,33,43,,
