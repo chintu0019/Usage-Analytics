@@ -70,25 +70,25 @@ app.layout = html.Div(
     [Input("userId_value", "value")])
 def display_(userId_value):
     if userId_value == None:
-        df_10_ts = data_10_frequency_timespent
-        df_11_ts = data_11_frequency_timespent
+        df_10_ft = data_10_frequency_timespent
+        df_11_ft = data_11_frequency_timespent
     else:
-        df_10_ts = data_10_frequency_timespent[data_10_frequency_timespent["userId"]==userId_value]
-        df_11_ts = data_11_frequency_timespent[data_11_frequency_timespent["userId"]==userId_value]
+        df_10_ft = data_10_frequency_timespent[data_10_frequency_timespent["userId"]==userId_value]
+        df_11_ft = data_11_frequency_timespent[data_11_frequency_timespent["userId"]==userId_value]
     
     trace_frequency_10 = go.Bar(
-        x = df_10_ts.actionName,
-        y = df_10_ts.frequency,
+        x = df_10_ft.actionName,
+        y = df_10_ft.frequency,
         name = "Odoo 10",
-        marker = dict(color = 'rgba(255, 100, 100, 0.5)',
+        marker = dict(color = 'rgba(0, 190, 224, 0.95)',
                      line=dict(color='rgb(0,0,0)',width=1.5)),
         text = data_10_frequency_timespent.frequency)
     # create trace_frequency_11 
     trace_frequency_11 = go.Bar(
-        x = df_11_ts.actionName,
-        y = df_11_ts.frequency,
+        x = df_11_ft.actionName,
+        y = df_11_ft.frequency,
         name = "Odoo 11",
-        marker = dict(color = 'rgba(100, 255, 255, 0.5)',
+        marker = dict(color = 'rgba(252, 69, 53, 0.95)',
                       line=dict(color='rgb(0,0,0)',width=1.5)),
         text = data_11_frequency_timespent.frequency)
 
@@ -98,18 +98,18 @@ def display_(userId_value):
 
 
     trace_timespent_10 = go.Bar(
-        x = df_10_ts.actionName,
-        y = df_10_ts.timespent,
+        x = df_10_ft.actionName,
+        y = df_10_ft.timespent,
         name = "Odoo 10",
-        marker = dict(color = 'rgba(50, 100, 255, 0.5)',
+        marker = dict(color = 'rgba(255, 167, 5, 0.95)',
                      line=dict(color='rgb(0,0,0)',width=1.5)),
         text = data_10_frequency_timespent.timespent)
 
     trace_timespent_11 = go.Bar(
-        x = df_11_ts.actionName,
-        y = df_11_ts.timespent,
+        x = df_11_ft.actionName,
+        y = df_11_ft.timespent,
         name = "Odoo 11",
-        marker = dict(color = 'rgba(255, 255, 0, 0.5)',
+        marker = dict(color = 'rgba(0, 204, 132, 0.95)',
                      line=dict(color='rgb(0,0,0)',width=1.5)),
         text = data_11_frequency_timespent.timespent)
     
@@ -118,6 +118,7 @@ def display_(userId_value):
     fig_timespent = go.Figure(data = data_timespent, layout = layout_timespent)
 
     
+    # Plot figures for Consistency measures 
     fig_consistency_frequency = px.histogram(
         data_consistency, 
         x="actionName", 
