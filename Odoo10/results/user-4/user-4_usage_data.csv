@@ -1,0 +1,132 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2021-02-15 14:32:27.835396,Create Stage,6,172.18.0.1,Temporary,,,
+2021-02-15 14:32:31.003891,Move Note,6,172.18.0.1,23,35,,
+2021-02-15 14:32:50.458751,Create Note,6,172.18.0.1,,,,arrange a call with the clients
+2021-02-15 14:35:21.182087,Create Note,6,172.18.0.1,,,,book flights
+2021-02-15 14:35:30.989232,Create Note,6,172.18.0.1,,,,get car fixed
+2021-02-15 14:36:37.906039,Create Note,6,172.18.0.1,,,,sign-off on the project X
+2021-02-15 14:37:15.220061,Create Note,6,172.18.0.1,,,,review code changes to project B
+2021-02-15 14:37:31.595697,Create Note,6,172.18.0.1,,,,plan for the weekend drive
+2021-02-15 14:38:00.502618,Create Note,6,172.18.0.1,,,,buy coffee powder
+2021-02-15 14:38:06.531129,Move Note,6,172.18.0.1,41,3,,
+2021-02-15 14:38:09.148682,Move Note,6,172.18.0.1,42,2,,
+2021-02-15 14:38:11.142191,Move Note,6,172.18.0.1,43,1,,
+2021-02-15 14:38:13.008409,Move Note,6,172.18.0.1,35,61,,
+2021-02-15 14:38:15.563010,Move Note,6,172.18.0.1,52,3,,
+2021-02-15 14:38:17.294736,Move Note,6,172.18.0.1,51,3,,
+2021-02-15 14:38:19.136555,Move Note,6,172.18.0.1,50,2,,
+2021-02-15 14:38:21.145169,Move Note,6,172.18.0.1,49,2,,
+2021-02-15 14:38:25.336431,Move Note,6,172.18.0.1,47,3,,
+2021-02-15 14:38:29.585838,Move Note,6,172.18.0.1,24,35,,
+2021-02-15 14:38:31.155760,Move Note,6,172.18.0.1,25,35,,
+2021-02-15 14:38:44.852519,Change Note Colour,6,172.18.0.1,48,,,
+2021-02-15 14:38:47.935926,Change Note Colour,6,172.18.0.1,46,,,
+2021-02-15 14:38:51.159128,Change Note Colour,6,172.18.0.1,46,,,
+2021-02-15 14:39:04.837084,Change Note Colour,6,172.18.0.1,50,,,
+2021-02-15 14:39:07.068867,Change Note Colour,6,172.18.0.1,49,,,
+2021-02-15 14:39:09.648155,Change Note Colour,6,172.18.0.1,52,,,
+2021-02-15 14:39:11.485792,Change Note Colour,6,172.18.0.1,51,,,
+2021-02-15 14:39:13.376584,Change Note Colour,6,172.18.0.1,47,,,
+2021-02-15 14:39:22.838513,Move Note,6,172.18.0.1,26,35,,
+2021-02-15 14:39:27.488655,Open Note,6,172.18.0.1,48,,,
+2021-02-15 14:39:31.915831,Create new tag,6,172.18.0.1,,,,personal
+2021-02-15 14:39:34.647091,Change Tag Colour,6,172.18.0.1,4,,,
+2021-02-15 14:39:36.032855,Add tag,6,172.18.0.1,[13],,,
+2021-02-15 14:39:44.688661,Create new tag,6,172.18.0.1,,,,work
+2021-02-15 14:39:46.809098,Change Tag Colour,6,172.18.0.1,5,,,
+2021-02-15 14:39:48.094225,Add tag,6,172.18.0.1,[14],,,
+2021-02-15 14:40:03.988811,Add tag,6,172.18.0.1,[14],,,
+2021-02-15 14:40:06.055590,Open Note,6,172.18.0.1,49,,,
+2021-02-15 14:40:11.109966,Add tag,6,172.18.0.1,[14],,,
+2021-02-15 14:40:16.102091,Open Note,6,172.18.0.1,52,,,
+2021-02-15 14:40:20.567250,Add tag,6,172.18.0.1,[13],,,
+2021-02-15 14:40:22.501034,Open Note,6,172.18.0.1,51,,,
+2021-02-15 14:40:34.364854,Add tag,6,172.18.0.1,[13],,,
+2021-02-15 14:40:37.984617,Open Note,6,172.18.0.1,47,,,
+2021-02-15 14:40:42.942219,Add tag,6,172.18.0.1,[13],,,
+2021-02-15 14:41:04.482964,Move Note,6,172.18.0.1,27,35,,
+2021-02-15 14:41:43.248023,Search with Tag,6,172.18.0.1,,,,personal
+2021-02-15 14:41:50.976740,Create Note,6,172.18.0.1,,,,personal 4
+2021-02-15 14:41:58.009980,Search with Tag,6,172.18.0.1,,,,work
+2021-02-15 14:42:07.740406,Create Note,6,172.18.0.1,,,,work 3
+2021-02-15 14:42:16.219740,Move Note,6,172.18.0.1,39,35,,
+2021-02-15 14:42:19.316397,Change Note Colour,6,172.18.0.1,53,,,
+2021-02-15 14:42:23.546982,Change Note Colour,6,172.18.0.1,54,,,
+2021-02-15 14:42:24.290807,Open Note,6,172.18.0.1,53,,,
+2021-02-15 14:42:29.365667,Add tag,6,172.18.0.1,[12],,,
+2021-02-15 14:42:31.824277,Open Note,6,172.18.0.1,54,,,
+2021-02-15 14:42:36.542250,Add tag,6,172.18.0.1,[12],,,
+2021-02-15 14:42:49.170553,Open Note,6,172.18.0.1,35,,,
+2021-02-15 14:42:55.045240,Edit Note,6,172.18.0.1,35,,,<p>this is an old note</p>
+2021-02-15 14:42:58.263374,Open Note,6,172.18.0.1,37,,,
+2021-02-15 14:43:02.972307,Edit Note,6,172.18.0.1,37,,,<p>review the paper</p>
+2021-02-15 14:43:05.963233,Open Note,6,172.18.0.1,32,,,
+2021-02-15 14:43:12.000477,Edit Note,6,172.18.0.1,32,,,<p>cook dinner</p><p><br></p><p>Hello</p>
+2021-02-15 14:43:21.291234,Move Note,6,172.18.0.1,28,35,,
+2021-02-15 14:43:24.793939,Open Note,6,172.18.0.1,48,,,
+2021-02-15 14:43:38.197031,Invite and Add follower,6,172.18.0.1,48,,"[6, False, [16]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: get car fixed</p></div>"
+2021-02-15 14:43:43.460745,Open Note,6,172.18.0.1,46,,,
+2021-02-15 14:43:52.747407,Invite and Add follower,6,172.18.0.1,46,,"[6, False, [17]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: arrange a call with the clients</p></div>"
+2021-02-15 14:44:01.000716,Open Note,6,172.18.0.1,50,,,
+2021-02-15 14:44:09.216631,Invite and Add follower,6,172.18.0.1,50,,"[6, False, [17]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: review code changes to project B</p></div>"
+2021-02-15 14:44:15.104242,Open Note,6,172.18.0.1,49,,,
+2021-02-15 14:44:27.885127,Invite and Add follower,6,172.18.0.1,49,,"[6, False, [17, 19]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: sign-off on the project X</p></div>"
+2021-02-15 14:44:33.116814,Open Note,6,172.18.0.1,52,,,
+2021-02-15 14:44:42.637137,Invite and Add follower,6,172.18.0.1,52,,"[6, False, [21]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: buy coffee powder</p></div>"
+2021-02-15 14:44:45.852194,Open Note,6,172.18.0.1,51,,,
+2021-02-15 14:44:55.255325,Invite and Add follower,6,172.18.0.1,51,,"[6, False, [16]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: plan for the weekend drive</p></div>"
+2021-02-15 14:44:58.921106,Open Note,6,172.18.0.1,47,,,
+2021-02-15 14:45:08.306401,Invite and Add follower,6,172.18.0.1,47,,"[6, False, [16]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: book flights</p></div>"
+2021-02-15 14:45:13.268756,Open Note,6,172.18.0.1,34,,,
+2021-02-15 14:45:22.648426,Invite and Add follower,6,172.18.0.1,34,,"[6, False, [17]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: refactor the old code</p></div>"
+2021-02-15 14:45:38.283193,Move Note,6,172.18.0.1,31,35,,
+2021-02-15 14:46:16.446503,Open Note,6,172.18.0.1,48,,,
+2021-02-15 14:46:17.726178,Open commenting in note,6,172.18.0.1,48,,,
+2021-02-15 14:46:22.110174,Comment in Note,6,172.18.0.1,,,,monday
+2021-02-15 14:46:26.309444,Open commenting in note,6,172.18.0.1,46,,,
+2021-02-15 14:46:30.309690,Comment in Note,6,172.18.0.1,,,,Tuesday
+2021-02-15 14:46:47.095487,Open commenting in note,6,172.18.0.1,50,,,
+2021-02-15 14:46:51.078114,Comment in Note,6,172.18.0.1,,,,wednesday
+2021-02-15 14:46:55.025574,Open commenting in note,6,172.18.0.1,49,,,
+2021-02-15 14:46:59.721229,Comment in Note,6,172.18.0.1,,,,thursday
+2021-02-15 14:47:10.496127,Open commenting in note,6,172.18.0.1,52,,,
+2021-02-15 14:47:15.501102,Comment in Note,6,172.18.0.1,,,,friday
+2021-02-15 14:47:19.931336,Open commenting in note,6,172.18.0.1,51,,,
+2021-02-15 14:47:25.201534,Comment in Note,6,172.18.0.1,,,,Saturday
+2021-02-15 14:47:28.334558,Open commenting in note,6,172.18.0.1,47,,,
+2021-02-15 14:47:31.728620,Comment in Note,6,172.18.0.1,,,,sunday
+2021-02-15 14:47:53.847723,Move Note,6,172.18.0.1,30,35,,
+2021-02-15 14:47:59.298648,Search with Tag,6,172.18.0.1,,,,work
+2021-02-15 14:48:00.914820,Open Note,6,172.18.0.1,46,,,
+2021-02-15 14:48:02.668554,Open commenting in note,6,172.18.0.1,46,,,
+2021-02-15 14:48:11.577655,Attach file,6,172.18.0.1,,,,
+2021-02-15 14:48:13.610213,Search with Tag,6,172.18.0.1,,,,work
+2021-02-15 14:48:14.852210,Open Note,6,172.18.0.1,50,,,
+2021-02-15 14:48:16.819416,Open commenting in note,6,172.18.0.1,50,,,
+2021-02-15 14:48:30.092381,Attach file,6,172.18.0.1,,,,
+2021-02-15 14:48:36.785350,Open commenting in note,6,172.18.0.1,49,,,
+2021-02-15 14:48:45.476698,Attach file,6,172.18.0.1,,,,
+2021-02-15 14:48:47.746816,Search with Tag,6,172.18.0.1,,,,work
+2021-02-15 14:48:52.558071,Move Note,6,172.18.0.1,40,35,,
+2021-02-15 14:49:02.681894,Search with Tag,6,172.18.0.1,,,,other
+2021-02-15 14:49:14.431043,Create Note,6,172.18.0.1,,,,other 6
+2021-02-15 14:49:17.322427,Change Note Colour,6,172.18.0.1,55,,,
+2021-02-15 14:49:18.971746,Open Note,6,172.18.0.1,55,,,
+2021-02-15 14:49:24.649576,Add tag,6,172.18.0.1,[12],,,
+2021-02-15 14:49:25.392958,Search with Tag,6,172.18.0.1,,,,other
+2021-02-15 14:49:29.155339,Delete Note,6,172.18.0.1,43,,,
+2021-02-15 14:49:33.470072,Delete Note,6,172.18.0.1,42,,,
+2021-02-15 14:49:38.610346,Delete Note,6,172.18.0.1,41,,,
+2021-02-15 14:49:42.755831,Move Note,6,172.18.0.1,45,35,,
+2021-02-15 14:49:48.105851,Search with Note,6,172.18.0.1,,,,helo
+2021-02-15 14:49:54.142252,Search with Note,6,172.18.0.1,,,,hello
+2021-02-15 14:50:01.127722,Create Note,6,172.18.0.1,,,,hello 3
+2021-02-15 14:50:09.082041,Move Note,6,172.18.0.1,38,35,,
+2021-02-15 14:50:15.046527,Search with Note,6,172.18.0.1,,,,old
+2021-02-15 14:50:19.399605,Search with both Tag and Note,6,172.18.0.1,,,,"old, depre"
+2021-02-15 14:50:24.869376,Search with Note,6,172.18.0.1,,,,old
+2021-02-15 14:50:29.299340,Search with both Tag and Note,6,172.18.0.1,,,,"old, deprecated"
+2021-02-15 14:50:34.007747,Delete Note,6,172.18.0.1,35,,,
+2021-02-15 14:50:37.933350,Delete Note,6,172.18.0.1,34,,,
+2021-02-15 14:50:39.644283,Search with Tag,6,172.18.0.1,,,,deprecated
+2021-02-15 14:50:44.206445,Move Note,6,172.18.0.1,44,35,,
