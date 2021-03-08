@@ -1,0 +1,33 @@
+timestamp,actionName,userId,ipAddr,id,stageId,partnerId,text
+2021-03-06 21:14:30.631098,Open Note,1,172.18.0.1,23,,,
+2021-03-06 21:15:01.707366,Create Stage,1,172.18.0.1,t,,,
+2021-03-06 21:15:09.043115,Move Note,1,172.18.0.1,23,35,,
+2021-03-06 21:16:51.551999,Open Note,1,172.18.0.1,33,,,
+2021-03-06 21:16:59.898079,Create new tag,1,172.18.0.1,,,,pers
+2021-03-06 21:17:07.204676,Add tag,1,172.18.0.1,"[8, 13]",,,
+2021-03-06 21:17:10.411164,Open Note,1,172.18.0.1,24,,,
+2021-03-06 21:17:24.713381,Move Note,1,172.18.0.1,43,1,,
+2021-03-06 21:17:30.517766,Move Note,1,172.18.0.1,41,3,,
+2021-03-06 21:17:32.582332,Move Note,1,172.18.0.1,42,2,,
+2021-03-06 21:17:40.404772,Move Note,1,172.18.0.1,25,35,,
+2021-03-06 21:17:41.587850,Move Note,1,172.18.0.1,24,35,,
+2021-03-06 21:17:43.055793,Open Note,1,172.18.0.1,26,,,
+2021-03-06 21:17:58.257710,Open Note,1,172.18.0.1,37,,,
+2021-03-06 21:18:17.818647,Move Note,1,172.18.0.1,26,35,,
+2021-03-06 21:18:51.259967,Search with Note,1,172.18.0.1,,,,dinner
+2021-03-06 21:18:57.972063,Search with Tag,1,172.18.0.1,,,,pers
+2021-03-06 21:19:06.398225,Search with Note,1,172.18.0.1,,,,old
+2021-03-06 21:19:13.523107,Search with both Tag and Note,1,172.18.0.1,,,,"old, deprecated"
+2021-03-06 21:19:23.789498,Search with Note,1,172.18.0.1,,,,old
+2021-03-06 21:19:30.892596,Move Note,1,172.18.0.1,39,35,,
+2021-03-06 21:19:33.456500,Move Note,1,172.18.0.1,27,35,,
+2021-03-06 21:19:36.629349,Open Note,1,172.18.0.1,37,,,
+2021-03-06 21:19:43.596196,Move Note,1,172.18.0.1,28,35,,
+2021-03-06 21:19:45.468860,Open Note,1,172.18.0.1,37,,,
+2021-03-06 21:20:11.785563,Open Note,1,172.18.0.1,37,,,
+2021-03-06 21:20:17.589954,Invite and Add follower,1,172.18.0.1,37,,"[6, False, [18]]","<div><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: review the paaaaaaper</p></div>"
+2021-03-06 21:20:28.257212,Open Note,1,172.18.0.1,31,,,
+2021-03-06 21:20:29.473596,Edit Note,1,172.18.0.1,31,,,"<p>Invite and add the follower&nbsp;<span style=""font-family: inherit; font-style: initial; font-variant-ligatures: initial; font-variant-caps: initial; font-weight: initial;"">you want to work with&nbsp;</span><span style=""font-style: initial; font-variant-ligatures: initial; font-variant-caps: initial; font-weight: initial;"">to the task at hand&nbsp;</span></p>"
+2021-03-06 21:20:39.319308,Move Note,1,172.18.0.1,31,35,,
+2021-03-06 21:20:42.293702,Open Note,1,172.18.0.1,37,,,
+2021-03-06 21:20:44.472509,Open commenting in note,1,172.18.0.1,37,,,
