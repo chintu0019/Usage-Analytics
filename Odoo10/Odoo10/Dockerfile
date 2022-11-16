@@ -59,9 +59,9 @@ RUN set -x; \
         && apt-get update \
         && apt-get -y install --force-yes -f --no-install-recommends \
         && rm -rf /var/lib/apt/lists/* odoo.deb \
-        && mkdir "/usr/lib/python2.7/dist-packages/odoo/csvfolder" \
+        && mkdir -p "/usr/lib/python2.7/dist-packages/odoo/csvfolder" \
         && mv "/usr/lib/python2.7/dist-packages/odoo" "/usr/lib/python2.7/dist-packages/odoo.untouched" \
-        && mkdir "/usr/lib/python2.7/dist-packages/odoo"
+        && mkdir -p "/usr/lib/python2.7/dist-packages/odoo"
 
 COPY ./analyzer.patch /usr/lib/python2.7/dist-packages
 # Copy entrypoint script and Odoo configuration file
