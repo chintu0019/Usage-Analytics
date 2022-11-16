@@ -22,6 +22,7 @@ RUN set -x; \
             #python-support \
             python-vobject \
             python-watchdog \
+            wget \
         && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.buster_amd64.deb \
         #&& echo '4d104ff338dc2d2083457b3b1e9baab8ddf14202 wkhtmltox.deb' | sha1sum -c - \
         && dpkg --force-depends -i wkhtmltox.deb \
@@ -38,10 +39,9 @@ RUN set -x; \
         #&& repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8' \
         #&& gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}" \
         #&& gpg --armor --export "${repokey}" | apt-key add - \
-        && apt-get update  \
-        && apt-get install wget \
-        && wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - \
+        && wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
         #&& rm -rf "$GNUPGHOME" \
+        && apt-get update \
         && apt-get install -y postgresql-client \
         && rm -rf /var/lib/apt/lists/*
 
