@@ -38,9 +38,10 @@ RUN set -x; \
         #&& repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8' \
         #&& gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}" \
         #&& gpg --armor --export "${repokey}" | apt-key add - \
+        && apt-get update  \
+        && apt-get install wget \
         && wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - \
         #&& rm -rf "$GNUPGHOME" \
-        && apt-get update  \
         && apt-get install -y postgresql-client \
         && rm -rf /var/lib/apt/lists/*
 
