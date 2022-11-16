@@ -52,7 +52,9 @@ ARG ODOO_RELEASE=20200827
 ARG ODOO_SHA=6a4e7e14ad7a669231e7b76d16e5dd4f8eb7a503 116648860
 RUN set -x; \
         curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb \
-        && echo "${ODOO_SHA} odoo.deb" | sha1sum -c - \
+        #&& echo "${ODOO_SHA} odoo.tar.gz" | sha1sum -c - \
+        && wget -O - https://nightly.odoo.com/odoo.key | gpg --dearmor -o /usr/share/keyrings/odoo-archive-keyring.gpg \
+        && echo 'deb [signed-by=/usr/share/keyrings/odoo-archive-keyring.gpg] https://nightly.odoo.com/10.0/nightly/deb/ ./' | tee /etc/apt/sources.list.d/odoo.list \
         && dpkg --force-depends -i odoo.deb \
         && apt-get update \
         && apt-get -y install --force-yes -f --no-install-recommends \
