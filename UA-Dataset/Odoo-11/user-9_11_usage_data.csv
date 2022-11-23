@@ -1,0 +1,45 @@
+timestamp                  ,actionName                ,odoo-version ,userId ,ipAddr     ,id ,stageId ,partnerId         ,text
+2019-09-21 20:19:37.298919 ,Create Note               ,          11 ,     1 ,172.18.0.1 ,   ,        ,                  ,Perform competitive research
+2019-09-21 20:19:37.427310 ,Open Note                 ,          11 ,     1 ,172.18.0.1 ,13 ,        ,                  ,
+2019-09-21 20:19:43.048946 ,Change Note Colour        ,          11 ,     1 ,172.18.0.1 ,13 ,        ,                  ,
+2019-09-21 20:19:55.162915 ,Create Note               ,          11 ,     1 ,172.18.0.1 ,   ,        ,                  ,Look for more patent-able ideas
+2019-09-21 20:19:55.426787 ,Open Note                 ,          11 ,     1 ,172.18.0.1 ,14 ,        ,                  ,
+2019-09-21 20:19:58.377812 ,Change Note Colour        ,          11 ,     1 ,172.18.0.1 ,14 ,        ,                  ,
+2019-09-21 20:20:10.748448 ,Create Note               ,          11 ,     1 ,172.18.0.1 ,   ,        ,                  ,Submit disclosure form
+2019-09-21 20:20:10.956610 ,Open Note                 ,          11 ,     1 ,172.18.0.1 ,15 ,        ,                  ,
+2019-09-21 20:20:14.473896 ,Change Note Colour        ,          11 ,     1 ,172.18.0.1 ,15 ,        ,                  ,
+2019-09-21 20:20:29.763798 ,Chat with other users     ,          11 ,     1 ,172.18.0.1 , 2 ,        ,                  ,Hi
+2019-09-21 20:20:34.542702 ,Chat with other users     ,          11 ,     1 ,172.18.0.1 , 2 ,        ,                  ,How are you today?
+2019-09-21 20:21:25.383378 ,Chat with other users     ,          11 ,     1 ,172.18.0.1 , 2 ,        ,                  ,"Since you have bandwidth, I'm looking to assign 'More patent-able ideas' card to you."
+2019-09-21 20:21:32.236860 ,Chat with other users     ,          11 ,     1 ,172.18.0.1 , 2 ,        ,                  ,Would you be okay with it?
+2019-09-21 20:21:33.788255 ,Open Note                 ,          11 ,     1 ,172.18.0.1 ,14 ,        ,                  ,
+2019-09-21 20:21:41.977092 ,Create new tag            ,          11 ,     1 ,172.18.0.1 ,   ,        ,                  ,ideas
+2019-09-21 20:22:00.764248 ,Add tag                   ,          11 ,     1 ,172.18.0.1 ,14 ,        ,                  ,
+2019-09-21 20:22:19.668786 ,Open Note                 ,          11 ,     1 ,172.18.0.1 ,14 ,        ,                  ,
+2019-09-21 20:22:40.013867 ,Invite and Add follower   ,          11 ,     1 ,172.18.0.1 ,14 ,        ,6                 ,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: Look for more patent-able ideas</p></div>"
+2019-09-21 20:23:00.287933 ,Comment in Note           ,          11 ,     1 ,172.18.0.1 ,   ,        ,                  ,This will be high priority for this week.
+2019-09-21 20:23:07.128839 ,Open Note                 ,          11 ,     1 ,172.18.0.1 ,13 ,        ,                  ,
+2019-09-21 20:23:26.694440 ,Create new tag            ,          11 ,     1 ,172.18.0.1 ,   ,        ,                  ,research
+2019-09-21 20:23:31.931878 ,Change Tag Colour         ,          11 ,     1 ,172.18.0.1 , 9 ,        ,                  ,
+2019-09-21 20:23:37.385929 ,Edit Note                 ,          11 ,     1 ,172.18.0.1 ,13 ,        ,                  ,"<p><img src=""/web/image/329/UA-QR-code.png?access_token=afeb5229-d738-4b0f-a969-8c7adde043ac"" class=""pull-left"" style=""width: 100%;"">Perform competitive research</p>"
+2019-09-21 20:23:41.321409 ,Open commenting in note   ,          11 ,     1 ,172.18.0.1 ,13 ,        ,                  ,
+2019-09-21 20:23:54.980932 ,Invite and Add follower   ,          11 ,     1 ,172.18.0.1 ,13 ,        ,6                 ,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: Perform competitive research</p></div>"
+2019-09-21 20:24:07.306458 ,Comment in Note           ,          11 ,     1 ,172.18.0.1 ,   ,        ,                  ,Can you perform this task today? 😊
+2019-09-21 20:24:17.814788 ,Create Channel            ,          11 ,     1 ,172.18.0.1 ,   ,        ,                  ,patent
+2019-09-21 20:24:52.772405 ,Invite user to channel    ,          11 ,     1 ,172.18.0.1 ,   ,        ,"[14, 13, 15, 8]" ,
+2019-09-21 20:24:55.947449 ,Chat with other users     ,          11 ,     1 ,172.18.0.1 , 3 ,        ,                  ,Hello
+2019-09-21 20:25:12.965693 ,Chat with other users     ,          11 ,     1 ,172.18.0.1 , 3 ,        ,                  ,any discussion related to patents to be discussed here
+2019-09-21 20:25:25.938069 ,Chat with other users     ,          11 ,     1 ,172.18.0.1 , 2 ,        ,                  ,I've assigned the card to you
+2019-09-21 20:25:51.577522 ,Create Note               ,          11 ,     1 ,172.18.0.1 ,   ,        ,                  ,Fill disclosure form for patent #2
+2019-09-21 20:25:51.706219 ,Open Note                 ,          11 ,     1 ,172.18.0.1 ,16 ,        ,                  ,
+2019-09-21 20:25:53.504555 ,Drag and Drop note        ,          11 ,     1 ,172.18.0.1 ,16 ,      2 ,                  ,
+2019-09-21 20:25:54.384301 ,Drag and Drop note        ,          11 ,     1 ,172.18.0.1 ,16 ,      3 ,                  ,
+2019-09-21 20:25:57.187834 ,Change Note Colour        ,          11 ,     1 ,172.18.0.1 ,16 ,        ,                  ,
+2019-09-21 20:26:01.801767 ,Open Note                 ,          11 ,     1 ,172.18.0.1 ,16 ,        ,                  ,
+2019-09-21 20:26:07.054057 ,Delete Note               ,          11 ,     1 ,172.18.0.1 ,16 ,        ,                  ,
+2019-09-21 20:26:07.191201 ,Open Note                 ,          11 ,     1 ,172.18.0.1 ,15 ,        ,                  ,
+2019-09-21 20:26:11.029483 ,Drag and Drop note        ,          11 ,     1 ,172.18.0.1 ,13 ,      2 ,                  ,
+2019-09-21 20:26:23.744949 ,Chat with other users     ,          11 ,     1 ,172.18.0.1 , 4 ,        ,                  ,Hi
+2019-09-21 20:26:33.711347 ,Chat with other users     ,          11 ,     1 ,172.18.0.1 , 4 ,        ,                  ,check out what is being assigned to you today!
+2019-09-21 20:26:37.423000 ,Chat with other users     ,          11 ,     1 ,172.18.0.1 , 4 ,        ,                  ,Good luck!
+2019-09-21 20:26:54.657245 ,Reference channel in chat ,          11 ,     1 ,172.18.0.1 , 4 ,        ,                  ,"<a href=""http://localhost:8011/web#model=mail.channel&amp;id=3"" class=""o_channel_redirect"" data-oe-id=""3"" data-oe-model=""mail.channel"" target=""_blank"">#patent</a> use this channel for comms"

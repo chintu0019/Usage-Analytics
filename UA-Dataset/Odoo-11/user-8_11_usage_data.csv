@@ -1,0 +1,53 @@
+timestamp                  ,actionName                ,odoo-version ,userId ,ipAddr     ,id         ,stageId ,partnerId     ,text
+2019-09-28 17:00:32.640752 ,Open Note                 ,          11 ,     2 ,172.18.0.1 ,18         ,        ,              ,
+2019-09-28 17:00:38.629401 ,Change Tag Colour         ,          11 ,     2 ,172.18.0.1 ,10         ,        ,              ,
+2019-09-28 17:00:59.918872 ,Edit Note                 ,          11 ,     2 ,172.18.0.1 ,18         ,        ,              ,<p>study</p>
+2019-09-28 17:01:18.559179 ,Add tag                   ,          11 ,     2 ,172.18.0.1 ,18         ,        ,              ,
+2019-09-28 17:01:30.332940 ,Delete Note               ,          11 ,     2 ,172.18.0.1 ,21         ,        ,              ,
+2019-09-28 17:01:35.271088 ,Delete Note               ,          11 ,     2 ,172.18.0.1 ,17         ,        ,              ,
+2019-09-28 17:01:37.761595 ,Drag and Drop note        ,          11 ,     2 ,172.18.0.1 ,18         ,      1 ,              ,
+2019-09-28 17:01:44.603550 ,Change Note Colour        ,          11 ,     2 ,172.18.0.1 ,18         ,        ,              ,
+2019-09-28 17:01:48.907317 ,Change Note Colour        ,          11 ,     2 ,172.18.0.1 ,18         ,        ,              ,
+2019-09-28 17:02:31.396358 ,Create new tag            ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,work-related
+2019-09-28 17:02:54.553206 ,Create Note               ,          11 ,     2 ,172.18.0.1 ,6          ,        ,              ,<p>cases</p>
+2019-09-28 17:03:03.599454 ,Change Note Colour        ,          11 ,     2 ,172.18.0.1 ,22         ,        ,              ,
+2019-09-28 17:03:28.408447 ,Change Tag Colour         ,          11 ,     2 ,172.18.0.1 ,5          ,        ,              ,
+2019-09-28 17:03:42.125762 ,Create Note               ,          11 ,     2 ,172.18.0.1 ,6          ,        ,              ,<p>visa papers</p>
+2019-09-28 17:03:50.054715 ,Change Note Colour        ,          11 ,     2 ,172.18.0.1 ,23         ,        ,              ,
+2019-09-28 17:03:52.146509 ,Open Note                 ,          11 ,     2 ,172.18.0.1 ,19         ,        ,              ,
+2019-09-28 17:04:17.750464 ,Edit Note                 ,          11 ,     2 ,172.18.0.1 ,19         ,        ,              ,<p>application&nbsp;</p>
+2019-09-28 17:04:23.381964 ,Change Note Colour        ,          11 ,     2 ,172.18.0.1 ,19         ,        ,              ,
+2019-09-28 17:04:25.018753 ,Open Note                 ,          11 ,     2 ,172.18.0.1 ,23         ,        ,              ,
+2019-09-28 17:04:35.551239 ,Create new tag            ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,visa
+2019-09-28 17:04:38.505808 ,Add tag                   ,          11 ,     2 ,172.18.0.1 ,23         ,        ,              ,
+2019-09-28 17:04:42.122057 ,Open Note                 ,          11 ,     2 ,172.18.0.1 ,19         ,        ,              ,
+2019-09-28 17:04:49.559785 ,Edit Note                 ,          11 ,     2 ,172.18.0.1 ,19         ,        ,              ,<p>application&nbsp;</p>
+2019-09-28 17:05:07.356529 ,Create new tag            ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,shopping
+2019-09-28 17:05:13.918598 ,Create Note               ,          11 ,     2 ,172.18.0.1 ,6          ,        ,              ,<p>grocery</p>
+2019-09-28 17:05:23.496469 ,Change Note Colour        ,          11 ,     2 ,172.18.0.1 ,24         ,        ,              ,
+2019-09-28 17:05:27.984544 ,Drag and Drop note        ,          11 ,     2 ,172.18.0.1 ,22         ,      2 ,              ,
+2019-09-28 17:05:51.440442 ,Rename Stage              ,          11 ,     2 ,172.18.0.1 ,2          ,        ,              ,In-progressish
+2019-09-28 17:06:10.634096 ,Create Stage              ,          11 ,     2 ,172.18.0.1 ,far future ,        ,              ,
+2019-09-28 17:06:29.435338 ,Create Note               ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,rent
+2019-09-28 17:06:29.553054 ,Open Note                 ,          11 ,     2 ,172.18.0.1 ,25         ,        ,              ,
+2019-09-28 17:06:34.202938 ,Change Note Colour        ,          11 ,     2 ,172.18.0.1 ,25         ,        ,              ,
+2019-09-28 17:06:44.641487 ,Delete Stage              ,          11 ,     2 ,172.18.0.1 ,42         ,        ,              ,
+2019-09-28 17:06:51.504646 ,Open Note                 ,          11 ,     2 ,172.18.0.1 ,24         ,        ,              ,
+2019-09-28 17:07:18.308926 ,Invite and Add follower   ,          11 ,     2 ,172.18.0.1 ,24         ,        ,6             ,"<div style=""font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;""><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Hello,</p><p style=""margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;"">Administrator invited you to follow Note document: grocery</p></div>"
+2019-09-28 17:07:26.897407 ,Open commenting in note   ,          11 ,     2 ,172.18.0.1 ,24         ,        ,              ,
+2019-09-28 17:07:40.161834 ,Attach file               ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,
+2019-09-28 17:07:49.965401 ,Comment in Note           ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,log note12
+2019-09-28 17:08:13.604460 ,Open Note                 ,          11 ,     2 ,172.18.0.1 ,24         ,        ,              ,
+2019-09-28 17:08:34.891757 ,Search with Tag           ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,devel
+2019-09-28 17:08:47.075481 ,Search with Note          ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,shopping
+2019-09-28 17:08:51.395556 ,Search with Tag           ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,shopping
+2019-09-28 17:08:58.252587 ,Search with Tag           ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,"shopping, visa"
+2019-09-28 17:09:05.680968 ,Search with Tag           ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,"shopping, visa, work"
+2019-09-28 17:09:18.882063 ,Search with Note          ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,to-d0
+2019-09-28 17:09:33.121979 ,Open Note                 ,          11 ,     2 ,172.18.0.1 ,25         ,        ,              ,
+2019-09-28 17:10:21.670488 ,Create Channel            ,          11 ,     2 ,172.18.0.1 ,           ,        ,              ,just
+2019-09-28 17:10:36.887684 ,Mention user in chat      ,          11 ,     2 ,172.18.0.1 ,8          ,        ,[3]           ,"<a href=""http://localhost:8011/web#model=res.partner&amp;id=3"" class=""o_mail_redirect"" data-oe-id=""3"" data-oe-model=""res.partner"" target=""_blank"">@Administrator</a> "
+2019-09-28 17:11:01.720404 ,Invite user to channel    ,          11 ,     2 ,172.18.0.1 ,           ,        ,"[13, 8, 11]" ,
+2019-09-28 17:11:20.340971 ,Mention user in chat      ,          11 ,     2 ,172.18.0.1 ,8          ,        ,[8]           ,"<a href=""http://localhost:8011/web#model=res.partner&amp;id=8"" class=""o_mail_redirect"" data-oe-id=""8"" data-oe-model=""res.partner"" target=""_blank"">@odoo11purpleb</a>  😸 "
+2019-09-28 17:11:36.856483 ,Reference channel in chat ,          11 ,     2 ,172.18.0.1 ,8          ,        ,              ,"<a href=""http://localhost:8011/web#model=mail.channel&amp;id=1"" class=""o_channel_redirect"" data-oe-id=""1"" data-oe-model=""mail.channel"" target=""_blank"">#general</a> "
+2019-09-28 17:11:55.494165 ,Unfollow from a Channel   ,          11 ,     2 ,172.18.0.1 ,7          ,        ,              ,
