@@ -1,39 +1,26 @@
 FROM debian:buster
 LABEL maintainer="Odoo S.A. <info@odoo.com>"
 
-RUN printf "deb http://ftp.uk.debian.org/debian/ buster main\ndeb-src http://ftp.uk.debian.org/debian/ buster main\ndeb http://security.debian.org buster/updates main\ndeb-src http://security.debian.org buster/updates main" > /etc/apt/sources.list
+# add user with the same user id as in core odoo package
+# unfortunately python comes with group 107 already defined so I used www-data as group
+RUN useradd -m -d /var/lib/odoo -s /bin/false -u 104 -g 33 odoo
 
 # Install some deps, lessc and less-plugin-clean-css, and wkhtmltopdf
 RUN set -x; \
         apt-get update \
-        && apt-get install -y --force-yes --no-install-recommends \
-            rsync \
-            psmisc \
-            patch \
+        && apt-get install -y --no-install-recommends \
             ca-certificates \
             curl \
-            dirmngr \
-            node-less \
-            python-gevent \
-            python-ldap \
-            python-pip \
-            python-qrcode \
-            python-renderpm \
-            #python-support \
-            python-vobject \
-            python-watchdog \
             wget \
-            gnupg \
-        && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.buster_amd64.deb \
-        #&& echo '4d104ff338dc2d2083457b3b1e9baab8ddf14202 wkhtmltox.deb' | sha1sum -c - \
-        && dpkg --force-depends -i wkhtmltox.deb \
-        && apt-get -y install -f --force-yes --no-install-recommends \
-        && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm \
-        && rm -rf /var/lib/apt/lists/* wkhtmltox.deb \
-        && pip install setuptools \
-        && pip install psycogreen==1.0
+            gnupg
+        #&& curl -o wkhtmltox.deb -SL http://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb \
+        #&& echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 wkhtmltox.deb' | sha1sum -c - \
+        #&& dpkg --force-depends -i wkhtmltox.deb \
+        #&& apt-get -y install -f --no-install-recommends \
+        #&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm \
+        #&& rm -rf /var/lib/apt/lists/* wkhtmltox.deb
 
-# install latest postgresql-client
+# support for Postgresql10
 RUN set -x; \
         echo 'deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main' > etc/apt/sources.list.d/pgdg.list \
         && export GNUPGHOME="$(mktemp -d)" \
@@ -46,27 +33,57 @@ RUN set -x; \
         && apt-get install -y postgresql-client \
         && rm -rf /var/lib/apt/lists/*
 
+# python python-minimal python2.7 python2.7-minimal
+#RUN apt-get purge -y python.*
+
 # Install Odoo
 ENV ODOO_VERSION 10.0
-ARG ODOO_RELEASE=20200827
-ARG ODOO_SHA=6a4e7e14ad7a669231e7b76d16e5dd4f8eb7a503 116648860
+ENV ODOO_RELEASE 20181008
 RUN set -x; \
-        curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb \
-        #&& echo "${ODOO_SHA} odoo.tar.gz" | sha1sum -c - \
-        && wget -O - https://nightly.odoo.com/odoo.key | gpg --dearmor -o /usr/share/keyrings/odoo-archive-keyring.gpg \
-        && echo 'deb [signed-by=/usr/share/keyrings/odoo-archive-keyring.gpg] https://nightly.odoo.com/10.0/nightly/deb/ ./' | tee /etc/apt/sources.list.d/odoo.list \
-        && dpkg --force-depends -i odoo.deb \
+        #apt-get install -y libsasl2-dev libldap2-dev libssl-dev gcc \
+        #&& curl -o odoo.tar.gz -SL https://nightly.odoo.com/${ODOO_VERSION}/nightly/src/odoo_${ODOO_VERSION}.${ODOO_RELEASE}.tar.gz \
+        #&& tar xzf odoo.tar.gz \
+        #&& cd odoo-${ODOO_VERSION}* \
+        #&& pip install -r ./requirements.txt \
+        #&& pip install . \
+        #&& cd .. && rm -rf ./odoo* \
+        #&& pip install --upgrade \
+        #    cryptography \
+        #    watchdog \
+        #    newrelic \
+        #    flanker \
+        #    # Additional for Order Planner/geolocalization \
+        #    uszipcode \
+        #    # Additional for Connectors (e.g. Walmart and Magento) \
+        #    cachetools \
+        #    magento \
+        #    pycrypto \
+        #&& apt-get purge -y \
+        #    gcc \
+        #    libsasl2-dev \
+        #    libldap2-dev \
+        #    libssl-dev \
+        wget -O - https://nightly.odoo.com/odoo.key | apt-key add - \
+        && echo "deb http://nightly.odoo.com/10.0/nightly/deb/ ./" >> /etc/apt/sources.list.d/odoo.list \
         && apt-get update \
-        && apt-get -y install --force-yes -f --no-install-recommends \
-        && rm -rf /var/lib/apt/lists/* odoo.deb \
+        && apt-get install odoo \
         && mkdir -p "/usr/lib/python2.7/dist-packages/odoo/csvfolder" \
         && mv "/usr/lib/python2.7/dist-packages/odoo" "/usr/lib/python2.7/dist-packages/odoo.untouched" \
         && mkdir -p "/usr/lib/python2.7/dist-packages/odoo"
+
+# install newer node and lessc (mostly for less compatibility)
+#RUN set -x; \
+#        curl -sL https://deb.nodesource.com/setup_10.x | bash - \
+#        && apt-get install -y nodejs \
+#        && npm install -g less \
+#        ;
 
 COPY ./analyzer.patch /usr/lib/python2.7/dist-packages
 # Copy entrypoint script and Odoo configuration file
 COPY ./entrypoint.sh /
 RUN chmod 755 ./entrypoint.sh
+COPY ./odoo.conf /etc/odoo/
+RUN chown odoo /etc/odoo/odoo.conf
 
 # Mount /var/lib/odoo to allow restoring filestore and /mnt/extra-addons for users addons
 RUN mkdir -p /mnt/extra-addons \
@@ -74,11 +91,13 @@ RUN mkdir -p /mnt/extra-addons \
 VOLUME ["/var/lib/odoo", "/mnt/extra-addons"]
 
 # Expose Odoo services
-EXPOSE 8069 8071
+EXPOSE 8069 8072
 
-# Set the default config file
-ENV ODOO_RC /usr/lib/python2.7/dist-packages/odoo/odoo.conf
+# Set the default config file - NOTE this is still used in odoo/tools/config.py in v10
+ENV ODOO_RC /etc/odoo/odoo.conf
 
+# Set default user when running the container
+USER odoo
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["odoo"]
