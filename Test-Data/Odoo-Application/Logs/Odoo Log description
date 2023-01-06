@@ -17,7 +17,7 @@
 //User posted a message in a task (comment)
 
 2018-01-07 17:53:52,189 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:53:52] "POST /web/dataset/call_kw/ir.attachment/load_views HTTP/1.1" 200 -
-//User opened the atachments page (every project overview page shows all the attachments belongign to theat project)
+//User opened the attachments page (every project overview page shows all the attachments belonging to that project)
 
 2018-01-07 17:55:40,875 4338 INFO DCU_Experiment_1 werkzeug: 192.168.0.116 - - [07/Jan/2018 17:55:40] "GET /web/session/logout HTTP/1.1" 303 -
-//User logged out 
+//User logged out
